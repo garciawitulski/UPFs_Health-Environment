@@ -1,0 +1,6 @@
+﻿env_group_extended,env_group_expanded,bridge_source,bridge_note
+AGB_eaux,Flavoured_water_drink,expanded_bridge,proxy for plain/flavoured waters in extended beverage groups
+AGB_boissons_sans_alcool,Soft_drinks_carbonated,expanded_bridge,proxy for non-alcoholic beverages not otherwise comparable-mapped
+AGB_boisson_alcoolisees,Beer,expanded_bridge,proxy for alcoholic beverages in extended mapping
+AGB_confiseries,Confectionery_candy,expanded_bridge,proxy for confectionery/sweets extended group
+AGB_glaces,Ice_cream,expanded_bridge,proxy for ice-cream/frozen dessert extended group

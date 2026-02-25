@@ -1,0 +1,30 @@
+# Local tooling
+.claude/
+__pycache__/
+*.pyc
+.Rhistory
+.RData
+.Rproj.user/
+
+# Build / generated outputs
+output/
+
+# LaTeX and manuscript build artifacts in project root
+/*.aux
+/*.bbl
+/*.blg
+/*.fdb_latexmk
+/*.fls
+/*.log
+/*.out
+/*.xdv
+/*.dvi
+/*.ps
+
+# Local installers and office drafts in project root
+/pandoc-*.msi
+/UPF*.docx
+/student_pdf_extracted.txt
+
+# Reference PDFs placed in project root (input datasets under data/ and ENNyS/ are kept)
+/*.pdf

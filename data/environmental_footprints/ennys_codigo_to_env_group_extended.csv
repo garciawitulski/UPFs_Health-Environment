@@ -1,0 +1,1041 @@
+codigo,descripcion,NOVA,env_group_arrieta,env_group_comparable,env_group_extended,mapping_level,extra_rule
+V001,Acelga,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V050,"Acelga, congelada",3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V073,"Acelga, pencas",1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V002,Achicoria,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V081,Ají en conserva,3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V077,Ají Locoto,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V003,Ají rojo / morrón rojo,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V004,Ají verde o amarillo / morrón verde o amarillo,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V065,Ajo,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V071,Albahaca,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V069,"Alcaparras, encurtido",3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V005,Alcaucil,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V006,Apio,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V051,"Arveja, congelada",3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V008,"Arveja, enlatada",3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V007,"Arveja, fresca",1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V010,Berenjena,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V011,Berro,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V012,Brócoli,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V013,Brotes de soja,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V075,Brotes de tacuara (bambú) en escabeche,3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V082,Caldo de verduras colado,4,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V014,Cebolla,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V052,Cebolla de verdeo,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V074,"Champignones, enlatados",3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V076,"Champignones, frescos",1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V053,"Chaucha, congelada",3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V016,"Chaucha, fresca",1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V078,Chuchu o chayote,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V015,Coliflor,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V020,Escarola,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V021,Espárrago,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V022,Espinaca,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V023,Habas,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V054,Hakusai o col china,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V024,Hinojo,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V083,Hojas de parra,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V026,"Hongos, enlatados",3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V025,"Hongos, frescos",1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V080,"Hongos, secos",1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V055,"Jardinera, congelada",3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V056,"Jardinera, enlatada",3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V066,Jengibre,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V057,Kale,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V027,Lechuga,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V028,Mandioca,1,Starchy vegetables,Starchy vegetables,Starchy vegetables,base_arrieta,none
+V072,Medallones de verdura congelados industrializados,4,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V029,"Palmitos, enlatados",3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V031,Pepino,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V067,Perejil,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V070,"Pickles, en vinagre",3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V062,"Prefritos congelados, croquetas de vegetales (espinaca, brócoli)",4,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V063,"Prefritos congelados, milanesas de vegetales (4 vegetales, espinaca)",4,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V064,"Prefritos congelados, patitas de vegetales (espinaca)",4,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V032,Puerro,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V033,Rabanito,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V034,Radicheta,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V035,Remolacha,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V036,Repollito de Bruselas,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V037,Repollo,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V058,Rúcula,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V038,Tomate,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V068,"Tomate, desecado",3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V039,"Tomate, enlatado",3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V060,"Tomate, puré de tomate",3,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V059,Tomate cherry,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V079,Verdolaga,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V040,Zanahoria,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V041,Zapallito,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V042,Zapallo,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V084,"Zapallo / calabaza, puré instantáneo (polvo)*",4,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+V061,Zucchini,1,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,none
+F050,Aceituna negra,3,Fruits,Fruits,Fruits,base_arrieta,none
+F001,Aceituna verde,3,Fruits,Fruits,Fruits,base_arrieta,none
+F069,"Alimento a base de coco (leche de coco, industrializada)",4,Fruits,Fruits,Fruits,base_arrieta,none
+F044,Acerola,1,Fruits,Fruits,Fruits,base_arrieta,none
+F003,Ananá,1,Fruits,Fruits,Fruits,base_arrieta,none
+F004,"Ananá, enlatado (fruta y almíbar)",3,Fruits,Fruits,Fruits,base_arrieta,none
+F071,Ananá glaseado,4,Fruits,Fruits,Fruits,base_arrieta,none
+F060,Arándanos,1,Fruits,Fruits,Fruits,base_arrieta,none
+F006,Banana,1,Fruits,Fruits,Fruits,base_arrieta,none
+F067,Banana deshidratada,1,Fruits,Fruits,Fruits,base_arrieta,none
+F045,Cayota o Alcayota,1,Fruits,Fruits,Fruits,base_arrieta,none
+F007,Cereza,1,Fruits,Fruits,Fruits,base_arrieta,none
+F009,Ciruela pasa / ciruela seca,3,Fruits,Fruits,Fruits,base_arrieta,none
+F008,Ciruela,1,Fruits,Fruits,Fruits,base_arrieta,none
+F046,Coco fresco,1,Fruits,Fruits,Fruits,base_arrieta,none
+F066,"Coco, leche",1,Fruits,Fruits,Fruits,base_arrieta,none
+F051,Coco rallado,3,Fruits,Fruits,Fruits,base_arrieta,none
+F052,"Coctail de frutas, enlatado (fruta y almíbar)",4,Fruits,Fruits,Fruits,base_arrieta,none
+F010,Damasco,1,Fruits,Fruits,Fruits,base_arrieta,none
+F061,Dátiles,3,Fruits,Fruits,Fruits,base_arrieta,none
+F013,"Durazno, enlatado light (fruta y almíbar)",4,Fruits,Fruits,Fruits,base_arrieta,none
+F012,"Durazno, enlatado (fruta y almíbar)",3,Fruits,Fruits,Fruits,base_arrieta,none
+F011,Durazno,1,Fruits,Fruits,Fruits,base_arrieta,none
+F014,Durazno orejón,3,Fruits,Fruits,Fruits,base_arrieta,none
+F064,Frambuesa,1,Fruits,Fruits,Fruits,base_arrieta,none
+F065,Frutas abrillantadas,4,Fruits,Fruits,Fruits,base_arrieta,none
+F015,Frutilla,1,Fruits,Fruits,Fruits,base_arrieta,none
+F016,Granada,1,Fruits,Fruits,Fruits,base_arrieta,none
+F053,Guabirova,1,Fruits,Fruits,Fruits,base_arrieta,none
+F017,Guayaba,1,Fruits,Fruits,Fruits,base_arrieta,none
+F054,Higo desecado,3,Fruits,Fruits,Fruits,base_arrieta,none
+F018,Higo,1,Fruits,Fruits,Fruits,base_arrieta,none
+F019,Kaki,1,Fruits,Fruits,Fruits,base_arrieta,none
+F020,Kinoto,1,Fruits,Fruits,Fruits,base_arrieta,none
+F021,Kiwi,1,Fruits,Fruits,Fruits,base_arrieta,none
+F022,Limón,1,Fruits,Fruits,Fruits,base_arrieta,none
+F059,"Limón, ralladura",1,Fruits,Fruits,Fruits,base_arrieta,none
+F023,Mamón,1,Fruits,Fruits,Fruits,base_arrieta,none
+F024,Mandarina,1,Fruits,Fruits,Fruits,base_arrieta,none
+F025,Mango,1,Fruits,Fruits,Fruits,base_arrieta,none
+F027,Manzana con piel,1,Fruits,Fruits,Fruits,base_arrieta,none
+F028,Manzana sin piel,1,Fruits,Fruits,Fruits,base_arrieta,none
+F070,Maracuyá,1,Fruits,Fruits,Fruits,base_arrieta,none
+F029,Melón,1,Fruits,Fruits,Fruits,base_arrieta,none
+F030,Membrillo,1,Fruits,Fruits,Fruits,base_arrieta,none
+F055,Mora,1,Fruits,Fruits,Fruits,base_arrieta,none
+F031,Naranja,1,Fruits,Fruits,Fruits,base_arrieta,none
+F062,"Naranja, ralladura",1,Fruits,Fruits,Fruits,base_arrieta,none
+F032,Níspero,1,Fruits,Fruits,Fruits,base_arrieta,none
+F034,Palta,1,Fruits,Fruits,Fruits,base_arrieta,none
+F063,Papaya,1,Fruits,Fruits,Fruits,base_arrieta,none
+F036,Pera,1,Fruits,Fruits,Fruits,base_arrieta,none
+F037,"Pera, enlatada (fruta y almíbar)",3,Fruits,Fruits,Fruits,base_arrieta,none
+F038,"Pera, enlatada light (fruta y almíbar)",4,Fruits,Fruits,Fruits,base_arrieta,none
+F039,Pera orejón,3,Fruits,Fruits,Fruits,base_arrieta,none
+F056,Pitanga,1,Fruits,Fruits,Fruits,base_arrieta,none
+F041,Pomelo,1,Fruits,Fruits,Fruits,base_arrieta,none
+F057,Puré de frutas envasado (alimento infantil),4,Fruits,Fruits,Fruits,base_arrieta,none
+F042,Sandía,1,Fruits,Fruits,Fruits,base_arrieta,none
+F058,Tuna,1,Fruits,Fruits,Fruits,base_arrieta,none
+F043,Uva,1,Fruits,Fruits,Fruits,base_arrieta,none
+F035,Uva pasa,3,Fruits,Fruits,Fruits,base_arrieta,none
+A001,Almidón de maíz,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A193,Almidón de mandioca,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A002,Amaranto,1,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A101,Anchi,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A003,Arroz blanco,1,Rice,Rice,Rice,base_arrieta,none
+A191,Arroz inflado azucarado,4,Rice,Rice,Rice,base_arrieta,none
+A004,Arroz integral,1,Rice,Rice,Rice,base_arrieta,none
+A102,Arroz yamaní,1,Rice,Rice,Rice,base_arrieta,none
+A103,"(tipo cuatro quesos, primavera, etc.)",3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A255,"Arroz a la portuguesa (envasado, fortificado con vitaminas y minerales)",4,Rice,Rice,Rice,base_arrieta,none
+A257,"Arroz a la valenciana (envasado, fortificado con vitaminas y minerales)",4,Rice,Rice,Rice,base_arrieta,none
+A006,"Arveja, semilla seca entera / partida",1,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A005,"Avena, arrollada",1,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A104,"Avena, almohaditas",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A105,Barra crocante de arroz,4,Rice,Rice,Rice,base_arrieta,none
+A106,Barra de cereal fortificada,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A107,Barra de cereal light,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A008,"Barra de cereales, PROMEDIO",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A073,Batata,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A108,Bizcochitos de grasa envasados,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A109,Bizcochitos de grasa envasados light,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A110,Bizcochitos de arroz envasados (tipo galletita),4,Rice,Rice,Rice,base_arrieta,none
+A009,"Bizcochos de grasa (panadería) / Criollitos, Libritos (pan con grasa)",2,Baked products,Baked products,Baked products,base_arrieta,none
+A010,Bizcochos tipo Bay Biscuit,3,Baked products,Baked products,Baked products,base_arrieta,none
+A229,Bizcochuelo preparado (panadería),4,Baked products,Baked products,Baked products,base_arrieta,none
+A111,Bizcochuelo preparado a partir de polvo premezcla,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A112,"Bizcochuelo preparado a partir de polvo premezcla, SIN TACC",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A113,Bollitos de anís,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A236,Brownie (panadería),3,Baked products,Baked products,Baked products,base_arrieta,none
+A114,Budín industrializado,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A234,"Budín industrializado con nueces, tipo navideño",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A115,"Capelettis / capelettinis deshidratados, envasados",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A011,"Capelettis frescos, artesanal",3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A074,"Cereal desayuno, aritos frutales",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A182,"Cereal desayuno, aritos sabor miel",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A194,"Cereal desayuno, bolitas de chocolate",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A075,"Cereal desayuno, copos de maíz sin azúcar, sin fortificar",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A116,Cereal infantil para papilla,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A248,Cheesecake (panadería / confitería),3,Baked products,Baked products,Baked products,base_arrieta,none
+A013,Chipá,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A120,Chipá preparado a partir de polvo premezcla,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A216,"Chipaco o pan con chicharrón, comprado",3,Baked products,Baked products,Baked products,base_arrieta,none
+A076,Choclo,1,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A176,"Choclo, congelado en grano",3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A078,"Choclo, enlatado cremoso",3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A077,"Choclo, enlatado en grano",3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A014,Churros,3,Baked products,Baked products,Baked products,base_arrieta,none
+A180,"Cereal desayuno, copos de cereal integral (arroz y maíz), fortificados",4,Rice,Rice,Rice,base_arrieta,none
+A012,"Cereal desayuno, copos azucarados, sin fortificar",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A117,"Cereal desayuno, copos azucarados, fortificados",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A204,Coquitos (panadería),3,Baked products,Baked products,Baked products,base_arrieta,none
+A118,Cous Cous,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A119,Cucurucho / cubanito,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A250,Empanaditas chinas (restaurant),3,Baked products,Baked products,Baked products,base_arrieta,none
+A015,Facturas rellenas,3,Baked products,Baked products,Baked products,base_arrieta,none
+A016,Facturas simples,3,Baked products,Baked products,Baked products,base_arrieta,none
+A192,"Farofa tradicional, harina de mandioca condimentada, envasada lista para",2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A207,"Fideos de arroz, SIN TACC",4,Rice,Rice,Rice,base_arrieta,none
+A017,"Fideos frescos, al huevo",3,Pasta,Pasta,Pasta,base_arrieta,none
+A018,Fideos secos,3,Pasta,Pasta,Pasta,base_arrieta,none
+A121,"Fideos secos, fortificados",3,Pasta,Pasta,Pasta,base_arrieta,none
+A122,Fideos secos integrales / fideos secos de sémola y harina de legumbres,2,Pasta,Pasta,Pasta,base_arrieta,none
+A201,Frangollo (maíz seco pisado),3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A064,Galleta de campo,4,Baked products,Baked products,Baked products,base_arrieta,none
+A206,Galleta de grasa con chicharrón,4,Baked products,Baked products,Baked products,base_arrieta,none
+A065,Galleta marinera,4,Baked products,Baked products,Baked products,base_arrieta,none
+A188,Galleta marinera con semillas / galletitas crackers con semillas,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,none
+A253,Galleta marinera integral,4,Baked products,Baked products,Baked products,base_arrieta,none
+A203,"Galleta marinera, light en grasas",4,Baked products,Baked products,Baked products,base_arrieta,none
+A019,Galletas de arroz,4,Rice,Rice,Rice,base_arrieta,none
+A185,Galletas de arroz horneadas tipo snack varios sabores,4,Rice,Rice,Rice,base_arrieta,none
+A123,Galletas de arroz sin sal,4,Rice,Rice,Rice,base_arrieta,none
+A067,Galletitas integrales sin sal,4,Baked products,Baked products,Baked products,base_arrieta,none
+A186,Galletitas dulces con centro de membrillo o similar (tipo Pepas),4,Baked products,Baked products,Baked products,base_arrieta,none
+A181,Galletitas dulces con chips de chocolate,4,Baked products,Baked products,Baked products,base_arrieta,none
+A220,Galletitas dulces hojaldradas,4,Baked products,Baked products,Baked products,base_arrieta,none
+A023,Galletitas dulces rellenas,4,Baked products,Baked products,Baked products,base_arrieta,none
+A211,Galletitas dulces rellenas bañadas en chocolate,4,Baked products,Baked products,Baked products,base_arrieta,none
+A024,Galletitas dulces simples,4,Baked products,Baked products,Baked products,base_arrieta,none
+A205,"Galletitas dulces sin azúcar agregada, con edulcorante (dietética)",4,Baked products,Baked products,Baked products,base_arrieta,none
+A124,"Galletitas dulces, SIN TACC",4,Baked products,Baked products,Baked products,base_arrieta,none
+A177,Galletitas dulces de almidón de maíz (tapita de alfajor),4,Baked products,Baked products,Baked products,base_arrieta,none
+A125,Galletitas dulces tipo Frutigran,4,Baked products,Baked products,Baked products,base_arrieta,none
+A068,Galletitas dulces obleas,4,Baked products,Baked products,Baked products,base_arrieta,none
+A020,"Galletitas de agua, PROMEDIO",4,Baked products,Baked products,Baked products,base_arrieta,none
+A066,Galletitas de agua sin sal,4,Baked products,Baked products,Baked products,base_arrieta,none
+A258,Galletitas de agua sin sal con chía y lino,4,Baked products,Baked products,Baked products,base_arrieta,none
+A127,Galletitas de agua con girasol alto oleico,4,Baked products,Baked products,Baked products,base_arrieta,none
+A021,Galletitas de agua con grasa vacuna,4,Baked products,Baked products,Baked products,base_arrieta,none
+A247,Galletitas de agua light,4,Baked products,Baked products,Baked products,base_arrieta,none
+A022,Galletitas de salvado o integrales,4,Baked products,Baked products,Baked products,base_arrieta,none
+A126,Galletitas tipo copetín,4,Baked products,Baked products,Baked products,base_arrieta,none
+A198,Galletitas tipo talitas o fajitas,4,Baked products,Baked products,Baked products,base_arrieta,none
+A254,Galletitas de vainilla con chips de chocolate (panadería),4,Baked products,Baked products,Baked products,base_arrieta,none
+A025,Garbanzos,1,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A128,"Garbanzos, enlatados",3,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A129,Gérmen de trigo,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A026,Granola,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A069,Grisines,3,Baked products,Baked products,Baked products,base_arrieta,none
+A130,Grisines sin sal,2,Baked products,Baked products,Baked products,base_arrieta,none
+A244,"Guiso de lentejas (envasado, fortificado con vitaminas y minerales)",1,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A260,Hamburguesa de quinoa envasada,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A175,Hamburguesa de soja congelada,4,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A027,Harina de algarrobo,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A028,Harina de arroz,2,Rice,Rice,Rice,base_arrieta,none
+A029,Harina de cebada,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A030,Harina de centeno,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A212,Harina de chía,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A131,Harina de garbanzos,1,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A031,Harina de maíz,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A070,Harina de quinoa,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A032,Harina de soja,2,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A033,Harina de trigo,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A202,Harina de trigo con levadura para pizza,4,Baked products,Baked products,Baked products,base_arrieta,none
+A132,Harina de trigo fortificada,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A034,Harina de trigo integral,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A133,Harina leudante,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A035,Lentejas,1,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A134,"Lentejas, enlatadas",3,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A259,Milanesa de lentejas (dietética),1,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A178,Levadura en polvo,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A179,Levadura fresca,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A135,Madalenas,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A187,Madalenas rellenas,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A136,Madalenas fortificadas,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A036,"Maíz, grano entero",1,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A197,"Masa de pizza, preparada a partir de polvo premezcla",4,Baked products,Baked products,Baked products,base_arrieta,none
+A138,"Masa de pizza, preparada a partir de polvo premezcla, SIN TACC",4,Baked products,Baked products,Baked products,base_arrieta,none
+A038,Masa de prepizza de panadería o envasada,4,Baked products,Baked products,Baked products,base_arrieta,none
+A037,Masa de tarta o empanadas,3,Baked products,Baked products,Baked products,base_arrieta,none
+A139,Masa de tarta o empanadas light,4,Baked products,Baked products,Baked products,base_arrieta,none
+A252,"Masa de tarta o empanada, integral",3,Baked products,Baked products,Baked products,base_arrieta,none
+A218,"Masa de tarta, SIN TACC",3,Baked products,Baked products,Baked products,base_arrieta,none
+A242,Masas finas surtidas (panadería / confitería),3,Baked products,Baked products,Baked products,base_arrieta,none
+A232,Masas secas surtidas (panadería / confitería),3,Baked products,Baked products,Baked products,base_arrieta,none
+A217,Muffins veganos,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A233,Ñoquis de espinaca envasados,4,Pasta,Pasta,Pasta,base_arrieta,none
+A039,"Ñoquis de papa frescos, artesanal",3,Pasta,Pasta,Pasta,base_arrieta,none
+A140,"Ñoquis de papa, envasados",1,Pasta,Pasta,Pasta,base_arrieta,none
+A171,Ñoquis preparados a partir de polvo premezcla,4,Pasta,Pasta,Pasta,base_arrieta,none
+A172,"Ñoquis preparados a partir de polvo premezcla, SIN TACC",4,Pasta,Pasta,Pasta,base_arrieta,none
+A241,Panko (pan rallado japonés),3,Baked products,Baked products,Baked products,base_arrieta,none
+A071,Pan árabe,3,Baked products,Baked products,Baked products,base_arrieta,none
+A215,"Pan cacho (tipo pan casero de campo, sin grasa)",2,Baked products,Baked products,Baked products,base_arrieta,none
+A240,"Pan con grasa (tipo pan ""cordero"")",2,Baked products,Baked products,Baked products,base_arrieta,none
+A072,Pan criollo / semita / tortillas / bollos / harinitas,3,Baked products,Baked products,Baked products,base_arrieta,none
+A040,Pan de centeno,3,Baked products,Baked products,Baked products,base_arrieta,none
+A042,Pan de gluten,3,Baked products,Baked products,Baked products,base_arrieta,none
+A043,Pan de maíz,3,Baked products,Baked products,Baked products,base_arrieta,none
+A044,Pan de miga,3,Baked products,Baked products,Baked products,base_arrieta,none
+A048,Pan de molde con salvado,4,Baked products,Baked products,Baked products,base_arrieta,none
+A045,Pan de salvado,2,Baked products,Baked products,Baked products,base_arrieta,none
+A184,Pan de salvado con semillas,2,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,none
+A141,Pan de molde con salvado sin sal,4,Baked products,Baked products,Baked products,base_arrieta,none
+A246,Pan de salvado sin sal (panadería),2,Baked products,Baked products,Baked products,base_arrieta,none
+A046,Pan de viena,3,Baked products,Baked products,Baked products,base_arrieta,none
+A142,Pan dulce,3,Baked products,Baked products,Baked products,base_arrieta,none
+A041,Pan francés o pan casero sin agregado de grasa o aceite,2,Baked products,Baked products,Baked products,base_arrieta,none
+A245,Pan francés sin sal,2,Baked products,Baked products,Baked products,base_arrieta,none
+A047,"Pan blanco, tipo molde, lacteado",3,Baked products,Baked products,Baked products,base_arrieta,none
+A237,"Pan lactal, SIN TACC",4,Baked products,Baked products,Baked products,base_arrieta,none
+A049,Pan negro sin levadura,2,Baked products,Baked products,Baked products,base_arrieta,none
+A143,"Pan para panchos o hamburguesas, envasado",4,Baked products,Baked products,Baked products,base_arrieta,none
+A231,"Pan paraguayo / galleta paraguaya (bollitos con levadura, harina, grasa o",4,Baked products,Baked products,Baked products,base_arrieta,none
+A050,Pan rallado,3,Baked products,Baked products,Baked products,base_arrieta,none
+A226,"Pan rallado, SIN TACC",3,Baked products,Baked products,Baked products,base_arrieta,none
+A144,"Pan rallado, fortificado",4,Baked products,Baked products,Baked products,base_arrieta,none
+A169,Pan figacita de manteca,2,Baked products,Baked products,Baked products,base_arrieta,none
+A079,Papa,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A153,"Papa, croquetas u otro preformado de papa rebozado, prefrito, congelado",3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A152,"Papa, puré instantáneo (polvo)*",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A145,Papas prefritas congeladas envasadas,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A146,"Pastas secas, SIN TACC",3,Pasta,Pasta,Pasta,base_arrieta,none
+A249,Pastelitos rellenos de dulce de membrillo o batata (panadería / confitería),3,Baked products,Baked products,Baked products,base_arrieta,none
+A147,Patay,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A148,Pionono,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A149,Pochoclo acaramelado,1,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A150,Pochoclo salado,1,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A190,Polvo de hornear,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A189,Polvo para preparar brownie*,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A051,Porotos,1,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A052,"Soja, porotos",1,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A151,"Porotos, enlatados",3,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A165,"Milanesa de arroz, prefrita",4,Rice,Rice,Rice,base_arrieta,none
+A164,"Milanesa de soja, prefrita",4,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A213,"Premezcla para panificados, pastas y postres, SIN TACC",4,Pasta,Pasta,Pasta,base_arrieta,none
+A256,"Premezcla para bizcochuelo, SIN TACC",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A154,Puflito,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A155,Quinoa inflada,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A053,"Quinoa, semilla",1,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,none
+A157,"Ravioles deshidratados, envasados",4,Pasta,Pasta,Pasta,base_arrieta,none
+A225,"Ravioles frescos, artesanal, SIN TACC",3,Pasta,Pasta,Pasta,base_arrieta,none
+A054,"Ravioles frescos, artesanal",3,Pasta,Pasta,Pasta,base_arrieta,none
+A156,"Ravioles frescos, envasados",4,Pasta,Pasta,Pasta,base_arrieta,none
+A223,Rosca de pascuas (panadería / confitería),3,Baked products,Baked products,Baked products,base_arrieta,none
+A243,Rosquete,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A210,Rosquita tipo Doughtnut,3,Baked products,Baked products,Baked products,base_arrieta,none
+A227,Rosquita tipo Doughtnut bañada en chocolate,4,Baked products,Baked products,Baked products,base_arrieta,none
+A219,Rosquita tipo Doughtnut de chocolate,4,Baked products,Baked products,Baked products,base_arrieta,none
+A209,Rosquito de vino (cuyano),3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A055,Salvado de avena,1,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A056,Salvado de trigo,1,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A057,"Cereal desayuno, salvado de trigo tipo bastoncitos",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A196,Scones (panadería / confitería),3,Baked products,Baked products,Baked products,base_arrieta,none
+A214,"Seitán, sucedáneo de carne a base de gluten de trigo",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A058,Sémola,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A195,Sémola fortificada,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A170,Soja texturizada,4,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,none
+A200,"Sorrentinos frescos, artesanal",3,Pasta,Pasta,Pasta,base_arrieta,none
+A183,"Sushi, PROMEDIO",3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A222,"Tapas para lasagna, pasta seca",3,Pasta,Pasta,Pasta,base_arrieta,none
+A059,Tapioca (almidón de mandioca),2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A168,Tofu,1,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A238,Torta de coco (panadería),3,Baked products,Baked products,Baked products,base_arrieta,none
+A224,"Torta de cumpleaños (masa, relleno y cobertura). Comprada lista para consumir,",4,Baked products,Baked products,Baked products,base_arrieta,none
+A251,Torta de manzana (panadería),3,Baked products,Baked products,Baked products,base_arrieta,none
+A235,Torta de ricotta (panadería),3,Baked products,Baked products,Baked products,base_arrieta,none
+A062,Torta frita,3,Baked products,Baked products,Baked products,base_arrieta,none
+A228,Torta mil hojas,3,Baked products,Baked products,Baked products,base_arrieta,none
+A208,"Tortillas de trigo, envasadas",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A158,Tortitas Jachaleras,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A159,Tostadas de gluten,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A160,Tostadas de mesa,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A161,Tostadas integrales,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A162,Tostadas light,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A163,Tostadas sin sal,2,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A221,"Tostaditas saladas, saborizadas, producto tipo copetín",4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A239,Trigo burgol,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A060,"Trigo, grano entero",1,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A230,Trigo inflado azucarado,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A199,Triguillo,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A173,Turrón de maní con oblea tipo golosina,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,none
+A174,Turrón tipo navideño,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A166,Tutuca,4,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+A061,Vainillas,3,Cereals (without rice),Cereals (without rice),Cereals (without rice),base_arrieta,none
+L065,"Alimento a base de leche entera y café, fortificado con calcio, varios sabores,",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L044,"Leche chocolatada en polvo, fortificada, para desayunos escolares*",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L001,"Leche parcialmente descremada, sabor chocolate o dulce de leche, fortificada",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L034,Leche condensada,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L002,"Leche de cabra, entera, fluida",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L070,"Leche de cabra, entera, en polvo*",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L003,"Leche de oveja, entera, fluida",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L067,"Leche de vaca, ordeñada (sin ningún tipo de procesamiento)",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L008,"Leche descremada en polvo, fortificada con vitaminas A y D*",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L069,"Leche descremada en polvo, tipo Nido Buen Día, fortificada con hierro y",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L060,más de proteínas,1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L045,"menos de grasas saturadas, fortificada con vitaminas A,",2,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L041,"Leche semidescremada en polvo, deslactosada*",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L039,"Leche entera fluida, con azúcar, lista para consumir",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L055,Leche entera en polvo tipo Nido Fortigrow*,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L046,"Leche entera en polvo, fortificada con vitaminas A y D, para desayunos",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L047,"Leche entera en polvo, fortificada con vitaminas A y D*",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L043,"As., fortificada con vitaminas A y D*",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L033,"fortificada con hierro, zinc y ác. ascórbico*",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L009,"Leche entera en polvo, deslactosada, fortificada con vitaminas A y D*",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L019,"Leche entera en polvo, fortificada con hierro*",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L032,"Leche entera en polvo, Plan Materno Infantil, sin fortificación*",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L010,"Leche entera en polvo, sin fortificación*",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L020,"Leche entera fluida, fortificada con hierro",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L007,"Leche entera fluida, con vitaminas A y D",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L048,"Leche entera fluida, fortificada con vitaminas A, D y B9",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L011,"Leche entera fluida, deslactosada, fortificada con vitaminas A y D",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L054,"Leche entera fluida, fortificada con vitaminas A, D, C, B9 y extra calcio",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L066,"Leche entera fluida, con CLA, fortificada con vitaminas A y D",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L006,"Leche entera fluida, sin fortificación",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L053,"3, fortificada con calcio y vitaminas A, D y E",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L057,"triglicéridos de cadena media, DHA/GLA y sin lactosa, para alergia a la",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L059,"Leche fórmula, tipo Enfabebe Confort, en polvo*",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L056,"Leche fórmula, tipo GA1 Anamix Infant, en polvo*",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L058,"Leche fórmula, tipo Nutrilon Pepti junior HE, en polvo*",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L042,"Leche fórmula antireflujo, en polvo*",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L063,"Leche fórmula 0-12 meses, hipoalergénica, tipo Nutrilón HA, NAN HA, en",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L062,"Leche fórmula 0-12 meses, sin lactosa, en polvo*",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L035,"Leche fórmula etapa 3, en polvo*",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L061,"Leche fórmula etapa 3, sin lactosa, en polvo*",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L036,"Leche fórmula etapa 3, fluida",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L037,"Leche fórmula etapa 4, en polvo*",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L038,"Leche fórmula etapa 4, fluida",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L022,"Leche fórmula inicio, en polvo*",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L024,"Leche fórmula inicio, fluida",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L049,"Leche fórmula para prematuros etapa 1, en polvo*",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L050,"Leche fórmula para prematuros etapa 1, fluida",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L051,"Leche fórmula para prematuros etapa 2, en polvo*",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L052,"Leche fórmula para prematuros etapa 2, fluida",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L023,"Leche fórmula seguimiento, en polvo*",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L025,"Leche fórmula seguimiento, fluida",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L064,"Leche seguimiento etapa 3, sabor vainilla",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L040,Leche materna,1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L030,"Leche parcialmente descremada fluida, fortificada con vitaminas A, D, C y ác.",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L031,"Leche parcialmente descremada fluida, fortificada con hierro",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L005,"Leche parcialmente descremada fluida, fortificada con vitaminas A y D",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L004,"Leche parcialmente descremada fluida, sin fortificación",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L012,"Leche parcialmente descremada fluida, deslactosada, fortificada con vitaminas",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L068,"vitaminas A, D, B2, B9 y zinc",1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L017,Probióticos descremados,1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L018,Probióticos enteros,1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y019,"Bebida láctea a base de agua, yogurt, azúcar y saborizantes",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y007,Flan envasado listo para consumir light,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y006,Flan envasado listo para consumir,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L013,Postre de leche bebible infantil,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L015,Postre de leche listo para consumir light,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L016,Postre de leche listo para consumir tipo Danonino,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+L014,Postre de leche listo para consumir tipo Serenito,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y014,Yogur con fitoesteroles,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y003,Yogur descremado,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y005,Yogur descremado bebible,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y012,Yogur descremado con cereales,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y013,Yogur descremado con frutas,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y017,Yogur descremado con frutas y cereales,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y004,Yogur entero bebible saborizado,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y010,Yogur entero con cereales,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y011,Yogur entero con frutas,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y018,Yogur entero con frutas y cereales,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y001,Yogur entero natural,1,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y002,Yogur entero saborizado,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y015,Yogur descremado fortificado con calcio,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Y016,Yogur fortificado con hierro,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q033,"Adherezo deshidratado a base de queso Reggianito, sémola y almidones",3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q043,Muzzarella rebozada prefrita,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q048,Muzzarella rebozada sin freir (pollería o granja),3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q049,"Quesillo (preparación regional, queso amasado artesanal)",3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q022,Queso Azul,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q003,"Queso blanco descremado, untable",3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q002,"Queso blanco semidescremado, untable",3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q042,Queso Cheddar,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q023,Queso Chubut,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q001,"Queso crema entero, untable",3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q050,Queso Cremoso,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q017,Queso Cuartirolo,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q045,Queso de cabra,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q021,Queso de máquina,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q052,Queso de vaca criollo,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q034,Queso en hebras,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q035,Queso en hebras light,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q024,Queso Fontina,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q051,Queso Fontina fundido light,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q047,Queso fresco sin sal,2,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q005,Queso fundido,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q036,Queso Goya,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q025,Queso Gruyére,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q026,Queso Holanda,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q018,Queso Limburguer,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q027,Queso Mar del Plata,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q028,Queso Pategrás,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q044,Queso Mascarpone,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q019,Queso Muzzarella,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q037,Queso Parmesano,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q015,Queso pasta blanda descremado,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q016,Queso pasta blanda doble crema,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q006,muzzarella),3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q008,"Sardo, Sbrinz)",3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q007,"Holanda, Mar del Plata, Pategrás, Queso de máquina, Roquefort, Taif, Tandil)",3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q046,Queso porsalut sin sal light,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q038,Queso Provolone,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q032,Queso rallado envasado,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q039,Queso Reggianito,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q029,Queso Roquefort,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q040,Queso Sardo,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q041,Queso Sbrinz,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q030,Queso Taif,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q031,Queso Tandil,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q000,"Queso untable, PROMEDIO",3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q013,Queso untable tipo Finlandia,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q014,Queso untable tipo Finlandia light,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q011,Queso untable tipo Tholem,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q012,Queso untable tipo Tholem light,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q020,Quesos de pasta semidura descremados,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q004,Ricota,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+Q010,Ricota descremada,3,Dairy products,Dairy products,Dairy products,base_arrieta,none
+C078,Aguja,1,Beef,Beef,Beef,base_arrieta,none
+C076,Asado con hueso***,1,Beef,Beef,Beef,base_arrieta,none
+C075,Asado sin hueso***,1,Beef,Beef,Beef,base_arrieta,none
+C089,Bife angosto con hueso***,1,Beef,Beef,Beef,base_arrieta,none
+C088,Bife angosto sin hueso***,1,Beef,Beef,Beef,base_arrieta,none
+C082,Bola de lomo,1,Beef,Beef,Beef,base_arrieta,none
+C094,Bondiola (fiambre),4,Pork,Pork,Pork,base_arrieta,none
+C123,Butifarra,1,Beef,Beef,Beef,base_arrieta,none
+C001,Cabra,1,Lamb and mutton,Lamb and mutton,Lamb and mutton,base_arrieta,none
+C121,Cantimpalo (fiambre),4,Pork,Pork,Pork,base_arrieta,none
+C109,Caracú,1,Beef,Beef,Beef,base_arrieta,none
+C073,Carne picada común,1,Beef,Beef,Beef,base_arrieta,none
+C074,Carne picada especial,1,Beef,Beef,Beef,base_arrieta,none
+C050,Carpincho,1,Other meats,Other meats,Other meats,base_arrieta,none
+C100,Cerdo bondiola,3,Pork,Pork,Pork,base_arrieta,none
+C099,"Cerdo costillar tipo ""ribs""",1,Pork,Pork,Pork,base_arrieta,none
+C098,Cerdo costillita,1,Pork,Pork,Pork,base_arrieta,none
+C104,Cerdo jamón (corte de carne),4,Pork,Pork,Pork,base_arrieta,none
+C101,Cerdo matambre,1,Pork,Pork,Pork,base_arrieta,none
+C105,Cerdo paleta (corte de carne),1,Pork,Pork,Pork,base_arrieta,none
+C102,Cerdo pechito,1,Pork,Pork,Pork,base_arrieta,none
+C002,"Cerdo, PROMEDIO",1,Pork,Pork,Pork,base_arrieta,none
+C115,"Cerdo, patas, patitas",1,Pork,Pork,Pork,base_arrieta,none
+C064,Charata (ave),1,Poultry,Poultry,Poultry,base_arrieta,none
+C038,Charqui de cordero o chalona,3,Lamb and mutton,Lamb and mutton,Lamb and mutton,base_arrieta,none
+C037,Charqui de vaca,3,Beef,Beef,Beef,base_arrieta,none
+C007,"Chinchulines, tripa gorda",1,Beef,Beef,Beef,base_arrieta,none
+C110,Chivito,1,Lamb and mutton,Lamb and mutton,Lamb and mutton,base_arrieta,none
+C129,"Chivito, cabeza",1,Lamb and mutton,Lamb and mutton,Lamb and mutton,base_arrieta,none
+C003,Chorizo,4,Pork,Pork,Pork,base_arrieta,none
+C095,Chorizo seco,3,Pork,Pork,Pork,base_arrieta,none
+C093,Colita de cuadril,1,Beef,Beef,Beef,base_arrieta,none
+C008,Conejo,1,Other meats,Other meats,Other meats,base_arrieta,none
+C107,"Corazón, vacuno",1,Beef,Beef,Beef,base_arrieta,none
+C009,"Cordero, PROMEDIO",1,Lamb and mutton,Lamb and mutton,Lamb and mutton,base_arrieta,none
+C084,Cuadrada,1,Beef,Beef,Beef,base_arrieta,none
+C092,Cuadril,1,Beef,Beef,Beef,base_arrieta,none
+C052,Cuerito de cerdo,1,Pork,Pork,Pork,base_arrieta,none
+C120,"Espinazo, vacuno",1,Beef,Beef,Beef,base_arrieta,none
+C079,Falda,1,Beef,Beef,Beef,base_arrieta,none
+C051,Fiambre de cerdo,4,Pork,Pork,Pork,base_arrieta,none
+C062,Garza,1,Beef,Beef,Beef,base_arrieta,none
+C111,"Guanaco, carne",1,Beef,Beef,Beef,base_arrieta,none
+C118,Hamburguesa de carne vacuna (carnicería),4,Beef,Beef,Beef,base_arrieta,none
+C116,Hamburguesa de cerdo (carnicería),4,Pork,Pork,Pork,base_arrieta,none
+C113,Hamburguesa de pollo (pollería / granja),4,Poultry,Poultry,Poultry,base_arrieta,none
+C011,"Hamburguesa de carne vacuna, industrializada",4,Beef,Beef,Beef,base_arrieta,none
+C124,"Hamburguesa de carne vacuna, industrializada, rebozada",4,Beef,Beef,Beef,base_arrieta,none
+C053,"Hamburguesa de carne vacuna, industrializada light",4,Beef,Beef,Beef,base_arrieta,none
+C010,"Hamburguesa de pollo, industrializada",4,Poultry,Poultry,Poultry,base_arrieta,none
+C012,Hígado,1,Beef,Beef,Beef,base_arrieta,none
+C122,Hígado de pollo,1,Poultry,Poultry,Poultry,base_arrieta,none
+C103,Jabalí,1,Other meats,Other meats,Other meats,base_arrieta,none
+C061,Jacaré,1,Beef,Beef,Beef,base_arrieta,none
+C004,Jamón cocido,4,Pork,Pork,Pork,base_arrieta,none
+C005,Jamón crudo,3,Pork,Pork,Pork,base_arrieta,none
+C065,Lampalagua (serpiente),1,Beef,Beef,Beef,base_arrieta,none
+C054,Leberwurst,1,Beef,Beef,Beef,base_arrieta,none
+C127,Liebre,1,Beef,Beef,Beef,base_arrieta,none
+C013,Lengua,1,Beef,Beef,Beef,base_arrieta,none
+C056,Lomito ahumado,1,Beef,Beef,Beef,base_arrieta,none
+C085,Lomo,1,Beef,Beef,Beef,base_arrieta,none
+C128,Llama,1,Lamb and mutton,Lamb and mutton,Lamb and mutton,base_arrieta,none
+C055,Longaniza,3,Beef,Beef,Beef,base_arrieta,none
+C080,Matambre (corte de carne),1,Beef,Beef,Beef,base_arrieta,none
+C057,Matambre (fiambre),4,Beef,Beef,Beef,base_arrieta,none
+C114,"Medallón de pollo relleno de jamón y queso, prefrito congelado",3,Poultry,Poultry,Poultry,base_arrieta,none
+C106,Milanesa de carne vacuna rebozada (carnicería),1,Beef,Beef,Beef,base_arrieta,none
+C126,Milanesa de cerdo (carnicería),1,Pork,Pork,Pork,base_arrieta,none
+C068,Milanesa de pollo rebozada (pollería / granja),1,Poultry,Poultry,Poultry,base_arrieta,none
+C069,"Milanesa de pollo, prefrita congelada",4,Poultry,Poultry,Poultry,base_arrieta,none
+C014,Mollejas,1,Beef,Beef,Beef,base_arrieta,none
+C015,Mondongo,1,Beef,Beef,Beef,base_arrieta,none
+C016,Morcilla,1,Pork,Pork,Pork,base_arrieta,none
+C017,Mortadela,4,Pork,Pork,Pork,base_arrieta,none
+C081,Nalga,1,Beef,Beef,Beef,base_arrieta,none
+C070,Nuggets o patitas de pollo,4,Poultry,Poultry,Poultry,base_arrieta,none
+C112,Nutria,1,Other meats,Other meats,Other meats,base_arrieta,none
+C108,Osobuco,1,Beef,Beef,Beef,base_arrieta,none
+C087,Paleta (corte de carne),1,Pork,Pork,Pork,base_arrieta,none
+C097,Paleta (fiambre),4,Pork,Pork,Pork,base_arrieta,none
+C091,Palomita (corte de carne),1,Beef,Beef,Beef,base_arrieta,none
+C006,Panceta,1,Pork,Pork,Pork,base_arrieta,none
+C058,Pastrón,3,Beef,Beef,Beef,base_arrieta,none
+C018,Paté / picadillo,1,Beef,Beef,Beef,base_arrieta,none
+C019,Pato,1,Beef,Beef,Beef,base_arrieta,none
+C020,Pavo,1,Poultry,Poultry,Poultry,base_arrieta,none
+C083,Peceto,1,Beef,Beef,Beef,base_arrieta,none
+C063,Perdiz,1,Beef,Beef,Beef,base_arrieta,none
+C021,Pollo con piel,1,Poultry,Poultry,Poultry,base_arrieta,none
+C023,Pollo sin piel,1,Poultry,Poultry,Poultry,base_arrieta,none
+C125,"Pollo, alitas",1,Poultry,Poultry,Poultry,base_arrieta,none
+C022,"Pollo, menudos",1,Poultry,Poultry,Poultry,base_arrieta,none
+C059,"Pollo, pechuga sin piel",1,Poultry,Poultry,Poultry,base_arrieta,none
+C024,Queso de cerdo,3,Pork,Pork,Pork,base_arrieta,none
+C117,Rana,1,Beef,Beef,Beef,base_arrieta,none
+C025,Riñón,1,Beef,Beef,Beef,base_arrieta,none
+C086,Roast beef,1,Beef,Beef,Beef,base_arrieta,none
+C026,Salame,2,Pork,Pork,Pork,base_arrieta,none
+C027,Salchicha de viena,4,Beef,Beef,Beef,base_arrieta,none
+C066,Salchicha de viena light,4,Beef,Beef,Beef,base_arrieta,none
+C028,Salchicha parrillera,4,Beef,Beef,Beef,base_arrieta,none
+C119,Salchicha rellena con cheddar,4,Beef,Beef,Beef,base_arrieta,none
+C067,Salchichón,2,Pork,Pork,Pork,base_arrieta,none
+C029,Sesos,1,Beef,Beef,Beef,base_arrieta,none
+C071,"Suprema de pollo con espinaca y queso, prefrita congelada",4,Poultry,Poultry,Poultry,base_arrieta,none
+C072,"Suprema de pollo con jamón y queso, prefrita congelada",4,Poultry,Poultry,Poultry,base_arrieta,none
+C096,Tatú,1,Beef,Beef,Beef,base_arrieta,none
+C090,Tortuguita,1,Beef,Beef,Beef,base_arrieta,none
+C030,Ubre,1,Beef,Beef,Beef,base_arrieta,none
+C077,Vacío,1,Beef,Beef,Beef,base_arrieta,none
+C032,"Vacuno, cortes grasos, con hueso (ej: asado), PROMEDIO",1,Beef,Beef,Beef,base_arrieta,none
+C031,"Vacuno, cortes grasos, sin hueso (ej: vacío, carne picada común, aguja, falda, alita,",1,Beef,Beef,Beef,base_arrieta,none
+C033,"intensamente desgrasada), PROMEDIO",2,Beef,Beef,Beef,base_arrieta,none
+C034,"Vacuno, cortes magros, con hueso, PROMEDIO",1,Beef,Beef,Beef,base_arrieta,none
+C036,"Vacuno, cortes semigrasos, con hueso (ej: bife angosto), PROMEDIO",1,Beef,Beef,Beef,base_arrieta,none
+C035,"paleta, bife angosto, tortuguita, palomita), PROMEDIO",1,Pork,Pork,Pork,base_arrieta,none
+C060,Vizcacha,1,Other meats,Other meats,Other meats,base_arrieta,none
+H001,"Huevo de gallina, entero",1,Eggs,Eggs,Eggs,base_arrieta,none
+H002,"Huevo de gallina, clara",1,Eggs,Eggs,Eggs,base_arrieta,none
+H003,"Huevo de gallina, yema",1,Eggs,Eggs,Eggs,base_arrieta,none
+H004,"Huevo de codorníz, entero",1,Eggs,Eggs,Eggs,base_arrieta,none
+P029,Abadejo,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P042,Almeja,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P010,"Anchoa, enlatada en aceite",2,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P009,"Anchoa, pasta",4,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P008,"Atún, enlatado en aceite",2,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P007,"Atún, enlatado al natural",3,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P028,"Atún, lomito fresco",1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P041,"Bocaditos de pescado, prefritos",4,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P021,Brótola,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P012,"Caballa, enlatada",3,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P011,"Caballa, tronco",1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P003,Calamar,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P004,Camarón,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P031,Cornalitos,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P023,Corvina,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P035,Dorado,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P024,Gatuzo,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P046,Hamburguesa de pescado (pescadería),1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P039,Kani Kama,4,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P005,Langostino,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P022,Lenguado,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P043,"Medallón de pescado relleno con queso y espinaca, prefrito",3,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P006,Mejillón,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P020,Merluza,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P045,"Merluza, enlatada en agua y aceite",2,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P040,"Milanesa de pescado, prefrita",4,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P036,Pacú,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P033,Palometa,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P030,Pejerrey,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P001,"Pescados de mar (ej: brótola, corvina blanca, gatuso, lenguado, merluza, etc.),",1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P002,"Pescados de río (ej: dorado, palometa, surubí, trucha, etc.), PROMEDIO",1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P025,Pollo de mar,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P038,Pulpo,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P047,Rabas (restaurant),1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P037,Sábalo,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P026,Salmón blanco,2,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P027,Salmón rosado,2,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P044,"Sardinas, enlatadas al natural",3,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P013,"Sardinas, enlatadas en aceite",2,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P034,Surubí,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+P032,Trucha,1,Fish and seafood,Fish and seafood,Fish and seafood,base_arrieta,none
+Z003,Aceite comestible mezcla,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z030,"Aceite comestible mezcla, para cocción",2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z005,Aceite de canola,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z032,"Aceite de canola, para cocción",2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z023,Aceite de chía,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z036,"Aceite de chía, para cocción",2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z022,Aceite de coco,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z034,"Aceite de coco, para cocción",2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z001,Aceite de girasol,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z020,Aceite de girasol alto oleico,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z027,"Aceite de girasol alto oleico, para cocción",2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z026,"Aceite de girasol, para cocción",2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z002,Aceite de maíz,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z028,"Aceite de maíz, para cocción",2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z021,Aceite mezcla con oliva,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z029,"Aceite mezcla con oliva, para cocción",2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z004,Aceite de oliva,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z031,"Aceite de oliva, para cocción",2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z042,Aceite de sésamo,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z007,Aceite de soja,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z035,"Aceite de soja, para cocción",2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z006,Aceite de uva,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z033,"Aceite de uva, para cocción",2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z025,"Aceite para cocción, PROMEDIO",2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z000,"Aceite, PROMEDIO",2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z024,Rocío vegetal,4,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z037,"Rocío vegetal, para cocción",4,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z043,Alimento a base de almendras (leche de almendras),4,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z040,Alimento a base de castañas (leche de castañas),4,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z050,Alimento a base de almendras con chocolate (chocolatada),4,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z008,Almendra,1,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z009,Avellana,1,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z045,Gomasio (sésamo integral tostado y molido con sal marina),2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z011,Maní tostado salado,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z010,Maní tostado sin sal,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z048,Mantequilla de maní,4,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z047,fortificado con calcio,1,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z016,"Mix de frutos secos, semillas y pasas de uva",4,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z012,Nuez,1,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z013,Pistacho,1,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z038,Pistacho salado,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z041,Semilla de chía,1,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z014,Semilla de girasol,1,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z049,Semilla de girasol con sal y con cáscara,2,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z015,Semilla de sésamo,1,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z044,Semilla de zapallo,1,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z046,Semilla de amapola,1,Oil crops,Oil crops,Oil crops,base_arrieta,none
+Z039,Semilla de lino,1,Oil crops,Oil crops,Oil crops,base_arrieta,none
+D003,Azúcar blanca molida,2,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D070,Azúcar light,4,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D127,Azúcar impalpable,2,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D004,Azúcar morena / azúcar mascabo,2,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D083,Edulcorante en polvo con aspartamo y acesulfame k,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D084,"Edulcorante en polvo con sacarina y ciclamato (tipo Hileret clásico 1 a 10, Sucaryl",4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D085,Edulcorante en polvo con stevia,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D071,"Edulcorante en polvo, PROMEDIO",4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D086,Edulcorante en polvo con sucralosa,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D093,Edulcorante en tabletas o comprimidos con aspartamo y acesulfame k,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D094,Edulcorante en tabletas o comprimidos con ciclamato y sacarina,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D092,Edulcorante en tabletas o comprimidos sin identificar,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D091,"Edulcorante líquido con ciclamato, sacarina y sucralosa",4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D088,Edulcorante líquido con aspartamo,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D089,Edulcorante líquido con sacarina y ciclamato,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D072,Edulcorante líquido con stevia,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D090,Edulcorante líquido con sucralosa,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D087,"Edulcorante líquido, PROMEDIO",4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D116,Glucosa,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D037,Alfajor de arroz,4,Baked products,Baked products,Baked products,base_arrieta,D_bakedsweet_to_baked
+D001,Alfajor de chocolate,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D028,Alfajor de chocolate con relleno tipo mousse,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D002,Alfajor de dulce de leche,4,Baked products,Baked products,Baked products,base_arrieta,D_bakedsweet_to_baked
+D036,Alfajor de fruta,4,Baked products,Baked products,Baked products,base_arrieta,D_bakedsweet_to_baked
+D029,Alfajor de maicena,4,Baked products,Baked products,Baked products,base_arrieta,D_bakedsweet_to_baked
+D107,Alfajor de miel,4,Baked products,Baked products,Baked products,base_arrieta,D_sugar_to_owid_sugars
+D035,Alfajor light,4,Baked products,Baked products,Baked products,base_arrieta,D_bakedsweet_to_baked
+D104,"Alfajor santafesino, tapas cubiertas con glasé",4,Baked products,Baked products,Baked products,base_arrieta,D_bakedsweet_to_baked
+D118,Algodón de azúcar,2,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D102,Bananita con cobertura de chocolate,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D132,Barra proteica,4,NA,Baked products,Baked products,extra_comparable,D_bakedsweet_to_baked
+D041,Barra de arroz rellena bañada,4,NA,Baked products,Baked products,extra_comparable,D_bakedsweet_to_baked
+D044,Bombones de fruta,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D014,Caramelos duros,4,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D015,Caramelos duros light,4,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D013,Caramelos masticables,4,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D012,Caramelos rellenos,4,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D042,Chicles,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D043,Chicles sin azúcar,4,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D047,Chupetín,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D034,Conito de dulce de leche envasado,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D110,Crema saborizada envasada tipo Ducrem,4,Dairy products,Dairy products,Dairy products,base_arrieta,D_other_to_agb_confiseries
+D033,Cubanito relleno,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D080,Garrapiñada de maní,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D125,Golosinas de merengue y cucurucho tipo Heladitos / Gallinitas,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D048,Gomitas de gelatina,4,NA,NA,AGB_glaces,extra_agribalyse,D_icecream_to_agb_glaces
+D122,Habanitos de chocolate,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D101,Malvaviscos,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D040,Merengues / merenguitos,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D106,Mielcitas,2,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D038,Minitorta bañada,4,Baked products,Baked products,Baked products,base_arrieta,D_bakedsweet_to_baked
+D032,Oblea bañada tipo Kit Kat,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D039,Oblea bañada tipo Nugaton,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D045,Pastillas,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D046,Pastillas sin azúcar,2,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D049,"Postre a base de pasta de maní, tipo Mantecol",4,NA,NA,AGB_glaces,extra_agribalyse,D_icecream_to_agb_glaces
+D030,Rhodesia,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D079,Tableta de dulce de leche light,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D078,Tableta de dulce de leche,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D031,Tita,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D052,Baño de repostería para cubrir tortas,4,Baked products,Baked products,Baked products,base_arrieta,D_bakedsweet_to_baked
+D053,Barra de chocolate tipo Kinder,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D054,Bocadito con dulce de leche tipo Cabsha,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D113,Bocadito tipo Dos Corazones,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D115,Bocadito tipo Marroc,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D055,Bombón tipo Bon O Bon,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D129,Bombón de chocolate relleno de licor,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D050,Cacao amargo*,2,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D018,Cacao en polvo sin fortificar*,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D051,Cacao en polvo tipo Nesquik*,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D108,Cacao en polvo tipo Zucoa / Zucoa Max instantáneo otros sabores*,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D117,"Cacao, cascarilla*",4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D123,Chips de chocolate,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D057,cacao o más,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D126,Chocolate amargo,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D058,Chocolate blanco,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D059,Chocolate con almendras,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D056,Chocolate con maní,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D119,Chocolate relleno con pasta de maní tipo Snickers,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D060,Chocolate light,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D016,Chocolate para taza,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D095,Chocolate relleno de dulce de leche tipo Tofi,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D017,Chocolatín / chocolate con leche,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D061,Huevo de chocolate tipo Kinder,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D063,Lentejas de chocolate,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D062,Maní con chocolate,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D131,Medallón de menta y chocolate,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D133,Pasas de uva con chocolate,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D066,Bombón helado,4,Dairy products,Dairy products,Dairy products,base_arrieta,D_icecream_to_agb_glaces
+D064,Helado de agua (heladería),4,Dairy products,Dairy products,Dairy products,base_arrieta,D_icecream_to_agb_glaces
+D019,Helado de agua (palito),4,Dairy products,Dairy products,Dairy products,base_arrieta,D_icecream_to_agb_glaces
+D020,Helado de crema (heladería),4,Dairy products,Dairy products,Dairy products,base_arrieta,D_icecream_to_agb_glaces
+D065,Helado de crema envasado,4,Dairy products,Dairy products,Dairy products,base_arrieta,D_icecream_to_agb_glaces
+D067,"Helado envasado con cucurucho, PROMEDIO",4,Dairy products,Dairy products,Dairy products,base_arrieta,D_icecream_to_agb_glaces
+D068,Polvo para preparar helado*,4,Dairy products,Dairy products,Dairy products,base_arrieta,D_icecream_to_agb_glaces
+D111,Torta helada envasada (crema helada varios sabores con base de galleta),4,Dairy products,Dairy products,Dairy products,base_arrieta,D_bakedsweet_to_baked
+D100,Almíbar,3,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D026,Arrope,2,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D114,Crema de avellanas con cacao tipo Nutella,4,Dairy products,Dairy products,Dairy products,base_arrieta,D_chocolate_to_owid_choc
+D005,Dulce de batata,3,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D081,Dulce de batata light,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D073,Dulce de cayote,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D008,Dulce de leche,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D077,Dulce de leche light,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D120,Dulce de mamón,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D006,Dulce de membrillo,3,Fruits,Fruits,Fruits,base_arrieta,D_jam_to_fruits
+D082,Dulce de membrillo light,4,Fruits,Fruits,Fruits,base_arrieta,D_jam_to_fruits
+D128,Dulce de zapallo (compacto),4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D130,Fondant,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D098,Grana para decorar tortas,4,Baked products,Baked products,Baked products,base_arrieta,D_bakedsweet_to_baked
+D007,Jalea tipo membrillo,4,Fruits,Fruits,Fruits,base_arrieta,D_jam_to_fruits
+D027,Kero o melaza,2,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D010,Mermelada de frutas,4,Fruits,Fruits,Fruits,base_arrieta,D_jam_to_fruits
+D025,Mermelada de frutas light,4,Fruits,Fruits,Fruits,base_arrieta,D_jam_to_fruits
+D011,Miel,2,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D134,Miel de caña,2,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D099,"Pulpa de frutas para repostería, coberturas y rellenos (frutilla, arándano o maracuyá)",4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D105,Rapadura,2,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D109,"Relleno y cobertura para repostería lista para batir, varios sabores",4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D124,"Saborizadores Tecknofood, sabores varios (malta, vainilla)",4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D097,Salsa topping de chocolate,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+D096,Salsa topping de dulce de leche,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+G017,Chicharrón,2,Pork,Pork,Pork,base_arrieta,none
+G013,Crema de leche,2,Dairy products,Dairy products,Dairy products,base_arrieta,none
+G018,"Crema chantilly (lista para consumir, aerosol o industrial preparada)",4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+G016,Crema light,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+G008,Grasa de cerdo,2,Pork,Pork,Pork,base_arrieta,none
+G019,Grasa de pollo,2,Poultry,Poultry,Poultry,base_arrieta,none
+G009,Grasa vacuna,2,Beef,Beef,Beef,base_arrieta,none
+G010,Manteca,2,Dairy products,Dairy products,Dairy products,base_arrieta,none
+G015,Manteca light,4,Dairy products,Dairy products,Dairy products,base_arrieta,none
+G011,Margarina (en pote y en pan),4,Oil crops,Oil crops,Oil crops,base_arrieta,none
+G012,Margarina untable light,4,Oil crops,Oil crops,Oil crops,base_arrieta,none
+O013,Palitos aireados de harina de maíz o de colores,4,Baked products,Baked products,Baked products,base_arrieta,O_snack_to_baked
+O014,Palitos salados,4,Baked products,Baked products,Baked products,base_arrieta,O_snack_to_baked
+O015,Papas fritas de copetín,4,Baked products,Baked products,Baked products,base_arrieta,O_snack_to_baked
+O043,Maní japonés,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,O_peanut_to_nuts
+O028,Nachos,4,Baked products,Baked products,Baked products,base_arrieta,O_snack_to_baked
+O041,Snacks saborizados salados a base de maíz,4,Baked products,Baked products,Baked products,base_arrieta,O_snack_to_baked
+O044,"Snacks saborizados salados a base de sémola de arroz, horneados, tipo Palitos de",4,Baked products,Baked products,Baked products,base_arrieta,O_snack_to_baked
+O022,Aceto balsámico,4,NA,NA,NA,unmapped,O_other_unmapped
+O048,Aderezo Salsa Alioli,4,Oil crops,Oil crops,Oil crops,base_arrieta,O_dressing_to_oil
+O021,Aderezo Caesar o Ranch,4,Oil crops,Oil crops,Oil crops,base_arrieta,O_dressing_to_oil
+O045,Aderezo para ensaladas light,4,Oil crops,Oil crops,Oil crops,base_arrieta,O_dressing_to_oil
+O037,Aderezo Salsa Cheddar,4,Oil crops,Oil crops,Oil crops,base_arrieta,O_dressing_to_oil
+B069,"Jugo de limón, envasado",4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+O005,Ketchup,4,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,O_tomato_sauce_to_veg
+O001,Mayonesa,4,Oil crops,Oil crops,Oil crops,base_arrieta,O_dressing_to_oil
+O002,Mayonesa light,4,Oil crops,Oil crops,Oil crops,base_arrieta,O_dressing_to_oil
+O003,Mayonesa de soja,4,Oil crops,Oil crops,Oil crops,base_arrieta,O_dressing_to_oil
+O006,Mostaza,4,Oil crops,Oil crops,Oil crops,base_arrieta,O_dressing_to_oil
+O035,"Salsa a base de tomate en tetra brick o sachet, lista para consumir (ej: pomarola,",2,Vegetables (outdoor),Vegetables (outdoor),Vegetables (outdoor),base_arrieta,O_tomato_sauce_to_veg
+O047,Salsa agridulce,2,NA,NA,NA,unmapped,O_other_unmapped
+O020,Salsa barbacoa,2,NA,NA,NA,unmapped,O_other_unmapped
+O049,Salsa blanca en polvo envasada*,4,NA,NA,NA,unmapped,O_other_unmapped
+O051,Salsa chimichurri envasada,2,NA,NA,NA,unmapped,O_other_unmapped
+O046,"Salsa deshidratada varios sabores, polvo*",4,NA,NA,NA,unmapped,O_other_unmapped
+O034,Salsa de soja,2,NA,NA,NA,unmapped,O_other_unmapped
+O004,Salsa Golf,2,NA,NA,NA,unmapped,O_other_unmapped
+O040,"Salsa para guiso campero envasada, fortificada*",4,NA,NA,NA,unmapped,O_other_unmapped
+O023,Vinagre,2,NA,NA,NA,unmapped,O_other_unmapped
+O007,Caldos en cubo*,4,NA,NA,NA,unmapped,O_other_unmapped
+O039,Caldos en polvo*,4,NA,NA,NA,unmapped,O_other_unmapped
+O008,Caldos en polvo light*,4,NA,NA,NA,unmapped,O_other_unmapped
+O009,Caldos en polvo sin sal light*,4,NA,NA,NA,unmapped,O_other_unmapped
+O010,Sopa crema instantánea preparada,4,NA,NA,NA,unmapped,O_other_unmapped
+O011,Sopa crema preparada a partir de polvo premezcla light,4,NA,NA,NA,unmapped,O_other_unmapped
+O012,Sopa crema preparada a partir de polvo premezcla sin sal light,4,NA,NA,NA,unmapped,O_other_unmapped
+O024,Saborizador en cubos,4,NA,NA,NA,unmapped,O_other_unmapped
+O038,Saborizador en polvo,4,NA,NA,NA,unmapped,O_other_unmapped
+O025,Sopa de fideos deshidratada envasada para preparar*,4,NA,NA,NA,unmapped,O_other_unmapped
+O029,"Sopa crema instantánea, polvo para preparar (sabores varios)*",4,NA,NA,NA,unmapped,O_other_unmapped
+O030,"Sopa crema instantánea, polvo para preparar light (sabores varios)*",4,NA,NA,NA,unmapped,O_other_unmapped
+O036,"Sopa de vegetales instantánea, polvo para preparar*",4,NA,NA,NA,unmapped,O_other_unmapped
+D103,Arroz con leche envasado listo para consumir,4,NA,NA,AGB_confiseries,extra_agribalyse,D_other_to_agb_confiseries
+D121,"Arroz con leche envasado sabor caramelo, fortificado",4,NA,Sugars_OWID,Sugars_OWID,extra_comparable,D_sugar_to_owid_sugars
+D069,Gelatina envasada lista para consumir,4,NA,NA,AGB_glaces,extra_agribalyse,D_icecream_to_agb_glaces
+D022,"Gelatina light, preparada a partir de polvo",4,NA,NA,AGB_glaces,extra_agribalyse,D_icecream_to_agb_glaces
+D021,Gelatina preparada a partir de polvo,4,NA,NA,AGB_glaces,extra_agribalyse,D_icecream_to_agb_glaces
+D009,Polvo para preparar flan*,4,Dairy products,Dairy products,Dairy products,base_arrieta,D_other_to_agb_confiseries
+D075,Polvo para preparar postre lácteo*,4,Dairy products,Dairy products,Dairy products,base_arrieta,D_icecream_to_agb_glaces
+D076,Polvo para preparar postre lácteo light*,4,Dairy products,Dairy products,Dairy products,base_arrieta,D_icecream_to_agb_glaces
+D112,Polvo para preparar mousse de limón / chocolate*,4,Nuts and seeds,Nuts and seeds,Nuts and seeds,base_arrieta,D_chocolate_to_owid_choc
+O042,Bicarbonato de sodio,2,NA,NA,NA,unmapped,O_other_unmapped
+O026,Sal,2,NA,NA,NA,unmapped,O_salt_unmapped
+O050,Sal Marina,2,NA,NA,NA,unmapped,O_salt_unmapped
+O033,"Sal dietética o modificada, PROMEDIO",4,NA,NA,NA,unmapped,O_salt_unmapped
+O027,"Sal dietética, sin sodio",4,NA,NA,NA,unmapped,O_salt_unmapped
+O031,Cloruro de sodio,2,NA,NA,NA,unmapped,O_other_unmapped
+O032,Cloruro de sodio,2,NA,NA,NA,unmapped,O_other_unmapped
+B055,Achilate / achilata,4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B044,"Agua saborizada Aquarius, varios sabores",4,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B046,"Agua saborizada Awafrut, varios sabores",4,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B030,"Agua saborizada con azúcar, PROMEDIO",4,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B045,"Agua saborizada Levité, varios sabores",4,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B047,"Agua saborizada tipo Sierra de los Padres, Manaos, otros",4,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B001,Amargo serrano*,4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B003,"Bebida a base de soja y jugo, varios sabores",4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B004,"Bebida a base de soja y jugo, varios sabores light",4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B020,Bebida a base de soja sabor natural,4,Legumes and pulses,Legumes and pulses,Legumes and pulses,base_arrieta,B_other_to_agb_non_alcohol
+B008,"Gaseosa con azúcar, PROMEDIO",4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B021,"Gaseosa con azúcar, sabor cola",4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B022,"Gaseosa con azúcar, sabor lima limón",4,Fruits,Fruits,Fruits,base_arrieta,B_other_to_agb_non_alcohol
+B023,"Gaseosa con azúcar, sabor naranja",4,Fruits,Fruits,Fruits,base_arrieta,B_other_to_agb_non_alcohol
+B024,"Gaseosa con azúcar, sabor pomelo",4,Fruits,Fruits,Fruits,base_arrieta,B_other_to_agb_non_alcohol
+B025,"Gaseosa con azúcar, agua tónica",4,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B037,"Gatorade, varios sabores",4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B054,Jugo congelado con azúcar en sachet,2,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B010,Jugo de fruta envasado varios sabores,4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B011,"Jugo en polvo con azúcar, PROMEDIO*",4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B053,Jugo en polvo con azúcar*,4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B014,Jugo concentrado con azúcar para diluir*,4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B038,"Powerade, varios sabores",4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B049,"Agua saborizada H2O, varios sabores",4,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B051,Agua saborizada Flip light,4,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B048,"Agua saborizada Levité Cero, varios sabores light",4,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B031,"Agua saborizada light, PROMEDIO",4,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B050,Agua saborizada We o Ser ligth,4,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B002,Amargo serrano light*,4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B009,"Gaseosa light, PROMEDIO",4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B112,"Gaseosa light, Guaraná",4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B026,"Gaseosa light, sabor cola",4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B027,"Gaseosa light, sabor lima limón",4,Fruits,Fruits,Fruits,base_arrieta,B_other_to_agb_non_alcohol
+B028,"Gaseosa light, sabor naranja",4,Fruits,Fruits,Fruits,base_arrieta,B_other_to_agb_non_alcohol
+B029,"Gaseosa light, sabor pomelo",4,Fruits,Fruits,Fruits,base_arrieta,B_other_to_agb_non_alcohol
+B039,"Gatorade Zero, varios sabores (sin azúcar)",4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B131,Granadina Zero (sin azúcar),4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B052,Jugo en polvo BC*,4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B012,Jugo en polvo light*,4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B121,de jugo y pulpa),4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B118,Jugo concentrado para diluir light*,4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B040,"Powerade Zero, varios sabores (sin azúcar)",4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B129,Ananá Fizz,4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B119,"Aperitivo, tipo Gancia",3,NA,NA,AGB_boisson_alcoolisees,extra_agribalyse,B_alcohol_to_agb_alcohol
+B005,"Bebidas destiladas, PROMEDIO",4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B041,Bebida energizante,4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B113,"Bebida mezcla de fernet con gaseosa sabor cola, lista para consumir",4,NA,NA,AGB_boisson_alcoolisees,extra_agribalyse,B_alcohol_to_agb_alcohol
+B006,Cerveza con alcohol,3,NA,NA,AGB_boisson_alcoolisees,extra_agribalyse,B_alcohol_to_agb_alcohol
+B007,Cerveza sin alcohol,3,NA,NA,AGB_boisson_alcoolisees,extra_agribalyse,B_alcohol_to_agb_alcohol
+B042,Champagne,3,NA,Wine_OWID,Wine_OWID,extra_comparable,B_wine_to_owid_wine
+B128,"Chicha, bebida tradicional obtenida por fermentación del maíz",4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B115,Dr. Lemon,4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B043,Fernet,3,NA,NA,AGB_boisson_alcoolisees,extra_agribalyse,B_alcohol_to_agb_alcohol
+B013,"Licor, PROMEDIO",3,NA,NA,AGB_boisson_alcoolisees,extra_agribalyse,B_alcohol_to_agb_alcohol
+B015,Sidra,3,NA,Wine_OWID,Wine_OWID,extra_comparable,B_wine_to_owid_wine
+B016,Vermouth,4,NA,Wine_OWID,Wine_OWID,extra_comparable,B_wine_to_owid_wine
+B017,Vino blanco,3,Fruits,Fruits,Fruits,base_arrieta,B_wine_to_owid_wine
+B120,"Vino espumante, tipo Frizze",3,Fruits,Fruits,Fruits,base_arrieta,B_wine_to_owid_wine
+B122,Vino Mistela,3,Fruits,Fruits,Fruits,base_arrieta,B_wine_to_owid_wine
+B123,Vino rosado,3,Fruits,Fruits,Fruits,base_arrieta,B_wine_to_owid_wine
+B072,Vino tinto,3,Fruits,Fruits,Fruits,base_arrieta,B_wine_to_owid_wine
+B125,Vodka,3,NA,NA,AGB_boisson_alcoolisees,extra_agribalyse,B_alcohol_to_agb_alcohol
+B111,Agua con gas / soda,1,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B126,Agua de mar,1,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B109,"Agua de lluvia, río, canal, arroyo o acequia",1,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B110,"Agua de lluvia, río, canal, arroyo o acequia, hervida y/o con lavandina",1,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B105,Agua de perforación con bomba,1,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B106,"Agua de perforación con bomba, hervida y/o con lavandina",1,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B107,Agua de pozo,1,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B108,"Agua de pozo, hervida y/o con lavandina",1,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B101,"Agua de red pública o agua corriente, dentro del hogar",1,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B102,"Agua de red pública o agua corriente, filtrada (filtro o dispenser de agua)",1,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B103,Agua embotellada (bidón / botella),1,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B104,"Agua embotellada (bidón / botella), bajo contenido de sodio",1,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B100,Agua origen desconocido,1,NA,NA,AGB_eaux,extra_agribalyse,B_water_to_agb_eaux
+B114,Hielo para bebidas,4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B078,Jugo de arándanos y chía,4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B124,"Jugo de arándanos, natural",1,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B032,"Jugo de fruta, exprimido sin azúcar agregada, envasado",2,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B033,"Jugo de fruta, pasteurizado no reconstituido",4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B034,"Jugo de limón, exprimido",4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B035,"Jugo de naranja, exprimido",4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B116,"Jugo de papaya, natural",1,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B036,"Jugo de pomelo, exprimido",4,Fruits,Fruits,Fruits,base_arrieta,B_juice_to_fruits
+B117,Café con leche en cápsula*,4,NA,Coffee_OWID,Coffee_OWID,extra_comparable,B_coffee_to_owid_coffee
+B073,Café en saquitos (ingresar cantidad de saquitos)*,1,NA,Coffee_OWID,Coffee_OWID,extra_comparable,B_coffee_to_owid_coffee
+B060,Café instantáneo (polvo o granulado con leche y azúcar para preparar)*,4,NA,Coffee_OWID,Coffee_OWID,extra_comparable,B_coffee_to_owid_coffee
+B056,Café instantáneo descafeinado (polvo o granulado para preparar)*,4,NA,Coffee_OWID,Coffee_OWID,extra_comparable,B_coffee_to_owid_coffee
+B057,Café instantáneo (polvo o granulado para preparar)*,4,NA,Coffee_OWID,Coffee_OWID,extra_comparable,B_coffee_to_owid_coffee
+B059,Café molido en cápsula*,4,NA,Coffee_OWID,Coffee_OWID,extra_comparable,B_coffee_to_owid_coffee
+B058,Café preparado a partir de grano molido (tipo café de filtro),1,NA,Coffee_OWID,Coffee_OWID,extra_comparable,B_coffee_to_owid_coffee
+B063,Capucchino instantáneo (polvo o granulado para preparar)*,4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B062,Capucchino instantáneo (polvo o granulado para preparar light)*,4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B061,Capucchino preparado,4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B127,"Infusión de hierbas en hebras tipo Boldo, Manzanilla, otros (ingresar cantidad en",1,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B068,"Infusión de hierbas en saquitos tipo Boldo, Manzanilla, otros (ingresar cantidad de",1,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B065,Mate cocido en saquitos (ingresar cantidad de saquitos)*,1,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B130,Malta instantánea polvo*,4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B076,Té blanco en hebras (ingresar cantidad en gramos)*,1,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B075,Té blanco en saquitos (ingresar cantidad de saquitos)*,1,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B071,Té negro en hebras (ingresar cantidad en gramos)*,1,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B066,Té negro en saquitos (ingresar cantidad de saquitos)*,1,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B077,"Té saborizado en saquitos, varios sabores (ingresar cantidad de saquitos)*",4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B132,Té concentrado de hierbas Herbalife,4,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B067,Té verde en saquitos (ingresar cantidad de saquitos)*,1,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B064,Yerba mate para mate cebado (ingresar cantidad en gramos)*,1,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B070,Yerba mate para mate cocido (ingresar cantidad en gramos)*,1,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+B074,Yerba mate para tereré (ingresar cantidad en gramos)*,1,NA,NA,AGB_boissons_sans_alcool,extra_agribalyse,B_other_to_agb_non_alcohol
+R053,"McDonald's, BigMc (ingresar cantidad de porciones)",4,NA,NA,NA,unmapped,R_other_unmapped
+R046,"McDonald's, Cajita Feliz, Hamburguesa con queso Grill (ingresar cantidad de",4,Beef,Beef,Beef,base_arrieta,R_beef_preparation
+R045,"McDonald's, Cajita Feliz, Hamburguesa Grill (ingresar cantidad de porciones)",4,Beef,Beef,Beef,base_arrieta,R_beef_preparation
+R043,"s, Cajita Feliz, Mc Tostado (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped
+R040,"s, Cajita Feliz, Mc Nuggets X4 (ingresar cantidad de porciones)",4,NA,NA,NA,unmapped,R_other_unmapped
+R041,"s, Cajita Feliz, Papas Kids (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped
+R042,"s, Cajita Feliz, Papas pequeñas (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped
+R044,"s, Cajita Feliz, Tomate cherry 50g (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped
+R054,"s, Club House (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped
+R058,"s, Clubhouse/Guacamole/Cryspi Onion BBQ con pollo crispy (ingresar",3,Poultry,Poultry,Poultry,base_arrieta,R_poultry
+R059,"s, Clubhouse/Guacamole/Cryspi Onion BBQ con pollo grill (ingresar",3,Poultry,Poultry,Poultry,base_arrieta,R_poultry
+R064,"s, Cono (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped
+R052,"s, Cuarto de Libra (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped
+R049,"s, Doble Cuarto de Libra con queso (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped
+R047,"s, Hamburguesa (ingresar cantidad de porciones)",3,Beef,Beef,Beef,base_arrieta,R_beef_preparation
+R048,"s, Hamburguesa con queso (ingresar cantidad de porciones)",3,Beef,Beef,Beef,base_arrieta,R_beef_preparation
+R050,"s, Mcnífica (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped
+R056,"s, McNuggets x 10 (ingresar cantidad de porciones)",4,NA,NA,NA,unmapped,R_other_unmapped
+R057,"s, McPollo Grill (ingresar cantidad de porciones)",3,Poultry,Poultry,Poultry,base_arrieta,R_poultry
+R063,"s, Papas grandes (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped
+R062,"s, Papas medianas (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped
+R061,"s, Papas pequeñas (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped
+R060,"s, Pollo Jr. (ingresar cantidad de porciones)",3,Poultry,Poultry,Poultry,base_arrieta,R_poultry
+R065,"s, Sundae chocolate (ingresar cantidad de porciones)",4,NA,NA,NA,unmapped,R_other_unmapped
+R066,"s, Sundae dulce de leche (ingresar cantidad de porciones)",4,NA,NA,NA,unmapped,R_other_unmapped
+R068,"s, Mc Flurry Oreo (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped
+R067,"s, Sundae frutilla (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped
+R051,"s, Triple Mac (ingresar cantidad de porciones)",3,NA,NA,NA,unmapped,R_other_unmapped

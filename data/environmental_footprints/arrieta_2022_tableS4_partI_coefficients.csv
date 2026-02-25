@@ -1,0 +1,19 @@
+﻿food_items,coefficient_factor_fw_rw_pct,ghg_kg_co2eq_per_kg,fossil_energy_mj_per_kg,land_occupation_m2_per_kg,cropland_demand_m2_per_kg,freshwater_consumption_l_per_kg,eutrophication_g_po4eq_per_kg
+Beef,72.0,40.93,24.43,251.63,13.38,130.77,42.53
+Poultry,75.0,0.99,11.2,6.87,6.87,75.0,16.34
+Pork,68.0,2.24,16.11,9.86,9.86,238.67,16.33
+Lamb and mutton,71.0,35.8,22.65,127.8,0.0,189.57,352.87
+Other meats,71.0,35.8,22.65,127.8,0.0,189.57,352.87
+Fish and seafood,51.0,1.83,27.52,0.01,0.0,0.0,2.45
+Dairy products,105.0,1.14,2.57,2.98,1.59,25.0,11.98
+Eggs,100.0,1.32,9.67,6.2,6.2,57.0,12.07
+Cereals (without rice),65.0,0.82,3.51,4.6,4.6,435.0,3.9
+Rice,49.0,1.68,7.85,1.8,1.8,448.0,10.0
+Baked products,119.27,0.71,2.2,5.45,5.45,11.0,4.62
+Pasta,59.21,0.71,2.2,5.45,5.45,11.0,4.62
+Legumes and pulses,78.0,0.22,2.31,4.3,4.3,33.0,2.5
+Nuts and seeds,50.0,2.01,27.33,0.33,0.33,852.0,3.62
+Fruits,51.0,0.18,1.38,0.4,0.4,239.0,10.0
+Vegetables (outdoor),51.0,0.34,2.52,0.48,0.48,140.0,0.61
+Starchy vegetables,63.0,0.13,1.27,0.33,0.33,51.0,1.2
+Oil crops,29.0,1.72,17.78,10.7,10.7,11.0,18.36
