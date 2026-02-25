@@ -1,18 +1,18 @@
-# run_all.R
-# Ejecuta todo el pipeline UPF Argentina desde R.
-# Requiere: readr, dplyr, tidyr (install.packages(c("readr","dplyr","tidyr"))).
+﻿# run_all.R
+# Runs the full UPF Argentina pipeline from R.
+# Requires: readr, dplyr, tidyr (install.packages(c("readr","dplyr","tidyr"))).
 #
-# Uso:
-#   Desde RStudio: establecer el directorio de trabajo en la raíz del proyecto
-#   (Ultra-processed_Mortality) y ejecutar: source("R/run_all.R")
-#   Desde R en consola: setwd("ruta/a/Ultra-processed_Mortality"); source("R/run_all.R")
+# Usage:
+#   From RStudio: set the working directory to the project root
+#   (Ultra-processed_Mortality) and run: source("R/run_all.R")
+#   From R console: setwd("path/to/Ultra-processed_Mortality"); source("R/run_all.R")
 
 PROJECT_ROOT <- getwd()
 if (!file.exists(file.path(PROJECT_ROOT, "ENNyS", "Base_Alimentos_Bebidas_Suplementos.csv"))) {
-  stop("Establecer directorio de trabajo en la raíz del proyecto (Ultra-processed_Mortality).")
+  stop("Set the working directory to the project root (Ultra-processed_Mortality).")
 }
 
-# Opcional: establecer raíz explícita para los scripts
+# Optional: set explicit project root for script execution
 # PROJECT_ROOT <- "C:/Users/admin/Documents/Papers/Ultra-processed_Mortality"
 
 run_script <- function(name) {
@@ -21,38 +21,38 @@ run_script <- function(name) {
   source(file.path(PROJECT_ROOT, "R", name), local = e)
 }
 
-message("=== Pipeline UPF Argentina (R) ===\n")
-message("1. Agregar defunciones por estrato...")
+message("=== UPF Argentina Pipeline (R) ===\n")
+message("1. Aggregate deaths by stratum...")
 run_script("01_agregar_defunciones.R")
 
-message("\n2. Agregar defunciones por causa...")
+message("\n2. Aggregate deaths by cause...")
 run_script("02_agregar_defunciones_causa.R")
 
-message("\n3. UPF por estrato (diet data, puede tardar)...")
+message("\n3. UPF exposure by stratum (diet data, can take time)...")
 run_script("03_upf_por_estrato.R")
 
-message("\n4. PAF y resultados (Monte Carlo 10k)...")
+message("\n4. PAF and outcomes (10k Monte Carlo)...")
 run_script("04_paf_resultados.R")
 
-message("\n5. Muertes por causa...")
+message("\n5. Deaths by cause...")
 run_script("05_muertes_por_causa.R")
 
 message("\n6. YLL...")
 run_script("06_yll.R")
 
-message("\n7. Esperanza de vida...")
+message("\n7. Life expectancy impact...")
 run_script("07_esperanza_vida.R")
 
-message("\n8. Costos indirectos...")
+message("\n8. Indirect costs...")
 run_script("08_costos_indirectos.R")
 
-message("\n9. Mapping ambiental (codigo -> grupo)...")
+message("\n9. Environmental mapping (code -> group)...")
 run_script("09_build_env_mapping.R")
 
-message("\n10. Base extendida de coeficientes y cobertura UPF...")
+message("\n10. Extended coefficients and UPF coverage...")
 run_script("11_build_extended_coeffs_and_upf_coverage.R")
 
-message("\n11. Impacto ambiental (extendido + escenarios isocaloricos)...")
+message("\n11. Environmental impact (extended + isocaloric scenarios)...")
 run_script("10_impacto_ambiental.R")
 
-message("\n=== Pipeline completado. Salidas en output/ ===")
+message("\n=== Pipeline completed. Outputs are written to output/ ===")
