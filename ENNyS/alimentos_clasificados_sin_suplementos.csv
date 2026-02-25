@@ -1,0 +1,1041 @@
+﻿descripcion,codigo,NOVA
+Acelga,V001,1
+"Acelga, congelada",V050,3
+"Acelga, pencas",V073,1
+Achicoria,V002,1
+Ají en conserva,V081,3
+Ají Locoto,V077,1
+Ají rojo / morrón rojo,V003,1
+Ají verde o amarillo / morrón verde o amarillo,V004,1
+Ajo,V065,1
+Albahaca,V071,1
+"Alcaparras, encurtido",V069,3
+Alcaucil,V005,1
+Apio,V006,1
+"Arveja, congelada",V051,3
+"Arveja, enlatada",V008,3
+"Arveja, fresca",V007,1
+Berenjena,V010,1
+Berro,V011,1
+Brócoli,V012,1
+Brotes de soja,V013,1
+Brotes de tacuara (bambú) en escabeche,V075,3
+Caldo de verduras colado,V082,4
+Cebolla,V014,1
+Cebolla de verdeo,V052,1
+"Champignones, enlatados",V074,3
+"Champignones, frescos",V076,1
+"Chaucha, congelada",V053,3
+"Chaucha, fresca",V016,1
+Chuchu o chayote,V078,1
+Coliflor,V015,1
+Escarola,V020,1
+Espárrago,V021,1
+Espinaca,V022,1
+Habas,V023,1
+Hakusai o col china,V054,1
+Hinojo,V024,1
+Hojas de parra,V083,1
+"Hongos, enlatados",V026,3
+"Hongos, frescos",V025,1
+"Hongos, secos",V080,1
+"Jardinera, congelada",V055,3
+"Jardinera, enlatada",V056,3
+Jengibre,V066,1
+Kale,V057,1
+Lechuga,V027,1
+Mandioca,V028,1
+Medallones de verdura congelados industrializados,V072,4
+"Palmitos, enlatados",V029,3
+Pepino,V031,1
+Perejil,V067,1
+"Pickles, en vinagre",V070,3
+"Prefritos congelados, croquetas de vegetales (espinaca, brócoli)",V062,4
+"Prefritos congelados, milanesas de vegetales (4 vegetales, espinaca)",V063,4
+"Prefritos congelados, patitas de vegetales (espinaca)",V064,4
+Puerro,V032,1
+Rabanito,V033,1
+Radicheta,V034,1
+Remolacha,V035,1
+Repollito de Bruselas,V036,1
+Repollo,V037,1
+Rúcula,V058,1
+Tomate,V038,1
+"Tomate, desecado",V068,3
+"Tomate, enlatado",V039,3
+"Tomate, puré de tomate",V060,3
+Tomate cherry,V059,1
+Verdolaga,V079,1
+Zanahoria,V040,1
+Zapallito,V041,1
+Zapallo,V042,1
+"Zapallo / calabaza, puré instantáneo (polvo)*",V084,4
+Zucchini,V061,1
+Aceituna negra,F050,3
+Aceituna verde,F001,3
+"Alimento a base de coco (leche de coco, industrializada)",F069,4
+Acerola,F044,1
+Ananá,F003,1
+"Ananá, enlatado (fruta y almíbar)",F004,3
+Ananá glaseado,F071,4
+Arándanos,F060,1
+Banana,F006,1
+Banana deshidratada,F067,1
+Cayota o Alcayota,F045,1
+Cereza,F007,1
+Ciruela pasa / ciruela seca,F009,3
+Ciruela,F008,1
+Coco fresco,F046,1
+"Coco, leche",F066,1
+Coco rallado,F051,3
+"Coctail de frutas, enlatado (fruta y almíbar)",F052,4
+Damasco,F010,1
+Dátiles,F061,3
+"Durazno, enlatado light (fruta y almíbar)",F013,4
+"Durazno, enlatado (fruta y almíbar)",F012,3
+Durazno,F011,1
+Durazno orejón,F014,3
+Frambuesa,F064,1
+Frutas abrillantadas,F065,4
+Frutilla,F015,1
+Granada,F016,1
+Guabirova,F053,1
+Guayaba,F017,1
+Higo desecado,F054,3
+Higo,F018,1
+Kaki,F019,1
+Kinoto,F020,1
+Kiwi,F021,1
+Limón,F022,1
+"Limón, ralladura",F059,1
+Mamón,F023,1
+Mandarina,F024,1
+Mango,F025,1
+Manzana con piel,F027,1
+Manzana sin piel,F028,1
+Maracuyá,F070,1
+Melón,F029,1
+Membrillo,F030,1
+Mora,F055,1
+Naranja,F031,1
+"Naranja, ralladura",F062,1
+Níspero,F032,1
+Palta,F034,1
+Papaya,F063,1
+Pera,F036,1
+"Pera, enlatada (fruta y almíbar)",F037,3
+"Pera, enlatada light (fruta y almíbar)",F038,4
+Pera orejón,F039,3
+Pitanga,F056,1
+Pomelo,F041,1
+Puré de frutas envasado (alimento infantil),F057,4
+Sandía,F042,1
+Tuna,F058,1
+Uva,F043,1
+Uva pasa,F035,3
+Almidón de maíz,A001,2
+Almidón de mandioca,A193,2
+Amaranto,A002,4
+Anchi,A101,4
+Arroz blanco,A003,3
+Arroz inflado azucarado,A191,4
+Arroz integral,A004,3
+Arroz yamaní,A102,3
+"(tipo cuatro quesos, primavera, etc.)",A103,3
+"Arroz a la portuguesa (envasado, fortificado con vitaminas y minerales)",A255,4
+"Arroz a la valenciana (envasado, fortificado con vitaminas y minerales)",A257,4
+"Arveja, semilla seca entera / partida",A006,4
+"Avena, arrollada",A005,4
+"Avena, almohaditas",A104,4
+Barra crocante de arroz,A105,4
+Barra de cereal fortificada,A106,4
+Barra de cereal light,A107,4
+"Barra de cereales, PROMEDIO",A008,4
+Batata,A073,1
+Bizcochitos de grasa envasados,A108,4
+Bizcochitos de grasa envasados light,A109,4
+Bizcochitos de arroz envasados (tipo galletita),A110,4
+"Bizcochos de grasa (panadería) / Criollitos, Libritos (pan con grasa)",A009,2
+Bizcochos tipo Bay Biscuit,A010,4
+Bizcochuelo preparado (panadería),A229,4
+Bizcochuelo preparado a partir de polvo premezcla,A111,4
+"Bizcochuelo preparado a partir de polvo premezcla, SIN TACC",A112,4
+Bollitos de anís,A113,4
+Brownie (panadería),A236,4
+Budín industrializado,A114,4
+"Budín industrializado con nueces, tipo navideño",A234,4
+"Capelettis / capelettinis deshidratados, envasados",A115,4
+"Capelettis frescos, artesanal",A011,4
+"Cereal desayuno, aritos frutales",A074,4
+"Cereal desayuno, aritos sabor miel",A182,4
+"Cereal desayuno, bolitas de chocolate",A194,4
+"Cereal desayuno, copos de maíz sin azúcar, sin fortificar",A075,4
+Cereal infantil para papilla,A116,4
+Cheesecake (panadería / confitería),A248,4
+Chipá,A013,3
+Chipá preparado a partir de polvo premezcla,A120,4
+"Chipaco o pan con chicharrón, comprado",A216,4
+Choclo,A076,1
+"Choclo, congelado en grano",A176,1
+"Choclo, enlatado cremoso",A078,3
+"Choclo, enlatado en grano",A077,3
+Churros,A014,4
+"Cereal desayuno, copos de cereal integral (arroz y maíz), fortificados",A180,4
+"Cereal desayuno, copos azucarados, sin fortificar",A012,4
+"Cereal desayuno, copos azucarados, fortificados",A117,4
+Coquitos (panadería),A204,4
+Cous Cous,A118,4
+Cucurucho / cubanito,A119,4
+Empanaditas chinas (restaurant),A250,4
+Facturas rellenas,A015,3
+Facturas simples,A016,3
+"Farofa tradicional, harina de mandioca condimentada, envasada lista para",A192,4
+"Fideos de arroz, SIN TACC",A207,4
+"Fideos frescos, al huevo",A017,3
+Fideos secos,A018,3
+"Fideos secos, fortificados",A121,4
+Fideos secos integrales / fideos secos de sémola y harina de legumbres,A122,3
+Frangollo (maíz seco pisado),A201,4
+Galleta de campo,A064,4
+Galleta de grasa con chicharrón,A206,4
+Galleta marinera,A065,4
+Galleta marinera con semillas / galletitas crackers con semillas,A188,4
+Galleta marinera integral,A253,4
+"Galleta marinera, light en grasas",A203,4
+Galletas de arroz,A019,4
+Galletas de arroz horneadas tipo snack varios sabores,A185,4
+Galletas de arroz sin sal,A123,4
+Galletitas integrales sin sal,A067,4
+Galletitas dulces con centro de membrillo o similar (tipo Pepas),A186,4
+Galletitas dulces con chips de chocolate,A181,4
+Galletitas dulces hojaldradas,A220,4
+Galletitas dulces rellenas,A023,4
+Galletitas dulces rellenas bañadas en chocolate,A211,4
+Galletitas dulces simples,A024,4
+"Galletitas dulces sin azúcar agregada, con edulcorante (dietética)",A205,4
+"Galletitas dulces, SIN TACC",A124,4
+Galletitas dulces de almidón de maíz (tapita de alfajor),A177,4
+Galletitas dulces tipo Frutigran,A125,4
+Galletitas dulces obleas,A068,4
+"Galletitas de agua, PROMEDIO",A020,4
+Galletitas de agua sin sal,A066,4
+Galletitas de agua sin sal con chía y lino,A258,4
+Galletitas de agua con girasol alto oleico,A127,4
+Galletitas de agua con grasa vacuna,A021,4
+Galletitas de agua light,A247,4
+Galletitas de salvado o integrales,A022,4
+Galletitas tipo copetín,A126,4
+Galletitas tipo talitas o fajitas,A198,4
+Galletitas de vainilla con chips de chocolate (panadería),A254,4
+Garbanzos,A025,3
+"Garbanzos, enlatados",A128,3
+Gérmen de trigo,A129,4
+Granola,A026,4
+Grisines,A069,4
+Grisines sin sal,A130,2
+"Guiso de lentejas (envasado, fortificado con vitaminas y minerales)",A244,4
+Hamburguesa de quinoa envasada,A260,4
+Hamburguesa de soja congelada,A175,4
+Harina de algarrobo,A027,2
+Harina de arroz,A028,2
+Harina de cebada,A029,2
+Harina de centeno,A030,2
+Harina de chía,A212,2
+Harina de garbanzos,A131,3
+Harina de maíz,A031,2
+Harina de quinoa,A070,2
+Harina de soja,A032,2
+Harina de trigo,A033,2
+Harina de trigo con levadura para pizza,A202,4
+Harina de trigo fortificada,A132,4
+Harina de trigo integral,A034,2
+Harina leudante,A133,4
+Lentejas,A035,3
+"Lentejas, enlatadas",A134,3
+Milanesa de lentejas (dietética),A259,4
+Levadura en polvo,A178,4
+Levadura fresca,A179,2
+Madalenas,A135,4
+Madalenas rellenas,A187,4
+Madalenas fortificadas,A136,4
+"Maíz, grano entero",A036,4
+"Masa de pizza, preparada a partir de polvo premezcla",A197,4
+"Masa de pizza, preparada a partir de polvo premezcla, SIN TACC",A138,4
+Masa de prepizza de panadería o envasada,A038,4
+Masa de tarta o empanadas,A037,4
+Masa de tarta o empanadas light,A139,4
+"Masa de tarta o empanada, integral",A252,4
+"Masa de tarta, SIN TACC",A218,4
+Masas finas surtidas (panadería / confitería),A242,4
+Masas secas surtidas (panadería / confitería),A232,4
+Muffins veganos,A217,4
+Ñoquis de espinaca envasados,A233,4
+"Ñoquis de papa frescos, artesanal",A039,1
+"Ñoquis de papa, envasados",A140,4
+Ñoquis preparados a partir de polvo premezcla,A171,4
+"Ñoquis preparados a partir de polvo premezcla, SIN TACC",A172,4
+Panko (pan rallado japonés),A241,3
+Pan árabe,A071,3
+"Pan cacho (tipo pan casero de campo, sin grasa)",A215,2
+"Pan con grasa (tipo pan ""cordero"")",A240,2
+Pan criollo / semita / tortillas / bollos / harinitas,A072,3
+Pan de centeno,A040,3
+Pan de gluten,A042,4
+Pan de maíz,A043,3
+Pan de miga,A044,3
+Pan de molde con salvado,A048,4
+Pan de salvado,A045,2
+Pan de salvado con semillas,A184,2
+Pan de molde con salvado sin sal,A141,4
+Pan de salvado sin sal (panadería),A246,2
+Pan de viena,A046,3
+Pan dulce,A142,4
+Pan francés o pan casero sin agregado de grasa o aceite,A041,2
+Pan francés sin sal,A245,2
+"Pan blanco, tipo molde, lacteado",A047,4
+"Pan lactal, SIN TACC",A237,4
+Pan negro sin levadura,A049,2
+"Pan para panchos o hamburguesas, envasado",A143,4
+"Pan paraguayo / galleta paraguaya (bollitos con levadura, harina, grasa o",A231,4
+Pan rallado,A050,3
+"Pan rallado, SIN TACC",A226,3
+"Pan rallado, fortificado",A144,4
+Pan figacita de manteca,A169,2
+Papa,A079,1
+"Papa, croquetas u otro preformado de papa rebozado, prefrito, congelado",A153,1
+"Papa, puré instantáneo (polvo)*",A152,4
+Papas prefritas congeladas envasadas,A145,4
+"Pastas secas, SIN TACC",A146,4
+Pastelitos rellenos de dulce de membrillo o batata (panadería / confitería),A249,3
+Patay,A147,4
+Pionono,A148,4
+Pochoclo acaramelado,A149,4
+Pochoclo salado,A150,2
+Polvo de hornear,A190,4
+Polvo para preparar brownie*,A189,4
+Porotos,A051,3
+"Soja, porotos",A052,3
+"Porotos, enlatados",A151,3
+"Milanesa de arroz, prefrita",A165,4
+"Milanesa de soja, prefrita",A164,4
+"Premezcla para panificados, pastas y postres, SIN TACC",A213,4
+"Premezcla para bizcochuelo, SIN TACC",A256,4
+Puflito,A154,4
+Quinoa inflada,A155,4
+"Quinoa, semilla",A053,4
+"Ravioles deshidratados, envasados",A157,4
+"Ravioles frescos, artesanal, SIN TACC",A225,4
+"Ravioles frescos, artesanal",A054,4
+"Ravioles frescos, envasados",A156,4
+Rosca de pascuas (panadería / confitería),A223,4
+Rosquete,A243,4
+Rosquita tipo Doughtnut,A210,4
+Rosquita tipo Doughtnut bañada en chocolate,A227,4
+Rosquita tipo Doughtnut de chocolate,A219,4
+Rosquito de vino (cuyano),A209,4
+Salvado de avena,A055,2
+Salvado de trigo,A056,2
+"Cereal desayuno, salvado de trigo tipo bastoncitos",A057,4
+Scones (panadería / confitería),A196,4
+"Seitán, sucedáneo de carne a base de gluten de trigo",A214,4
+Sémola,A058,3
+Sémola fortificada,A195,4
+Soja texturizada,A170,4
+"Sorrentinos frescos, artesanal",A200,4
+"Sushi, PROMEDIO",A183,4
+"Tapas para lasagna, pasta seca",A222,3
+Tapioca (almidón de mandioca),A059,2
+Tofu,A168,4
+Torta de coco (panadería),A238,4
+"Torta de cumpleaños (masa, relleno y cobertura). Comprada lista para consumir,",A224,4
+Torta de manzana (panadería),A251,4
+Torta de ricotta (panadería),A235,4
+Torta frita,A062,4
+Torta mil hojas,A228,4
+"Tortillas de trigo, envasadas",A208,4
+Tortitas Jachaleras,A158,4
+Tostadas de gluten,A159,4
+Tostadas de mesa,A160,4
+Tostadas integrales,A161,4
+Tostadas light,A162,4
+Tostadas sin sal,A163,2
+"Tostaditas saladas, saborizadas, producto tipo copetín",A221,4
+Trigo burgol,A239,4
+"Trigo, grano entero",A060,4
+Trigo inflado azucarado,A230,4
+Triguillo,A199,4
+Turrón de maní con oblea tipo golosina,A173,4
+Turrón tipo navideño,A174,4
+Tutuca,A166,4
+Vainillas,A061,4
+"Alimento a base de leche entera y café, fortificado con calcio, varios sabores,",L065,4
+"Leche chocolatada en polvo, fortificada, para desayunos escolares*",L044,4
+"Leche parcialmente descremada, sabor chocolate o dulce de leche, fortificada",L001,4
+Leche condensada,L034,4
+"Leche de cabra, entera, fluida",L002,1
+"Leche de cabra, entera, en polvo*",L070,4
+"Leche de oveja, entera, fluida",L003,1
+"Leche de vaca, ordeñada (sin ningún tipo de procesamiento)",L067,1
+"Leche descremada en polvo, fortificada con vitaminas A y D*",L008,4
+"Leche descremada en polvo, tipo Nido Buen Día, fortificada con hierro y",L069,4
+más de proteínas,L060,3
+"menos de grasas saturadas, fortificada con vitaminas A,",L045,4
+"Leche semidescremada en polvo, deslactosada*",L041,4
+"Leche entera fluida, con azúcar, lista para consumir",L039,2
+Leche entera en polvo tipo Nido Fortigrow*,L055,4
+"Leche entera en polvo, fortificada con vitaminas A y D, para desayunos",L046,4
+"Leche entera en polvo, fortificada con vitaminas A y D*",L047,4
+"As., fortificada con vitaminas A y D*",L043,4
+"fortificada con hierro, zinc y ác. ascórbico*",L033,4
+"Leche entera en polvo, deslactosada, fortificada con vitaminas A y D*",L009,4
+"Leche entera en polvo, fortificada con hierro*",L019,4
+"Leche entera en polvo, Plan Materno Infantil, sin fortificación*",L032,4
+"Leche entera en polvo, sin fortificación*",L010,4
+"Leche entera fluida, fortificada con hierro",L020,4
+"Leche entera fluida, con vitaminas A y D",L007,1
+"Leche entera fluida, fortificada con vitaminas A, D y B9",L048,4
+"Leche entera fluida, deslactosada, fortificada con vitaminas A y D",L011,4
+"Leche entera fluida, fortificada con vitaminas A, D, C, B9 y extra calcio",L054,4
+"Leche entera fluida, con CLA, fortificada con vitaminas A y D",L066,4
+"Leche entera fluida, sin fortificación",L006,1
+"3, fortificada con calcio y vitaminas A, D y E",L053,4
+"triglicéridos de cadena media, DHA/GLA y sin lactosa, para alergia a la",L057,3
+"Leche fórmula, tipo Enfabebe Confort, en polvo*",L059,4
+"Leche fórmula, tipo GA1 Anamix Infant, en polvo*",L056,4
+"Leche fórmula, tipo Nutrilon Pepti junior HE, en polvo*",L058,4
+"Leche fórmula antireflujo, en polvo*",L042,4
+"Leche fórmula 0-12 meses, hipoalergénica, tipo Nutrilón HA, NAN HA, en",L063,4
+"Leche fórmula 0-12 meses, sin lactosa, en polvo*",L062,4
+"Leche fórmula etapa 3, en polvo*",L035,4
+"Leche fórmula etapa 3, sin lactosa, en polvo*",L061,4
+"Leche fórmula etapa 3, fluida",L036,4
+"Leche fórmula etapa 4, en polvo*",L037,4
+"Leche fórmula etapa 4, fluida",L038,4
+"Leche fórmula inicio, en polvo*",L022,4
+"Leche fórmula inicio, fluida",L024,4
+"Leche fórmula para prematuros etapa 1, en polvo*",L049,4
+"Leche fórmula para prematuros etapa 1, fluida",L050,4
+"Leche fórmula para prematuros etapa 2, en polvo*",L051,4
+"Leche fórmula para prematuros etapa 2, fluida",L052,4
+"Leche fórmula seguimiento, en polvo*",L023,4
+"Leche fórmula seguimiento, fluida",L025,4
+"Leche seguimiento etapa 3, sabor vainilla",L064,3
+Leche materna,L040,3
+"Leche parcialmente descremada fluida, fortificada con vitaminas A, D, C y ác.",L030,4
+"Leche parcialmente descremada fluida, fortificada con hierro",L031,4
+"Leche parcialmente descremada fluida, fortificada con vitaminas A y D",L005,4
+"Leche parcialmente descremada fluida, sin fortificación",L004,1
+"Leche parcialmente descremada fluida, deslactosada, fortificada con vitaminas",L012,4
+"vitaminas A, D, B2, B9 y zinc",L068,3
+Probióticos descremados,L017,3
+Probióticos enteros,L018,3
+"Bebida láctea a base de agua, yogurt, azúcar y saborizantes",Y019,4
+Flan envasado listo para consumir light,Y007,4
+Flan envasado listo para consumir,Y006,4
+Postre de leche bebible infantil,L013,4
+Postre de leche listo para consumir light,L015,4
+Postre de leche listo para consumir tipo Danonino,L016,4
+Postre de leche listo para consumir tipo Serenito,L014,4
+Yogur con fitoesteroles,Y014,3
+Yogur descremado,Y003,3
+Yogur descremado bebible,Y005,3
+Yogur descremado con cereales,Y012,4
+Yogur descremado con frutas,Y013,4
+Yogur descremado con frutas y cereales,Y017,4
+Yogur entero bebible saborizado,Y004,4
+Yogur entero con cereales,Y010,4
+Yogur entero con frutas,Y011,4
+Yogur entero con frutas y cereales,Y018,4
+Yogur entero natural,Y001,1
+Yogur entero saborizado,Y002,4
+Yogur descremado fortificado con calcio,Y015,4
+Yogur fortificado con hierro,Y016,4
+"Adherezo deshidratado a base de queso Reggianito, sémola y almidones",Q033,3
+Muzzarella rebozada prefrita,Q043,3
+Muzzarella rebozada sin freir (pollería o granja),Q048,3
+"Quesillo (preparación regional, queso amasado artesanal)",Q049,3
+Queso Azul,Q022,3
+"Queso blanco descremado, untable",Q003,3
+"Queso blanco semidescremado, untable",Q002,3
+Queso Cheddar,Q042,3
+Queso Chubut,Q023,3
+"Queso crema entero, untable",Q001,3
+Queso Cremoso,Q050,3
+Queso Cuartirolo,Q017,3
+Queso de cabra,Q045,3
+Queso de máquina,Q021,3
+Queso de vaca criollo,Q052,3
+Queso en hebras,Q034,3
+Queso en hebras light,Q035,4
+Queso Fontina,Q024,3
+Queso Fontina fundido light,Q051,4
+Queso fresco sin sal,Q047,2
+Queso fundido,Q005,3
+Queso Goya,Q036,3
+Queso Gruyére,Q025,3
+Queso Holanda,Q026,3
+Queso Limburguer,Q018,3
+Queso Mar del Plata,Q027,3
+Queso Pategrás,Q028,3
+Queso Mascarpone,Q044,3
+Queso Muzzarella,Q019,3
+Queso Parmesano,Q037,3
+Queso pasta blanda descremado,Q015,3
+Queso pasta blanda doble crema,Q016,3
+muzzarella),Q006,3
+"Sardo, Sbrinz)",Q008,3
+"Holanda, Mar del Plata, Pategrás, Queso de máquina, Roquefort, Taif, Tandil)",Q007,3
+Queso porsalut sin sal light,Q046,4
+Queso Provolone,Q038,3
+Queso rallado envasado,Q032,4
+Queso Reggianito,Q039,3
+Queso Roquefort,Q029,3
+Queso Sardo,Q040,3
+Queso Sbrinz,Q041,3
+Queso Taif,Q030,3
+Queso Tandil,Q031,3
+"Queso untable, PROMEDIO",Q000,3
+Queso untable tipo Finlandia,Q013,3
+Queso untable tipo Finlandia light,Q014,4
+Queso untable tipo Tholem,Q011,3
+Queso untable tipo Tholem light,Q012,4
+Quesos de pasta semidura descremados,Q020,3
+Ricota,Q004,3
+Ricota descremada,Q010,3
+Aguja,C078,1
+Asado con hueso***,C076,1
+Asado sin hueso***,C075,1
+Bife angosto con hueso***,C089,1
+Bife angosto sin hueso***,C088,1
+Bola de lomo,C082,1
+Bondiola (fiambre),C094,4
+Butifarra,C123,1
+Cabra,C001,1
+Cantimpalo (fiambre),C121,4
+Caracú,C109,1
+Carne picada común,C073,1
+Carne picada especial,C074,1
+Carpincho,C050,1
+Cerdo bondiola,C100,3
+"Cerdo costillar tipo ""ribs""",C099,1
+Cerdo costillita,C098,1
+Cerdo jamón (corte de carne),C104,3
+Cerdo matambre,C101,1
+Cerdo paleta (corte de carne),C105,1
+Cerdo pechito,C102,1
+"Cerdo, PROMEDIO",C002,1
+"Cerdo, patas, patitas",C115,1
+Charata (ave),C064,1
+Charqui de cordero o chalona,C038,3
+Charqui de vaca,C037,3
+"Chinchulines, tripa gorda",C007,1
+Chivito,C110,1
+"Chivito, cabeza",C129,1
+Chorizo,C003,3
+Chorizo seco,C095,3
+Colita de cuadril,C093,1
+Conejo,C008,1
+"Corazón, vacuno",C107,1
+"Cordero, PROMEDIO",C009,1
+Cuadrada,C084,1
+Cuadril,C092,1
+Cuerito de cerdo,C052,1
+"Espinazo, vacuno",C120,1
+Falda,C079,1
+Fiambre de cerdo,C051,4
+Garza,C062,1
+"Guanaco, carne",C111,1
+Hamburguesa de carne vacuna (carnicería),C118,3
+Hamburguesa de cerdo (carnicería),C116,3
+Hamburguesa de pollo (pollería / granja),C113,3
+"Hamburguesa de carne vacuna, industrializada",C011,4
+"Hamburguesa de carne vacuna, industrializada, rebozada",C124,4
+"Hamburguesa de carne vacuna, industrializada light",C053,4
+"Hamburguesa de pollo, industrializada",C010,4
+Hígado,C012,1
+Hígado de pollo,C122,1
+Jabalí,C103,1
+Jacaré,C061,1
+Jamón cocido,C004,4
+Jamón crudo,C005,3
+Lampalagua (serpiente),C065,1
+Leberwurst,C054,1
+Liebre,C127,1
+Lengua,C013,1
+Lomito ahumado,C056,1
+Lomo,C085,1
+Llama,C128,1
+Longaniza,C055,3
+Matambre (corte de carne),C080,1
+Matambre (fiambre),C057,4
+"Medallón de pollo relleno de jamón y queso, prefrito congelado",C114,3
+Milanesa de carne vacuna rebozada (carnicería),C106,1
+Milanesa de cerdo (carnicería),C126,1
+Milanesa de pollo rebozada (pollería / granja),C068,1
+"Milanesa de pollo, prefrita congelada",C069,4
+Mollejas,C014,1
+Mondongo,C015,1
+Morcilla,C016,1
+Mortadela,C017,4
+Nalga,C081,1
+Nuggets o patitas de pollo,C070,4
+Nutria,C112,1
+Osobuco,C108,1
+Paleta (corte de carne),C087,1
+Paleta (fiambre),C097,4
+Palomita (corte de carne),C091,1
+Panceta,C006,1
+Pastrón,C058,3
+Paté / picadillo,C018,1
+Pato,C019,1
+Pavo,C020,1
+Peceto,C083,1
+Perdiz,C063,1
+Pollo con piel,C021,1
+Pollo sin piel,C023,1
+"Pollo, alitas",C125,1
+"Pollo, menudos",C022,1
+"Pollo, pechuga sin piel",C059,1
+Queso de cerdo,C024,3
+Rana,C117,1
+Riñón,C025,1
+Roast beef,C086,1
+Salame,C026,2
+Salchicha de viena,C027,4
+Salchicha de viena light,C066,4
+Salchicha parrillera,C028,4
+Salchicha rellena con cheddar,C119,4
+Salchichón,C067,2
+Sesos,C029,1
+"Suprema de pollo con espinaca y queso, prefrita congelada",C071,4
+"Suprema de pollo con jamón y queso, prefrita congelada",C072,4
+Tatú,C096,1
+Tortuguita,C090,1
+Ubre,C030,1
+Vacío,C077,1
+"Vacuno, cortes grasos, con hueso (ej: asado), PROMEDIO",C032,1
+"Vacuno, cortes grasos, sin hueso (ej: vacío, carne picada común, aguja, falda, alita,",C031,1
+"intensamente desgrasada), PROMEDIO",C033,2
+"Vacuno, cortes magros, con hueso, PROMEDIO",C034,1
+"Vacuno, cortes semigrasos, con hueso (ej: bife angosto), PROMEDIO",C036,1
+"paleta, bife angosto, tortuguita, palomita), PROMEDIO",C035,1
+Vizcacha,C060,1
+"Huevo de gallina, entero",H001,1
+"Huevo de gallina, clara",H002,1
+"Huevo de gallina, yema",H003,1
+"Huevo de codorníz, entero",H004,1
+Abadejo,P029,1
+Almeja,P042,1
+"Anchoa, enlatada en aceite",P010,2
+"Anchoa, pasta",P009,4
+"Atún, enlatado en aceite",P008,2
+"Atún, enlatado al natural",P007,3
+"Atún, lomito fresco",P028,1
+"Bocaditos de pescado, prefritos",P041,4
+Brótola,P021,1
+"Caballa, enlatada",P012,3
+"Caballa, tronco",P011,1
+Calamar,P003,1
+Camarón,P004,1
+Cornalitos,P031,1
+Corvina,P023,1
+Dorado,P035,1
+Gatuzo,P024,1
+Hamburguesa de pescado (pescadería),P046,1
+Kani Kama,P039,4
+Langostino,P005,1
+Lenguado,P022,1
+"Medallón de pescado relleno con queso y espinaca, prefrito",P043,3
+Mejillón,P006,1
+Merluza,P020,1
+"Merluza, enlatada en agua y aceite",P045,2
+"Milanesa de pescado, prefrita",P040,4
+Pacú,P036,1
+Palometa,P033,1
+Pejerrey,P030,1
+"Pescados de mar (ej: brótola, corvina blanca, gatuso, lenguado, merluza, etc.),",P001,1
+"Pescados de río (ej: dorado, palometa, surubí, trucha, etc.), PROMEDIO",P002,1
+Pollo de mar,P025,1
+Pulpo,P038,1
+Rabas (restaurant),P047,1
+Sábalo,P037,1
+Salmón blanco,P026,2
+Salmón rosado,P027,2
+"Sardinas, enlatadas al natural",P044,3
+"Sardinas, enlatadas en aceite",P013,2
+Surubí,P034,1
+Trucha,P032,1
+Aceite comestible mezcla,Z003,2
+"Aceite comestible mezcla, para cocción",Z030,2
+Aceite de canola,Z005,2
+"Aceite de canola, para cocción",Z032,2
+Aceite de chía,Z023,2
+"Aceite de chía, para cocción",Z036,2
+Aceite de coco,Z022,2
+"Aceite de coco, para cocción",Z034,2
+Aceite de girasol,Z001,2
+Aceite de girasol alto oleico,Z020,2
+"Aceite de girasol alto oleico, para cocción",Z027,2
+"Aceite de girasol, para cocción",Z026,2
+Aceite de maíz,Z002,2
+"Aceite de maíz, para cocción",Z028,2
+Aceite mezcla con oliva,Z021,2
+"Aceite mezcla con oliva, para cocción",Z029,2
+Aceite de oliva,Z004,2
+"Aceite de oliva, para cocción",Z031,2
+Aceite de sésamo,Z042,2
+Aceite de soja,Z007,2
+"Aceite de soja, para cocción",Z035,2
+Aceite de uva,Z006,2
+"Aceite de uva, para cocción",Z033,2
+"Aceite para cocción, PROMEDIO",Z025,2
+"Aceite, PROMEDIO",Z000,2
+Rocío vegetal,Z024,4
+"Rocío vegetal, para cocción",Z037,4
+Alimento a base de almendras (leche de almendras),Z043,4
+Alimento a base de castañas (leche de castañas),Z040,4
+Alimento a base de almendras con chocolate (chocolatada),Z050,4
+Almendra,Z008,1
+Avellana,Z009,1
+Gomasio (sésamo integral tostado y molido con sal marina),Z045,2
+Maní tostado salado,Z011,2
+Maní tostado sin sal,Z010,2
+Mantequilla de maní,Z048,4
+fortificado con calcio,Z047,4
+"Mix de frutos secos, semillas y pasas de uva",Z016,4
+Nuez,Z012,3
+Pistacho,Z013,3
+Pistacho salado,Z038,2
+Semilla de chía,Z041,1
+Semilla de girasol,Z014,1
+Semilla de girasol con sal y con cáscara,Z049,2
+Semilla de sésamo,Z015,1
+Semilla de zapallo,Z044,1
+Semilla de amapola,Z046,1
+Semilla de lino,Z039,1
+Azúcar blanca molida,D003,2
+Azúcar light,D070,4
+Azúcar impalpable,D127,2
+Azúcar morena / azúcar mascabo,D004,2
+Edulcorante en polvo con aspartamo y acesulfame k,D083,4
+"Edulcorante en polvo con sacarina y ciclamato (tipo Hileret clásico 1 a 10, Sucaryl",D084,4
+Edulcorante en polvo con stevia,D085,4
+"Edulcorante en polvo, PROMEDIO",D071,4
+Edulcorante en polvo con sucralosa,D086,4
+Edulcorante en tabletas o comprimidos con aspartamo y acesulfame k,D093,4
+Edulcorante en tabletas o comprimidos con ciclamato y sacarina,D094,4
+Edulcorante en tabletas o comprimidos sin identificar,D092,4
+"Edulcorante líquido con ciclamato, sacarina y sucralosa",D091,4
+Edulcorante líquido con aspartamo,D088,4
+Edulcorante líquido con sacarina y ciclamato,D089,4
+Edulcorante líquido con stevia,D072,4
+Edulcorante líquido con sucralosa,D090,4
+"Edulcorante líquido, PROMEDIO",D087,4
+Glucosa,D116,4
+Alfajor de arroz,D037,4
+Alfajor de chocolate,D001,4
+Alfajor de chocolate con relleno tipo mousse,D028,4
+Alfajor de dulce de leche,D002,4
+Alfajor de fruta,D036,4
+Alfajor de maicena,D029,4
+Alfajor de miel,D107,4
+Alfajor light,D035,4
+"Alfajor santafesino, tapas cubiertas con glasé",D104,4
+Algodón de azúcar,D118,2
+Bananita con cobertura de chocolate,D102,4
+Barra proteica,D132,4
+Barra de arroz rellena bañada,D041,3
+Bombones de fruta,D044,3
+Caramelos duros,D014,4
+Caramelos duros light,D015,4
+Caramelos masticables,D013,4
+Caramelos rellenos,D012,4
+Chicles,D042,4
+Chicles sin azúcar,D043,4
+Chupetín,D047,3
+Conito de dulce de leche envasado,D034,4
+Crema saborizada envasada tipo Ducrem,D110,4
+Cubanito relleno,D033,3
+Garrapiñada de maní,D080,3
+Golosinas de merengue y cucurucho tipo Heladitos / Gallinitas,D125,4
+Gomitas de gelatina,D048,3
+Habanitos de chocolate,D122,4
+Malvaviscos,D101,3
+Merengues / merenguitos,D040,3
+Mielcitas,D106,2
+Minitorta bañada,D038,4
+Oblea bañada tipo Kit Kat,D032,4
+Oblea bañada tipo Nugaton,D039,3
+Pastillas,D045,3
+Pastillas sin azúcar,D046,2
+"Postre a base de pasta de maní, tipo Mantecol",D049,4
+Rhodesia,D030,4
+Tableta de dulce de leche light,D079,4
+Tableta de dulce de leche,D078,4
+Tita,D031,3
+Baño de repostería para cubrir tortas,D052,4
+Barra de chocolate tipo Kinder,D053,4
+Bocadito con dulce de leche tipo Cabsha,D054,4
+Bocadito tipo Dos Corazones,D113,3
+Bocadito tipo Marroc,D115,3
+Bombón tipo Bon O Bon,D055,4
+Bombón de chocolate relleno de licor,D129,4
+Cacao amargo*,D050,2
+Cacao en polvo sin fortificar*,D018,4
+Cacao en polvo tipo Nesquik*,D051,4
+Cacao en polvo tipo Zucoa / Zucoa Max instantáneo otros sabores*,D108,4
+"Cacao, cascarilla*",D117,3
+Chips de chocolate,D123,4
+cacao o más,D057,3
+Chocolate amargo,D126,4
+Chocolate blanco,D058,4
+Chocolate con almendras,D059,4
+Chocolate con maní,D056,4
+Chocolate relleno con pasta de maní tipo Snickers,D119,4
+Chocolate light,D060,4
+Chocolate para taza,D016,4
+Chocolate relleno de dulce de leche tipo Tofi,D095,4
+Chocolatín / chocolate con leche,D017,4
+Huevo de chocolate tipo Kinder,D061,4
+Lentejas de chocolate,D063,4
+Maní con chocolate,D062,4
+Medallón de menta y chocolate,D131,4
+Pasas de uva con chocolate,D133,4
+Bombón helado,D066,3
+Helado de agua (heladería),D064,3
+Helado de agua (palito),D019,3
+Helado de crema (heladería),D020,3
+Helado de crema envasado,D065,4
+"Helado envasado con cucurucho, PROMEDIO",D067,4
+Polvo para preparar helado*,D068,4
+Torta helada envasada (crema helada varios sabores con base de galleta),D111,4
+Almíbar,D100,3
+Arrope,D026,2
+Crema de avellanas con cacao tipo Nutella,D114,4
+Dulce de batata,D005,3
+Dulce de batata light,D081,4
+Dulce de cayote,D073,3
+Dulce de leche,D008,4
+Dulce de leche light,D077,4
+Dulce de mamón,D120,3
+Dulce de membrillo,D006,3
+Dulce de membrillo light,D082,4
+Dulce de zapallo (compacto),D128,3
+Fondant,D130,4
+Grana para decorar tortas,D098,3
+Jalea tipo membrillo,D007,4
+Kero o melaza,D027,2
+Mermelada de frutas,D010,4
+Mermelada de frutas light,D025,4
+Miel,D011,2
+Miel de caña,D134,2
+"Pulpa de frutas para repostería, coberturas y rellenos (frutilla, arándano o maracuyá)",D099,3
+Rapadura,D105,2
+"Relleno y cobertura para repostería lista para batir, varios sabores",D109,4
+"Saborizadores Tecknofood, sabores varios (malta, vainilla)",D124,4
+Salsa topping de chocolate,D097,4
+Salsa topping de dulce de leche,D096,4
+Chicharrón,G017,2
+Crema de leche,G013,2
+"Crema chantilly (lista para consumir, aerosol o industrial preparada)",G018,4
+Crema light,G016,4
+Grasa de cerdo,G008,2
+Grasa de pollo,G019,2
+Grasa vacuna,G009,2
+Manteca,G010,2
+Manteca light,G015,4
+Margarina (en pote y en pan),G011,4
+Margarina untable light,G012,4
+Palitos aireados de harina de maíz o de colores,O013,4
+Palitos salados,O014,4
+Papas fritas de copetín,O015,4
+Maní japonés,O043,4
+Nachos,O028,4
+Snacks saborizados salados a base de maíz,O041,4
+"Snacks saborizados salados a base de sémola de arroz, horneados, tipo Palitos de",O044,4
+Aceto balsámico,O022,3
+Aderezo Salsa Alioli,O048,4
+Aderezo Caesar o Ranch,O021,4
+Aderezo para ensaladas light,O045,4
+Aderezo Salsa Cheddar,O037,4
+"Jugo de limón, envasado",B069,4
+Ketchup,O005,4
+Mayonesa,O001,4
+Mayonesa light,O002,4
+Mayonesa de soja,O003,4
+Mostaza,O006,3
+"Salsa a base de tomate en tetra brick o sachet, lista para consumir (ej: pomarola,",O035,2
+Salsa agridulce,O047,2
+Salsa barbacoa,O020,2
+Salsa blanca en polvo envasada*,O049,4
+Salsa chimichurri envasada,O051,4
+"Salsa deshidratada varios sabores, polvo*",O046,4
+Salsa de soja,O034,2
+Salsa Golf,O004,2
+"Salsa para guiso campero envasada, fortificada*",O040,4
+Vinagre,O023,2
+Caldos en cubo*,O007,3
+Caldos en polvo*,O039,4
+Caldos en polvo light*,O008,4
+Caldos en polvo sin sal light*,O009,4
+Sopa crema instantánea preparada,O010,4
+Sopa crema preparada a partir de polvo premezcla light,O011,4
+Sopa crema preparada a partir de polvo premezcla sin sal light,O012,4
+Saborizador en cubos,O024,4
+Saborizador en polvo,O038,4
+Sopa de fideos deshidratada envasada para preparar*,O025,4
+"Sopa crema instantánea, polvo para preparar (sabores varios)*",O029,4
+"Sopa crema instantánea, polvo para preparar light (sabores varios)*",O030,4
+"Sopa de vegetales instantánea, polvo para preparar*",O036,4
+Arroz con leche envasado listo para consumir,D103,4
+"Arroz con leche envasado sabor caramelo, fortificado",D121,4
+Gelatina envasada lista para consumir,D069,4
+"Gelatina light, preparada a partir de polvo",D022,4
+Gelatina preparada a partir de polvo,D021,4
+Polvo para preparar flan*,D009,4
+Polvo para preparar postre lácteo*,D075,4
+Polvo para preparar postre lácteo light*,D076,4
+Polvo para preparar mousse de limón / chocolate*,D112,4
+Bicarbonato de sodio,O042,2
+Sal,O026,2
+Sal Marina,O050,2
+"Sal dietética o modificada, PROMEDIO",O033,4
+"Sal dietética, sin sodio",O027,4
+Cloruro de sodio,O031,2
+Cloruro de sodio,O032,2
+Achilate / achilata,B055,4
+"Agua saborizada Aquarius, varios sabores",B044,4
+"Agua saborizada Awafrut, varios sabores",B046,4
+"Agua saborizada con azúcar, PROMEDIO",B030,4
+"Agua saborizada Levité, varios sabores",B045,4
+"Agua saborizada tipo Sierra de los Padres, Manaos, otros",B047,4
+Amargo serrano*,B001,4
+"Bebida a base de soja y jugo, varios sabores",B003,4
+"Bebida a base de soja y jugo, varios sabores light",B004,4
+Bebida a base de soja sabor natural,B020,4
+"Gaseosa con azúcar, PROMEDIO",B008,4
+"Gaseosa con azúcar, sabor cola",B021,4
+"Gaseosa con azúcar, sabor lima limón",B022,4
+"Gaseosa con azúcar, sabor naranja",B023,4
+"Gaseosa con azúcar, sabor pomelo",B024,4
+"Gaseosa con azúcar, agua tónica",B025,4
+"Gatorade, varios sabores",B037,4
+Jugo congelado con azúcar en sachet,B054,2
+Jugo de fruta envasado varios sabores,B010,4
+"Jugo en polvo con azúcar, PROMEDIO*",B011,4
+Jugo en polvo con azúcar*,B053,4
+Jugo concentrado con azúcar para diluir*,B014,4
+"Powerade, varios sabores",B038,4
+"Agua saborizada H2O, varios sabores",B049,4
+Agua saborizada Flip light,B051,4
+"Agua saborizada Levité Cero, varios sabores light",B048,4
+"Agua saborizada light, PROMEDIO",B031,4
+Agua saborizada We o Ser ligth,B050,4
+Amargo serrano light*,B002,4
+"Gaseosa light, PROMEDIO",B009,4
+"Gaseosa light, Guaraná",B112,4
+"Gaseosa light, sabor cola",B026,4
+"Gaseosa light, sabor lima limón",B027,4
+"Gaseosa light, sabor naranja",B028,4
+"Gaseosa light, sabor pomelo",B029,4
+"Gatorade Zero, varios sabores (sin azúcar)",B039,4
+Granadina Zero (sin azúcar),B131,4
+Jugo en polvo BC*,B052,4
+Jugo en polvo light*,B012,4
+de jugo y pulpa),B121,4
+Jugo concentrado para diluir light*,B118,4
+"Powerade Zero, varios sabores (sin azúcar)",B040,4
+Ananá Fizz,B129,4
+"Aperitivo, tipo Gancia",B119,4
+"Bebidas destiladas, PROMEDIO",B005,4
+Bebida energizante,B041,4
+"Bebida mezcla de fernet con gaseosa sabor cola, lista para consumir",B113,4
+Cerveza con alcohol,B006,4
+Cerveza sin alcohol,B007,4
+Champagne,B042,4
+"Chicha, bebida tradicional obtenida por fermentación del maíz",B128,4
+Dr. Lemon,B115,4
+Fernet,B043,4
+"Licor, PROMEDIO",B013,4
+Sidra,B015,4
+Vermouth,B016,4
+Vino blanco,B017,4
+"Vino espumante, tipo Frizze",B120,4
+Vino Mistela,B122,4
+Vino rosado,B123,4
+Vino tinto,B072,4
+Vodka,B125,4
+Agua con gas / soda,B111,1
+Agua de mar,B126,1
+"Agua de lluvia, río, canal, arroyo o acequia",B109,1
+"Agua de lluvia, río, canal, arroyo o acequia, hervida y/o con lavandina",B110,1
+Agua de perforación con bomba,B105,1
+"Agua de perforación con bomba, hervida y/o con lavandina",B106,1
+Agua de pozo,B107,1
+"Agua de pozo, hervida y/o con lavandina",B108,1
+"Agua de red pública o agua corriente, dentro del hogar",B101,1
+"Agua de red pública o agua corriente, filtrada (filtro o dispenser de agua)",B102,1
+Agua embotellada (bidón / botella),B103,1
+"Agua embotellada (bidón / botella), bajo contenido de sodio",B104,1
+Agua origen desconocido,B100,1
+Hielo para bebidas,B114,4
+Jugo de arándanos y chía,B078,4
+"Jugo de arándanos, natural",B124,4
+"Jugo de fruta, exprimido sin azúcar agregada, envasado",B032,4
+"Jugo de fruta, pasteurizado no reconstituido",B033,4
+"Jugo de limón, exprimido",B034,4
+"Jugo de naranja, exprimido",B035,4
+"Jugo de papaya, natural",B116,4
+"Jugo de pomelo, exprimido",B036,4
+Café con leche en cápsula*,B117,4
+Café en saquitos (ingresar cantidad de saquitos)*,B073,1
+Café instantáneo (polvo o granulado con leche y azúcar para preparar)*,B060,4
+Café instantáneo descafeinado (polvo o granulado para preparar)*,B056,4
+Café instantáneo (polvo o granulado para preparar)*,B057,4
+Café molido en cápsula*,B059,4
+Café preparado a partir de grano molido (tipo café de filtro),B058,1
+Capucchino instantáneo (polvo o granulado para preparar)*,B063,4
+Capucchino instantáneo (polvo o granulado para preparar light)*,B062,4
+Capucchino preparado,B061,4
+"Infusión de hierbas en hebras tipo Boldo, Manzanilla, otros (ingresar cantidad en",B127,1
+"Infusión de hierbas en saquitos tipo Boldo, Manzanilla, otros (ingresar cantidad de",B068,1
+Mate cocido en saquitos (ingresar cantidad de saquitos)*,B065,1
+Malta instantánea polvo*,B130,4
+Té blanco en hebras (ingresar cantidad en gramos)*,B076,1
+Té blanco en saquitos (ingresar cantidad de saquitos)*,B075,1
+Té negro en hebras (ingresar cantidad en gramos)*,B071,1
+Té negro en saquitos (ingresar cantidad de saquitos)*,B066,1
+"Té saborizado en saquitos, varios sabores (ingresar cantidad de saquitos)*",B077,4
+Té concentrado de hierbas Herbalife,B132,4
+Té verde en saquitos (ingresar cantidad de saquitos)*,B067,1
+Yerba mate para mate cebado (ingresar cantidad en gramos)*,B064,1
+Yerba mate para mate cocido (ingresar cantidad en gramos)*,B070,1
+Yerba mate para tereré (ingresar cantidad en gramos)*,B074,4
+"McDonald's, BigMc (ingresar cantidad de porciones)",R053,4
+"McDonald's, Cajita Feliz, Hamburguesa con queso Grill (ingresar cantidad de",R046,4
+"McDonald's, Cajita Feliz, Hamburguesa Grill (ingresar cantidad de porciones)",R045,4
+"s, Cajita Feliz, Mc Tostado (ingresar cantidad de porciones)",R043,4
+"s, Cajita Feliz, Mc Nuggets X4 (ingresar cantidad de porciones)",R040,4
+"s, Cajita Feliz, Papas Kids (ingresar cantidad de porciones)",R041,4
+"s, Cajita Feliz, Papas pequeñas (ingresar cantidad de porciones)",R042,4
+"s, Cajita Feliz, Tomate cherry 50g (ingresar cantidad de porciones)",R044,4
+"s, Club House (ingresar cantidad de porciones)",R054,4
+"s, Clubhouse/Guacamole/Cryspi Onion BBQ con pollo crispy (ingresar",R058,4
+"s, Clubhouse/Guacamole/Cryspi Onion BBQ con pollo grill (ingresar",R059,4
+"s, Cono (ingresar cantidad de porciones)",R064,4
+"s, Cuarto de Libra (ingresar cantidad de porciones)",R052,4
+"s, Doble Cuarto de Libra con queso (ingresar cantidad de porciones)",R049,3
+"s, Hamburguesa (ingresar cantidad de porciones)",R047,4
+"s, Hamburguesa con queso (ingresar cantidad de porciones)",R048,3
+"s, Mcnífica (ingresar cantidad de porciones)",R050,4
+"s, McNuggets x 10 (ingresar cantidad de porciones)",R056,4
+"s, McPollo Grill (ingresar cantidad de porciones)",R057,4
+"s, Papas grandes (ingresar cantidad de porciones)",R063,4
+"s, Papas medianas (ingresar cantidad de porciones)",R062,4
+"s, Papas pequeñas (ingresar cantidad de porciones)",R061,4
+"s, Pollo Jr. (ingresar cantidad de porciones)",R060,4
+"s, Sundae chocolate (ingresar cantidad de porciones)",R065,4
+"s, Sundae dulce de leche (ingresar cantidad de porciones)",R066,4
+"s, Mc Flurry Oreo (ingresar cantidad de porciones)",R068,4
+"s, Sundae frutilla (ingresar cantidad de porciones)",R067,4
+"s, Triple Mac (ingresar cantidad de porciones)",R051,4

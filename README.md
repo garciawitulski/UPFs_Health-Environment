@@ -1,14 +1,15 @@
 # UPFs_Health-Environment
 
-R-only repository for the UPF health and environment analysis pipeline.
+R repository for the UPF health and environment paper workflow.
 
 ## Scope
 
-This repository now contains only:
-- `R/` scripts used in the paper workflow
-- project documentation (`README.md` and `R/README.md`)
+This repository contains:
+- R scripts to run paper results
+- pre-classified UPF and pre-mapped environmental input tables
+- the minimum input datasets required by the R pipeline
 
-Python code and datasets were intentionally removed from version control.
+The mapping/classification builder scripts were intentionally removed.
 
 ## Requirements
 
@@ -27,7 +28,9 @@ From the project root:
 source("R/run_all.R")
 ```
 
-## Data inputs
+## Included data
 
-The R scripts expect external input data (for example ENNyS, DEIS, EPH, and environmental coefficients) available in local folders such as `ENNyS/` and `data/`.
-These datasets are not versioned in this repository.
+- ENNyS inputs used by the analysis (`Base_Alimentos_Bebidas_Suplementos.csv`, `Base_Nutrientes.csv`, `ENNyS2_encuesta.csv`, `composicion_quimica.csv`)
+- pre-classified UPF tables (`ENNyS/alimentos_clasificados_NOVA.csv`, `ENNyS/alimentos_clasificados_sin_suplementos.csv`)
+- health inputs (`data/defunciones_2019.csv`, `data/poblacion_argentina_2018_ennys.csv`, `data/EPH/ingresos_por_estrato.csv`)
+- pre-mapped and pre-built environmental tables under `data/environmental_footprints/`

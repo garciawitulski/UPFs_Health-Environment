@@ -1,0 +1,52 @@
+env_group,ghg_kg_co2eq_per_kg,land_m2_per_kg,water_l_per_kg,eutro_g_po4eq_per_kg,coefficient_factor_fw_rw_pct,source,status,notes
+Beef,40.93,251.63,130.77,42.53,72.0,Arrieta2022_TableS4,current,Farm-gate; FW/RW=72%. Argentina-specific LCA (Arrieta et al. 2020)
+Poultry,0.99,6.87,75.0,16.34,75.0,Arrieta2022_TableS4,current,Farm-gate; Argentina-specific (Arrieta & González 2019a)
+Pork,2.24,9.86,238.67,16.33,68.0,Arrieta2022_TableS4,current,Farm-gate; Argentina-specific (Arrieta & González 2019a)
+Lamb and mutton,35.8,127.8,189.57,352.87,71.0,Arrieta2022_TableS4,current,Farm-gate; proxy from global data
+Other meats,35.8,127.8,189.57,352.87,71.0,Arrieta2022_TableS4,current,Same as lamb; conservative proxy
+Fish and seafood,1.83,0.01,0.0,2.45,51.0,Arrieta2022_TableS4,current,Likely wild-catch dominated for Argentina
+Dairy products,1.14,2.98,25.0,11.98,105.0,Arrieta2022_TableS4,current,Farm-gate; FW/RW>100 (whey/water added). Argentina-specific
+Eggs,1.32,6.2,57.0,12.07,100.0,Arrieta2022_TableS4,current,Farm-gate; Argentina-specific
+Cereals (without rice),0.82,4.6,435.0,3.9,65.0,Arrieta2022_TableS4,current,Farm-gate; wheat-dominated for Argentina
+Rice,1.68,1.8,448.0,10.0,49.0,Arrieta2022_TableS4,current,Farm-gate
+Baked products,0.71,5.45,11.0,4.62,119.27,Arrieta2022_TableS4,current,FW/RW>100: product gains water during baking
+Pasta,0.71,5.45,11.0,4.62,59.21,Arrieta2022_TableS4,current,"Same coefficients as baked products, different FW/RW"
+Legumes and pulses,0.22,4.3,33.0,2.5,78.0,Arrieta2022_TableS4,current,Farm-gate
+Nuts and seeds,2.01,0.33,852.0,3.62,50.0,Arrieta2022_TableS4,current,Farm-gate; peanut-dominated for Argentina
+Fruits,0.18,0.4,239.0,10.0,51.0,Arrieta2022_TableS4,current,Farm-gate; mixed fruit average
+Vegetables (outdoor),0.34,0.48,140.0,0.61,51.0,Arrieta2022_TableS4,current,Farm-gate
+Starchy vegetables,0.13,0.33,51.0,1.2,63.0,Arrieta2022_TableS4,current,Farm-gate; potato-dominated
+Oil crops,1.72,10.7,11.0,18.36,29.0,Arrieta2022_TableS4,current,Farm-gate; soy-dominated for Argentina
+Sugars_OWID,2.505,1.935,418.9,11.165,,OWID_Poore2018,current,Average cane+beet sugar. Retail-level; ratio=1
+Wine_OWID,1.79,1.78,78.9,4.57,,OWID_Poore2018,current,Per kg wine (≈per L). Retail-level
+Chocolate_OWID,46.65,68.96,540.6,87.08,,OWID_Poore2018,current,Dark chocolate. CAUTION: apply mass fraction for UPF items
+Coffee_OWID,28.53,21.62,25.9,110.52,,OWID_Poore2018,current,Per kg roasted coffee. CAUTION: check if ENNyS codes = brewed or dry
+Beer,1.27,0.87,82.2,2.78,,Poore2018_retail,new_proposed,Per kg (≈per L). Covers cerveza industrial and craft
+Soft_drinks_carbonated,0.41,0.16,17.5,0.82,,Agribalyse3.1_proxy,new_proposed,Gaseosas. Based on Agribalyse 'cola-type soda'. Low impact per kg (mostly water+sugar)
+Fruit_juice_industrial,0.84,0.52,139.0,4.2,,Agribalyse3.1_proxy,new_proposed,Jugos industriales. Agribalyse 'fruit juice from concentrate'
+Flavoured_water_drink,0.3,0.12,12.0,0.55,,Agribalyse3.1_proxy,new_proposed,Aguas saborizadas. Proxy: diluted soft drink (~70% water)
+Tea_infusions,0.52,0.28,15.2,1.85,,Poore2018_proxy,new_proposed,Per L prepared tea. Very low impact per kg beverage (high dilution)
+Mate_yerba,1.2,2.1,45.0,3.5,,Estimated_Argentina,new_proposed,"Per kg dry yerba. For prepared mate, divide by ~15-20 (dilution factor)"
+Spirits_distilled,2.8,1.2,82.0,5.1,,Agribalyse3.1_proxy,new_proposed,Per L spirit. Low-volume item in diet
+Tomato_sauce_industrial,1.85,0.75,280.0,6.5,,Agribalyse3.1_proxy,new_proposed,Salsa de tomate envasada. Agribalyse 'tomato sauce'
+Mayonnaise,2.95,4.8,120.0,12.5,,Agribalyse3.1_proxy,new_proposed,Agribalyse 'mayonnaise'. Oil-dominated
+Ketchup,1.52,0.65,185.0,5.8,,Agribalyse3.1_proxy,new_proposed,Agribalyse 'ketchup'
+Bouillon_cube_powder,3.1,2.5,45.0,8.5,,Agribalyse3.1_proxy,new_proposed,Caldos en cubo/polvo. Based on Agribalyse 'bouillon cube'. Mixed fat+salt+starch
+Instant_soup_powder,2.4,1.8,55.0,6.8,,Agribalyse3.1_proxy,new_proposed,Sopas instantáneas. Starch+fat+flavor base
+Breakfast_cereal,1.48,4.12,390.0,5.2,,Poore2018_proxy,new_proposed,Cereales de desayuno. Based on wheat+sugar processing
+Biscuits_cookies,1.65,4.8,120.0,5.8,,Agribalyse3.1_proxy,new_proposed,Galletitas dulces y saladas. Wheat+fat+sugar composite
+Snack_chips,2.8,5.5,95.0,7.2,,Agribalyse3.1_proxy,new_proposed,"Snacks fritos (papas fritas de bolsa, etc.)"
+Ice_cream,2.45,5.8,280.0,14.2,,Agribalyse3.1_proxy,new_proposed,Helados. Dairy+sugar composite
+Processed_meat_sausage,5.85,10.2,450.0,25.5,,Poore2018_proxy,new_proposed,"Fiambres, embutidos, salchichas. Meat-based UPF, pork/beef blend"
+Margarine,3.2,8.5,35.0,15.8,,Agribalyse3.1_proxy,new_proposed,Margarina. Vegetable oil based
+Sweetened_dairy_dessert,1.85,5.2,200.0,12.8,,Agribalyse3.1_proxy,new_proposed,"Postres lácteos, yogures saborizados"
+Bread_industrial,0.95,4.8,55.0,4.2,,Agribalyse3.1_proxy,new_proposed,Pan industrial de molde
+Confectionery_candy,2.1,2.5,180.0,7.5,,Agribalyse3.1_proxy,new_proposed,"Golosinas, caramelos (sugar-based)"
+Peanuts_coated,3.5,9.5,1650.0,14.8,,Poore2018_proxy,new_proposed,Maní japonés/recubierto. Groundnut+coating
+Fast_food_burger,10.5,28.0,550.0,42.0,,Composite_estimate,new_proposed,"BigMac proxy: ~45% beef, 30% bread, 15% veg, 10% condiments"
+Fast_food_nuggets,5.2,8.5,380.0,28.0,,Composite_estimate,new_proposed,"McNuggets proxy: ~60% poultry, 25% batter, 15% oil"
+Fast_food_sundae,2.8,6.5,320.0,15.5,,Composite_estimate,new_proposed,"Sundae proxy: ~70% ice cream, 30% sauce"
+Vinegar_balsamic,1.25,1.5,65.0,3.8,,Agribalyse3.1_proxy,new_proposed,Aceto balsámico. Grape-derived
+Diet_salt,0.05,0.02,0.5,0.1,,Minimal_impact,new_proposed,Sal dietética. Negligible environmental impact per kg consumed
+Powdered_flavoring,2.0,2.0,40.0,6.0,,Agribalyse3.1_proxy,new_proposed,Saborizadores en polvo. Mixed starch+salt+flavor
+Powdered_sauce_mix,1.8,2.2,50.0,5.5,,Agribalyse3.1_proxy,new_proposed,Salsa en polvo para guiso

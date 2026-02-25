@@ -23,9 +23,7 @@ install.packages(c("readr", "dplyr", "tidyr"))
 | `06_yll.R` | Years of Life Lost (YLL) | `output/resultados_paper_argentina.csv`, `output/resultados_por_causa.csv` | `output/yll_*.csv` |
 | `07_esperanza_vida.R` | Cause-eliminated life table and life expectancy effects | deaths + population + main results | `output/esperanza_vida_perdida_UPF.csv` |
 | `08_costos_indirectos.R` | Indirect costs (human capital/PVLE, EPH 2019) | main results + `data/EPH/ingresos_por_estrato.csv` | `output/costos_indirectos_por_estrato.csv`, `output/resumen_costos_indirectos.csv` |
-| `09_build_env_mapping.R` | Maps ENNyS food codes to environmental groups | NOVA table + environmental coefficients | mapping CSVs + coverage summaries |
-| `10_impacto_ambiental.R` | Environmental footprint baseline and UPF replacement/reduction scenarios | ENNyS diet + mapping + coefficients | `output/env_impact_*.csv` |
-| `11_build_extended_coeffs_and_upf_coverage.R` | Builds extended environmental coefficients and UPF coverage diagnostics | OWID + Agribalyse + ENNyS | extended coefficient and coverage outputs |
+| `10_impacto_ambiental.R` | Environmental footprint baseline and UPF replacement/reduction scenarios | ENNyS diet + pre-mapped/pre-built coefficients | `output/env_impact_*.csv` |
 | `12_impacto_ambiental_upf_extended.R` | Environmental scenarios using extended coefficients | extended mapping/coefs + ENNyS | extended scenario outputs |
 | `13_merge_health_env_summaries.R` | Merges health and environmental scenario summaries | health and environmental summary tables | merged summaries |
 | `14_figuras_demo_resultados.R` | Generates exploratory figures | output tables | demo figures |
@@ -49,5 +47,5 @@ source("R/02_agregar_defunciones_causa.R")
 
 ## Data dependencies
 
-The scripts require local external data under folders such as `ENNyS/` and `data/` (for example DEIS, EPH, population and environmental footprint inputs).  
-Those datasets are not versioned in this repository.
+The scripts use inputs under `ENNyS/` and `data/` (DEIS, EPH, population, ENNyS diet, and environmental footprint inputs).
+This repository includes pre-classified UPF tables and pre-mapped/pre-built environmental tables, so mapping/classification builder scripts are not included.

@@ -1,0 +1,733 @@
+﻿codigo,descripcion,kcal_100g
+V001,"Acelga, cruda",18.0
+V073,"Acelga, pencas, crudas",8.0
+V002,"Achicoria, cruda",12.0
+V081,Ají en conserva,20.0
+V004,"Ají verde o amarillo / morrón verde o amarillo, crudo",17.0
+V065,"Ajo, crudo",91.0
+V071,"Albahaca, cruda",23.0
+V069,"Alcaparras, encurtido",24.0
+V005,"Alcaucil, crudo",41.0
+V006,"Apio, crudo",10.0
+V008,"Arveja, enlatada",104.0
+V007,"Arveja, fresca, cruda",83.0
+V010,"Berenjena, cruda",16.0
+V011,"Berro, crudo",18.0
+V012,"Brócoli, crudo",27.0
+V013,"Brotes de soja, crudo",30.0
+V014,"Cebolla de verdeo, cruda",28.0
+V052,"Cebolla de verdeo, cruda",28.0
+V074,"Champignones, enlatados",21.0
+V076,"Champignones, frescos, crudos",24.0
+V016,"Chaucha, fresca, cruda",29.0
+V078,"Chuchu o chayote, crudo",16.0
+V015,"Coliflor, crudo",23.0
+V020,"Escarola, cruda",12.0
+V021,"Espárrago, crudo",18.0
+V022,"Espinaca, cruda",21.0
+V023,"Habas, cruda",95.0
+V054,"Hakusai o col china, crudo",13.0
+V024,"Hinojo, crudo",24.0
+V026,"Hongos, enlatados",21.0
+V025,"Hongos, frescos, crudos",24.0
+V080,"Hongos, secos",303.0
+V056,"Jardinera, enlatada",67.0
+V066,Jengibre,77.0
+V057,"Kale, crudo",26.0
+V027,"Lechuga, cruda",12.0
+V028,"Mandioca, cruda",153.0
+V029,"Palmitos, enlatados",25.0
+V031,"Pepino, crudo",12.0
+V067,"Perejil, crudo",47.0
+V070,"Pickles, en vinagre",7.0
+V064,"Prefritos congelados, patitas de vegetales (espinaca)",225.0
+V032,"Puerro, crudo",38.0
+V033,"Rabanito, crudo",23.0
+V034,"Radicheta, cruda",14.0
+V035,"Remolacha, cruda",44.0
+V036,"Repollito de Bruselas, crudos",43.0
+V037,"Repollo, crudo",19.0
+V058,"Rúcula, cruda",24.0
+V038,"Tomate, crudo",17.0
+V068,"Tomate, desecado",257.0
+V039,"Tomate, enlatado",12.0
+V060,"Tomate, puré de tomate",37.0
+V059,"McDonald's, Cajita Feliz, Tomate cherry 50g",23.0
+V079,"Verdolaga, cruda",19.0
+V040,"Zanahoria, cruda",43.0
+V041,"Zapallito, crudo",15.0
+V042,"Zapallo, crudo",36.0
+V061,"Zucchini, crudo",16.0
+F050,Aceituna negra,119.0
+F001,Aceituna verde,130.0
+F044,Acerola,31.0
+F003,Ananá,50.0
+F004,"Ananá, enlatado (fruta y almíbar)",84.0
+F071,Ananá,50.0
+F060,Arándanos,54.0
+F006,Banana,92.0
+F067,Banana,92.0
+F007,Cereza,65.0
+F009,Ciruela pasa / ciruela seca,236.0
+F008,Ciruela,51.0
+F051,Coco rallado,504.0
+F052,"Coctail de frutas, enlatado (fruta y almíbar)",74.0
+F010,Damasco,41.0
+F061,Dátiles,282.0
+F013,"Durazno, enlatado light (fruta y almíbar)",43.0
+F012,"Durazno, enlatado (fruta y almíbar)",70.0
+F011,Durazno,45.0
+F014,Durazno orejón,234.0
+F064,Frambuesa,32.0
+F065,Frutas abrillantadas,327.0
+F015,Frutilla,31.0
+F016,Granada,63.0
+F017,Guayaba,47.0
+F054,Higo desecado,238.0
+F018,Higo,74.0
+F019,Kaki,67.0
+F020,Kinoto,47.0
+F021,Kiwi,56.0
+F022,Limón,35.0
+F059,Limón,35.0
+F023,Mamón,38.0
+F024,Mandarina,52.0
+F025,Mango,60.0
+F027,Manzana con piel,48.0
+F028,Manzana sin piel,59.0
+F070,Maracuyá,67.0
+F029,Melón,37.0
+F030,Membrillo,56.0
+F055,Mora,27.0
+F031,Naranja,43.0
+F062,Naranja,43.0
+F032,Níspero,38.0
+F034,Palta,190.0
+F063,Papaya,38.0
+F036,Pera,55.0
+F037,"Pera, enlatada (fruta y almíbar)",72.0
+F039,Pera orejón,262.0
+F041,Pomelo,22.0
+F057,Puré de frutas envasado (alimento infantil),39.0
+F042,Sandía,32.0
+F058,Aceituna negra,119.0
+F043,Uva,73.0
+F035,Uva pasa,315.0
+A001,"Almidón de maíz, crudo",363.0
+A193,"Almidón de mandioca, crudo",363.0
+A002,"Amaranto, crudo",366.0
+A101,Anchi,116.0
+A003,"Arroz blanco, crudo",339.0
+A191,Arroz inflado azucarado,382.0
+A004,"Arroz integral, crudo",350.0
+A102,"Arroz yamaní, crudo",345.0
+A103,"Arroz envasado deshidratado listo para preparar con salsa u otros ingredientes (tipo cuatro quesos, primavera, etc.)",355.0
+A005,"Avena, arrollada, cruda",357.0
+A104,"Avena, almohaditas",366.0
+A105,Barra crocante de arroz,399.0
+A106,Barra de cereal fortificada,426.0
+A107,Barra de cereal light,323.0
+A008,"Barra de cereales, PROMEDIO",370.0
+A073,"Batata, cruda",73.0
+A108,Bizcochitos de grasa envasados,499.0
+A109,Bizcochitos de grasa envasados light,444.0
+A110,Bizcochitos de arroz envasados (tipo galletita),397.0
+A009,"Bizcochos de grasa (panadería) / Criollitos, Libritos (pan con grasa)",392.0
+A010,Bizcochos tipo Bay Biscuit,396.0
+A111,Bizcochuelo preparado a partir de polvo premezcla,294.0
+A112,"Bizcochuelo preparado a partir de polvo premezcla, SIN TACC",266.0
+A113,Bollitos de anís,330.0
+A236,Brownie (panadería),519.0
+A114,Budín industrializado,379.0
+A234,"Budín industrializado con nueces, tipo navideño",417.0
+A011,"Capelettis frescos, artesanal, cru- do",295.0
+A074,"Cereal desayuno, aritos frutales",385.0
+A182,"Cereal desayuno, aritos sabor miel",369.0
+A116,Cereal infantil para papilla,365.0
+A013,Chipá,371.0
+A120,Chipá preparado a partir de polvo premezcla,316.0
+A216,"Chipaco o pan con chicharrón, comprado",340.0
+A076,"Choclo, crudo",97.0
+A078,"Choclo, enlatado cremoso",80.0
+A077,"Choclo, enlatado en grano",67.0
+A014,Churros,354.0
+A204,Coquitos (panadería),440.0
+A118,"Cous Cous, cocido",104.0
+A119,Cucurucho / cubanito,399.0
+A250,Empanaditas chinas (restaurant),270.0
+A015,Facturas rellenas,339.0
+A016,Facturas simples,395.0
+A207,"Fideos de arroz, SIN TACC, crudos",168.0
+A017,"Fideos frescos, al huevo, crudos",285.0
+A018,"Fideos secos integrales / fideos secos de sémola y harina de le- gumbres, crudos",346.0
+A121,"Fideos secos, fortificados, crudos",352.0
+A201,Frangollo (maíz seco pisado),341.0
+A064,Galleta de campo,289.0
+A206,Galleta de grasa con chicharrón,392.0
+A065,Galleta marinera,350.0
+A188,Galleta marinera con semillas / galletitas crackers con semillas,422.0
+A253,Galleta marinera integral,371.0
+A203,"Galleta marinera, light en grasas",370.0
+A019,Galletas de arroz,380.0
+A185,Galletas de arroz,380.0
+A123,Galletas de arroz sin sal,367.0
+A067,Galletitas integrales sin sal,411.0
+A186,Galletitas dulces con centro de membrillo o similar (tipo Pepas),473.0
+A181,Galletitas dulces con chips de chocolate,480.0
+A220,Galletitas dulces hojaldradas,414.0
+A023,Galletitas dulces rellenas,473.0
+A211,Galletitas dulces rellenas bañadas en chocolate,520.0
+A024,Galletitas dulces simples,450.0
+A124,"Galletitas dulces, SIN TACC",458.0
+A177,Galletitas dulces de almidón de maíz (tapita de alfajor),450.0
+A125,Galletitas dulces tipo Frutigran,423.0
+A068,Galletitas dulces obleas,480.0
+A020,"Galletitas de agua, PROMEDIO",438.0
+A066,Galletitas de agua sin sal,438.0
+A258,Galletitas de agua sin sal con chía y lino,435.0
+A127,Galletitas de agua con girasol alto oleico,438.0
+A021,Grasa vacuna,899.0
+A247,Galletitas de agua light,438.0
+A022,Galletitas de salvado o integrales,411.0
+A126,Galletitas tipo copetín,500.0
+A198,Galletitas tipo talitas o fajitas,438.0
+A025,"Garbanzos, crudos",339.0
+A128,"Garbanzos, enlatados",117.0
+A129,Gérmen de trigo,334.0
+A026,Granola,453.0
+A069,Grisines,380.0
+A130,Grisines sin sal,380.0
+A175,Hamburguesa de soja congelada,157.0
+A027,Harina de algarrobo,221.0
+A028,"Harina de arroz, cruda",348.0
+A029,"Harina de cebada, cruda",328.0
+A030,"Harina de centeno, cruda",333.0
+A212,Harina de chía,374.0
+A131,"Harina de garbanzos, cruda",338.0
+A031,"Harina de maíz, cruda",307.0
+A070,"Harina de quinoa, cruda",304.0
+A032,"Harina de soja, cruda",338.0
+A033,"Harina de trigo con levadura para pizza, cruda",360.0
+A202,"Harina de trigo con levadura para pizza, cruda",360.0
+A132,"Harina de trigo fortificada, cruda",329.0
+A034,"Harina de trigo integral, cruda",308.0
+A133,"Harina leudante, cruda",329.0
+A035,"Lentejas, crudas",301.0
+A134,"Lentejas, enlatadas",86.0
+A178,Levadura en polvo,288.0
+A179,Levadura fresca,91.0
+A135,Madalenas,368.0
+A187,Madalenas rellenas,371.0
+A136,Madalenas fortificadas,364.0
+A036,"Maíz, grano entero, crudo",317.0
+A197,"Masa de pizza, preparada a partir de polvo premezcla",248.0
+A138,"Masa de pizza, preparada a partir de polvo premezcla, SIN TACC",248.0
+A038,Masa de prepizza de panadería o envasada,241.0
+A037,Masa de tarta o empanadas,337.0
+A139,Masa de tarta o empanadas light,268.0
+A218,"Masa de tarta, SIN TACC",283.0
+A242,Masas finas surtidas (panadería / confitería),431.0
+A140,"Ñoquis de papa, envasados, cru- dos",159.0
+A171,Ñoquis preparados a partir de polvo premezcla,139.0
+A172,"Ñoquis preparados a partir de polvo premezcla, SIN TACC",151.0
+A241,Panko (pan rallado japonés),314.0
+A071,Pan árabe,261.0
+A215,"Pan cacho (tipo pan casero de campo, sin grasa)",268.0
+A240,"Pan con grasa (tipo pan ""cordero"")",329.0
+A072,Pan criollo / semita / tortillas / bollos / harinitas,268.0
+A040,Pan de Centeno,234.0
+A042,Pan de gluten,231.0
+A043,Pan de maíz,265.0
+A044,Pan de miga,241.0
+A048,Pan de molde con salvado,225.0
+A045,Pan de salvado,263.0
+A184,Pan de salvado con semillas,258.0
+A141,Pan de molde con salvado sin sal,263.0
+A246,Pan de salvado,263.0
+A046,Pan de viena,298.0
+A142,Pan dulce,358.0
+A041,Pan francés o pan casero sin agregado de grasa o aceite,268.0
+A245,Pan francés sin sal,268.0
+A047,"Pan blanco, tipo molde, lacteado",244.0
+A237,"Pan lactal, SIN TACC",230.0
+A049,Pan negro sin levadura,228.0
+A050,Pan rallado,371.0
+A226,"Pan rallado, SIN TACC",335.0
+A144,"Pan rallado, fortificado",371.0
+A169,Pan figacita de manteca,278.0
+A079,Papaya,38.0
+A152,"Papa, puré instantáneo (polvo)",335.0
+A249,Pastelitos rellenos de dulce de membrillo o batata (panadería / confitería),404.0
+A147,Patay,221.0
+A148,Pionono,294.0
+A149,Pochoclo acaramelado,426.0
+A150,Pochoclo salado,478.0
+A190,Polvo de hornear,96.0
+A189,Polvo para preparar brownie,415.0
+A051,"Porotos, crudos",276.0
+A052,"Soja, porotos, crudos",413.0
+A151,"Porotos, enlatados",80.0
+A165,"Milanesa de arroz, prefrita",240.0
+A164,"Milanesa de soja, prefrita",256.0
+A256,"Premezcla para bizcochuelo, SIN TACC",377.0
+A154,Puflito,371.0
+A155,Quinoa inflada,407.0
+A053,"Quinoa, semilla, cruda",330.0
+A054,"Ravioles frescos, artesanal, crudos",295.0
+A156,"Ravioles frescos, envasados, cru- dos",272.0
+A243,Rosquete,342.0
+A210,Rosquita tipo Doughtnut,363.0
+A227,Rosquita tipo Doughtnut,363.0
+A219,Rosquita tipo Doughtnut,363.0
+A209,Rosquito de vino (cuyano),465.0
+A055,Salvado de avena,336.0
+A056,"Cereal desayuno, salvado de trigo tipo bastoncitos",259.0
+A057,"Cereal desayuno, salvado de trigo tipo bastoncitos",259.0
+A058,"Fideos secos integrales / fideos secos de sémola y harina de le- gumbres, crudos",346.0
+A195,"Sémola fortificada, cruda",336.0
+A170,Soja texturizada,283.0
+A183,"Sushi, PROMEDIO",87.0
+A222,"Tapas para lasagna, pasta seca",352.0
+A059,"Tapioca (almidón de mandioca), crudo",352.0
+A168,Tofu,149.0
+A238,Torta de coco (panadería),507.0
+A251,Torta de manzana (panadería),317.0
+A235,Torta de ricotta (panadería),363.0
+A062,Torta frita,426.0
+A228,Torta mil hojas,407.0
+A208,"Tortillas de trigo, envasadas",288.0
+A158,Tortitas Jachaleras,484.0
+A159,Tostadas de gluten,335.0
+A160,Tostadas de mesa,388.0
+A161,Tostadas integrales,386.0
+A162,Tostadas light,361.0
+A163,Tostadas sin sal,388.0
+A221,"Tostaditas saladas, saborizadas, producto tipo copetín",474.0
+A239,"Trigo burgol, crudo",315.0
+A060,"Trigo, grano entero, crudo",294.0
+A230,Trigo inflado azucarado,379.0
+A174,Turrón tipo navideño,485.0
+A166,Tutuca,341.0
+L065,"Alimento a base de leche entera y café, fortificado con calcio, varios sabores, listo para consumir",48.0
+L001,"Leche parcialmente descremada, sabor chocolate o dulce de leche, fortificada con vitaminas A y D, lista para consumir",67.0
+L034,Leche condensada,328.0
+L002,"Leche de cabra, entera, fluida",84.0
+L070,"Leche de cabra, entera, en polvo",526.0
+L003,"Leche de oveja, entera, fluida",99.0
+L069,"Leche descremada en polvo, tipo Nido Buen Día, fortificada con hierro y calcio",495.0
+L060,"Leche descremada fluida, con 50% más de proteínas",43.0
+L045,"Leche en polvo, 25% menos de grasas saturadas, fortificada con vitaminas A, D, C, calcio y zinc",501.0
+L041,"Leche semidescremada en polvo, deslactosada",496.0
+L039,"Leche entera fluida, con azúcar, lista para consumir",76.0
+L055,Leche entera en polvo tipo Nido Fortigrow,496.0
+L007,"Leche entera fluida, con vitaminas A y D",58.0
+L054,"Leche entera fluida, fortificada con vitaminas A, D, C, B9 y extra calcio",57.0
+L059,"Leche fórmula, tipo Enfabebe Confort, en polvo",515.0
+L056,"Leche fórmula, tipo GA1 Anamix Infant, en polvo",459.0
+L058,"Leche fórmula, tipo Nutrilon Pepti junior HE, en polvo",511.0
+L062,"Leche fórmula 0-12 meses, sin lactosa, en polvo",504.0
+L035,"Leche fórmula etapa 3, en polvo",460.0
+L036,"Leche fórmula etapa 3, fluida",67.0
+L037,"Leche fórmula etapa 4, en polvo",436.0
+L038,"Leche fórmula etapa 4, fluida",61.0
+L022,"Leche fórmula inicio, en polvo",472.0
+L024,"Leche fórmula inicio, fluida",66.0
+L049,"Leche fórmula para prematuros etapa 1, en polvo",503.0
+L050,"Leche fórmula para prematuros etapa 1, fluida",79.0
+L051,"Leche fórmula para prematuros etapa 2, en polvo",503.0
+L052,"Leche fórmula para prematuros etapa 2, fluida",79.0
+L023,"Leche fórmula seguimiento, en polvo",449.0
+L025,"Leche fórmula seguimiento, fluida",66.0
+L064,"Leche seguimiento etapa 3, sabor vainilla",68.0
+L040,Leche materna,70.0
+L030,"Leche parcialmente descremada fluida, fortificada con vitaminas A, D, C y ác. fólico",44.0
+L005,"Leche parcialmente descremada fluida, fortificada con vitaminas A y D",44.0
+L012,"Leche parcialmente descremada fluida, deslactosada, fortificada con vitaminas A y D",44.0
+L068,"Bebida láctea parcialmente des- cremada fluida, baja en lactosa, fortificada con vitaminas A, D, B2, B9 y Zinc",44.0
+L017,Probióticos descremados,39.0
+L018,Probióticos enteros,84.0
+L013,Postre de leche bebible infantil,59.0
+Y014,Yogur con fitoesteroles,46.0
+Y003,Yogur descremado,36.0
+Y005,Yogur descremado bebible,36.0
+Y012,Yogur descremado con cereales,69.0
+Y013,Yogur descremado con frutas,56.0
+Y017,Yogur descremado con frutas,56.0
+Y004,Yogur entero bebible saborizado,76.0
+Y010,Yogur entero con cereales,123.0
+Y011,Yogur entero con frutas,96.0
+Y018,Yogur entero con frutas y cereales,133.0
+Y001,Yogur entero natural,62.0
+Y002,Yogur entero saborizado,87.0
+Y015,Yogur descremado,36.0
+Y016,Yogur fortificado con hierro,87.0
+Q033,Queso Reggianito,381.0
+Q022,Queso Azul,368.0
+Q003,"Queso blanco descremado, untable",82.0
+Q002,"Queso blanco semidescremado, untable",128.0
+Q042,Queso Cheddar,410.0
+Q023,Queso Chubut,337.0
+Q001,"Queso crema entero, untable",245.0
+Q050,Queso Cremoso,310.0
+Q017,Queso Cuartirolo,280.0
+Q045,Queso de cabra,355.0
+Q021,Queso de máquina,356.0
+Q034,Queso en hebras,381.0
+Q035,Queso en hebras light,277.0
+Q024,Queso Fontina,389.0
+Q051,Queso Fontina fundido light,198.0
+Q047,Queso fresco sin sal,224.0
+Q005,Queso fundido,303.0
+Q025,Queso Gruyére,407.0
+Q026,Queso Holanda,356.0
+Q027,Queso Mar del Plata,332.0
+Q044,Queso Mascarpone,357.0
+Q019,Queso Muzzarella,278.0
+Q037,Queso Parmesano,350.0
+Q015,Queso pasta blanda descremado,207.0
+Q016,Queso pasta blanda doble crema,357.0
+Q007,Queso de máquina,356.0
+Q046,Queso porsalut sin sal light,225.0
+Q038,Queso Provolone,350.0
+Q032,Queso rallado envasado,420.0
+Q039,Queso Reggianito,381.0
+Q029,Queso Roquefort,370.0
+Q040,Queso Sardo,384.0
+Q041,Queso Sbrinz,350.0
+Q000,"Queso untable, PROMEDIO",208.0
+Q013,Queso untable tipo Finlandia,284.0
+Q014,Queso untable tipo Finlandia light,195.0
+Q011,Queso untable tipo Tholem,284.0
+Q012,Queso untable tipo Tholem light,128.0
+Q004,Ricota,169.0
+Q010,Ricota descremada,137.0
+C094,Bondiola (fiambre),264.0
+C123,Butifarra,296.0
+C001,"Leche de cabra, entera, en polvo",526.0
+C121,Cantimpalo (fiambre),372.0
+C074,"Vacuno, cortes semigrasos, (ej: lomo, carne picada especial, roast beef, paleta, bife angosto, tortuguita, palomita), PROMEDIO, horno/parrilla",225.0
+C050,"Carpincho, crudo",206.0
+C002,"Cerdo, PROMEDIO, crudo",206.0
+C007,"Chinchulines, tripa gorda, crudos",216.0
+C110,"Chivito, crudo",103.0
+C003,"Chorizo, crudo",296.0
+C095,Chorizo seco,425.0
+C008,"Conejo, crudo",130.0
+C107,"Corazón, vacuno, crudo",107.0
+C009,"Cordero, PROMEDIO, crudo",224.0
+C052,Cuerito de cerdo,514.0
+C051,Fiambre de cerdo,155.0
+C118,Hamburguesa de carne vacuna (carnicería),209.0
+C113,Hamburguesa de pollo (pollería / granja),208.0
+C011,"Hamburguesa de carne vacuna, industrializada",218.0
+C124,"Hamburguesa de carne vacuna, industrializada, rebozada",240.0
+C053,"Hamburguesa de carne vacuna, industrializada light",175.0
+C012,"Hígado, crudo",130.0
+C122,"Hígado de pollo, crudo",114.0
+C103,"Jabalí, crudo",116.0
+C004,Jamón cocido,107.0
+C005,Jamón crudo,319.0
+C054,Leberwurst,322.0
+C013,"Lengua, cruda",219.0
+C056,Lomito ahumado,115.0
+C085,"Vacuno, cortes semigrasos, (ej: lomo, carne picada especial, roast beef, paleta, bife angosto, tortuguita, palomita), PROMEDIO, horno/parrilla",225.0
+C055,Longaniza,425.0
+C057,Matambre (fiambre),176.0
+C014,"Mollejas, crudas",232.0
+C015,"Mondongo, crudo",81.0
+C016,Morcilla,374.0
+C017,Mortadela,306.0
+C070,Nuggets o patitas de pollo,262.0
+C108,"Osobuco, crudo",210.0
+C097,Paleta (fiambre),107.0
+C006,Panceta,389.0
+C058,Pastrón,141.0
+C018,Paté / picadillo,315.0
+C019,"Pato, crudo",130.0
+C020,"Pavo, crudo",108.0
+C021,"Pollo con piel, crudo",208.0
+C023,"Pollo sin piel, crudo",106.0
+C022,"Pollo, menudos, crudos",122.0
+C059,"Pollo, pechuga sin piel, crudo",114.0
+C117,Granada,63.0
+C025,"Riñón, crudo",99.0
+C086,"Vacuno, cortes semigrasos, (ej: lomo, carne picada especial, roast beef, paleta, bife angosto, tortuguita, palomita), PROMEDIO, horno/parrilla",225.0
+C026,Salame,372.0
+C027,Salchicha de viena,226.0
+C066,Salchicha de viena light,140.0
+C028,"Salchicha parrillera, cruda",296.0
+C067,Salchichón,243.0
+C029,"Sesos, crudos",140.0
+C090,"Vacuno, cortes semigrasos, (ej: lomo, carne picada especial, roast beef, paleta, bife angosto, tortuguita, palomita), PROMEDIO, horno/parrilla",225.0
+C030,"Ubre, cruda",230.0
+C035,"Vacuno, cortes semigrasos, (ej: lomo, carne picada especial, roast beef, paleta, bife angosto, tortuguita, palomita), PROMEDIO, horno/parrilla",225.0
+C060,"Vizcacha, cruda",160.0
+H001,"Huevo de gallina, entero, crudo",156.0
+H002,"Huevo de gallina, clara, cruda",51.0
+H003,"Huevo de gallina, yema, cruda",339.0
+H004,"Huevo de codorníz, entero, crudo",175.0
+P029,"Abadejo, crudo",72.0
+P042,"Almeja, cruda",82.0
+P010,"Anchoa, enlatada en aceite",203.0
+P008,"Atún, enlatado en aceite",190.0
+P007,"Atún, enlatado al natural",86.0
+P028,"Atún, lomito fresco, crudo",137.0
+P041,"Bocaditos de pescado, prefritos",248.0
+P021,"Brótola, cruda",83.0
+P012,"Caballa, enlatada",149.0
+P003,"Calamar, crudo",99.0
+P004,Camarón,91.0
+P031,"Cornalitos, crudos",86.0
+P023,"Corvina, cruda",97.0
+P035,"Dorado, crudo",99.0
+P024,"Gatuzo, crudo",72.0
+P039,Kani Kama,96.0
+P005,Langostino,96.0
+P022,"Lenguado, crudo",88.0
+P006,"Mejillón, crudo",83.0
+P020,"Merluza, cruda",80.0
+P045,Merluza,104.0
+P040,"Milanesa de pescado, prefrita",248.0
+P036,"Pacú, crudo",121.0
+P033,"Palometa, cruda",215.0
+P030,"Pejerrey, crudo",86.0
+P001,"Pescados de mar (ej: brótola, corvina blanca, gatuso, lenguado, merluza, etc.), PROMEDIO, crudo",80.0
+P002,Palometa,277.0
+P025,"Pollo de mar, crudo",100.0
+P038,"Pulpo, crudo",78.0
+P047,Rabas (restaurant),259.0
+P037,"Sábalo, crudo",148.0
+P026,"Salmón blanco, crudo",114.0
+P027,"Salmón rosado, crudo",122.0
+P044,"Sardinas, enlatadas al natural",170.0
+P013,"Sardinas, enlatadas en aceite",202.0
+P034,"Pescados de río (ej: dorado, pa- lometa, surubí, trucha, etc.), PRO- MEDIO, crudo",134.0
+P032,"Pescados de río (ej: dorado, pa- lometa, surubí, trucha, etc.), PRO- MEDIO, crudo",134.0
+Z003,Aceite comestible mezcla,900.0
+Z030,Aceite comestible mezcla,900.0
+Z005,Aceite de canola,900.0
+Z032,Aceite de canola,900.0
+Z023,Aceite de chía,892.0
+Z036,Aceite de chía,892.0
+Z022,Aceite de coco,900.0
+Z034,Aceite de coco,900.0
+Z001,Aceite de girasol,900.0
+Z020,Aceite de girasol alto oleico,900.0
+Z027,Aceite de girasol alto oleico,900.0
+Z026,Aceite de girasol,900.0
+Z002,Aceite de maíz,900.0
+Z028,Aceite de maíz,900.0
+Z021,Aceite mezcla con oliva,900.0
+Z029,Aceite mezcla con oliva,900.0
+Z004,Aceite de oliva,900.0
+Z031,Aceite de oliva,900.0
+Z042,Aceite de sésamo,900.0
+Z007,Aceite de soja,900.0
+Z035,Aceite de soja,900.0
+Z006,Aceite de uva,900.0
+Z033,Aceite de uva,900.0
+Z024,Rocío vegetal,900.0
+Z037,Rocío vegetal,900.0
+Z043,Almendra,570.0
+Z050,Almendra,570.0
+Z008,Alimento a base de almendras (le- che de almendras),36.0
+Z009,Avellana,631.0
+Z011,Maní tostado salado,596.0
+Z010,Maní tostado sin sal,596.0
+Z048,Mantequilla de maní,607.0
+Z047,"Alimento a base de leche entera y café, fortificado con calcio, varios sabores, listo para consumir",48.0
+Z016,"Mix de frutos secos, semillas y pasas de uva",515.0
+Z012,Nuez,690.0
+Z013,Pistacho salado,566.0
+Z038,Pistacho salado,566.0
+Z041,Semilla de chía,374.0
+Z014,Semilla de girasol,592.0
+Z049,Semilla de girasol con sal y con cáscara,586.0
+Z015,Semilla de sésamo,565.0
+Z044,Semilla de zapallo,581.0
+Z046,Semilla de amapola,481.0
+Z039,Semilla de lino,459.0
+D003,Azúcar blanca molida,400.0
+D127,Azúcar impalpable,399.0
+D004,Azúcar morena / azúcar mascabo,393.0
+D116,Glucosa,339.0
+D037,Alfajor de arroz,486.0
+D001,Alfajor de chocolate,411.0
+D028,Alfajor de chocolate con relleno tipo mousse,540.0
+D002,Alfajor de dulce de leche,381.0
+D036,Alfajor de fruta,387.0
+D029,Alfajor de maicena,405.0
+D107,Alfajor de miel,303.0
+D035,Alfajor light,300.0
+D041,Barra de arroz rellena bañada,501.0
+D044,Bombones de fruta,327.0
+D014,Caramelos duros,394.0
+D015,Caramelos duros light,236.0
+D013,Caramelos masticables,398.0
+D012,Caramelos rellenos,394.0
+D042,Chicles,380.0
+D043,Chicles sin azúcar,256.0
+D047,Chupetín,394.0
+D034,Dulce de leche,315.0
+D033,Cubanito relleno,506.0
+D080,Garrapiñada de maní,539.0
+D048,Gomitas de gelatina,374.0
+D040,Merengues / merenguitos,347.0
+D038,Minitorta bañada,403.0
+D032,Oblea bañada tipo Kit Kat,514.0
+D045,Pastillas,336.0
+D046,Pastillas sin azúcar,380.0
+D030,Rhodesia,519.0
+D079,Tableta de dulce de leche light,316.0
+D078,Tableta de dulce de leche,339.0
+D031,"Prefritos congelados, patitas de vegetales (espinaca)",225.0
+D052,Baño de repostería para cubrir tortas,564.0
+D053,Barra de chocolate tipo Kinder,552.0
+D054,Dulce de leche,315.0
+D055,Bombón tipo Bon O Bon,556.0
+D050,Cacao amargo*,285.0
+D018,Cacao en polvo sin fortificar*,383.0
+D123,Galletitas dulces con chips de chocolate,480.0
+D057,Chocolate 60% cacao o más,547.0
+D126,Chocolate amargo,575.0
+D058,Chocolate blanco,548.0
+D059,Chocolate con almendras,534.0
+D056,Chocolate con maní,542.0
+D060,Chocolate light,566.0
+D016,Chocolate para taza,519.0
+D095,Dulce de leche,315.0
+D017,Chocolatín / chocolate con leche,522.0
+D061,Huevo de chocolate tipo Kinder,538.0
+D063,Lentejas de chocolate,485.0
+D062,Maní con chocolate,534.0
+D131,Medallón de menta y chocolate,545.0
+D133,Pasas de uva con chocolate,411.0
+D066,Bombón helado,328.0
+D064,Helado de agua (heladería),112.0
+D019,Helado de agua (palito),82.0
+D020,Helado de crema (heladería),213.0
+D065,Helado de crema envasado,178.0
+D068,Polvo para preparar helado,418.0
+D100,"Ananá, enlatado (fruta y almíbar)",84.0
+D114,Avellana,631.0
+D005,Dulce de batata,255.0
+D081,Dulce de batata light,164.0
+D008,"Leche parcialmente descremada, sabor chocolate o dulce de leche, fortificada con vitaminas A y D, lista para consumir",67.0
+D077,Dulce de leche light,287.0
+D120,Mamón,38.0
+D006,Pastelitos rellenos de dulce de membrillo o batata (panadería / confitería),404.0
+D082,Dulce de membrillo light,160.0
+D007,Jalea tipo membrillo,277.0
+D027,Kero o melaza,300.0
+D010,Mermelada de frutas,273.0
+D025,Mermelada de frutas light,145.0
+D011,"Cereal desayuno, aritos sabor miel",369.0
+D099,Frutilla,31.0
+D096,Dulce de leche,315.0
+G017,"Chipaco o pan con chicharrón, comprado",340.0
+G013,Crema de leche,347.0
+G016,Crema light,299.0
+G008,Grasa de cerdo,898.0
+G019,Grasa de pollo,626.0
+G009,Grasa vacuna,899.0
+G010,Pan figacita de manteca,278.0
+G015,Manteca light,509.0
+G011,Margarina (en pote y en pan),559.0
+G012,Margarina untable light,472.0
+O013,Palitos aireados de harina de maíz o de colores,552.0
+O014,Palitos salados,528.0
+O015,Papas fritas de copetín,534.0
+O043,Maní japonés,523.0
+O028,Nachos,499.0
+O041,Snacks saborizados salados a base de maíz,548.0
+O022,Aceto balsámico,70.0
+O021,Aderezo Caesar o Ranch,380.0
+O045,Aderezo para ensaladas light,18.0
+B069,"Jugo de limón, envasado",22.0
+O005,Ketchup,113.0
+O001,Mayonesa,391.0
+O002,Mayonesa light,270.0
+O003,Mayonesa de soja,212.0
+O006,Mostaza,52.0
+O035,"Salsa a base de tomate en tetra brick o sachet, lista para consumir (ej: pomarola, napolitana, con o sin verdeo, etc.)",42.0
+O047,Salsa agridulce,154.0
+O020,Salsa barbacoa,168.0
+O049,Salsa blanca en polvo envasada,347.0
+O051,Salsa chimichurri envasada,23.0
+O046,"Salsa deshidratada varios sabores, polvo",349.0
+O034,Salsa de soja,62.0
+O004,Salsa Golf,320.0
+O023,"Pickles, en vinagre",7.0
+O007,Caldos en cubo,269.0
+O039,Caldos en polvo,107.0
+O008,Caldos en polvo light,171.0
+O009,Caldos en polvo sin sal light,345.0
+O011,Sopa crema preparada a partir de polvo premezcla light,23.0
+O012,Sopa crema preparada a partir de polvo premezcla sin sal light,23.0
+O024,Saborizador en cubos,366.0
+O038,Saborizador en polvo,160.0
+O029,"Sopa crema instantánea, polvo para preparar (sabores varios)",350.0
+O036,"Sopa de vegetales instantánea, polvo para preparar",351.0
+D103,Arroz con leche envasado listo para consumir,126.0
+D022,"Gelatina light, preparada a partir de polvo",8.0
+D021,Gelatina preparada a partir de polvo,14.0
+D075,Polvo para preparar postre lácteo,369.0
+D076,Polvo para preparar postre lácteo,369.0
+D112,Limón,35.0
+O026,"Arroz envasado deshidratado listo para preparar con salsa u otros ingredientes (tipo cuatro quesos, primavera, etc.)",355.0
+B044,"Agua saborizada Aquarius, varios sabores",30.0
+B046,"Agua saborizada Awafrut, varios sabores",14.0
+B047,"Agua saborizada tipo Sierra de los Padres, Manaos, otros",34.0
+B001,Amargo serrano,80.0
+B003,"Bebida a base de soja y jugo, varios sabores",33.0
+B004,"Bebida a base de soja y jugo, varios sabores light",16.0
+B020,Bebida a base de soja sabor natural,40.0
+B008,"Gaseosa con azúcar, PROMEDIO",40.0
+B022,Limón,35.0
+B023,Naranja,43.0
+B024,Pomelo,22.0
+B037,"Gatorade, varios sabores",28.0
+B011,Jugo en polvo con azúcar,322.0
+B053,Jugo en polvo con azúcar,322.0
+B038,"Powerade, varios sabores",24.0
+B051,Agua saborizada Flip light,17.0
+B031,"Agua saborizada light, PROMEDIO",1.0
+B002,Amargo serrano,80.0
+B027,Limón,35.0
+B028,Naranja,43.0
+B029,Pomelo,22.0
+B052,Jugo en polvo BC,386.0
+B012,Jugo en polvo light,285.0
+B121,"Jugo tipo BC, varios sabores (ali- mento líquido dietético con 50% de jugo y pulpa)",20.0
+B129,Ananá Fizz,60.0
+B119,"Aperitivo, tipo Gancia",163.0
+B041,Bebida energizante,45.0
+B113,Fernet,280.0
+B006,Cerveza con alcohol,43.0
+B007,Cerveza sin alcohol,25.0
+B042,Champagne,83.0
+B115,Dr. Lemon,68.0
+B043,Fernet,280.0
+B013,"Licor, PROMEDIO",378.0
+B015,Sidra,43.0
+B016,Vermouth,138.0
+B017,Vino blanco,83.0
+B120,"Vino espumante, tipo Frizze",66.0
+B122,Vino Mistela,163.0
+B072,Vino tinto,84.0
+B125,Vodka,298.0
+B078,Arándanos,54.0
+B124,"Jugo de arándanos, natural",37.0
+B033,"Jugo de fruta, pasteurizado no reconstituido",47.0
+B034,"Jugo de limón, exprimido",30.0
+B035,"Jugo de naranja, exprimido",45.0
+B116,"Jugo de papaya, natural",56.0
+B036,"Jugo de pomelo, exprimido",40.0
+B056,Café instantáneo descafeinado (polvo o granulado para preparar),392.0
+B058,Café preparado a partir de grano molido (tipo café de filtro),1.0
+B061,Capucchino preparado,27.0
+R053,"McDonald's, BigMc",240.0
+R066,Dulce de leche,315.0
+R067,Frutilla,31.0
+S153,Pastillas,336.0
+S164,Limón,35.0

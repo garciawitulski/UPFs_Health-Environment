@@ -46,13 +46,10 @@ run_script("07_esperanza_vida.R")
 message("\n8. Indirect costs...")
 run_script("08_costos_indirectos.R")
 
-message("\n9. Environmental mapping (code -> group)...")
-run_script("09_build_env_mapping.R")
-
-message("\n10. Extended coefficients and UPF coverage...")
-run_script("11_build_extended_coeffs_and_upf_coverage.R")
-
-message("\n11. Environmental impact (extended + isocaloric scenarios)...")
+message("\n9. Environmental impact (using pre-mapped/pre-built coefficient tables)...")
 run_script("10_impacto_ambiental.R")
+
+message("\n10. Merge health and environmental summaries...")
+run_script("13_merge_health_env_summaries.R")
 
 message("\n=== Pipeline completed. Outputs are written to output/ ===")
