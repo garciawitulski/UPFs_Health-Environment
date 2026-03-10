@@ -1,0 +1,440 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{ccaption}
+\usepackage{subcaption}
+\usepackage[capposition=top]{floatrow}
+\usepackage{subfig}
+\usepackage[super,sort&compress,comma]{natbib}
+\bibliographystyle{vancouver}
+\usepackage[margin=2.5cm,includefoot,footskip=30pt]{geometry}
+\renewcommand{\figurename}{Fig.}
+\usepackage{pdflscape}
+\usepackage{textcomp}
+\usepackage{newunicodechar}
+\usepackage{lineno}
+\usepackage{gensymb}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{longtable,array,calc}
+\usepackage{etoolbox}
+\usepackage{footnote}
+\makesavenoteenv{longtable}
+\usepackage{xurl}
+\urlstyle{same}
+\setlength{\emergencystretch}{3em}
+\setlength{\parindent}{0pt}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\newcounter{none}
+\newcommand{\tabnote}[1]{%
+  \vspace{0.06cm}%
+  {\footnotesize\setstretch{1}\par\raggedright\textit{Note.} #1\par}%
+}
+
+
+\definecolor{LancetRed}{HTML}{A6192E}
+\tcbset{
+  lancetbox/.style={
+    enhanced,
+    breakable,
+    colback=gray!6,
+    boxrule=0pt,
+    borderline west={2pt}{0pt}{LancetRed},
+    left=6pt, right=6pt,
+    top=4pt, bottom=4pt,
+    before skip=10pt, after skip=10pt,
+    fonttitle=\normalsize\bfseries,
+    colbacktitle=gray!6,
+    coltitle=black,
+    attach boxed title to top left={
+      yshift=-\tcboxedtitleheight/2,
+      xshift=6pt
+    },
+    boxed title style={
+      size=normal,
+      boxrule=0pt,
+      colframe=gray!6
+    },
+  }
+}
+
+\title{Health and environmental impacts of ultra-processed food consumption in Argentina: a national modelling study \bigskip}
+\author{Christian Garc\'ia-Witulski\textsuperscript{a,*}, Mariano Javier Rabassa\textsuperscript{a}}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\noindent\textsuperscript{a} Affiliation [to be completed]\\
+
+\vspace{1.2cm}
+\noindent\textsuperscript{*}\textbf{Corresponding author}\\
+Name Christian Garc\'ia-Witulski\\
+Institution [to be completed]\\
+Address [to be completed]\\
+Email \texttt{[to\_be\_completed]}\\
+Phone [to be completed]
+
+\onehalfspacing
+\vspace{1.0cm}
+
+\begin{center}
+\begin{minipage}{0.80\textwidth}
+\noindent \textbf{\large{Abstract}} \\
+
+\noindent \textbf{Background.} Ultra-processed foods (UPFs) are increasingly associated with adverse health outcomes, but policy decisions also require evidence on potential environmental trade-offs under plausible dietary substitutions. We assessed the health, economic, and environmental effects of reducing UPF consumption in Argentina. \\
+
+\textbf{Methods.} We developed a comparative risk assessment macrosimulation using ENNyS~2 dietary data from 2018--19, DEIS mortality data from 2019, and dose--response evidence for all-cause mortality. We estimated attributable and preventable deaths, years of life lost, gains in life expectancy, and indirect economic costs. We also modelled greenhouse gas emissions, land use, water use, and freshwater eutrophication under three replacement structures: no substitution, isocaloric substitution, and isoweight substitution. Uncertainty was propagated through 10,000 Monte Carlo iterations.\\
+
+\textbf{Findings.} In 2019, UPF consumption was associated with an estimated 9,823 premature deaths among adults aged 30 to 69 years, accounting for 9.5\% of deaths in this age group (95\% UI 5,687--14,183), and 349,686 years of life lost. Men accounted for 5,699 attributable deaths and women for 4,124. The gain in life expectancy at age 30 after removing UPF-attributable deaths was 0.35 years in men, 0.22 years in women, and 0.28 years overall. Indirect economic costs were estimated at 0.84 billion international dollars. Depending on the reduction target, preventable deaths ranged from 977 to 8,747 per year. Environmental impacts depended on replacement strategy: footprints generally decreased under no substitution, whereas some substitution scenarios increased water use.\\
+
+\textbf{Interpretation.} Reducing UPF intake could generate substantial health and economic gains in Argentina. Environmental co-benefits depend on the foods that replace UPFs, underscoring the need for integrated policies that pair UPF reduction with guidance towards lower-impact substitutions. \\
+\textbf{Funding.} [to be completed].
+
+\vspace{0.5cm}
+\noindent \textit{Keywords} ultra-processed foods, mortality, comparative risk assessment, economic costs, environmental impacts, Argentina \\
+\end{minipage}
+\end{center}
+
+\thispagestyle{empty}
+\clearpage
+\bigskip
+\thispagestyle{empty}
+\clearpage
+\setcounter{page}{1}
+
+\section{Introduction}
+
+Ultra-processed foods (UPFs), as defined by the NOVA classification, are industrial formulations made largely from food-derived substances and cosmetic additives, with little or no intact whole foods.\cite{Monteiro2019UPFIdentify,Monteiro2019FAO} A growing body of epidemiological evidence links increased consumption of UPFs to adverse health outcomes. An umbrella review of meta-analyses reported consistent associations with cardiometabolic outcomes and all-cause mortality,\cite{Lane2024BMJ} and dose--response meta-analyses support increased risk as UPF intake rises.\cite{Qu2024} Experimental evidence supports these findings. In a controlled inpatient crossover trial, an ultra-processed diet increased ad libitum energy intake and body weight compared to an unprocessed diet matched for presented energy, macronutrients, fibre, sodium, and sugar.\cite{Hall2019} Proposed mechanisms include altered eating rate and satiety signalling, high glycaemic loads, and exposures to food additives and packaging-related chemicals.\cite{Monteiro2019FAO,Lane2024BMJ,Yates2024}\\
+
+Yet the consequences of UPF consumption extend well beyond individual health. Food systems are already the single largest driver of environmental degradation globally, accounting for 26\% of anthropogenic greenhouse gas emissions, 32\% of global terrestrial acidification, 66\% of freshwater withdrawals, and 78\% of marine and freshwater eutrophication.\cite{PooreNemecek2018,Crippa2021NatureFood} Within this broader footprint, UPFs occupy a disproportionate share. In France, for instance, UPFs represented 19\% of the diet but contributed 24\% to diet-related greenhouse gas emissions, 23\% to water and land use, and 26\% to energy demand.\cite{KesseGuyot2023} A review of the environmental impacts of UPFs concluded that they can account for substantial shares of diet-related greenhouse gas emissions, land use, food waste, and water use in high-income settings.\cite{Anastasiou2022JCP} However, the environmental consequences of reducing UPFs are not straightforward. UPFs often involve additional processing, packaging and long supply chains,\citep{Seferidi2020} yet substitution patterns matter. \\
+
+UPF availability has expanded rapidly worldwide, particularly in middle-income countries.\cite{PAHO2015} This pattern raises concerns about the health and economic burden of UPF exposure, as well as each country's environmental trajectory, given the scale of diet-related resource use.\\
+
+The application of CRA models to UPF consumption has yielded estimates of attributable mortality and avertable deaths in Brazil \citep{Nilson2023} and, more recently, across multiple countries \citep{Nilson2025}. However, all of these analyses focus exclusively on health outcomes. This leaves unanswered a central question for policy-making; whether the health benefits of reducing UPFs are accompanied by environmental co-benefits. Replacing UPFs with less processed foods may lower greenhouse gas emissions, yet simultaneously increase water demand, depending on which foods expand in the diet \citep{Anastasiou2022JCP,Garzillo2022RSP,Arrieta2022SustainSci}. Argentina is a particularly relevant case study for addressing this gap, as UPFs contribute substantially to total dietary energy intake in the country.\citep{Zapata2023} \\
+
+We therefore developed a national CRA macrosimulation using ENNyS~2 dietary data and official mortality statistics to estimate premature all-cause mortality attributable to UPF consumption among Argentine adults aged 30–69 years, together with years of life lost, gains in life expectancy, and indirect economic costs. We then evaluated policy-relevant UPF-reduction scenarios, including targets aligned with the National Dietary Guidelines food-group structure,\citep{NDG2016} and quantified associated changes in greenhouse gas emissions, land use, water use, and freshwater eutrophication under no-substitution and structured substitution designs. 
+
+\section{Methods}\label{methods}
+
+\subsection{Overview and study population}
+
+We developed a CRA macrosimulation\cite{Murray2003,WHO2004CQR,Forouzanfar2015} to quantify premature all-cause mortality attributable to UPF consumption among Argentine adults and to evaluate avertable mortality under policy-relevant reduction targets. The model linked nationally representative dietary exposure distributions to mortality counts by sex and five-year age group, and propagated uncertainty through Monte Carlo simulation. End-to-end analytic workflows for the health and environmental modules are shown in Online Appendix Fig~S1 and Fig~S2, respectively. \\
+
+Dietary exposure was drawn from the Second National Survey of Nutrition and Health (ENNyS~2), a cross-sectional, multistage, region-stratified probabilistic survey conducted in Argentine urban localities in 2018--2019.\cite{ENNYS22019,ENNYS2Dataset} Dietary intake was collected with 24-hour recalls using a multiple-pass approach.\cite{ENNYS22019} We restricted analyses to adults aged 30--69 years to focus on premature mortality from diet-related chronic diseases. Full methodological details, including life table construction and Monte Carlo specifications, are provided in the Online Appendix, and data sources are summarised in Online Appendix Table~S1.
+
+\subsection{Dietary exposure and UPF contribution to total energy}
+
+All reported foods and beverages were classified according to the NOVA framework.\cite{Monteiro2019UPFIdentify} We operationalised UPF exposure as the percentage of total dietary energy derived from NOVA group~4 items (\%UPF). For each 24-hour recall, UPF energy was computed from item-level grams and official kcal/100\,g values from the ENNyS~2/SARA~2 composition resources,\cite{SARA22022} and divided by the official total recall energy. The item-level classification is reported in Online Appendix Table~S2 and the overall NOVA-group distribution in Online Appendix Table~S3. The recall-level UPF energy share was computed as:
+%
+\begin{equation}
+\%\text{UPF}_{kj} \;=\; 100 \times \frac{E^{\text{UPF}}_{kj}}{E^{\text{tot}}_{kj}},
+\end{equation}
+%
+where $E^{\text{UPF}}_{kj}$ includes only UPF items with available energy density and $E^{\text{tot}}_{kj}$ is the official total energy for recall~$j$ of participant~$k$. \\
+
+We estimated sex- and age-specific exposure distributions (eight five-year groups from 30--34 to 65--69) using ENNyS~2 calibrated survey weights. For CRA calculations, exposure in each stratum was represented by a log-normal distribution parameterised from the weighted mean and standard deviation of \%UPF (Online Appendix, Section~B.1).
+
+\subsection{Mortality outcomes}
+
+Premature deaths were classified by underlying cause using the 10th revision of the International Statistical Classification of Diseases (ICD-10). For the purposes of this study, we considered all-cause mortality, defined as deaths coded A00–Y89. Data on all-cause deaths in 2019 were obtained from Argentina’s Directorate of Health Statistics and Information (DEIS)\cite{DEIS2019} and tabulated by sex and across the same eight age groups. 
+
+\subsection{Counterfactual UPF-reduction scenarios}
+
+Counterfactual scenarios were defined as shifts in the \%UPF distribution within each sex--age stratum. We pre-specified two families of scenarios to span theoretical, proportional, and policy-anchored contrasts.
+
+\paragraph{Theoretical and proportional scenarios.}
+The theoretical minimum risk level (TMRL) set \%UPF to approximately zero for all individuals and served as the attributable-burden reference under CRA convention. Proportional reduction scenarios applied uniform relative decreases of 10\%, 20\%, and 50\% to baseline \%UPF within each stratum.
+
+\paragraph{Guideline-aligned scenarios.}
+To reflect plausible policy targets grounded in Argentine dietary guidance, we implemented scenarios based on the National Dietary Guidelines (NDG) food-group structure.\cite{NDG2016} These scenarios imposed low residual UPF content within food groups, generating population-level \%UPF targets. For profile $q$, the target was computed as
+%
+\begin{equation}
+\%\mathrm{UPF}^{\mathrm{target}}_q = 100\sum_g w_g\,c_{gq},
+\end{equation}
+%
+where $w_g$ is the normalized NDG basket composition weight assigned to group $g$ (used as an energy-proxy weight for aggregating group caps to total \%UPF; $\sum_g w_g=1$) and $c_{gq}$ is the residual UPF cap for group $g$ under profile $q$. We defined profile multipliers as an exploratory $\pm50\%$ range around the central profile to capture uncertainty in guideline-compliant residual UPF allowances, with $m_{\text{conservative}}=1.5$, $m_{\text{central}}=1.0$, and $m_{\text{strict}}=0.5$. This yielded target \%UPF values of 5.45 (conservative), 3.63 (central), and 1.81 (strict). Full construction details are provided in the Online Appendix (Section~B.3, Table~B1).
+
+\subsection{Risk function and comparative risk assessment}
+
+We treated hazard ratios from the source meta-analysis as approximations to relative risks (RR), consistent with standard CRA practice when outcome incidence is low relative to the study population.\cite{Murray2003} UPF exposure was associated with all-cause mortality using a log-linear dose--response function.
+%
+\begin{equation}
+\text{RR}(p) \;=\; \exp(\beta \cdot p), \qquad \beta \;=\; \frac{\ln(\text{RR}_{\text{ref}})}{x_{\text{ref}}},
+\end{equation}
+%
+where $p$ is the UPF energy share (percentage points, 0--100), $\text{RR}_{\text{ref}}$ is the reference relative risk from meta-analysis, and $x_{\text{ref}}$ is the exposure contrast used to calibrate the slope in this CRA implementation. We used $\text{RR}_{\text{ref}} = 1.25$ (95\% CI 1.14--1.37) from Pagliai et al.\cite{Pagliai2021} Following prior UPF CRA implementations,\cite{Nilson2023} we calibrated $\beta$ by mapping this RR to $x_{\text{ref}} = 35.7$ percentage points (0--35.7\% contrast). Thus, $x_{\text{ref}}$ is a model-calibration parameter rather than a universal threshold. \\
+
+For each sex--age stratum, we computed the population attributable fraction (PAF) using a distributional CRA approach, integrating the relative risk over the log-normal exposure density rather than evaluating it only at the mean.
+%
+\begin{equation}
+\text{PAF} \;=\; \frac{\text{E}[\text{RR}(P)] \;-
+\; \text{E}[\text{RR}(P^{\text{cf}})]}{\text{E}[\text{RR}(P)]},
+\end{equation}
+%
+where $P$ and $P^{\text{cf}}$ are the baseline and counterfactual exposure distributions, respectively. Because exposure is bounded, integrations were performed on the support $[0,100]$ using a truncated log-normal density and a fine discretisation grid. Attributable deaths were computed as $D_{\text{att}} = \text{PAF} \times D$, where $D$ is the observed number of deaths in the stratum. \\
+
+Uncertainty was quantified by Monte Carlo simulation (10,000 iterations). In each iteration we jointly sampled (i)~stratum-specific mean \%UPF (normal approximation using survey-based standard errors), (ii)~the dose--response slope $\beta$ (normal approximation using the meta-analytic standard error), and (iii)~death counts (Poisson). All results are reported as medians with 95\% uncertainty intervals (UI; 2.5th and 97.5th percentiles).
+
+\subsection{Years of life lost, life expectancy, and indirect economic costs}
+
+Years of life lost (YLL) were calculated by multiplying stratum-specific attributable deaths by standard expected remaining years of life at the age-group midpoint, taken from the WHO reference life table.\cite{WHO2024MethodsGBD} Life expectancy gains were estimated using cause-deleted life tables in which UPF-attributable deaths were removed from each sex--age stratum and age-specific mortality rates were recomputed (Online Appendix, Section~B.6). \\
+
+Indirect economic costs were estimated with a human capital approach. We valued each premature death as the present value of forgone earnings from the age-group midpoint to an assumed retirement age of 65 years for both sexes, using sex- and age-specific employment rates and labour income from Argentina's Permanent Household Survey (EPH, 2019Q4).\cite{INDECEPH2019Q4,INDECMercadoTrabajo2020} In Argentina, statutory retirement ages are generally 60 years for women and 65 years for men; we used a uniform age 65 horizon as a simplifying modelling assumption to keep a common valuation horizon across strata.\cite{ANSESJubilacionOrdinaria2026} Future earnings were discounted at 3\% annually, consistent with standard economic-evaluation reference-case practice.\cite{iDSIReferenceCase2014,Sanders2016SecondPanel} All costs were converted to international dollars using the World Bank purchasing power parity (PPP) conversion factor for Argentina in 2019.\cite{WorldBankPPP2019} Stratum-specific PVLE estimates are reported in Online Appendix Table~S4.
+
+\subsection{Environmental impacts and scenarios}
+
+Environmental impacts were estimated by linking ENNyS~2 food intakes (in grams) to food-group-specific intensity coefficients for greenhouse gas emissions, land use, water use, and freshwater eutrophication, expressed per kilogram of product at a consistent system boundary. Coefficients prioritised Argentina-focused life-cycle assessment evidence\cite{Arrieta2018,Arrieta2021,Arrieta2022SustainSci} and were complemented with global datasets when direct matches were unavailable.\cite{PooreNemecek2018,OWIDDatasets2026,ADEMEAgribalyse2026} Mapping coverage is reported in Online Appendix Table~S5 and the coefficient set used in the manuscript specification is reported in Online Appendix Table~S8.
+
+For each recall, total impact was computed as the sum of (consumed mass in kg) $\times$ (intensity per kg) over all in-scope foods, then aggregated to the population using calibrated survey weights. Environmental counterfactuals mirrored the six health scenarios and were evaluated under three structural assumptions.
+
+\begin{itemize}
+    \item \textbf{No substitution.} Reductions in UPF intake reduced total dietary mass and energy, providing an upper-bound estimate of environmental savings.
+    \item \textbf{Isocaloric substitution.} Energy removed by reducing UPFs was replaced with non-UPF foods, preserving total dietary energy. Replacement baskets included minimally processed foods, processed (non-UPF) foods, a weighted NOVA~1/NOVA~3 mix, and an NDG-concordant basket aligned with national dietary guidelines.\cite{NDG2016} Net replacement impacts were computed from basket-specific environmental intensities per kcal (Online Appendix, Section~B.8); basket composition and UPF targets are summarised in Online Appendix Table~S7.
+    \item \textbf{Isoweight substitution.} Removed UPF mass (kg) was replaced one-for-one with non-UPF foods, using basket-specific environmental intensities per kg. See Online Appendix Tables S6-7, which contain the basket-specific environmental results.
+\end{itemize}
+
+\section{Results}\label{results}
+
+Among Argentine adults aged 30--69 years, the mean share of total energy intake from UPFs ranged from approximately 13\% to 20\% across sex and age strata (Table~1). The overall UPF contribution was 15.9\% in men, 17.2\% in women, and 16.7\% in total. The highest values were observed among men aged 30--34 years (20.1\%) and women aged 55--59 years (17.8\%).
+
+\vspace{0.8em}
+\textbf{Table 1.} Contribution of Ultra-processed Foods to Total Energy Intake in Argentine Adults Aged 30--69 Years by Sex and Age Group
+
+{\def\LTcaptype{none}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.22}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.26}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.26}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.26}}@{}}
+\toprule\noalign{}
+Age groups, years & Men, \% (95\% CI) & Women, \% (95\% CI) & Total, \% (95\% CI) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+30--34 & 20.1 (18.1, 22.0) & 18.4 (16.9, 19.9) & 19.1 (17.9, 20.3) \\
+35--39 & 15.7 (14.2, 17.3) & 16.2 (14.8, 17.7) & 16.0 (15.0, 17.1) \\
+40--44 & 15.1 (13.4, 16.7) & 16.6 (15.1, 18.1) & 16.0 (14.9, 17.2) \\
+45--49 & 15.6 (13.8, 17.4) & 16.5 (15.0, 17.9) & 16.1 (15.0, 17.2) \\
+50--54 & 14.8 (13.0, 16.7) & 17.7 (16.0, 19.4) & 16.6 (15.3, 17.8) \\
+55--59 & 12.9 (11.0, 14.8) & 17.8 (15.5, 20.0) & 15.5 (14.0, 17.0) \\
+60--64 & 14.7 (12.4, 17.0) & 17.4 (15.6, 19.2) & 16.3 (14.9, 17.7) \\
+65--69 & 15.7 (13.1, 18.3) & 17.6 (15.5, 19.8) & 16.7 (15.1, 18.4) \\
+\textbf{Total} & \textbf{15.9 (15.2, 16.5)} & \textbf{17.2 (16.7, 17.8)} & \textbf{16.7 (16.2, 17.1)} \\
+\end{longtable}
+\tabnote{Values are survey-weighted mean percentages of total dietary energy from UPFs by sex, age group, and overall total. CI denotes confidence interval and UPFs denote ultra-processed foods.}
+}
+
+Of 103,448 adults aged 30--69 years who died in Argentina in 2019, an estimated 9,823 deaths (9.5\%; 95\% UI 5,687--14,183) were attributable to UPF consumption (Table~2). Men accounted for 5,699 attributable deaths and women for 4,124, consistent with men's higher baseline all-cause mortality. The largest absolute numbers were observed in the oldest age groups, with 3,068 in the 65--69 group, 2,205 in the 60--64 group, and 1,424 in the 55--59 group. Median population attributable fractions were broadly similar across strata, ranging from 7.8\% to 11.7\%. This burden corresponded to approximately 349,686 YLL and to a present value of forgone earnings of 0.84 billion international dollars (PPP, 2019) (Table~3), including 203,601 YLL and 0.61 billion intl.\$ PPP in men and 146,086 YLL and 0.23 billion intl.\$ PPP in women. Eliminating UPF-attributable mortality was associated with a gain of 0.28 years (3.3 months) in life expectancy at age~30 (Table~3, Panel~A), with larger gains in men (0.35 years; 4.2 months) than in women (0.22 years; 2.6 months), reflecting the sex difference in attributable deaths and baseline mortality.
+\par\vspace{0.8em}
+\textbf{Table 2.} Deaths From All Causes, PAF, and Estimated Deaths Attributable to the Consumption of Ultra-processed Foods in Argentine Adults 
+
+{\def\LTcaptype{none}
+\footnotesize
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.16}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.14}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.14}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.14}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.14}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.14}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.14}}@{}}
+\toprule\noalign{}
+\multicolumn{1}{@{}l}{} & \multicolumn{3}{c}{PAF (\%)} & \multicolumn{3}{c@{}}{Attributable deaths} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Age groups, years & Men & Women & Total & Men & Women & Total \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+30--34 & 11.7 & 10.9 & 11.5 & 270 & 137 & 407 \\
+35--39 & 9.5 & 9.7 & 9.6 & 254 & 166 & 420 \\
+40--44 & 9.1 & 10.0 & 9.4 & 314 & 241 & 555 \\
+45--49 & 9.4 & 9.9 & 9.6 & 429 & 301 & 730 \\
+50--54 & 8.9 & 10.6 & 9.6 & 579 & 435 & 1,015 \\
+55--59 & 7.8 & 10.4 & 8.8 & 776 & 648 & 1,424 \\
+60--64 & 8.8 & 10.4 & 9.4 & 1,279 & 926 & 2,205 \\
+65--69 & 9.2 & 10.5 & 9.7 & 1,798 & 1,270 & 3,068 \\
+\textbf{Total} & \textbf{9.0} & \textbf{10.4} & \textbf{9.5} & \textbf{5,699 (3,282--8,275)} & \textbf{4,124 (2,404--5,908)} & \textbf{9,823 (5,687--14,183)} \\
+\end{longtable}
+\tabnote{PAF denotes population attributable fraction and UI denotes uncertainty interval. Age-specific PAF values are point estimates. Total PAF values were computed as attributable deaths divided by observed deaths within each age group or sex-specific total. Attributable-death totals are medians with 95\% UI from 10,000 Monte Carlo iterations.}
+}
+
+
+\vspace{0.8em}
+\textbf{Table 3.} All-cause YLL, life expectancy, and economic outcomes 
+
+{\def\LTcaptype{none}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.36}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.22}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.22}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.20}}@{}}
+\toprule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\multicolumn{4}{@{}l}{\textbf{Panel A. All-cause YLL and life expectancy at age 30 years}} \\
+Outcome & Men & Women & Total \\
+YLL attributable to UPF & 203,601 & 146,086 & 349,686 \\
+$e_{30}$ actual & 35.70 & 37.78 & 36.85 \\
+$e_{30}$ without UPF-attributable deaths & 36.04 & 38.00 & 37.13 \\
+Life expectancy gain & 0.35 & 0.22 & 0.28 \\
+\addlinespace
+\multicolumn{4}{@{}l}{\textbf{Panel B. Indirect economic costs}} \\
+Outcome & Men & Women & Total \\
+Total PVLE (billion intl.\$ PPP) & 0.61 & 0.23 & 0.84 \\
+Cost per attributable death (thousand intl.\$ PPP) & 107 & 56 & 85 \\
+\end{longtable}
+\tabnote{YLL denotes years of life lost, $e_{30}$ denotes life expectancy at age 30 years, PVLE denotes present value of lifetime earnings lost, and PPP denotes purchasing power parity. Economic values are reported in 2019 purchasing-power-parity terms.}
+}
+
+Table~4 summarises total health and economic gains across the six pre-specified scenarios. Under proportional reductions of 10\%, 20\%, and 50\% in UPF energy share, an estimated 977 (95\% UI 549--1,456), 1,966 (1,108--2,922), and 4,971 (2,827--7,316) premature deaths could be prevented or postponed annually, corresponding to 34,887, 70,195, and 177,223 YLL averted, gains in life expectancy at age~30 of 0.03, 0.06, and 0.14 years, and averted indirect costs of 0.08, 0.17, and 0.43 billion intl.\$ PPP, respectively.
+
+Guideline-aligned targets produced larger gains. Under NDG profiles, avertable deaths ranged from 6,521 (3,650--9,825) for the conservative profile (target \%UPF$\,=\,$5.45) to 8,747 (5,021--12,761) for the strict profile (target \%UPF$\,=\,$1.81), with the central profile (target \%UPF$\,=\,$3.63) at 7,646 (4,343--11,309). These scenarios implied 232,728 to 311,567 YLL averted, gains in life expectancy at age~30 of 0.18 to 0.25 years, and averted indirect costs of 0.56 to 0.75 billion intl.\$ PPP.
+
+\vspace{0.8em}
+\textbf{Table 4.} Health and economic gains under counterfactual UPF-reduction scenarios
+
+{\def\LTcaptype{none}
+\footnotesize
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.42}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.34}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.24}}@{}}
+\toprule\noalign{}
+\multicolumn{3}{@{}l}{\textbf{Panel A. Avertable deaths}} \\
+Scenario & \multicolumn{2}{c@{}}{Deaths averted (95\% UI)} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+10\% reduction & \multicolumn{2}{r@{}}{977 (549--1,456)} \\
+20\% reduction & \multicolumn{2}{r@{}}{1,966 (1,108--2,922)} \\
+50\% reduction & \multicolumn{2}{r@{}}{4,971 (2,827--7,316)} \\
+NDG conservative (target UPF=5.45\%) & \multicolumn{2}{r@{}}{6,521 (3,650--9,825)} \\
+NDG central (target UPF=3.63\%) & \multicolumn{2}{r@{}}{7,646 (4,343--11,309)} \\
+NDG strict (target UPF=1.81\%) & \multicolumn{2}{r@{}}{8,747 (5,021--12,761)} \\
+\addlinespace
+\multicolumn{3}{@{}l}{\textbf{Panel B. Avertable YLL and life expectancy at age 30 years}} \\
+Scenario & YLL averted (95\% UI) & Gain in $e_{30}$, years \\
+10\% reduction & 34,887 (19,638--51,887) & 0.03 \\
+20\% reduction & 70,195 (39,613--104,107) & 0.06 \\
+50\% reduction & 177,223 (100,917--260,299) & 0.14 \\
+NDG conservative (target UPF=5.45\%) & 232,728 (130,702--349,255) & 0.18 \\
+NDG central (target UPF=3.63\%) & 272,580 (155,172--401,905) & 0.22 \\
+NDG strict (target UPF=1.81\%) & 311,567 (179,136--453,493) & 0.25 \\
+\addlinespace
+\multicolumn{3}{@{}l}{\textbf{Panel C. Averted indirect economic costs}} \\
+Scenario & \multicolumn{2}{c@{}}{Averted PVLE (billion intl.\$ PPP, 95\% UI)} \\
+10\% reduction & \multicolumn{2}{r@{}}{0.08 (0.05--0.12)} \\
+20\% reduction & \multicolumn{2}{r@{}}{0.17 (0.10--0.25)} \\
+50\% reduction & \multicolumn{2}{r@{}}{0.43 (0.24--0.62)} \\
+NDG conservative (target UPF=5.45\%) & \multicolumn{2}{r@{}}{0.56 (0.31--0.83)} \\
+NDG central (target UPF=3.63\%) & \multicolumn{2}{r@{}}{0.65 (0.37--0.95)} \\
+NDG strict (target UPF=1.81\%) & \multicolumn{2}{r@{}}{0.75 (0.43--1.08)} \\
+\end{longtable}
+\tabnote{Deaths, YLL, and PVLE values are avertable totals under each counterfactual scenario. Uncertainty intervals for YLL and PVLE were derived by applying stratum-specific YLL and PVLE factors to the corresponding avertable-death intervals. Life expectancy gains are point estimates from cause-deleted life tables using scenario-specific death reductions. YLL denotes years of life lost, $e_{30}$ denotes life expectancy at age 30 years, PVLE denotes present value of lifetime earnings lost, PPP denotes purchasing power parity, and NDG denotes National Dietary Guidelines.}
+}
+
+In the baseline environmental profile (Table~5, Panel~A), UPFs accounted for 10.0\% of diet-related GHG emissions, 9.0\% of land use, 20.2\% of water use, and 16.2\% of freshwater eutrophication. Under no-substitution scenarios (Table~5, Panel~B), all four indicators decreased monotonically with the intensity of UPF reduction; for example, the NDG central scenario yielded reductions of 7.8\% in GHG, 7.1\% in land use, 15.8\% in water use, and 12.7\% in eutrophication. These figures represent mechanical upper bounds, because removed UPF mass and energy are not replaced. Under isocaloric substitution with an NDG-concordant basket (Table~5, Panel~C), the pattern was markedly different. GHG changes were near null and land-use reductions were small (up to $-$1.4\%), while water use increased substantially (up to $+$27.8\% in the strict scenario) and eutrophication rose modestly (up to $+$2.4\%). Under isoweight substitution with an NDG-concordant basket (Table~5, Panel~D), net increases were observed in all four indicators, reaching up to $+$13.3\% for water use and $+$13.7\% for eutrophication in the strict scenario. Online Appendix Table~S6 illustrates these trade-offs for the NDG policy scenarios and shows that they depended strongly on the replacement basket. Under isocaloric substitution, replacing UPFs with NOVA~3 foods produced the most favorable profile, with reductions across all four indicators, whereas replacement with NOVA~1 foods increased all four. The weighted NOVA~1/NOVA~3 mix yielded intermediate results, with near-null changes in GHG and land use but persistent increases in water use and eutrophication. Under isoweight substitution, only the NOVA~3 basket still reduced all four indicators.
+
+\vspace{0.8em}
+\textbf{Table 5.} Baseline UPF share and net environmental change using the same policy scenarios as the health model (\%)
+
+{\def\LTcaptype{none}
+\begin{longtable}[]{@{}lrrrr@{}}
+\toprule\noalign{}
+Scenario & GHG & Land use & Water use & Freshwater eutrophication \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\multicolumn{5}{@{}l}{\textbf{Panel A. UPF impact at baseline}} \\
+UPF share of total impact & 10.0 & 9.0 & 20.2 & 16.2 \\
+\addlinespace
+\multicolumn{5}{@{}l}{\textbf{Panel B. No substitution (upper-bound mechanical effect)}} \\
+10\% reduction & -1.0 & -0.9 & -2.0 & -1.6 \\
+20\% reduction & -2.0 & -1.8 & -4.0 & -3.2 \\
+50\% reduction & -5.0 & -4.5 & -10.1 & -8.1 \\
+NDG conservative (target UPF=5.45\%) & -6.7 & -6.1 & -13.6 & -10.9 \\
+NDG central (target UPF=3.63\%) & -7.8 & -7.1 & -15.8 & -12.7 \\
+NDG strict (target UPF=1.81\%) & -8.9 & -8.1 & -18.0 & -14.5 \\
+\addlinespace
+\multicolumn{5}{@{}l}{\textbf{Panel C. Isocaloric NDG-concordant replacement (net effect)}} \\
+10\% reduction & 0.0 & -0.2 & +3.1 & +0.3 \\
+20\% reduction & 0.0 & -0.3 & +6.2 & +0.5 \\
+50\% reduction & 0.0 & -0.8 & +15.6 & +1.4 \\
+NDG conservative (target UPF=5.45\%) & 0.0 & -1.1 & +21.0 & +1.8 \\
+NDG central (target UPF=3.63\%) & 0.0 & -1.2 & +24.4 & +2.1 \\
+NDG strict (target UPF=1.81\%) & 0.0 & -1.4 & +27.8 & +2.4 \\
+\addlinespace
+\multicolumn{5}{@{}l}{\textbf{Panel D. Isoweight NDG-concordant replacement (net effect)}} \\
+10\% reduction & +0.9 & +0.9 & +1.5 & +1.5 \\
+20\% reduction & +1.7 & +1.8 & +3.0 & +3.1 \\
+50\% reduction & +4.3 & +4.4 & +7.5 & +7.7 \\
+NDG conservative (target UPF=5.45\%) & +5.8 & +5.9 & +10.0 & +10.4 \\
+NDG central (target UPF=3.63\%) & +6.7 & +6.9 & +11.7 & +12.1 \\
+NDG strict (target UPF=1.81\%) & +7.7 & +7.8 & +13.3 & +13.7 \\
+\end{longtable}
+\tabnote{Panel A reports the percentage share of total mapped diet-related impact attributable to UPFs at baseline. Panels B--D report net percentage changes versus baseline under the specified scenario assumptions. Panel B assumes no substitution, panel C assumes isocaloric replacement, and panel D assumes isoweight replacement. Negative values indicate reductions and positive values indicate increases. GHG denotes greenhouse gas emissions and NDG denotes National Dietary Guidelines.}
+}
+
+\section{Discussion}\label{discussion}
+
+Using nationally representative dietary data and official mortality statistics, we found that UPF consumption was associated with a substantial burden of premature mortality, years of life lost, and indirect economic costs in adults. This burden was consistently larger in men than in women, and cause-deleted life table analyses indicated measurable gains in life expectancy if UPF-attributable deaths were removed. Scenario analyses further suggested that reducing UPF intake could generate important health benefits, with the largest gains under targets aligned with national dietary guidelines. Environmental results were more mixed. Some scenarios were associated with lower greenhouse gas emissions and land use, whereas water-use outcomes varied substantially depending on the replacement pattern. These findings suggest that health gains do not necessarily translate into uniform environmental co-benefits. \\
+
+Our estimated attributable fraction was slightly lower than recent CRA results for Brazil (approximately 10.5\%),\cite{Nilson2023} consistent with Argentina's UPF energy share in ENNyS~2 (16.7\% overall; 15.9\% in men and 17.2\% in women) remaining below the highest-consumption settings in the region. At the same time, our results are broadly comparable to multi-country estimates that combine national dietary surveys with meta-analytic risk functions, where the attributable burden varies with baseline UPF consumption and background mortality rates.\cite{Nilson2025} Differences across studies can also reflect modelling choices (e.g., exposure metric, age range, lag structure) and the availability of nationally representative dietary data. \\
+
+Several mechanisms may explain why higher UPF consumption is associated with adverse health outcomes beyond their nutrient profiles, including reduced satiety signalling, higher energy density and eating rate, altered food matrix and glycaemic responses, and exposures to additives and packaging-related chemicals.\cite{Lane2024BMJ,Yates2024} Experimental evidence from a controlled feeding trial suggests that, even when diets are matched on macronutrients, an ultra-processed diet can increase ad libitum energy intake and short-term weight gain,\cite{Hall2019} supporting biological plausibility for at least part of the observed epidemiological associations. Nevertheless, the relative risks used here are primarily derived from observational studies, and residual confounding and measurement error may persist; therefore, our estimates should be interpreted as modelled attributable burden under stated assumptions rather than direct causal effects. \\
+
+From a policy perspective, Argentina's Law~27,642 provides a platform for reducing exposure to unhealthy products through front-of-package warning labels and related measures.\cite{ArgentinaLaw27642} Evidence from countries that have implemented warning-label policies indicates meaningful changes in purchases of labelled products,\cite{Taillie2020ChileLaw} but labelling alone is unlikely to maximise health gains. Multi-component packages that combine labelling with fiscal measures, marketing restrictions (especially to children), reformulation incentives, and healthier food environments (including public procurement and school food standards) are consistently recommended in global guidance.\cite{WHO2024FiscalGuideline} In this context, dietary guidance should explicitly address substitutions: our health scenarios assumed reductions in UPF energy share toward national guideline targets, whereas environmental outcomes varied markedly under alternative replacement designs. \\
+
+Regarding environmental impacts, reductions in UPF intake generally lowered greenhouse gas emissions and land use in our no-substitution and structured substitution scenarios, but water-use outcomes were more sensitive to what foods replaced UPFs. Under isocaloric substitution, we observed a potential increase in water use, underscoring that less processed or guideline-concordant replacements are not automatically lower-impact across all environmental dimensions. European cohort analyses have reported similar functional-unit sensitivity: in substitution analyses, replacing ultra-processed foods with unprocessed or minimally processed foods was associated with lower greenhouse gas emissions and land use when modelled in grams, but higher emissions and land use when modelled in kilocalories.\cite{Berden2025EPIC} Studies in Brazil also show that higher UPF contribution can be associated with higher dietary carbon and water footprints, particularly for water.\cite{Garzillo2022RSP} This heterogeneity highlights the need to evaluate both nutritional quality and multiple environmental indicators when designing substitution-based interventions, and to consider local production systems and water scarcity contexts.\cite{Anastasiou2022JCP} \\
+
+This study has several strengths, including the use of the most recent national dietary survey (ENNyS~2), official mortality statistics, and a transparent CRA framework extended to years of life lost, life expectancy, and indirect economic costs. We also modelled alternative UPF-reduction scenarios aligned with national dietary guidelines and evaluated environmental trade-offs under multiple substitution structures. Limitations include: (i) relative risks were largely derived from cohort studies in other settings and may not fully capture Argentina-specific confounding structures or effect modification; (ii) CRA assumes immediate or short-term risk changes after dietary shifts and does not explicitly model latency for chronic disease outcomes; (iii) substitution scenarios necessarily simplify complex behavioural and market responses; (iv) environmental coefficients were drawn from international life-cycle assessment sources, and we did not propagate their uncertainty in our probabilistic analysis;\cite{PooreNemecek2018,ADEMEAgribalyse2026} and (v) the environmental module assumes that dietary-demand shifts are met by domestic production and does not explicitly model imports. This simplification is likely to have limited influence at the aggregate level in Argentina, where Food Balance Sheets indicate a low imported share of total food-energy availability (roughly 1--2\% in recent years), but import composition could still matter for specific food groups.\cite{FAOSTATFBS2026} \\
+
+Overall, this study extends UPF burden assessment beyond mortality alone by linking avoidable deaths and economic gains to environmental trade-offs that vary according to the foods chosen as replacements in Argentina. Future work should prioritise Argentina-specific evidence on UPF consumption patterns, causal pathways, and substitution behaviours, alongside locally calibrated environmental footprint coefficients. Integrating distributional analyses (e.g., by income or region) and dynamic modelling of lagged health effects could further strengthen policy relevance. These extensions would also improve the basis for future cost-benefit analyses, when health and environmental outcomes point in the same direction, policy appraisal is relatively straightforward, but when they diverge, all relevant effects would need to be monetised to assess net social benefits.
+
+\section{Conclusions}\label{conclusions}
+
+UPF consumption in Argentina was associated with a substantial modelled burden of premature mortality among adults aged 30--69 years, corresponding to 9,823 deaths and 349,686 years of life lost in 2019 under CRA assumptions. This burden was larger in men than in women. Achieving UPF-reduction targets aligned with the Argentine dietary guidelines could generate important health and economic benefits, but environmental outcomes depend on replacement design. Policy packages should therefore pair UPF reduction with guidance and food-environment measures that facilitate healthy substitutions with lower water intensity.
+
+\IfFileExists{references_upf_argentina.bib}{%
+\bibliography{references_upf_argentina}%
+}{%
+\bibliography{output/references_upf_argentina}%
+}
+
+\section*{Acknowledgments}\label{acknowledgments}
+
+\section*{Data Availability}\label{data-availability}
+
+The analytical code and aggregated results used in this study are
+available upon reasonable request. ENNyS 2 microdata are available
+through the Ministry of Health of Argentina. Mortality data are publicly
+available through the DEIS (https://datos.gob.ar). EPH microdata are
+available through INDEC (https://www.indec.gob.ar).
+
+\section*{Author Contributions}\label{author-contributions}
+
+{[}To be completed{]}
+
+\section*{Funding}\label{funding}
+
+{[}To be completed{]}
+
+\section*{Conflict of Interest}\label{conflict-of-interest}
+
+{[}To be completed{]}
+
+\end{document}

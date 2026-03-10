@@ -1,0 +1,1336 @@
+﻿\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable,array,tabularx}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,calc}
+\usepackage[export]{adjustbox}
+\definecolor{FlowBlue}{HTML}{DCEAF7}
+\definecolor{FlowGreen}{HTML}{DDEEDB}
+\definecolor{FlowYellow}{HTML}{F6E8B1}
+\definecolor{FlowRed}{HTML}{F6D7D7}
+\tikzset{
+  >={Latex[length=3mm]},
+  box/.style={rectangle, rounded corners=2pt, draw=black,
+    align=left, text width=5.10in, minimum height=0.70in,
+    inner sep=8pt, font=\normalsize},
+  data/.style={box, fill=FlowBlue},
+  process/.style={box, fill=FlowGreen},
+  formula/.style={box, fill=FlowYellow},
+  output/.style={box, fill=FlowRed},
+  note/.style={rectangle, draw=black!55, dashed, rounded corners=2pt,
+    align=left, text width=3.10in, inner sep=7pt, font=\small},
+  flow/.style={draw, ->, line width=0.9pt},
+  smallflow/.style={draw, ->, line width=0.8pt}
+}
+\usepackage[super,sort&compress,comma]{natbib}
+\bibliographystyle{vancouver}
+\usepackage[margin=2.5cm,includefoot,footskip=30pt]{geometry}
+\usepackage{setspace}
+\usepackage{xurl}
+\urlstyle{same}
+\setlength{\emergencystretch}{3em}
+\setlength{\parindent}{0pt}
+\renewcommand{\figurename}{Fig.}
+\newcommand{\manualtablecaption}[1]{%
+  \par\centering\textbf{#1}\par\vspace{0.4em}%
+}
+\newcommand{\manualfigurecaption}[1]{%
+  \par\vspace{0.2em}{\footnotesize\centering #1\par}%
+}
+\newcommand{\tabnote}[1]{%
+  \vspace{0.06cm}%
+  {\footnotesize\setstretch{1}\par\raggedright\textit{Note.} #1\par}%
+}
+\newcommand{\appsection}[1]{%
+  \section*{#1}%
+  \addcontentsline{toc}{section}{#1}%
+}
+\newcommand{\appsubsection}[1]{%
+  \subsection*{#1}%
+  \addcontentsline{toc}{subsection}{#1}%
+}
+
+\title{Online Appendix for Health and environmental impacts of ultra-processed food consumption in Argentina, a national modelling study}
+\author{Christian Garc\'ia-Witulski \and Mariano Javier Rabassa}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\clearpage
+\renewcommand{\contentsname}{Appendix Index}
+\setcounter{tocdepth}{2}
+\tableofcontents
+\clearpage
+
+\onehalfspacing
+
+\appsection{Online Appendix}
+This Online Appendix accompanies the main manuscript and provides additional methodological details on data sources, processing steps, and the health, economic, and environmental modelling framework, together with supplementary tables.
+
+%====================================================%
+%  APPENDIX A                                        %
+%====================================================%
+\appsection{Appendix A. Data sources and processing}
+
+\appsubsection{A.1 Dietary intake data (ENNyS 2)}
+Dietary intake was obtained from Argentina's \emph{Second National Survey of Nutrition and Health} (ENNyS~2, 2018--2019), a cross-sectional, multistage, region-stratified probabilistic survey conducted in urban localities. Dietary intake was collected with 24-hour recalls using a multiple-pass approach. \citep{ENNYS22019,ENNYS2Dataset}
+
+In the survey file used for this study, 21,358 selected members were recorded overall. We restricted the analysis to adults aged 30--69 years, yielding 4,523 selected members in that age range. After linkage with the food-intake file, 4,496 adults aged 30--69 years had at least one recall with food-record information (1,888 men and 2,608 women) and therefore contributed to the dietary exposure analysis. Repeated recalls were available for 1,011 adults in this analytic age range. Recall-level intakes were first averaged within person across available recall days and then summarised with calibrated survey weights ($w_k$) to obtain population-representative estimates.
+
+\appsubsection{A.2 NOVA food classification}
+
+Each ENNyS~2 food and beverage code was classified according to the NOVA framework, which groups foods into four groups based on the extent and purpose of industrial processing rather than on nutrient content. \citep{Monteiro2019UPFIdentify} The four groups are: (1)~unprocessed or minimally processed foods (NOVA~1); (2)~processed culinary ingredients (NOVA~2); (3)~processed foods (NOVA~3); and (4)~ultra-processed foods (NOVA~4). Classification was performed at the individual food-code level using the Spanish item descriptions provided in the ENNyS~2 food file, supplemented where necessary by knowledge of typical Argentine product formulations. Dietary supplement codes (identified by codes beginning with the letter S) were excluded from the classification and from all analyses; the remaining 1,040 non-supplement codes are classified in Table~S2 and their distribution across NOVA groups is summarised in Table~S3.
+
+The primary distinguishing criterion between groups is the presence or absence of industrial additives not normally used in home cooking and serving no culinary purpose beyond product palatability, preservation, or marketability. Concretely:
+
+\begin{itemize}
+  \item \textbf{NOVA~1} encompasses foods that have undergone no industrial processing or only processes aimed at preservation without altering the essential nature of the product---such as fresh, chilled, or frozen single-ingredient vegetables, fruits, meats, fish, eggs, plain legumes, and plain whole grains. For example, fresh beef cuts, fresh chicken, whole-grain rice, raw eggs, and fresh seasonal vegetables were classified as NOVA~1.
+
+  \item \textbf{NOVA~2} covers substances extracted from whole foods and used in home preparation---including vegetable oils, sugar, salt, vinegar, and plain flour. These are not consumed on their own but are used to season or cook NOVA~1 foods.
+
+  \item \textbf{NOVA~3} includes foods manufactured by applying salt, sugar, oil, vinegar, or fermentation to NOVA~1 foods to preserve them or modify their flavour, without the addition of industrial additives. Typical examples in the ENNyS~2 food list include canned or preserved vegetables (e.g., canned peas, bottled peppers in brine), cured or smoked cheeses and meats when formulated without flavour enhancers or stabilisers, canned fish in oil or brine, and commercially bottled fruit in syrup.
+
+  \item \textbf{NOVA~4} (ultra-processed foods) encompasses industrial formulations that, in addition to NOVA~1 foods, sugars, oils, or salts, contain substances typically not found in home cooking---such as flavourings, emulsifiers, colour enhancers, stabilisers, artificial sweeteners, or high-fructose syrup---and/or food products assembled largely from industrial ingredients rather than whole foods. In the Argentine dietary context, this group included packaged biscuits, cookies, and crackers (\textit{galletitas dulces, galletitas de agua, bizcochitos envasados}); packaged breads and pastries prepared from industrial mixes (\textit{pan de molde, chip\'a de polvo premezcla}); breakfast cereals, cereal bars, and puffed-grain snacks; carbonated and sweetened non-alcoholic beverages; industrial fruit juices and flavoured drinks; spreadable processed cheeses; frankfurters, sausages, and formed meat products; instant noodles and dehydrated soups; confectionery including chocolates, sweets, and ice cream; flavoured yoghurts and dairy desserts; industrial sauces, dressings, and condiments with additives; and prepared frozen meals.
+\end{itemize}
+
+Several categories required judgement. Items sold both in artisan and industrial forms (e.g., \textit{bizcochitos}, \textit{empanadas}, \textit{bizcochuelo}) were classified based on the ENNyS description: items explicitly described as packaged, industrial, or prepared from a premixed powder were assigned to NOVA~4, while those described as freshly prepared at home or in a bakery were assigned to NOVA~3 or examined case by case. Restaurant or food-service codes that could not be disaggregated into ingredients (e.g., fast-food items, complete restaurant dishes) were classified according to their predominant formulation and typical Argentine product characteristics. Where the description alone was insufficient, Argentine food labelling and product databases were consulted to infer the ingredient profile. Plain mate herb (\textit{yerba mate}) was classified as NOVA~1; instant or flavoured mate preparations were classified as NOVA~4.
+
+Of the 1,040 non-supplement codes, 310 (29.8\%) were classified as NOVA~1, 69 (6.6\%) as NOVA~2, 203 (19.5\%) as NOVA~3, and 458 (44.0\%) as NOVA~4 (Table~S3). The high share of NOVA~4 codes reflects the diversity of packaged and industrialised products captured in ENNyS~2, though each code's contribution to total dietary energy depends on reported quantities consumed (Table~S2).
+
+\appsubsection{A.3 Food composition and energy calculation}
+Food-specific energy density (kcal per 100\,g) was obtained from the official composition resources linked to ENNyS~2. Item-level energy intake was computed as
+\[
+E_{kji}=\frac{g_{kji}\,\mathrm{kcal}_i}{100},
+\]
+where $g_{kji}$ is grams of food code $i$ consumed by individual $k$ on recall day $j$, and $\mathrm{kcal}_i$ is kcal per 100\,g. \citep{ENNYS22019}
+
+Food-code energy values were taken from the ENNyS~2-linked composition files, with an official secondary composition source used as a fallback when values were unavailable in the primary file. No additional item-level imputation rules were applied. When $\mathrm{kcal}_i$ was not available for a code, the corresponding item-level energy was treated as missing and excluded from item-level energy aggregation. Because the recall denominator uses the official ENNyS total energy variable, missing item-level energy affects only the reconstructed numerator used for $E^{\mathrm{UPF}}_{kj}$ and not the total-energy denominator itself. In practice, item-level energy coverage was high, so the potential impact of these missing values on derived \%UPF estimates is expected to be small. \citep{SARA22022}
+
+\appsubsection{A.4 Mortality data}
+Mortality inputs were obtained from Argentina's 2019 vital statistics (DEIS) and processed at record level using sex, age-group, underlying-cause, and death-count fields. \citep{DEIS2019} We retained records with known sex, excluded unspecified age-group records, and restricted the analysis to adults aged 30--69 years (groups 07\_30 a 34 to 14\_65 a 69), yielding 16 strata (two sexes by eight 5-year age groups). Death counts were aggregated within each stratum. The all-cause mortality input used in the CRA model was therefore based on all underlying-cause codes combined (no ICD-10 chapter restriction), with 103,448 deaths in the analytic population.
+
+\appsubsection{A.5 Population data}
+Population denominators were estimated from ENNyS~2 calibrated expansion factors and aggregated to the same 16 sex-by-age strata used in the mortality module (30--34 to 65--69 years, in men and women). To avoid duplicate contributions, each sampled person contributed once to the denominator, and only observations with valid positive total energy intake were retained. Stratum-specific population was computed as the sum of calibrated person-weights:
+\[
+N_{sa}=\sum_{k \in (s,a)} w_k,
+\]
+where $w_k$ denotes the calibrated expansion factor for individual $k$. This procedure yields population-representative counts for the ENNyS~2 target frame (urban localities with $\geq$5,000 inhabitants). \citep{ENNYS22019}
+
+The resulting analytic population aged 30--69 years was 15,130,807, with non-zero population in each of the 16 sex-age strata.
+
+\appsubsection{A.6 Economic data}
+Economic inputs were obtained from Argentina's national household survey microdata for 2019 (fourth quarter). For each sex-age stratum, we estimated two labour-market parameters using survey weights: (i) mean labour income among employed individuals with positive income in their main occupation, and (ii) the employment rate (share employed within the stratum). Monthly labour income was annualised by multiplying by 12. \citep{INDECEPH2019Q4}
+
+These stratum-specific parameters were linked to attributable deaths and valued with a human-capital approach as the present value of lost earnings up to retirement age (65 years), applying a 3\% annual discount rate. Final estimates were expressed in international dollars (intl.\$) using the World Bank PPP conversion factor for Argentina in 2019 (20.38 ARS per intl.\$). \citep{WorldBankPPP2019}
+
+\appsubsection{A.7 Environmental footprint data and food-code mapping}
+Environmental impacts were estimated by linking consumed food codes to life-cycle assessment coefficients for greenhouse gas emissions (GHG), land use, water use, and freshwater eutrophication. Coefficients were expressed per kilogram of product at a consistent system boundary; the hierarchy prioritised Argentina-focused evidence and was complemented with global datasets for groups not covered by primary sources. \citep{Arrieta2022SustainSci,PooreNemecek2018,OWIDDatasets2026,ADEMEAgribalyse2026} Mapping coverage for in-scope foods is reported in Table~S5, and the group-level coefficient set used in the manuscript environmental specification is reported in Table~S8. Plain drinking water and ice were treated as out of scope for diet-related footprint accounting because they contribute negligible dietary energy and would distort mass-based coverage summaries.
+
+%====================================================%
+%  APPENDIX B                                        %
+%====================================================%
+\appsection{Appendix B. Health, economic, and environmental modelling framework}
+
+\iffalse % figures repositioned to end of Appendix C
+\begin{figure}[!htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[node distance=0.32in and 0.42in, scale=0.87, every node/.style={transform shape}]
+
+\node[data] (input) at (0,0) {
+\textbf{1. Input data}\\[3pt]
+\textit{Dietary exposure:} 24-hour dietary recall data from ENNyS~2
+(2018--2019). Each record reports grams consumed per food code
+($g_{kji}$), NOVA classification (1--4), and official energy density
+($\mathrm{kcal}_i$ per 100\,g). Calibrated survey weight $w_k$.\\[3pt]
+\textit{Mortality:} All-cause deaths $D_{sa}$ in 2019 by sex $s$ and
+age group $a$ (30--34, $\ldots$, 65--69) from Argentina's vital
+statistics (DEIS).
+};
+
+\node[formula, below=of input] (exposure) {
+\textbf{2. UPF energy share per recall (Section~B.1)}\\
+UPF energy for individual $k$, recall $j$ (summing over NOVA~4 codes
+$\mathcal{U}$ with available energy density):
+\[
+  E^{\mathrm{UPF}}_{kj}=\sum_{i\in\mathcal{U}}\frac{g_{kji}\,\mathrm{kcal}_i}{100}.
+\]
+UPF energy share at recall level (using official total energy
+$E^{\mathrm{tot}}_{kj}$):
+\[
+  \%\mathrm{UPF}_{kj}=100\times\frac{E^{\mathrm{UPF}}_{kj}}{E^{\mathrm{tot}}_{kj}}.
+\]
+};
+
+\node[process, below=of exposure] (stratum) {
+\textbf{3. Person-level mean and stratum-level moments (Section~B.1)}\\
+Within-person mean across $J_k$ recall days:
+$\;\overline{\%\mathrm{UPF}}_{k}=\dfrac{1}{J_k}\displaystyle\sum_{j=1}^{J_k}\%\mathrm{UPF}_{kj}$.\\[4pt]
+Survey-weighted stratum mean and standard deviation:
+\[
+  \mu_{sa}=\frac{\sum_{k\in(s,a)}w_k\,\overline{\%\mathrm{UPF}}_{k}}
+                {\sum_{k\in(s,a)}w_k}
+\]
+\[
+  \sigma_{sa}=\sqrt{\frac{\sum_{k}w_k(\overline{\%\mathrm{UPF}}_{k}-\mu_{sa})^2}
+                         {\sum_{k}w_k}}.
+\]
+Approximate standard error: $\mathrm{SE}_{sa}=\sigma_{sa}/\sqrt{n_{sa}}$.
+};
+
+\node[formula, below=of stratum] (dr) {
+\textbf{4. Dose--response function (Section~B.2)}\\
+Log-linear relative risk at exposure $p$ (percentage points of
+dietary energy from UPFs):
+\[
+  \mathrm{RR}(p)=\exp(\beta p),\qquad
+  \beta=\frac{\ln(\mathrm{RR}_{\mathrm{ref}})}{x_{\mathrm{ref}}}.
+\]
+Calibration: $\mathrm{RR}_{\mathrm{ref}}=1.25$
+(95\,\% CI 1.14--1.37) from Pagliai et~al.\ (2021), mapped to
+$x_{\mathrm{ref}}=35.7$ percentage-point contrast following
+Nilson et~al.\ (2023). Uncertainty in $\beta$ from the CI, assuming
+normality on the log scale.
+};
+
+\node[formula, below=of dr] (cra) {
+\textbf{5. Distributional CRA: log-normal exposure model (Section~B.3)}\\
+Stratum exposure modelled as log-normal, truncated to $[0,100]$:
+\[
+  \sigma_{sa}^{*2}=\ln\!\left(1+\!\left(\tfrac{\sigma_{sa}}{\mu_{sa}}\right)^{\!2}\right),\quad
+  \mu_{sa}^{*}=\ln(\mu_{sa})-\tfrac{1}{2}\sigma_{sa}^{*2}.
+\]
+Expected relative risk integrated over the truncated density $f_{sa}$:
+\[
+  \mathbb{E}\!\left[\mathrm{RR}(X_{sa})\right]=\int_0^{100}\exp(\beta x)\,f_{sa}(x)\,dx.
+\]
+};
+
+\node[note, right=0.95in of cra] (scenarios) {
+\textbf{Counterfactual scenario types}\\[3pt]
+\textbf{TMRL} (theoretical minimum risk level):\\
+$\mathbb{E}[\mathrm{RR}(X^{\mathrm{cf}}_{sa})]=1$\\[4pt]
+\textbf{Proportional reductions} ($r=10\%,20\%,50\%$):\\
+$X^{\mathrm{cf}}_{sa}=(1-r)\,X_{sa}$\\[4pt]
+\textbf{NDG-aligned absolute targets} (profile $q$):\\
+$\mu^{\mathrm{cf}}_{saq}=\min\!\bigl(\mu_{sa},\,\%\mathrm{UPF}^{\mathrm{target}}_q\bigr)$\\
+$\sigma^{\mathrm{cf}}_{saq}=\sigma_{sa}\,\mu^{\mathrm{cf}}_{saq}/\max(\mu_{sa},0.001)$\\[4pt]
+where $\%\mathrm{UPF}^{\mathrm{target}}_q=100\textstyle\sum_g w_g\,c_{gq}$\\
+Profiles: 5.45\,\% / 3.63\,\% / 1.81\,\%\\
+(Table~B1)
+};
+
+\node[formula, below=of cra] (paf) {
+\textbf{6. Population attributable fraction and attributable deaths}\\
+For each sex--age stratum $(s,a)$:
+\[
+  \mathrm{PAF}_{sa}=
+  \frac{\mathbb{E}[\mathrm{RR}(X_{sa})]-\mathbb{E}[\mathrm{RR}(X^{\mathrm{cf}}_{sa})]}
+       {\mathbb{E}[\mathrm{RR}(X_{sa})]}.
+\]
+Attributable (or avertable) deaths:
+\[
+  A_{sa}=\mathrm{PAF}_{sa}\times D_{sa}.
+\]
+};
+
+\node[
+  draw=black!55, rounded corners=3pt,
+  align=left, inner sep=8pt, font=\footnotesize,
+  below=0.28in of scenarios
+] (legend) {
+  \textbf{Legend}\\[3pt]
+  \colorbox{FlowBlue}{\hphantom{~~~~}}\enspace Input data\\[2pt]
+  \colorbox{FlowGreen}{\hphantom{~~~~}}\enspace Processing step\\[2pt]
+  \colorbox{FlowYellow}{\hphantom{~~~~}}\enspace Formula / computation\\[2pt]
+  \colorbox{FlowRed}{\hphantom{~~~~}}\enspace Manuscript output\\[2pt]
+  \tikz[baseline=0pt]\draw[black!55,dashed,line width=0.7pt](0,0)--(0.42in,0);%
+  \enspace Annotation / note
+};
+
+\node[process, below=of paf] (mc) {
+\textbf{7. Monte Carlo uncertainty quantification (Section~B.4)}\\
+10,000 iterations. At each iteration $b$: sample
+$\mu^{(b)}_{sa}\sim\mathcal{N}(\mu_{sa},\mathrm{SE}_{sa}^2)$ truncated
+to $[0,100]$; dose--response slope $\beta^{(b)}$ on the log scale
+from the CI of $\mathrm{RR}_{\mathrm{ref}}$; death counts
+$D^{(b)}_{sa}\sim\mathrm{Poisson}(D_{sa})$. PAFs and outcomes are
+recomputed at each iteration; 95\,\% uncertainty intervals are
+the 2.5th and 97.5th percentiles.
+};
+
+\node[output, below=of mc] (outputs) {
+\textbf{8. Health and economic scenario outputs (Table~4)}\\[3pt]
+\textbf{Deaths averted:}\enspace$\sum_{s,a}A_{sa}$ and 95\,\%~UI.\\[3pt]
+\textbf{YLL averted (Section~B.5):}\enspace
+  $\mathrm{YLL}=\displaystyle\sum_{s,a}A_{sa}\,L_a$,
+  where $L_a$ is the WHO standard expected years lost for age group~$a$.\\[3pt]
+\textbf{Life expectancy gained} $\Delta e_{30}$ \textbf{(Section~B.6):}
+  cause-deleted life table with
+  $D^{\mathrm{cf}}_{sa}=D_{sa}-A_{sa}$.\\[3pt]
+\textbf{Economic costs PVLE (Section~B.7, Table~S4):}
+  $\mathrm{PVLE}_{sa}=A_{sa}\!\times\!y_{sa}\!\times\!emp_{sa}
+  \!\times\!\displaystyle\sum_{t=1}^{T_{sa}}\!(1+r)^{-t}$,\;$r=3\,\%$.
+};
+
+\draw[flow]      (input)    -- (exposure);
+\draw[flow]      (exposure) -- (stratum);
+\draw[flow]      (stratum)  -- (dr);
+\draw[flow]      (dr)       -- (cra);
+\draw[smallflow] (cra)      -- (scenarios);
+\draw[flow]      (cra)      -- (paf);
+\draw[flow]      (paf)      -- (mc);
+\draw[flow]      (mc)       -- (outputs);
+
+\end{tikzpicture}
+}
+\caption*{\textbf{Fig.~B1.} Health impact estimation pipeline. Blue = input data; green = processing step; yellow = formula/computation; red = manuscript output. Section and table references point to this appendix.}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[!htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[node distance=0.32in and 0.42in, scale=0.87, every node/.style={transform shape}]
+
+\node[data] (input) at (0,0) {
+\textbf{1. Dietary intake data (ENNyS)}\\
+24-hour dietary recall data from the Argentine National Nutrition
+Survey (ENNyS). Each record reports the quantity consumed (grams)
+for each food item on one recall day. Dietary supplements and
+unclassified foods are excluded.
+};
+
+\node[data, below=of input] (weights) {
+\textbf{2. Survey weighting and repeated recalls}\\
+Each respondent carries a calibrated post-stratification survey
+weight~$w_k$. For individuals with more than one recall day ($n_k>1$),
+the weight is split equally across recall days:
+\[
+  w_{k,j}=\frac{w_k}{n_k}.
+\]
+This ensures each person contributes exactly once to population totals,
+avoiding double-counting in repeated-recall designs.
+};
+
+\node[data, below=of weights] (joins) {
+\textbf{3. Linking foods to environmental coefficients}\\
+Each food item is matched to:\\
+\hspace*{0.5em}\textbullet\; NOVA processing class (1--4)\\
+\hspace*{0.5em}\textbullet\; energy density (kcal per 100\,g)\\
+\hspace*{0.5em}\textbullet\; environmental food group\\
+\hspace*{1.3em}\textit{(Arrieta et~al.\ 2022; extended with OWID data)}\\
+\hspace*{0.5em}\textbullet\; impact coefficients per kg:\\
+\hspace*{1.3em}GHG, land, water, eutrophication
+};
+
+\node[process, right=1.0in of joins] (curated) {
+\textbf{Scope refinements (main analysis)}\\
+\begin{itemize}
+  \item Plain drinking water and ice are excluded\\
+        (negligible environmental footprint)
+  \item Certain beverages reassigned to more\\
+        specific environmental food groups
+  \item Survey weighting structure unchanged
+\end{itemize}
+};
+
+\node[formula, below=of joins] (mass) {
+\textbf{4. Converting intake to coefficient-compatible mass (Section~B.8)}\\
+Consumed grams are expressed as kilograms at the retail stage:
+$q^{\mathrm{ret}}=g/1000$.\\[4pt]
+Coefficients for some food groups are defined at farm-gate (i.e.,
+before post-harvest losses). For these, retail mass is converted to
+an equivalent farm-gate mass using a food-group-specific
+retail-to-farm-gate yield ratio~$\phi_i$:
+\[
+  q^{\mathrm{ref}}=\frac{q^{\mathrm{ret}}}{\phi_i}.
+\]
+For groups without an explicit ratio, $\phi_i=1$ is assumed.
+};
+
+\node[formula, below=of mass] (itemimpact) {
+\textbf{5. Item-level environmental footprint (Section~B.8)}\\
+For each food~$i$ consumed by person~$k$ on recall day~$j$, the
+contribution to indicator~$m$ is:
+\[
+  I_{kji,m}=q^{\mathrm{ref}}_{kji}\,c_{i,m},
+\]
+where $c_{i,m}$ is the impact coefficient for food group~$i$.\\[3pt]
+Indicators:\;GHG\,(kg\,CO$_2$-eq)\;\textbullet\;
+Land\,(m$^2$)\;\textbullet\;
+Water\,(L)\;\textbullet\;
+Eutrophication\,(g\,PO$_4$-eq).
+};
+
+\node[process, below=of itemimpact] (aggregate) {
+\textbf{6. Population-weighted totals (Section~B.8)}\\
+Item-level footprints are summed over all foods and all
+survey-weighted observations:\\[2pt]
+Total diet:\;
+$\displaystyle I^{\mathrm{base}}_m=\sum_{k,j}\sum_i I_{kji,m}$.\\[4pt]
+Ultra-processed foods (NOVA\,4) component:\;
+$\displaystyle I^{\mathrm{UPF}}_m=\sum_{k,j}\!\sum_{i\in\mathrm{NOVA\,4}}\! I_{kji,m}$.
+};
+
+\node[note, right=0.95in of aggregate] (coverage) {
+\textbf{Mapping coverage (Table~S5)}\\
+Computed separately for the full diet and for NOVA\,4
+ultra-processed foods:\\[2pt]
+\hspace*{0.5em}\textbullet\; share of observations with a matched coefficient\\
+\hspace*{0.5em}\textbullet\; share of total grams matched\\
+\hspace*{0.5em}\textbullet\; share of dietary energy matched\\[3pt]
+The matched-energy share serves as the\\
+denominator for all environmental shares.
+};
+
+\node[
+  draw=black!55, rounded corners=3pt,
+  align=left, inner sep=8pt, font=\footnotesize,
+  below=0.28in of coverage
+] (legend2) {
+  \textbf{Legend}\\[3pt]
+  \colorbox{FlowBlue}{\hphantom{~~~~}}\enspace Input data\\[2pt]
+  \colorbox{FlowGreen}{\hphantom{~~~~}}\enspace Processing step\\[2pt]
+  \colorbox{FlowYellow}{\hphantom{~~~~}}\enspace Formula / computation\\[2pt]
+  \colorbox{FlowRed}{\hphantom{~~~~}}\enspace Manuscript output\\[2pt]
+  \tikz[baseline=0pt]\draw[black!55,dashed,line width=0.7pt](0,0)--(0.42in,0);%
+  \enspace Annotation / note
+};
+
+\node[process, below=of aggregate] (shares) {
+\textbf{7. UPF share of baseline environmental footprint (Table~5, Panel~A)}\\
+The fraction of the total diet-related footprint attributable to
+ultra-processed foods at baseline:
+\[
+  \text{UPF share}_m = 100\times\frac{I^{\mathrm{UPF}}_m}{I^{\mathrm{base}}_m}.
+\]
+};
+
+\node[formula, below left=0.55in and 0.15in of shares] (norepl) {
+\textbf{8A. No substitution} \normalfont\textit{(upper bound)}\\
+UPF intake is reduced by a fraction~$r$ and the removed
+food is not replaced. Total footprint falls by exactly the
+UPF share of the reduction:
+\[
+  I^{\mathrm{cf}}_m = I^{\mathrm{base}}_m - r\,I^{\mathrm{UPF}}_m.
+\]
+This is a theoretical maximum saving.
+};
+
+\node[formula, below=0.55in of shares] (iso) {
+\textbf{8B. Isocaloric substitution (Section~B.8)}\\
+The energy contained in the reduced UPF intake is replaced
+calorie-for-calorie with non-UPF foods from basket~$g$.
+Denoting the removed energy as $E^{\mathrm{red}}=r\,E^{\mathrm{map}}_{\mathrm{UPF}}$,
+the net footprint is:
+\[
+  I^{\mathrm{cf}}_{m,g}=I^{\mathrm{base}}_m-r\,I^{\mathrm{UPF}}_m
+  +E^{\mathrm{red}}\,\gamma_{m,g},
+\]
+where $\gamma_{m,g}$ is the environmental intensity of basket~$g$
+(impact per kcal).
+};
+
+\node[note, right=0.95in of iso] (baskets) {
+\textbf{Replacement food baskets (8B \& 8C)}\\[3pt]
+Four alternative substitution profiles:\\[2pt]
+\hspace*{0.5em}\textbullet\; Minimally processed foods (NOVA\,1)\\
+\hspace*{0.5em}\textbullet\; Processed non-UPF foods (NOVA\,3)\\
+\hspace*{0.5em}\textbullet\; Blended NOVA\,1\,/\,NOVA\,3 mix\\
+\hspace*{0.5em}\textbullet\; Diet aligned with national guidelines\\
+\hspace*{1.2em}(NDG~2016)\\[4pt]
+8B: intensity per kcal ($\gamma_{m,g}$)\\
+8C: intensity per kg ($\kappa_{m,g}$)
+};
+
+\node[formula, below=0.38in of iso] (isoweight) {
+\textbf{8C. Isoweight substitution}
+\normalfont\textit{(sensitivity analysis, Section~B.8)}\\
+The mass (kg) of reduced UPF intake is replaced gram-for-gram
+with non-UPF foods from basket~$g$, instead of calorie-for-calorie.
+Denoting the removed mass as $M^{\mathrm{red}}=r\,M^{\mathrm{map}}_{\mathrm{UPF}}$:
+\[
+  I^{\mathrm{cf,W}}_{m,g}=I^{\mathrm{base}}_m-r\,I^{\mathrm{UPF}}_m
+  +M^{\mathrm{red}}\,\kappa_{m,g},
+\]
+where $\kappa_{m,g}$ is the intensity of basket~$g$ per kg.
+};
+
+\node[output, below=0.75in of isoweight] (outputs) {
+\textbf{9. Net environmental change: scenario outputs}\\
+For each indicator~$m$ and reduction scenario, the percentage change
+in total diet-related footprint relative to baseline:
+\[
+  \%\Delta I_m = 100\!\left(\frac{I^{\mathrm{cf}}_m}{I^{\mathrm{base}}_m}-1\right).
+\]
+\textit{Results reported in:}\enspace
+Table~5 (Panels~B--D)\enspace\textbullet\enspace
+Online Appendix Table~S6.
+};
+
+\draw[flow]      (input)      -- (weights);
+\draw[flow]      (weights)    -- (joins);
+\draw[smallflow] (joins)      -- (curated);
+\draw[flow]      (joins)      -- (mass);
+\draw[flow]      (mass)       -- (itemimpact);
+\draw[flow]      (itemimpact) -- (aggregate);
+\draw[smallflow] (aggregate)  -- (coverage);
+\draw[flow]      (aggregate)  -- (shares);
+\draw[flow]      (shares)     -- (norepl);
+\draw[flow]      (shares)     -- (iso);
+\draw[smallflow] (iso)        -- (baskets);
+\draw[smallflow, dashed] (iso) -- (isoweight);
+\draw[smallflow] (isoweight.east) -| (baskets.south);
+\draw[smallflow] (norepl.south)    |- (outputs.west);
+\draw[smallflow] (iso.east) to[out=0,in=0,looseness=1.1] (outputs.east);
+\draw[flow]      (isoweight)       -- (outputs);
+
+\end{tikzpicture}
+}
+\caption*{\textbf{Fig.~B2.} Environmental footprint estimation pipeline.}
+\end{figure}
+
+\fi % end of repositioned figures
+
+\appsubsection{Notation}
+Sex is indexed by $s$, age group by $a$ (30--34, 35--39, \ldots, 65--69), individual by $k$, recall day by $j$, and food code by $i$. Calibrated survey weights are $w_k$. Observed deaths in stratum $(s,a)$ are $D_{sa}$ and UPF-attributable deaths are $A_{sa}$. The exposure is the dietary energy share from ultra-processed foods (UPFs), measured in percentage points from 0 to 100. Environmental indicators are indexed by $m$.
+
+\appsubsection{B.1 Estimation of UPF contribution to total energy intake}
+The exposure is defined as the percentage of total dietary energy from UPFs. First, UPF energy per recall is computed by summing item-level energy over food codes classified as NOVA~4 with official energy density available.
+\[
+E^{\mathrm{UPF}}_{kj}=\sum_{i\in\mathcal{U}}\frac{g_{kji}\,\mathrm{kcal}_i}{100},
+\]
+where $\mathcal{U}$ denotes the set of NOVA~4 food codes with available $\mathrm{kcal}_i$. \citep{Monteiro2019UPFIdentify,ENNYS22019}
+
+Second, recall-level \%UPF uses the official total energy for that recall, $E^{\mathrm{tot}}_{kj}$, as denominator.
+\[
+\%\mathrm{UPF}_{kj}=100\times\frac{E^{\mathrm{UPF}}_{kj}}{E^{\mathrm{tot}}_{kj}}.
+\]
+Recalls with non-positive total energy or values outside $[0,100]$ are excluded.
+
+Third, for participants with multiple recalls, we compute a within-person mean.
+\[
+\overline{\%\mathrm{UPF}}_{k}=\frac{1}{J_k}\sum_{j=1}^{J_k}\%\mathrm{UPF}_{kj}.
+\]
+
+Fourth, stratum-level summaries are computed as weighted moments.
+\[
+\mu_{sa}=\frac{\sum_{k\in(s,a)}w_k\,\overline{\%\mathrm{UPF}}_{k}}{\sum_{k\in(s,a)}w_k},\qquad
+\sigma_{sa}=\sqrt{\frac{\sum_{k\in(s,a)}w_k\left(\overline{\%\mathrm{UPF}}_{k}-\mu_{sa}\right)^2}{\sum_{k\in(s,a)}w_k}}.
+\]
+
+Because full replicate-weight variance estimation was not available for all derived exposure moments, sampling uncertainty in $\mu_{sa}$ was propagated using an approximate standard error $\mathrm{SE}_{sa}=\sigma_{sa}/\sqrt{n_{sa}}$, where $n_{sa}$ is the number of individuals in the stratum. This approximation should be interpreted as capturing within-stratum sampling variability rather than the full complex-survey variance.
+
+\appsubsection{B.2 Dose--response function and relative risk}
+The CRA framework requires a continuous risk function to translate the full stratum-specific exposure distribution (not only mean exposure) into expected risk. For this reason, we parameterised the UPF--mortality association as a log-linear dose--response function in which risk increases multiplicatively with each additional percentage point of dietary energy from UPFs:
+\[
+\mathrm{RR}(p)=\exp(\beta p), \qquad \beta=\frac{\ln(\mathrm{RR}_{\mathrm{ref}})}{x_{\mathrm{ref}}}.
+\]
+The reference effect size was taken from the meta-analysis used in the main model input, $\mathrm{RR}_{\mathrm{ref}}=1.25$ (95\% CI 1.14--1.37) for all-cause mortality. \citep{Pagliai2021} To convert this pooled high-versus-low contrast into a continuous coefficient, we used the exposure contrast adopted in prior UPF CRA applications, $x_{\mathrm{ref}}=35.7$ percentage points of energy from UPFs (interpreted as an approximately 0\% to 35.7\% contrast). \citep{Nilson2023} This calibration imposes two anchors: $\mathrm{RR}(0)=1$ and $\mathrm{RR}(35.7)=1.25$, yielding $\beta=\ln(1.25)/35.7=0.00625$.
+
+Under this specification, relative risk at any exposure level can be evaluated directly and integrated over the observed exposure distribution. For interpretation, a 10-percentage-point increase in UPF energy share corresponds to $\exp(10\beta)=1.064$, i.e., about a 6.4\% higher mortality risk under the model assumptions.
+
+Uncertainty in $\beta$ was propagated from the reported confidence interval of $\mathrm{RR}_{\mathrm{ref}}$ by working on the log scale and assuming approximate normality of the log-risk coefficient, following standard burden-of-disease practice. \citep{WHO2024MethodsGBD} This uncertainty component was then sampled in the Monte Carlo stage (Section~B.4).
+
+\appsubsection{B.3 Population attributable fraction (distributional CRA)}
+Population attributable fractions (PAFs) were computed using a distributional comparative risk assessment approach, integrating risk over the exposure distribution within each stratum. \citep{WHO2024MethodsGBD,Nilson2023}
+
+Within each stratum $(s,a)$, exposure was modelled as log-normal, parameterised from the stratum mean and standard deviation.
+\[
+X_{sa}\sim\mathrm{LogNormal}(\mu_{sa}^*,\sigma_{sa}^{*2}),
+\qquad
+\sigma_{sa}^{*2}=\ln\left(1+\left(\frac{\sigma_{sa}}{\mu_{sa}}\right)^2\right),\quad
+\mu_{sa}^*=\ln(\mu_{sa})-\frac{\sigma_{sa}^{*2}}{2}.
+\]
+Because \%UPF is bounded, expectations were evaluated over $[0,100]$ using a truncated density.
+\[
+\mathbb{E}\!\left[\mathrm{RR}(X_{sa})\right]=\int_0^{100}\exp(\beta x)\,f_{sa}(x)\,dx,
+\]
+where $f_{sa}$ denotes the truncated log-normal density. \citep{WHO2024MethodsGBD}
+
+For a proportional reduction scenario with fraction $r$, exposure is shifted to $X_{sa}^{\mathrm{cf}}=(1-r)X_{sa}$ and
+\[
+\mathrm{PAF}_{sa}=
+\frac{\mathbb{E}[\mathrm{RR}(X_{sa})]-\mathbb{E}[\mathrm{RR}(X_{sa}^{\mathrm{cf}})]}
+{\mathbb{E}[\mathrm{RR}(X_{sa})]}.
+\]
+For a theoretical minimum risk level (TMRL) at 0\% UPF, $\mathbb{E}[\mathrm{RR}(X_{sa}^{\mathrm{cf}})]=1$.
+
+Guideline-aligned scenarios imposed absolute \%UPF targets derived from the National Dietary Guidelines (NDG) food-group structure. \citep{NDG2016} For profile $q\in\{\text{conservative},\text{central},\text{strict}\}$, the target was constructed as
+\[
+\%\mathrm{UPF}^{\mathrm{target}}_q = 100\sum_g w_g\,c_{gq},
+\]
+where $w_g$ are normalised NDG basket composition weights ($\sum_g w_g=1$) and $c_{gq}$ are group-specific residual UPF caps under profile $q$. Profile multipliers were defined as an exploratory $\pm50\%$ range around the central profile ($m_q\in\{1.5,1.0,0.5\}$), yielding targets of 5.45\% (conservative), 3.63\% (central), and 1.81\% (strict). For each stratum, we set the counterfactual mean to $\mu^{\mathrm{cf}}_{saq}=\min(\mu_{sa},\%\mathrm{UPF}^{\mathrm{target}}_q)$ and scaled the standard deviation proportionally, $\sigma^{\mathrm{cf}}_{saq}=\sigma_{sa}\,\mu^{\mathrm{cf}}_{saq}/\max(\mu_{sa},0.001)$, before recomputing $\mathbb{E}[\mathrm{RR}(X_{sa}^{\mathrm{cf}})]$.
+
+Attributable deaths were then computed as $A_{sa}=\mathrm{PAF}_{sa}\,D_{sa}$ and summed over strata to obtain national totals. \citep{WHO2024MethodsGBD,Nilson2023}
+
+\subsubsection*{Construction of group-specific UPF caps}
+The central cap $c_g$ was set to reflect the maximum UPF fraction consistent with guideline-concordant consumption of that food group (Table~B1). Food groups where whole or minimally processed forms are normative---fruits, vegetables, legumes, rice, starchy vegetables, eggs, and nuts---were assigned $c_g=0$. Processed-grain groups (cereals, pasta), dairy products, and oil crops were assigned $c_g=0.10$, allowing a modest share of processed variants (e.g., packaged pasta, flavoured yoghurt) while maintaining guideline adherence. Baked products received $c_g=0.20$ because Argentina's guideline basket includes a small allowance for bread-type items, and NOVA~4 classification is common in this group. All animal-protein groups (meats, fish) were assigned $c_g=0.02$, a near-zero allowance consistent with fresh-cut or lightly processed preparations. The three profiles apply a uniform multiplier: $c_{gq}=\min(c_g\,m_q,\,0.95)$, where $m_{\mathrm{conservative}}=1.5$, $m_{\mathrm{central}}=1.0$, and $m_{\mathrm{strict}}=0.5$.
+
+Because the NDG normative diet assigns large energy shares to plant-based groups that carry a zero cap---fruits (18\%), vegetables (25\%), and legumes (5\%)---the aggregated target is well below Argentina's observed UPF share of 16.66\%, producing reductions of 67.3\%, 78.2\%, and 89.1\% for the conservative, central, and strict profiles, respectively. The derivation of the 3.63\% central target is shown in Table~B1 and the scenario-level targets are summarised in Table~S7.
+
+\vspace{0.5em}
+\noindent\textbf{Table B1.} Derivation of the central NDG guideline-aligned UPF target (3.63\% energy)
+
+\smallskip
+\begin{center}
+\small
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Food group} & \textbf{NDG weight $w_g$ (\%)} & \textbf{Central cap $c_g$} & \textbf{Contribution $w_g c_g$ (pp)} \\
+\midrule
+Fruits & 18.0 & 0.00 & 0.00 \\
+Vegetables & 25.0 & 0.00 & 0.00 \\
+Legumes and pulses & 5.0 & 0.00 & 0.00 \\
+Cereals (excl.\ rice) & 6.0 & 0.10 & 0.60 \\
+Rice & 3.0 & 0.00 & 0.00 \\
+Pasta & 3.0 & 0.10 & 0.30 \\
+Baked products & 3.0 & 0.20 & 0.60 \\
+Starchy vegetables & 3.0 & 0.00 & 0.00 \\
+Dairy products & 13.0 & 0.10 & 1.30 \\
+Beef & 4.0 & 0.02 & 0.08 \\
+Lamb and mutton & 0.5 & 0.02 & 0.01 \\
+Other meats & 0.5 & 0.02 & 0.01 \\
+Poultry & 2.5 & 0.02 & 0.05 \\
+Pork & 1.0 & 0.02 & 0.02 \\
+Fish and seafood & 3.0 & 0.02 & 0.06 \\
+Eggs & 1.5 & 0.00 & 0.00 \\
+Oil crops & 6.0 & 0.10 & 0.60 \\
+Nuts and seeds & 2.0 & 0.00 & 0.00 \\
+\midrule
+\textbf{Total} & \textbf{100.0} & & \textbf{3.63} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent{\begingroup\footnotesize\setstretch{1}\selectfont NDG weights ($w_g$) are the normative energy shares prescribed by Argentina's 2016 National Dietary Guidelines. The central cap $c_g$ is the maximum UPF fraction assigned to each food group for a guideline-concordant dietary pattern; caps are scenario assumptions intended to reflect guideline intent rather than observed values. The population-level target equals $100\sum_g w_g c_g = 3.63\%$ of total dietary energy. Conservative (5.45\%) and strict (1.81\%) targets are obtained by multiplying all central caps by 1.5 and 0.5, respectively.\par\endgroup}
+
+\vspace{0.5em}
+
+\appsubsection{B.4 Monte Carlo uncertainty quantification}
+Because attributable mortality is a nonlinear function of exposure, risk coefficients, and death counts, analytic variance propagation is not straightforward in this setting. We therefore used probabilistic Monte Carlo simulation to jointly propagate uncertainty from key model inputs and obtain uncertainty intervals for both stratum-level and national estimates, following standard comparative risk assessment practice. \citep{WHO2024MethodsGBD,Nilson2023}
+
+We ran 10,000 iterations. For each stratum $(s,a)$ and iteration $b$, inputs were sampled as:
+\[
+\mu^{(b)}_{sa}\sim\mathcal{N}(\mu_{sa},\mathrm{SE}_{sa}^2),\qquad
+\mu^{(b)}_{sa}\in[0.1,100],
+\]
+\[
+\beta^{(b)}\sim\mathcal{N}(\beta,\mathrm{SE}_{\beta}^{2}),\qquad
+D^{(b)}_{sa}\sim\mathrm{Poisson}(D_{sa}).
+\]
+Here, $\mu^{(b)}_{sa}$ is the sampled mean exposure, truncated to the feasible \%UPF range; $\beta^{(b)}$ is the sampled dose--response slope using the uncertainty derived from the confidence interval of the reference RR (Section~B.2); and $D^{(b)}_{sa}$ is a sampled death count under a Poisson counting model. The stratum-specific exposure spread ($\sigma_{sa}$) was held at its estimated value and used to evaluate the distributional PAF under each draw.
+
+For each iteration, we recomputed baseline PAFs, attributable deaths, and scenario-specific avertable deaths using the same equations as in Section~B.3. Final point estimates are reported as medians (50th percentile), and uncertainty intervals as the 2.5th and 97.5th percentiles of the simulated distributions.
+
+To complement deaths averted, we report two additional mortality-burden metrics: years of life lost (YLL) and life expectancy gained. YLL captures premature mortality by weighting attributable deaths by remaining standard life expectancy, and life expectancy gain translates those avoided deaths into an intuitive population-level metric at age 30. Both measures follow standard WHO/GBD burden-of-disease conventions, improving comparability across studies and policy scenarios. \citep{Murray2003,WHO2024MethodsGBD}
+
+\appsubsection{B.5 Years of life lost (YLL)}
+YLL was estimated to capture the timing of premature mortality attributable to UPF intake, not only the number of attributable deaths. Death counts alone treat deaths at different ages as equivalent, while YLL assigns larger weight to deaths that occur earlier in adult life. This improves interpretability for prevention policy and keeps results comparable with WHO/GBD burden metrics. \citep{Murray2003,WHO2024MethodsGBD}
+
+For each sex-age stratum, YLL is
+\[
+\mathrm{YLL}_{sa}=A_{sa}\,L_a,
+\]
+and national YLL is
+\[
+\mathrm{YLL}=\sum_{s,a}A_{sa}\,L_a,
+\]
+where $A_{sa}$ are UPF-attributable deaths from the comparative risk assessment model (Sections~B.2--B.4), and $L_a$ denotes standard remaining life expectancy at age group $a$ from the WHO reference table. \citep{Murray2003,WHO2024MethodsGBD}
+
+In implementation, age-specific YLL weights were fixed for the 30--69 year groups (30--34: 60.34; 35--39: 55.38; 40--44: 50.43; 45--49: 45.51; 50--54: 40.61; 55--59: 35.74; 60--64: 30.92; 65--69: 26.21 years). These weights were applied identically across sexes, consistent with WHO/GBD practice of using a common standard life table for comparability.
+
+No additional age weighting or time discounting was applied to YLL; burden differences are driven only by the number of attributable deaths and the standard life-years remaining in each age group.
+
+Uncertainty was propagated at each Monte Carlo draw by recomputing
+\[
+\mathrm{YLL}^{(b)}=\sum_{s,a}A_{sa}^{(b)}L_a.
+\]
+For each scenario $q$, avertable YLL was computed as
+\[
+\Delta \mathrm{YLL}^{(q,b)}=\sum_{s,a}A^{(q,b)}_{sa}L_a,
+\]
+and final results were summarized as the median and 95\% uncertainty interval (2.5th--97.5th percentiles) across draws (Section~B.4).
+
+\appsubsection{B.6 Life expectancy gained (cause-deleted life table)}
+Life expectancy gain was included as a complementary mortality metric because it translates avertable deaths into expected years lived from age 30 under observed mortality conditions. In this framework, YLL quantifies the burden removed, whereas the cause-deleted life table expresses the same removal as a shift in survival expectancy. This is a standard comparative risk assessment approach. \citep{Murray2003,WHO2004CQR,Forouzanfar2015,WHO2024MethodsGBD}
+
+A baseline life table was built from observed deaths and population in 5-year age bands (30--34 to 65--69). For each stratum, baseline central mortality was
+\[
+m_{sa}=\frac{D_{sa}}{N_{sa}}.
+\]
+Age-specific death probabilities were then obtained using the standard abridged conversion
+\[
+q_x=\frac{n\,m_x}{1+\frac{n}{2}m_x},\qquad n=5,
+\]
+with a radix of $l_{30}=100{,}000$. Survivors and deaths were updated recursively by $d_x=l_xq_x$ and $l_{x+n}=l_x-d_x$. Person-years in each interval were computed as
+\[
+L_x=n\,l_{x+n}+\frac{n}{2}d_x,
+\]
+then accumulated as $T_x=\sum_{y\ge x}L_y$, and life expectancy obtained as $e_x=T_x/l_x$.
+
+For the final open interval, a terminal-life assumption was applied using expected years at age 70 of $E_{70}=18.5$, so that the last age-group contribution includes survivors beyond 69 years.
+
+The counterfactual removes UPF-attributable deaths,
+\[
+D^{\mathrm{cf}}_{sa}=D_{sa}-A_{sa},\qquad
+m^{\mathrm{cf}}_{sa}=\frac{D^{\mathrm{cf}}_{sa}}{N_{sa}},
+\]
+and recomputes all life-table functions under the same assumptions. Life expectancy gain at age 30 is
+\[
+\Delta e_{30}=e_{30}^{\mathrm{cf}}-e_{30}.
+\]
+For scenario reporting, $A_{sa}$ is replaced by scenario-specific avertable deaths $A^{(q)}_{sa}$, yielding $\Delta e_{30}^{(q)}$ for each policy target.
+
+This cause-deleted construction assumes that removing UPF-attributable deaths changes all-cause mortality only through the deleted component, while other-cause hazards within each stratum remain unchanged. Under that assumption, the estimated $\Delta e_{30}$ can be interpreted as a partial expectancy gain attributable to the modelled UPF mortality component in ages 30--69, rather than as a full forecast of national life expectancy dynamics.
+
+Uncertainty in $\Delta e_{30}$ was propagated by repeating the entire cause-deleted life table calculation at each Monte Carlo draw using $A_{sa}^{(b)}$ (or $A_{sa}^{(q,b)}$ for scenarios), and summarizing the resulting distribution with medians and 95\% uncertainty intervals.
+
+\appsubsection{B.7 Indirect economic costs (human capital approach)}
+Indirect costs were included because mortality burden also implies loss of productive years, not only health loss. We used the human capital approach, in which each premature death is valued as the discounted stream of expected labour earnings that would have occurred until retirement age. This approach is widely used in burden studies when the objective is to estimate the full production value forgone from premature mortality, and it is aligned with reference-case guidance when productivity effects are reported from a societal perspective. \citep{Sanders2016SecondPanel,iDSIReferenceCase2014}
+
+For each stratum $(s,a)$, indirect costs were valued as the present value of forgone earnings until an assumed retirement age of 65 years for both sexes:
+\[
+\mathrm{PVLE}_{sa}=A_{sa}\times y_{sa}\times emp_{sa}\times \sum_{t=1}^{T_{sa}}(1+r)^{-t},
+\]
+where $y_{sa}$ is mean annual labour income, $emp_{sa}$ is the employment rate, $r=0.03$ is the discount rate, and $T_{sa}$ is remaining working years from the age-group midpoint (capped at zero). The annuity factor is
+\[
+\sum_{t=1}^{T}(1+r)^{-t}=\frac{1-(1+r)^{-T}}{r}.
+\]
+Age-midpoint mapping implies $T_{sa}=0$ for 65--69 years, so deaths in that group contribute no additional labour-market losses under this framework.
+
+In Argentina, statutory retirement ages are generally 60 years for women and 65 years for men; we used a uniform age-65 horizon as a simplifying assumption to apply a common valuation window across strata. \citep{ANSESJubilacionOrdinaria2026} The 3\% annual discount rate follows reference-case guidance. \citep{iDSIReferenceCase2014,Sanders2016SecondPanel} Income and employment inputs were derived from national labour survey microdata (monthly income annualised by $\times12$), and monetary totals were converted from ARS to intl.\$ using the 2019 PPP factor (20.38 ARS/intl.\$). \citep{INDECEPH2019Q4,INDECMercadoTrabajo2020,WorldBankPPP2019}
+
+The valuation is static and incidence-based: wages and employment rates are held at their observed 2019 stratum-specific values, with no additional assumptions on future wage growth, labour-force transitions, or macroeconomic feedback effects. Therefore, estimates should be interpreted as discounted market-income losses directly linked to modelled premature deaths under the observed labour market structure.
+
+For each scenario $q$, avertable indirect cost was computed by replacing $A_{sa}$ with $A^{(q)}_{sa}$ and summing over strata:
+\[
+\Delta \mathrm{PVLE}^{(q)}=\sum_{s,a}A^{(q)}_{sa}\,y_{sa}\,emp_{sa}\,\frac{1-(1+r)^{-T_{sa}}}{r}.
+\]
+Uncertainty was propagated by applying the same valuation equation to each simulation draw $A_{sa}^{(q,b)}$ and summarizing medians and 95\% uncertainty intervals.
+
+This specification captures market labour losses only. It does not include unpaid household production, caregiver time, employer replacement dynamics (friction-cost adjustments), or intangible welfare losses beyond labour income.
+
+\appsubsection{B.8 Environmental impacts, replacement matrix, and structural sensitivities}
+Environmental impacts were not assigned by building a separate life-cycle inventory for each ENNyS food code. Instead, each consumed ENNyS food code was linked through a mapping dictionary to an environmental food group, and group-level coefficients were then applied. Thus, multiple ENNyS codes can share the same environmental coefficient set. The environmental analysis used four indicators at the food-group level: greenhouse gas emissions (kg CO$_2$-eq), land use (m$^2$), water use (L), and freshwater eutrophication (g PO$_4$-eq) per kg of reference mass. \citep{Arrieta2022SustainSci,PooreNemecek2018,OWIDDatasets2026,ADEMEAgribalyse2026}
+
+For each individual $k$, recall day $j$, and food code $i$, reported grams were first transformed into weighted population-representative quantities using the calibrated survey weight and dividing that weight by the number of recalls available for the same person. This yields weighted grams and weighted energy that can be aggregated without double counting repeated recalls. Positive-intake records were then linked to their NOVA group, environmental group, and energy density before impact coefficients were applied.
+
+For each food code $i$ and environmental indicator $m$, baseline item-level impact is
+\[
+I_{kji,m}=q_{kji}^{\mathrm{ref}}\;c_{i,m},
+\]
+where $q_{kji}^{\mathrm{ref}}$ is the reference mass (kg) consistent with the coefficient definition and $c_{i,m}$ is the impact coefficient per kg. The term ``reference mass'' means the mass expressed in the same physical reference used by the environmental coefficient. This matters because intake is observed at the retail/consumption level in ENNyS, whereas some coefficients are defined at farm-gate level. When coefficients are defined at farm-gate level and observed quantities are recorded at retail level, mass is converted using a yield factor $y_i$ (retail weight per farm weight).
+\[
+q_{kji}^{\mathrm{ref}}=\frac{q_{kji}^{\mathrm{ret}}}{y_i}.
+\]
+In practice, observed grams are first converted to retail kg and then, where necessary, to the mass reference required by the coefficient before multiplication by the corresponding per-kg impact factor. Baseline totals are then obtained by summing item-level impacts over all weighted records,
+\[
+I_m^{\mathrm{base}}=\sum_{k,j}\sum_i I_{kji,m},
+\]
+and the UPF component is computed by restricting the same sum to NOVA~4 codes,
+\[
+I_m^{\mathrm{UPF}}=\sum_{k,j}\sum_{i\in \mathrm{NOVA4}} I_{kji,m}.
+\]
+
+The manuscript reports results from the environmental specification used for the main tables. In that specification, plain drinking water and ice were excluded from the environmental scope, because they dominate grams consumed but contribute no dietary energy, and selected beverages without a direct comparable-group match were reassigned to more appropriate beverage groups before coefficients were applied (e.g., mate/yerba, tea or infusions, coffee, industrial fruit juice, flavoured water, beer, wine, and spirits). Coverage diagnostics for this mapping are shown in Table~S5. In this in-scope analysis, row-level mapping coverage was lower than gram- and energy-level coverage, but mapped energy coverage was high overall and within NOVA~4.
+
+\paragraph*{Counterfactual accounting.}
+Counterfactual scenarios apply the same UPF-reduction fractions used in the health analysis (10\%, 20\%, 50\%, and the NDG-aligned targets), denoted here by $r$. For each environmental indicator $m$, the accounting logic is the same in all scenarios: we first calculate the gross impact removed by reducing UPFs, then add back the impact of any replacement basket when substitution is assumed, and finally compare the resulting counterfactual total with the observed baseline.
+
+Let the gross removed impact be
+\[
+I^{\mathrm{rem}}_{m}=r\,I^{\mathrm{UPF}}_{m}.
+\]
+Under no substitution, a fraction $r$ of the UPF component is removed and nothing is added back. The counterfactual therefore becomes
+\[
+I^{\mathrm{cf}}_{m}=I^{\mathrm{base}}_{m}-r\,I^{\mathrm{UPF}}_{m}.
+\]
+This scenario can be interpreted as a mechanical upper bound, because the removed UPF component is not replaced by any other food or beverage.
+
+Under isocaloric substitution, the model removes a fraction $r$ of mapped UPF intake but then restores the same amount of dietary energy using a non-UPF replacement basket. Let
+\[
+E^{\mathrm{red}}=r\,E^{\mathrm{map}}_{\mathrm{UPF}}
+\]
+denote removed mapped UPF energy. For a replacement basket $g$, define the basket intensity per kcal as
+\[
+\gamma_{m,g}=I_{m,g}/E_g,
+\]
+that is, environmental impact per kcal of the replacement basket. The impact added back by replacement is
+\[
+I^{\mathrm{add}}_{m,g}=E^{\mathrm{red}}\gamma_{m,g},
+\]
+and the counterfactual total is
+\[
+I^{\mathrm{cf}}_{m,g}=I^{\mathrm{base}}_{m}-r\,I^{\mathrm{UPF}}_{m}+I^{\mathrm{add}}_{m,g}.
+\]
+In words, the net environmental effect under isocaloric substitution is the impact of the removed UPF energy minus the impact of the calories used to replace it. A basket with lower impact per kcal than the removed UPFs will generate a net reduction, whereas a basket with higher impact per kcal can attenuate or reverse that reduction.
+
+As an alternative substitution structure, we also implemented isoweight substitution, replacing removed UPF mass one-for-one rather than replacing calories one-for-one. Let
+\[
+M^{\mathrm{red}}=r\,M^{\mathrm{map}}_{\mathrm{UPF}}
+\]
+denote removed mapped UPF mass. For basket $g$, define impact intensity per kg as
+\[
+\kappa_{m,g}=I_{m,g}/M_g.
+\]
+The impact added back under mass-for-mass replacement is
+\[
+I^{\mathrm{add,kg}}_{m,g}=M^{\mathrm{red}}\kappa_{m,g},
+\]
+and the resulting counterfactual is
+\[
+I^{\mathrm{cf,W}}_{m,g}=I^{\mathrm{base}}_{m}-r\,I^{\mathrm{UPF}}_{m}+I^{\mathrm{add,kg}}_{m,g}.
+\]
+Because many non-UPF foods are less energy-dense than UPFs, isocaloric and isoweight substitution need not lead to the same environmental pattern.
+
+We report environmental outcomes as net percentage change versus baseline,
+\[
+\%\Delta I_{m}=100\left(\frac{I^{\mathrm{cf}}_{m}}{I^{\mathrm{base}}_{m}}-1\right),
+\]
+so negative values indicate reductions and positive values indicate increases. Replacement baskets include NOVA~1, NOVA~3, a weighted NOVA~1/NOVA~3 mix, and an NDG-concordant basket. The NOVA~1 and NOVA~3 baskets use observed mapped non-UPF foods in those NOVA classes to estimate impact intensities. The weighted NOVA~1/NOVA~3 mix interpolates between those two structures using their observed mapped energy shares. The NDG-concordant basket uses food-group weights derived from the Argentine National Dietary Guidelines (NDG) together with observed mapped non-UPF foods to construct basket-specific impact intensities. The diet composition of these replacement baskets and the UPF targets used in the counterfactuals are summarised in Table~S7. NOVA~2 was not used as a standalone replacement basket because its units and scope are not directly comparable to foods in diet-based footprint accounting. \citep{NDG2016}
+
+
+\appsection{Appendix C. Supplementary tables}
+Tables~S1--S8 summarise key inputs and supplementary results that are not duplicated in the main manuscript. Additional granular scenario outputs and mapping files are included in the project materials.
+
+\vspace{0.8em}
+\begin{table}[!htbp]
+\centering
+\manualtablecaption{Table S1. Data sources summary}
+\begin{tabular}{p{5.1cm}p{6.8cm}p{3.4cm}}
+\toprule
+\textbf{Input} & \textbf{Source} & \textbf{Year / resolution}\\
+\midrule
+Dietary intake (24h recalls) & ENNyS 2, Ministry of Health \citep{ENNYS22019} & 2018--2019 / individual\\
+NOVA processing classification & NOVA framework \citep{Monteiro2019UPFIdentify} & food-code level\\
+Relative risks (all-cause mortality) & Meta-analysis estimate with CRA calibration implementation \citep{Pagliai2021,Nilson2023} & published studies\\
+Mortality counts by sex and age & Argentina vital statistics inputs; CRA framework \citep{DEIS2019,WHO2024MethodsGBD,Nilson2023} & 2019 / strata\\
+Economic inputs (income, employment) & National household survey microdata \citep{INDECEPH2019Q4} & 2019 / strata\\
+PPP conversion factor & World Bank \citep{WorldBankPPP2019} & 2019\\
+Environmental coefficients & LCA sources and global datasets \citep{Arrieta2022SustainSci,PooreNemecek2018,OWIDDatasets2026,ADEMEAgribalyse2026} & food-group level\\
+\bottomrule
+\end{tabular}
+\tabnote{CRA denotes comparative risk assessment, PPP denotes purchasing power parity, and LCA denotes life-cycle assessment.}
+\end{table}
+
+\clearpage
+\input{table_s2_nova_classification_all_items.tex}
+\tabnote{This table reports the 1,040 non-supplement ENNyS food and beverage codes classified by NOVA group. English item descriptions are provided as reference translations of the original Spanish labels used in the survey files.}
+
+\clearpage
+\vspace{0.8em}
+\begin{table}[!htbp]
+\centering
+\manualtablecaption{Table S3. NOVA classification distribution (excluding supplements)}
+\begin{tabular}{lrr}
+\toprule
+\textbf{NOVA group} & \textbf{N items} & \textbf{\% of items}\\
+\midrule
+NOVA 1 & 310 & 29.8\\
+NOVA 2 & 69 & 6.6\\
+NOVA 3 & 203 & 19.5\\
+NOVA 4 (UPFs) & 458 & 44.0\\
+\midrule
+\textbf{Total} & \textbf{1,040} & \textbf{100.0}\\
+\bottomrule
+\end{tabular}
+\tabnote{N items denotes the number of ENNyS food codes classified in each NOVA group. UPFs denotes ultra-processed foods.}
+\end{table}
+
+\vspace{0.8em}
+\begin{table}[!htbp]
+\centering
+\manualtablecaption{Table S4. Indirect economic costs (PVLE) by sex and age group (intl.\$ PPP)}
+\begin{tabular}{l l r r r}
+\toprule
+\textbf{Sex} & \textbf{Age} & \textbf{Deaths attr} & \textbf{PVLE per death} & \textbf{Total PVLE}\\
+\midrule
+Men & 30--34 & 270 & 319k & 86.0M\\
+Men & 35--39 & 254 & 291k & 73.9M\\
+Men & 40--44 & 314 & 290k & 91.0M\\
+Men & 45--49 & 429 & 229k & 98.3M\\
+Men & 50--54 & 579 & 213k & 123.6M\\
+Men & 55--59 & 776 & 108k & 84.0M\\
+Men & 60--64 & 1,279 & 40k & 50.6M\\
+Men & 65--69 & 1,798 & 0 & 0\\
+\textbf{Men subtotal} & -- & \textbf{5,699} & \textbf{107k} & \textbf{607.5M}\\
+Women & 30--34 & 137 & 182k & 25.0M\\
+Women & 35--39 & 166 & 168k & 27.8M\\
+Women & 40--44 & 241 & 170k & 41.0M\\
+Women & 45--49 & 301 & 135k & 40.6M\\
+Women & 50--54 & 435 & 111k & 48.2M\\
+Women & 55--59 & 648 & 56k & 36.0M\\
+Women & 60--64 & 926 & 12k & 11.0M\\
+Women & 65--69 & 1,270 & 0 & 0\\
+\textbf{Women subtotal} & -- & \textbf{4,124} & \textbf{56k} & \textbf{229.6M}\\
+\midrule
+\textbf{Total} & -- & \textbf{9,823} & \textbf{85k} & \textbf{837.0M}\\
+\bottomrule
+\end{tabular}
+\tabnote{Deaths attr denotes attributable deaths. PVLE denotes present value of lifetime earnings lost, PPP denotes purchasing power parity, and intl.\$ denotes international dollars.}
+\end{table}
+
+\vspace{0.8em}
+\begin{table}[!htbp]
+\centering
+\manualtablecaption{Table S5. Environmental mapping coverage}
+\begin{tabular}{p{6.0cm}ccc}
+\toprule
+\textbf{Scope} & \textbf{Rows covered (\%)} & \textbf{Grams covered (\%)} & \textbf{Energy covered (\%)}\\
+\midrule
+All foods/beverages in-scope (excluding plain water/ice) & 93.4 & 99.7 & 99.5\\
+UPF only (NOVA 4) & 96.5 & 99.8 & 99.6\\
+\bottomrule
+\end{tabular}
+\tabnote{Coverage percentages indicate the share of rows, grams, and energy linked to environmental coefficients. UPF denotes ultra-processed food and NOVA~4 is the UPF group.}
+\end{table}
+
+\vspace{0.8em}
+\begin{table}[!htbp]
+\centering
+\manualtablecaption{Table S6. Environmental replacement matrix for NDG policy scenarios (net \% vs baseline)}
+\scriptsize
+\begin{tabular}{lllrrrr}
+\toprule
+\textbf{Scenario} & \textbf{Structure} & \textbf{Basket} & \textbf{GHG} & \textbf{Land} & \textbf{Water} & \textbf{Eutro}\\
+\midrule
+\multicolumn{7}{l}{\textbf{Panel A. No substitution (reference policy scenarios)}}\\
+NDG conservative & No substitution & -- & -6.7 & -6.1 & -13.6 & -10.9\\
+NDG central & No substitution & -- & -7.8 & -7.1 & -15.8 & -12.7\\
+NDG strict & No substitution & -- & -8.9 & -8.1 & -18.0 & -14.5\\
+\addlinespace
+\multicolumn{7}{l}{\textbf{Panel B. Isocaloric substitution (replacement matrix)}}\\
+NDG conservative & Isocaloric & NDG-concordant & 0.0 & -1.1 & +21.0 & +1.8\\
+NDG conservative & Isocaloric & NOVA1 & +7.0 & +4.1 & +16.1 & +12.0\\
+NDG conservative & Isocaloric & NOVA3 & -5.0 & -4.8 & -9.0 & -7.3\\
+NDG conservative & Isocaloric & NOVA1/NOVA3 mix & -0.1 & -1.1 & +1.3 & +0.6\\
+NDG central & Isocaloric & NDG-concordant & 0.0 & -1.2 & +24.4 & +2.1\\
+NDG central & Isocaloric & NOVA1 & +8.1 & +4.8 & +18.7 & +13.9\\
+NDG central & Isocaloric & NOVA3 & -5.8 & -5.5 & -10.4 & -8.5\\
+NDG central & Isocaloric & NOVA1/NOVA3 mix & -0.1 & -1.3 & +1.5 & +0.7\\
+NDG strict & Isocaloric & NDG-concordant & 0.0 & -1.4 & +27.8 & +2.4\\
+NDG strict & Isocaloric & NOVA1 & +9.3 & +5.5 & +21.4 & +15.9\\
+NDG strict & Isocaloric & NOVA3 & -6.6 & -6.3 & -11.9 & -9.7\\
+NDG strict & Isocaloric & NOVA1/NOVA3 mix & -0.1 & -1.5 & +1.7 & +0.7\\
+\addlinespace
+\multicolumn{7}{l}{\textbf{Panel C. Isoweight substitution (replacement matrix)}}\\
+NDG conservative & Isoweight & NDG-concordant & +5.8 & +5.9 & +10.0 & +10.4\\
+NDG conservative & Isoweight & NOVA1 & +5.5 & +3.0 & +12.8 & +9.5\\
+NDG conservative & Isoweight & NOVA3 & -3.0 & -3.2 & -3.5 & -3.0\\
+NDG conservative & Isoweight & NOVA1/NOVA3 mix & +0.5 & -0.7 & +3.2 & +2.1\\
+NDG central & Isoweight & NDG-concordant & +6.7 & +6.9 & +11.7 & +12.1\\
+NDG central & Isoweight & NOVA1 & +6.4 & +3.5 & +15.0 & +11.1\\
+NDG central & Isoweight & NOVA3 & -3.5 & -3.7 & -4.1 & -3.5\\
+NDG central & Isoweight & NOVA1/NOVA3 mix & +0.6 & -0.8 & +3.7 & +2.4\\
+NDG strict & Isoweight & NDG-concordant & +7.7 & +7.8 & +13.3 & +13.7\\
+NDG strict & Isoweight & NOVA1 & +7.3 & +4.0 & +17.1 & +12.6\\
+NDG strict & Isoweight & NOVA3 & -3.9 & -4.2 & -4.7 & -4.0\\
+NDG strict & Isoweight & NOVA1/NOVA3 mix & +0.7 & -0.9 & +4.2 & +2.8\\
+\bottomrule
+\end{tabular}
+\normalsize
+\tabnote{Values are net percentage changes versus baseline. GHG denotes greenhouse gas emissions, Eutro denotes freshwater eutrophication, and NDG denotes National Dietary Guidelines. Negative values indicate reductions and positive values indicate increases.}
+\end{table}
+
+\vspace{0.8em}
+\input{table_s7_scenario_composition.tex}
+
+\clearpage
+\vspace{0.8em}
+\input{table_s8_environmental_coefficients.tex}
+
+\clearpage
+
+%====================================================%
+%  FLOW DIAGRAMS (end of Appendix C)                 %
+%====================================================%
+
+\begin{figure}[p]
+\centering
+\makebox[\textwidth][c]{%
+\begin{adjustbox}{width=1.18\textwidth, totalheight=0.964\textheight, keepaspectratio}
+\begin{tikzpicture}[node distance=0.16in and 0.32in, scale=1.03, every node/.style={transform shape}]
+
+\node[data] (input) at (0,0) {
+\textbf{1. Input data}\\[3pt]
+\textit{Dietary exposure:} 24-hour dietary recall data from ENNyS~2
+(2018--2019). Each record reports grams consumed per food code
+($g_{kji}$), NOVA classification (1--4), and official energy density
+($\mathrm{kcal}_i$ per 100\,g). Calibrated survey weight $w_k$.\\[3pt]
+\textit{Mortality:} All-cause deaths $D_{sa}$ in 2019 by sex $s$ and
+age group $a$ (30--34, $\ldots$, 65--69) from Argentina's vital
+statistics (DEIS).
+};
+
+\node[formula, below=of input] (exposure) {
+\textbf{2. UPF energy share per recall (Section~B.1)}\\
+UPF energy for individual $k$, recall $j$ (summing over NOVA~4 codes
+$\mathcal{U}$ with available energy density):
+\[
+  E^{\mathrm{UPF}}_{kj}=\sum_{i\in\mathcal{U}}\frac{g_{kji}\,\mathrm{kcal}_i}{100}.
+\]
+UPF energy share at recall level (using official total energy
+$E^{\mathrm{tot}}_{kj}$):
+\[
+  \%\mathrm{UPF}_{kj}=100\times\frac{E^{\mathrm{UPF}}_{kj}}{E^{\mathrm{tot}}_{kj}}.
+\]
+};
+
+\node[process, below=of exposure] (stratum) {
+\textbf{3. Person-level mean and stratum-level moments (Section~B.1)}\\
+Within-person mean across $J_k$ recall days:
+$\;\overline{\%\mathrm{UPF}}_{k}=\dfrac{1}{J_k}\displaystyle\sum_{j=1}^{J_k}\%\mathrm{UPF}_{kj}$.\\[4pt]
+Survey-weighted stratum mean and standard deviation:
+\[
+  \mu_{sa}=\frac{\sum_{k\in(s,a)}w_k\,\overline{\%\mathrm{UPF}}_{k}}
+                {\sum_{k\in(s,a)}w_k}
+\]
+\[
+  \sigma_{sa}=\sqrt{\frac{\sum_{k}w_k(\overline{\%\mathrm{UPF}}_{k}-\mu_{sa})^2}
+                         {\sum_{k}w_k}}.
+\]
+Approximate standard error: $\mathrm{SE}_{sa}=\sigma_{sa}/\sqrt{n_{sa}}$.
+};
+
+\node[formula, below=of stratum] (dr) {
+\textbf{4. Dose--response function (Section~B.2)}\\
+Log-linear relative risk at exposure $p$ (percentage points of
+dietary energy from UPFs):
+\[
+  \mathrm{RR}(p)=\exp(\beta p),\qquad
+  \beta=\frac{\ln(\mathrm{RR}_{\mathrm{ref}})}{x_{\mathrm{ref}}}.
+\]
+Calibration: $\mathrm{RR}_{\mathrm{ref}}=1.25$
+(95\,\% CI 1.14--1.37) from Pagliai et~al.\ (2021), mapped to
+$x_{\mathrm{ref}}=35.7$ percentage-point contrast following
+Nilson et~al.\ (2023). Uncertainty in $\beta$ from the CI, assuming
+normality on the log scale.
+};
+
+\node[formula, below=of dr] (cra) {
+\textbf{5. Distributional CRA: log-normal exposure model (Section~B.3)}\\
+Stratum exposure modelled as log-normal, truncated to $[0,100]$:
+\[
+  \sigma_{sa}^{*2}=\ln\!\left(1+\!\left(\tfrac{\sigma_{sa}}{\mu_{sa}}\right)^{\!2}\right),\quad
+  \mu_{sa}^{*}=\ln(\mu_{sa})-\tfrac{1}{2}\sigma_{sa}^{*2}.
+\]
+Expected relative risk integrated over the truncated density $f_{sa}$:
+\[
+  \mathbb{E}\!\left[\mathrm{RR}(X_{sa})\right]=\int_0^{100}\exp(\beta x)\,f_{sa}(x)\,dx.
+\]
+};
+
+\node[note, right=0.95in of cra] (scenarios) {
+\textbf{Counterfactual scenario types}\\[3pt]
+\textbf{TMRL} (theoretical minimum risk level):\\
+$\mathbb{E}[\mathrm{RR}(X^{\mathrm{cf}}_{sa})]=1$\\[4pt]
+\textbf{Proportional reductions} ($r=10\%,20\%,50\%$):\\
+$X^{\mathrm{cf}}_{sa}=(1-r)\,X_{sa}$\\[4pt]
+\textbf{NDG-aligned absolute targets} (profile $q$):\\
+$\mu^{\mathrm{cf}}_{saq}=\min\!\bigl(\mu_{sa},\,\%\mathrm{UPF}^{\mathrm{target}}_q\bigr)$\\
+$\sigma^{\mathrm{cf}}_{saq}=\sigma_{sa}\,\mu^{\mathrm{cf}}_{saq}/\max(\mu_{sa},0.001)$\\[4pt]
+where $\%\mathrm{UPF}^{\mathrm{target}}_q=100\textstyle\sum_g w_g\,c_{gq}$\\
+Profiles: 5.45\,\% / 3.63\,\% / 1.81\,\%\\
+(Table~B1)
+};
+
+\node[formula, below=of cra] (paf) {
+\textbf{6. Population attributable fraction and attributable deaths}\\
+For each sex--age stratum $(s,a)$:
+\[
+  \mathrm{PAF}_{sa}=
+  \frac{\mathbb{E}[\mathrm{RR}(X_{sa})]-\mathbb{E}[\mathrm{RR}(X^{\mathrm{cf}}_{sa})]}
+       {\mathbb{E}[\mathrm{RR}(X_{sa})]}.
+\]
+Attributable (or avertable) deaths:
+\[
+  A_{sa}=\mathrm{PAF}_{sa}\times D_{sa}.
+\]
+};
+
+\node[process, below=of paf] (mc) {
+\textbf{7. Monte Carlo uncertainty quantification (Section~B.4)}\\
+10,000 iterations. At each iteration $b$: sample
+$\mu^{(b)}_{sa}\sim\mathcal{N}(\mu_{sa},\mathrm{SE}_{sa}^2)$ truncated
+to $[0,100]$; dose--response slope $\beta^{(b)}$ on the log scale
+from the CI of $\mathrm{RR}_{\mathrm{ref}}$; death counts
+$D^{(b)}_{sa}\sim\mathrm{Poisson}(D_{sa})$. PAFs and outcomes are
+recomputed at each iteration; 95\,\% uncertainty intervals are
+the 2.5th and 97.5th percentiles.
+};
+
+\node[output, below=of mc] (outputs) {
+\textbf{8. Health and economic scenario outputs (Table~4)}\\[3pt]
+\textbf{Deaths averted:}\enspace$\sum_{s,a}A_{sa}$ and 95\,\%~UI.\\[3pt]
+\textbf{YLL averted (Section~B.5):}\enspace
+  $\mathrm{YLL}=\displaystyle\sum_{s,a}A_{sa}\,L_a$,
+  where $L_a$ is the WHO standard expected years lost for age group~$a$.\\[3pt]
+\textbf{Life expectancy gained} $\Delta e_{30}$ \textbf{(Section~B.6):}
+  cause-deleted life table with
+  $D^{\mathrm{cf}}_{sa}=D_{sa}-A_{sa}$.\\[3pt]
+\textbf{Economic costs PVLE (Section~B.7, Table~S4):}
+  $\mathrm{PVLE}_{sa}=A_{sa}\!\times\!y_{sa}\!\times\!emp_{sa}
+  \!\times\!\displaystyle\sum_{t=1}^{T_{sa}}\!(1+r)^{-t}$,\;$r=3\,\%$.
+};
+
+\node[
+  draw=black!55, rounded corners=3pt,
+  align=left, inner sep=8pt, font=\small,
+  anchor=south east
+] (legend) at ($(scenarios.east |- outputs.south)+(0.00in,0.05in)$) {
+  \textbf{Legend}\\[3pt]
+  \colorbox{FlowBlue}{\hphantom{~~~~}}\enspace Input data\\[2pt]
+  \colorbox{FlowGreen}{\hphantom{~~~~}}\enspace Processing step\\[2pt]
+  \colorbox{FlowYellow}{\hphantom{~~~~}}\enspace Formula / computation\\[2pt]
+  \colorbox{FlowRed}{\hphantom{~~~~}}\enspace Manuscript output\\[2pt]
+  \tikz[baseline=0pt]\draw[black!55,dashed,line width=0.7pt](0,0)--(0.42in,0);%
+  \enspace Annotation / note
+};
+
+\draw[flow]      (input)    -- (exposure);
+\draw[flow]      (exposure) -- (stratum);
+\draw[flow]      (stratum)  -- (dr);
+\draw[flow]      (dr)       -- (cra);
+\draw[smallflow] (cra)      -- (scenarios);
+\draw[flow]      (cra)      -- (paf);
+\draw[flow]      (paf)      -- (mc);
+\draw[flow]      (mc)       -- (outputs);
+
+\end{tikzpicture}
+\end{adjustbox}%
+}
+\manualfigurecaption{\textbf{Fig S1.} Flow diagram of health impact estimation. Blue\,=\,input data; green\,=\,processing; yellow\,=\,formula/computation; red\,=\,manuscript output. Note: solid arrows indicate the main computational sequence, while dashed arrows indicate auxiliary annotations. Section and table references point to this appendix.}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[p]
+\centering
+\makebox[\textwidth][c]{%
+{%
+\tikzset{
+  box/.append style={text width=5.35in, inner sep=9pt},
+  note/.append style={text width=3.25in, font=\normalsize}
+}
+\begin{adjustbox}{width=1.30\textwidth, totalheight=0.985\textheight, keepaspectratio}
+\begin{tikzpicture}[node distance=0.22in and 0.34in, scale=1.09, every node/.style={transform shape}]
+
+\node[data] (input) at (0,0) {
+\textbf{1. Dietary intake data (ENNyS)}\\
+24-hour dietary recall data from the Argentine National Nutrition
+Survey (ENNyS). Each record reports the quantity consumed (grams)
+for each food item on one recall day. Dietary supplements and
+unclassified foods are excluded.
+};
+
+\node[data, below=of input] (weights) {
+\textbf{2. Survey weighting and repeated recalls}\\
+Each respondent carries a calibrated post-stratification survey
+weight~$w_k$. For individuals with more than one recall day ($n_k>1$),
+the weight is split equally across recall days:
+\[
+  w_{k,j}=\frac{w_k}{n_k}.
+\]
+This ensures each person contributes exactly once to population totals,
+avoiding double-counting in repeated-recall designs.
+};
+
+\node[data, below=of weights] (joins) {
+\textbf{3. Linking foods to environmental coefficients}\\
+Each food item is matched to:\\
+\hspace*{0.5em}\textbullet\; NOVA processing class (1--4)\\
+\hspace*{0.5em}\textbullet\; energy density (kcal per 100\,g)\\
+\hspace*{0.5em}\textbullet\; environmental food group\\
+\hspace*{1.3em}\textit{(Arrieta et~al.\ 2022; extended with OWID data)}\\
+\hspace*{0.5em}\textbullet\; impact coefficients per kg:\\
+\hspace*{1.3em}GHG, land, water, eutrophication
+};
+
+\node[process, right=0.92in of joins, text width=2.70in] (curated) {
+\textbf{Scope refinements (main analysis)}\\
+\hspace*{0.5em}\textbullet\; Plain drinking water and ice are excluded\\
+\hspace*{1.2em}(negligible environmental footprint)\\
+\hspace*{0.5em}\textbullet\; Certain beverages reassigned to more\\
+\hspace*{1.2em}specific environmental food groups\\
+\hspace*{0.5em}\textbullet\; Survey weighting structure unchanged
+};
+
+\node[formula, below=of joins] (mass) {
+\textbf{4. Converting intake to coefficient-compatible mass (Section~B.8)}\\
+Consumed grams are expressed as kilograms at the retail stage:
+$q^{\mathrm{ret}}=g/1000$.\\[4pt]
+Coefficients for some food groups are defined at farm-gate (i.e.,
+before post-harvest losses). For these, retail mass is converted to
+an equivalent farm-gate mass using a food-group-specific
+retail-to-farm-gate yield ratio~$\phi_i$:
+\[
+  q^{\mathrm{ref}}=\frac{q^{\mathrm{ret}}}{\phi_i}.
+\]
+For groups without an explicit ratio, $\phi_i=1$ is assumed.
+};
+
+\node[formula, below=of mass] (itemimpact) {
+\textbf{5. Item-level environmental footprint (Section~B.8)}\\
+For each food~$i$ consumed by person~$k$ on recall day~$j$, the
+contribution to indicator~$m$ is:
+\[
+  I_{kji,m}=q^{\mathrm{ref}}_{kji}\,c_{i,m},
+\]
+where $c_{i,m}$ is the impact coefficient for food group~$i$.\\[3pt]
+Indicators:\;GHG\,(kg\,CO$_2$-eq)\;\textbullet\;
+Land\,(m$^2$)\;\textbullet\;
+Water\,(L)\;\textbullet\;
+Eutrophication\,(g\,PO$_4$-eq).
+};
+
+\node[process, below=of itemimpact] (aggregate) {
+\textbf{6. Population-weighted totals (Section~B.8)}\\
+Item-level footprints are summed over all foods and all
+survey-weighted observations:\\[2pt]
+Total diet:\;
+$\displaystyle I^{\mathrm{base}}_m=\sum_{k,j}\sum_i I_{kji,m}$.\\[4pt]
+Ultra-processed foods (NOVA\,4) component:\;
+$\displaystyle I^{\mathrm{UPF}}_m=\sum_{k,j}\!\sum_{i\in\mathrm{NOVA\,4}}\! I_{kji,m}$.
+};
+
+\node[note, right=0.95in of aggregate] (coverage) {
+\textbf{Mapping coverage (Table~S5)}\\
+Computed separately for the full diet and for NOVA\,4
+ultra-processed foods:\\[2pt]
+\hspace*{0.5em}\textbullet\; share of observations with a matched coefficient\\
+\hspace*{0.5em}\textbullet\; share of total grams matched\\
+\hspace*{0.5em}\textbullet\; share of dietary energy matched\\[3pt]
+The matched-energy share serves as the\\
+denominator for all environmental shares.
+};
+
+\node[process, below=of aggregate] (shares) {
+\textbf{7. UPF share of baseline environmental footprint (Table~5, Panel~A)}\\
+The fraction of the total diet-related footprint attributable to
+ultra-processed foods at baseline:
+\[
+  \text{UPF share}_m = 100\times\frac{I^{\mathrm{UPF}}_m}{I^{\mathrm{base}}_m}.
+\]
+};
+
+\node[formula, below left=0.55in and 0.15in of shares] (norepl) {
+\textbf{8A. No substitution} \normalfont\textit{(upper bound)}\\
+UPF intake is reduced by a fraction~$r$ and the removed
+food is not replaced. Total footprint falls by exactly the
+UPF share of the reduction:
+\[
+  I^{\mathrm{cf}}_m = I^{\mathrm{base}}_m - r\,I^{\mathrm{UPF}}_m.
+\]
+This is a theoretical maximum saving.
+};
+
+\node[formula, below=0.55in of shares] (iso) {
+\textbf{8B. Isocaloric substitution (Section~B.8)}\\
+The energy contained in the reduced UPF intake is replaced
+calorie-for-calorie with non-UPF foods from basket~$g$.
+Denoting the removed energy as $E^{\mathrm{red}}=r\,E^{\mathrm{map}}_{\mathrm{UPF}}$,
+the net footprint is:
+\[
+  I^{\mathrm{cf}}_{m,g}=I^{\mathrm{base}}_m-r\,I^{\mathrm{UPF}}_m
+  +E^{\mathrm{red}}\,\gamma_{m,g},
+\]
+where $\gamma_{m,g}$ is the environmental intensity of basket~$g$
+(impact per kcal).
+};
+
+\node[note, right=0.95in of iso] (baskets) {
+\textbf{Replacement food baskets (8B \& 8C)}\\[3pt]
+Four alternative substitution profiles:\\[2pt]
+\hspace*{0.5em}\textbullet\; Minimally processed foods (NOVA\,1)\\
+\hspace*{0.5em}\textbullet\; Processed non-UPF foods (NOVA\,3)\\
+\hspace*{0.5em}\textbullet\; Blended NOVA\,1\,/\,NOVA\,3 mix\\
+\hspace*{0.5em}\textbullet\; Diet aligned with national guidelines\\
+\hspace*{1.2em}(NDG~2016)\\[4pt]
+8B: intensity per kcal ($\gamma_{m,g}$)\\
+8C: intensity per kg ($\kappa_{m,g}$)
+};
+
+\node[formula, below=0.38in of iso] (isoweight) {
+\textbf{8C. Isoweight substitution}
+\normalfont\textit{(sensitivity analysis, Section~B.8)}\\
+The mass (kg) of reduced UPF intake is replaced gram-for-gram
+with non-UPF foods from basket~$g$, instead of calorie-for-calorie.
+Denoting the removed mass as $M^{\mathrm{red}}=r\,M^{\mathrm{map}}_{\mathrm{UPF}}$:
+\[
+  I^{\mathrm{cf,W}}_{m,g}=I^{\mathrm{base}}_m-r\,I^{\mathrm{UPF}}_m
+  +M^{\mathrm{red}}\,\kappa_{m,g},
+\]
+where $\kappa_{m,g}$ is the intensity of basket~$g$ per kg.
+};
+
+\node[output, below=0.75in of isoweight] (outputs) {
+\textbf{9. Net environmental change: scenario outputs}\\
+For each indicator~$m$ and reduction scenario, the percentage change
+in total diet-related footprint relative to baseline:
+\[
+  \%\Delta I_m = 100\!\left(\frac{I^{\mathrm{cf}}_m}{I^{\mathrm{base}}_m}-1\right).
+\]
+\textit{Results reported in:}\enspace
+Table~5 (Panels~B--D)\enspace\textbullet\enspace
+Online Appendix Table~S6.
+};
+
+\node[
+  draw=black!55, rounded corners=3pt,
+  align=left, inner sep=8pt, font=\small,
+  anchor=south east
+] (legend2) at ($(baskets.east |- outputs.south)+(0.00in,0.05in)$) {
+  \textbf{Legend}\\[3pt]
+  \colorbox{FlowBlue}{\hphantom{~~~~}}\enspace Input data\\[2pt]
+  \colorbox{FlowGreen}{\hphantom{~~~~}}\enspace Processing step\\[2pt]
+  \colorbox{FlowYellow}{\hphantom{~~~~}}\enspace Formula / computation\\[2pt]
+  \colorbox{FlowRed}{\hphantom{~~~~}}\enspace Manuscript output\\[2pt]
+  \tikz[baseline=0pt]\draw[black!55,dashed,line width=0.7pt](0,0)--(0.42in,0);%
+  \enspace Annotation / note
+};
+
+\draw[flow]      (input)      -- (weights);
+\draw[flow]      (weights)    -- (joins);
+\draw[smallflow] (joins)      -- (curated);
+\draw[flow]      (joins)      -- (mass);
+\draw[flow]      (mass)       -- (itemimpact);
+\draw[flow]      (itemimpact) -- (aggregate);
+\draw[smallflow] (aggregate)  -- (coverage);
+\draw[flow]      (aggregate)  -- (shares);
+\draw[flow]      (shares)     -- (norepl);
+\draw[flow]      (shares)     -- (iso);
+\draw[smallflow] (iso)        -- (baskets);
+\draw[smallflow, dashed] (iso) -- (isoweight);
+\draw[smallflow] (isoweight.east) -| (baskets.south);
+\draw[smallflow] (norepl.south)    |- (outputs.west);
+\draw[smallflow] (iso.east) to[out=0,in=0,looseness=1.1] (outputs.east);
+\draw[flow]      (isoweight)       -- (outputs);
+
+\end{tikzpicture}
+\end{adjustbox}%
+}%
+}
+\manualfigurecaption{\textbf{Fig S2.} Flow diagram of environmental impact estimation. Blue\,=\,input data; green\,=\,processing; yellow\,=\,formula/computation; red\,=\,manuscript output. Note: the dashed arrow from 8B to 8C indicates that isoweight substitution is a sensitivity variant, not a sequential step.}
+\end{figure}
+
+\clearpage
+\nocite{Monteiro2019UPFIdentify,Pagliai2021,Nilson2023,WHO2024MethodsGBD,ENNYS22019,INDECEPH2019Q4,WorldBankPPP2019,Arrieta2022SustainSci,PooreNemecek2018,OWIDDatasets2026,ADEMEAgribalyse2026}
+\IfFileExists{references_upf_argentina.bib}{%
+\bibliography{references_upf_argentina}%
+}{%
+\bibliography{output/references_upf_argentina}%
+}
+
+\end{document}
+
+
