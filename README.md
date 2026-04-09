@@ -1,12 +1,14 @@
-# Replication Package for Main Manuscript Figures
+# Manuscript Replication Package
 
-This repository contains the minimal code and processed inputs required to reproduce the five main-text figures from the manuscript:
+This repository provides a compact replication package for the manuscript:
 
 **Health and environmental impacts of ultra-processed food consumption in Argentina**
 
-The package is intentionally narrow in scope. It is designed for readers who want to rebuild the published figures without running the full analytical pipeline for the manuscript and online appendix.
+It contains the code and processed analytical inputs needed to regenerate the main quantitative visual outputs used in the paper, without requiring the full internal workflow used to build every intermediate dataset, table, and appendix artifact.
 
-## What this repository reproduces
+## Scope of this package
+
+The current public package reproduces the five main figures cited in the manuscript:
 
 - `Figure_1`: UPF exposure and attributable mortality by sex and age
 - `Figure_2`: Baseline environmental shares and scenario-specific environmental changes
@@ -17,14 +19,14 @@ The package is intentionally narrow in scope. It is designed for readers who wan
 ## Repository structure
 
 ```text
-data/         Processed inputs required to rebuild Figures 1-5
-scripts/      Figure-building scripts and verification checks
+data/         Processed analytical inputs used by the manuscript replication package
+scripts/      Reproducible figure-building scripts and verification checks
 generated/    Regenerated outputs (created locally, ignored by git)
 ```
 
 ## Included data
 
-The repository includes only the processed data files needed for the manuscript figures:
+The repository includes the processed data files required by the public manuscript replication package:
 
 - `upf_exposure_by_age_and_sex.csv`
 - `upf_attributable_deaths_by_age_and_sex.csv`
@@ -37,13 +39,13 @@ See [data/README.md](data/README.md) for a short description of each file.
 
 ## Quick start
 
-Rebuild all figures:
+Rebuild the manuscript figures:
 
 ```r
 source("scripts/06_build_all_figures.R")
 ```
 
-Verify that the regenerated figures remain numerically aligned with the manuscript:
+Verify that the regenerated outputs remain numerically aligned with the manuscript:
 
 ```r
 source("scripts/07_verify_main_figure_values.R")
@@ -58,7 +60,7 @@ If this package is nested inside the local `submission_nature_food` folder used 
 
 ## Script order
 
-Individual figure scripts can be run independently:
+Individual scripts can also be run independently:
 
 1. `scripts/01_build_figure_1.R`
 2. `scripts/02_build_figure_2.R`
@@ -87,10 +89,10 @@ Or use the single entry point:
 
 ## Reproducibility notes
 
-- The repository contains processed figure inputs rather than raw survey microdata.
+- The repository contains processed analytical inputs rather than raw survey microdata.
 - The verification script checks key figure values and workflow labels, but it does not perform pixel-perfect image comparison.
-- This package is not intended to reproduce every table, appendix figure, or intermediate dataset from the study.
+- This public package is focused on the main manuscript outputs and does not include every table, appendix figure, or intermediate dataset from the full study workflow.
 
 ## Citation
 
-If you use this code or these processed figure inputs, please cite the associated manuscript and acknowledge this replication package.
+If you use this code or these processed manuscript inputs, please cite the associated manuscript and acknowledge this replication package.

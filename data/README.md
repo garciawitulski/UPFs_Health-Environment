@@ -1,6 +1,6 @@
-# Figure input files
+# Processed data for the manuscript replication package
 
-This folder contains the processed inputs required to regenerate the five main-text figures in the manuscript replication package.
+This folder contains the processed inputs required by the public manuscript replication package.
 
 - `upf_exposure_by_age_and_sex.csv`
   Age- and sex-specific ultra-processed food exposure estimates used in Figure 1.
@@ -20,4 +20,4 @@ This folder contains the processed inputs required to regenerate the five main-t
 - `replacement_basket_composition.csv`
   Food-group composition of the replacement baskets used in Figure 3.
 
-These files are processed analytical inputs derived from the larger study workflow. They are included here so the public figure-replication package remains compact and reproducible.
+These files are processed analytical inputs derived from the larger study workflow. They are included here so the public manuscript replication package remains compact, readable, and reproducible.
