@@ -21,8 +21,6 @@ col_text <- col_ink
 pal_env_low <- "#0F766E"
 pal_env_mid <- "#FFFBEB"
 pal_env_high <- "#B91C1C"
-pal_base_low <- "#F8FAFC"
-pal_base_high <- "#2F7F6E"
 
 theme_bundle <- function(base_size = 11) {
   theme_minimal(base_size = base_size) +
@@ -39,8 +37,8 @@ theme_bundle <- function(base_size = 11) {
     )
 }
 
-baseline_env <- read_pkg_csv("env_impact_curated_table_main_totals_shares.csv")
-summary_env <- read_pkg_csv("summary_health_environment_upf_scenarios.csv")
+baseline_env <- read_pkg_csv("environmental_baseline_shares.csv")
+summary_env <- read_pkg_csv("scenario_environment_results.csv")
 
 baseline_row <- baseline_env %>% filter(component == "NOVA4_UPF")
 baseline_panel <- data.frame(
@@ -100,7 +98,14 @@ env_tradeoff <- summary_env %>%
 p_top <- ggplot(baseline_panel, aes(x = indicator, y = "Baseline UPF share", fill = value)) +
   geom_tile(colour = "#D1D5DB", linewidth = 0.7, width = 0.96, height = 0.88) +
   geom_text(aes(label = label, colour = value > 14), size = 3.6, fontface = "bold") +
-  scale_fill_gradient(low = pal_base_low, high = pal_base_high, limits = c(0, 22), guide = "none") +
+  scale_fill_gradient2(
+    low = pal_env_low,
+    mid = pal_env_mid,
+    high = pal_env_high,
+    midpoint = 13,
+    limits = c(0, 22),
+    guide = "none"
+  ) +
   scale_colour_manual(values = c(`TRUE` = "white", `FALSE` = col_text), guide = "none") +
   labs(x = NULL, y = NULL) +
   theme_bundle(11) +

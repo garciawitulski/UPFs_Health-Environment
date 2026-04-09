@@ -27,11 +27,11 @@ add_check <- function(section, item, observed, expected, pass) {
   )
 }
 
-t1 <- read_pkg_csv("Tabla1_UPF_por_energia_Argentina.csv")
-t2 <- read_pkg_csv("Tabla2_Muertes_atribuibles_Argentina.csv")
-env_base <- read_pkg_csv("env_impact_curated_table_main_totals_shares.csv")
-env_sum <- read_pkg_csv("summary_health_environment_upf_scenarios.csv")
-s7a <- read_pkg_csv("table_s7_scenario_composition_panelA.csv")
+t1 <- read_pkg_csv("upf_exposure_by_age_and_sex.csv")
+t2 <- read_pkg_csv("upf_attributable_deaths_by_age_and_sex.csv")
+env_base <- read_pkg_csv("environmental_baseline_shares.csv")
+env_sum <- read_pkg_csv("scenario_environment_results.csv")
+s7a <- read_pkg_csv("replacement_basket_composition.csv")
 
 t1_total <- t1[t1[[1]] == "Total", ]
 t1_m <- parse_ci(t1_total$`Men, % (95% CI)`)$est
@@ -112,7 +112,8 @@ strict_iso_nova1 <- pareto_df %>% filter(scenario_label == "NDG strict", structu
 add_check("Figure 4", "Strict isocaloric NOVA 1 deaths", sprintf("%.0f", strict_iso_nova1$deaths), "8747", round(strict_iso_nova1$deaths) == 8747)
 add_check("Figure 4", "Strict isocaloric NOVA 1 water change", sprintf("%.1f", strict_iso_nova1$water), "21.4", round(strict_iso_nova1$water, 1) == 21.4)
 
-figure5_source <- readLines(file.path(FIGSRC_DIR, "Figure_5.tex"), warn = FALSE)
+figure5_source <- readLines(file.path(SCRIPT_DIR, "05_build_figure_5.R"), warn = FALSE)
+add_check("Figure 5", "Figure 5 PDF generated", ifelse(file.exists(file.path(FIG_DIR, "Figure_5.pdf")), "yes", "no"), "yes", file.exists(file.path(FIG_DIR, "Figure_5.pdf")))
 appendix_path <- file.path(SUBMISSION_ROOT, "Online_Appendix_UPF_Argentina.tex")
 if (file.exists(appendix_path)) {
   appendix_tex <- readLines(appendix_path, warn = FALSE)

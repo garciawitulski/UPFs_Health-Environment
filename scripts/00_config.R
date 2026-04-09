@@ -39,7 +39,6 @@ if (IS_NESTED_SUBMISSION) {
 }
 
 DATA_DIR <- file.path(PKG_ROOT, "data")
-FIGSRC_DIR <- file.path(PKG_ROOT, "figure_sources")
 GEN_DIR <- file.path(PKG_ROOT, "generated")
 FIG_DIR <- file.path(GEN_DIR, "figures")
 REPORT_DIR <- file.path(GEN_DIR, "reports")
@@ -110,6 +109,42 @@ save_pair <- function(plot_obj, base_name, width_mm = NULL, height_mm = NULL, w_
       file.copy(target, file.path(SUBMISSION_FIG_DIR, paste0(base_name, ext)), overwrite = TRUE)
     }
   }
+}
+
+save_grid_pair <- function(draw_fun, base_name, width_mm, height_mm, sync_submission = IS_NESTED_SUBMISSION) {
+  pdf_path <- file.path(FIG_DIR, paste0(base_name, ".pdf"))
+  png_path <- file.path(FIG_DIR, paste0(base_name, ".png"))
+
+  grDevices::cairo_pdf(
+    filename = pdf_path,
+    width = width_mm / 25.4,
+    height = height_mm / 25.4,
+    onefile = TRUE,
+    family = "sans",
+    bg = "white"
+  )
+  draw_fun()
+  grDevices::dev.off()
+
+  grDevices::png(
+    filename = png_path,
+    width = width_mm / 25.4,
+    height = height_mm / 25.4,
+    units = "in",
+    res = 400,
+    type = "cairo",
+    bg = "white"
+  )
+  draw_fun()
+  grDevices::dev.off()
+
+  if (sync_submission) {
+    file.copy(pdf_path, file.path(SUBMISSION_ROOT, paste0(base_name, ".pdf")), overwrite = TRUE)
+    file.copy(pdf_path, file.path(SUBMISSION_FIG_DIR, paste0(base_name, ".pdf")), overwrite = TRUE)
+    file.copy(png_path, file.path(SUBMISSION_ROOT, paste0(base_name, ".png")), overwrite = TRUE)
+    file.copy(png_path, file.path(SUBMISSION_FIG_DIR, paste0(base_name, ".png")), overwrite = TRUE)
+  }
+  invisible(NULL)
 }
 
 sync_binary <- function(src, dest_name = basename(src), sync_submission = IS_NESTED_SUBMISSION) {

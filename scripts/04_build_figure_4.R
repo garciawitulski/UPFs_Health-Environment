@@ -18,7 +18,7 @@ bootstrap_script_dir <- function() {
 }
 source(file.path(bootstrap_script_dir(), "00_config.R"), local = TRUE)
 
-summary_env <- read_pkg_csv("summary_health_environment_upf_scenarios.csv")
+summary_env <- read_pkg_csv("scenario_environment_results.csv")
 
 pareto_df <- summary_env %>%
   mutate(
@@ -27,7 +27,7 @@ pareto_df <- summary_env %>%
       NDG_ARG = "NDG",
       NOVA1 = "NOVA 1",
       NOVA3 = "NOVA 3",
-      NOVA1_NOVA3_mix = "NOVA1/3 mix",
+      NOVA1_NOVA3_mix = "NOVA 1/3 mix",
       none = "No replacement"
     ),
     structure = recode(
@@ -60,7 +60,7 @@ pal_basket <- c(
   "NDG" = "#1D3557",
   "NOVA 1" = "#2A9D8F",
   "NOVA 3" = "#C57B1C",
-  "NOVA1/3 mix" = "#8D6A9F",
+  "NOVA 1/3 mix" = "#8D6A9F",
   "No replacement" = "#7C8797"
 )
 col_zone_better <- "#EEF7F4"
@@ -123,6 +123,9 @@ p5_scatter <- function(df, yvar, ylab, tag, show_shape_legend = FALSE, show_x = 
   y_span <- diff(range(df[[yvar]], na.rm = TRUE))
   if (!is.finite(y_span) || y_span == 0) y_span <- max(abs(df[[yvar]]), na.rm = TRUE)
   if (!is.finite(y_span) || y_span == 0) y_span <- 1
+  x_annot <- min(df$deaths, na.rm = TRUE) + x_span * 0.02
+  y_annot_low <- min(df[[yvar]], na.rm = TRUE) - y_span * 0.08
+  y_annot_high <- max(df[[yvar]], na.rm = TRUE) + y_span * 0.08
 
   front_labels <- emph %>%
     arrange(desc(.data[[yvar]]), deaths) %>%
@@ -188,22 +191,36 @@ p5_scatter <- function(df, yvar, ylab, tag, show_shape_legend = FALSE, show_x = 
       colour = col_ink
     ) +
     {if (show_annotations) list(
-      annotate("text", x = min(df$deaths) * 1.02, y = min(df[[yvar]], na.rm = TRUE) * 0.96, label = "Lower environmental burden", hjust = 0, vjust = 1, size = 2.45, colour = col_muted),
-      annotate("text", x = min(df$deaths) * 1.02, y = max(df[[yvar]], na.rm = TRUE) * 1.08, label = "Higher environmental burden", hjust = 0, vjust = 1, size = 2.45, colour = col_muted)
+      annotate("text", x = x_annot, y = min(df[[yvar]], na.rm = TRUE) - y_span * 0.06, label = "Lower environmental burden", hjust = 0, vjust = 0, size = 2.2, colour = col_muted),
+      annotate("text", x = x_annot, y = max(df[[yvar]], na.rm = TRUE) + y_span * 0.06, label = "Higher environmental burden", hjust = 0, vjust = 1, size = 2.2, colour = col_muted)
     ) else NULL} +
     scale_fill_manual(
       values = pal_basket,
       name = "Basket",
-      guide = if (show_shape_legend) guide_legend(override.aes = list(shape = 21, size = 3.2, alpha = 1)) else "none"
+      guide = if (show_shape_legend) guide_legend(
+        override.aes = list(shape = 21, size = 3.2, alpha = 1),
+        nrow = 1,
+        byrow = TRUE,
+        order = 2
+      ) else "none"
     ) +
-    scale_shape_manual(values = c(Isocaloric = 21, Isoweight = 22, `No sub.` = 24), name = "Structure") +
-    scale_x_continuous(labels = comma, expand = expansion(mult = c(0.04, 0.75))) +
+    scale_shape_manual(
+      values = c(Isocaloric = 21, Isoweight = 22, `No sub.` = 24),
+      name = "Structure",
+      guide = guide_legend(order = 1)
+    ) +
+    scale_x_continuous(
+      labels = comma,
+      expand = expansion(mult = c(0.04, 0.75))
+    ) +
     labs(tag = tag, title = NULL, x = if (show_x) "Deaths averted/year" else NULL, y = ylab) +
     coord_cartesian(clip = "off") +
     theme_nf() +
     theme(
       legend.position = if (show_shape_legend) "right" else "none",
       legend.key.size = unit(3, "mm"),
+      axis.title.y = element_text(margin = margin(r = 1)),
+      plot.margin = margin(6, 14, 6, 6),
       axis.text.x = if (show_x) element_text() else element_blank(),
       axis.ticks.x = if (show_x) element_line() else element_blank()
     )
@@ -232,7 +249,7 @@ heatmap_df <- highlight_df %>%
 fig4e <- ggplot(heatmap_df, aes(metric, row_label, fill = desirability)) +
   geom_tile(colour = "white", linewidth = 0.9) +
   geom_text(aes(label = label, colour = label_colour), size = 2.35, lineheight = 0.92) +
-  scale_fill_gradientn(colours = c("#F8FAFC", "#DCEFE7", "#0F766E"), limits = c(0, 1), guide = "none") +
+  scale_fill_gradientn(colours = c("#C2410C", "#F8FAFC", "#1F3A4D"), limits = c(0, 1), guide = "none") +
   scale_colour_identity() +
   labs(tag = "e", x = NULL, y = NULL) +
   theme_nf() +
@@ -243,9 +260,46 @@ fig4e <- ggplot(heatmap_df, aes(metric, row_label, fill = desirability)) +
     plot.margin = margin(6, 10, 6, 6)
   )
 
-fig <- ((fig4a | fig4b) / (fig4c | fig4d) / fig4e) +
-  plot_layout(guides = "collect", heights = c(1, 1, 0.85)) &
-  theme(legend.position = "bottom", legend.key.size = unit(3, "mm"))
+get_legend_grob <- function(plot_obj) {
+  gt <- ggplotGrob(plot_obj)
+  idx <- which(vapply(gt$grobs, function(x) x$name, character(1)) == "guide-box")
+  if (!length(idx)) return(NULL)
+  gt$grobs[[idx[1]]]
+}
 
-save_pair(fig, "Figure_4", width_mm = 183, height_mm = 240)
+legend_source <- p5_scatter(
+  pareto_df, "land", "Land change (%)", "c",
+  show_x = TRUE, show_annotations = FALSE, show_shape_legend = TRUE
+) +
+  theme(
+    legend.position = "bottom",
+    legend.box = "vertical",
+    legend.key.size = unit(3, "mm"),
+    legend.text = element_text(size = rel(0.72))
+  )
+
+legend_grob <- get_legend_grob(legend_source)
+legend_panel <- wrap_elements(legend_grob) +
+  theme(plot.margin = margin(8, 18, 6, 18))
+
+fig4c <- fig4c + theme(legend.position = "none", plot.margin = margin(6, 10, 14, 10))
+fig4d <- fig4d + theme(legend.position = "none", plot.margin = margin(6, 10, 14, 10))
+
+heatmap_scale_df <- data.frame(x = seq(0.28, 0.72, length.out = 256), y = 0.5)
+fig4e_scale <- ggplot(heatmap_scale_df, aes(x = x, y = y, fill = x)) +
+  geom_tile(width = 0.44 / 256 * 1.05, height = 0.12) +
+  scale_fill_gradientn(colours = c("#C2410C", "#F8FAFC", "#1F3A4D"), guide = "none") +
+  annotate("text", x = 0.26, y = 0.34, label = "Lower score", hjust = 1, vjust = 0.5, size = 1.85, colour = col_muted) +
+  annotate("text", x = 0.74, y = 0.34, label = "Higher score", hjust = 0, vjust = 0.5, size = 1.85, colour = col_muted) +
+  coord_cartesian(xlim = c(0, 1), ylim = c(0.30, 0.62), clip = "off") +
+  theme_void(base_size = 9.3) +
+  theme(plot.margin = margin(0, 40, 2, 40))
+
+heatmap_block <- fig4e / fig4e_scale + plot_layout(heights = c(1, 0.11))
+
+fig <- (fig4a | fig4b) / (fig4c | fig4d) / legend_panel / heatmap_block +
+  plot_layout(heights = c(1, 1.03, 0.24, 0.96)) &
+  theme(plot.margin = margin(8, 14, 8, 10))
+
+save_pair(fig, "Figure_4", width_mm = 190, height_mm = 252)
 message("Saved Figure_4 to ", FIG_DIR)

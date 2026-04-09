@@ -22,7 +22,7 @@ col_div_low  <- "#C2410C"
 col_div_mid  <- "#F8FAFC"
 col_div_high <- "#1F3A4D"
 
-panel_a <- read_pkg_csv("table_s7_scenario_composition_panelA.csv") %>%
+panel_a <- read_pkg_csv("replacement_basket_composition.csv") %>%
   transmute(
     food_group = as.character(food_group),
     `Observed non-UPF` = as.numeric(observed_non_upf),

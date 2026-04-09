@@ -1,49 +1,96 @@
-# GitHub-ready main-figure replication package
+# Replication Package for Main Manuscript Figures
 
-Minimal replication package for the five main-text figures used in the manuscript:
+This repository contains the minimal code and processed inputs required to reproduce the five main-text figures from the manuscript:
 
-`Health and environmental impacts of ultra-processed food consumption in Argentina`
+**Health and environmental impacts of ultra-processed food consumption in Argentina**
 
-This folder is the clean subset to share if the goal is to reproduce only those figures, with the minimal code and data needed to rebuild them.
+The package is intentionally narrow in scope. It is designed for readers who want to rebuild the published figures without running the full analytical pipeline for the manuscript and online appendix.
 
-## Scope
+## What this repository reproduces
 
-- Reproduces `Figure_1` to `Figure_5` used by the Nature Food submission manuscript
-- Keeps only the minimal data needed for those figures
-- Writes regenerated figures to:
-  - `generated/figures`
-  - and, when this package is nested inside `submission_nature_food/github_figures_only`, also syncs them to the manuscript submission folders
+- `Figure_1`: UPF exposure and attributable mortality by sex and age
+- `Figure_2`: Baseline environmental shares and scenario-specific environmental changes
+- `Figure_3`: Composition of the replacement baskets used in the environmental scenarios
+- `Figure_4`: Health-environment trade-offs across UPF-reduction scenarios
+- `Figure_5`: Overview of the health and environmental analytical workflows
 
-## Included minimal data
+## Repository structure
 
-- `Tabla1_UPF_por_energia_Argentina.csv`
-- `Tabla2_Muertes_atribuibles_Argentina.csv`
-- `env_impact_curated_table_main_totals_shares.csv`
-- `scenario_health_economic_summary.csv`
-- `summary_health_environment_upf_scenarios.csv`
-- `table_s7_scenario_composition_panelA.csv`
+```text
+data/         Processed inputs required to rebuild Figures 1-5
+scripts/      Figure-building scripts and verification checks
+generated/    Regenerated outputs (created locally, ignored by git)
+```
 
-## Run order
+## Included data
 
-1. `scripts/06_build_all_figures.R`
-2. `scripts/07_verify_main_figure_values.R`
+The repository includes only the processed data files needed for the manuscript figures:
 
-Or run figures one by one:
+- `upf_exposure_by_age_and_sex.csv`
+- `upf_attributable_deaths_by_age_and_sex.csv`
+- `environmental_baseline_shares.csv`
+- `scenario_health_economic_results.csv`
+- `scenario_environment_results.csv`
+- `replacement_basket_composition.csv`
+
+See [data/README.md](data/README.md) for a short description of each file.
+
+## Quick start
+
+Rebuild all figures:
+
+```r
+source("scripts/06_build_all_figures.R")
+```
+
+Verify that the regenerated figures remain numerically aligned with the manuscript:
+
+```r
+source("scripts/07_verify_main_figure_values.R")
+```
+
+Generated outputs are written to:
+
+- `generated/figures/`
+- `generated/reports/`
+
+If this package is nested inside the local `submission_nature_food` folder used by the authors, the scripts also synchronize the refreshed figure files into the manuscript submission directory.
+
+## Script order
+
+Individual figure scripts can be run independently:
 
 1. `scripts/01_build_figure_1.R`
 2. `scripts/02_build_figure_2.R`
 3. `scripts/03_build_figure_3.R`
 4. `scripts/04_build_figure_4.R`
 5. `scripts/05_build_figure_5.R`
+6. `scripts/07_verify_main_figure_values.R`
 
-## Dependencies
+Or use the single entry point:
 
-- R packages: `ggplot2`, `dplyr`, `tidyr`, `scales`, `forcats`, `patchwork`
-- MiKTeX `latexmk` for `Figure_5`
-- `pdftoppm` only if you also want the workflow PNG regenerated; the manuscript uses the PDF
+1. `scripts/06_build_all_figures.R`
+2. `scripts/07_verify_main_figure_values.R`
 
-## Notes
+## Software requirements
 
-- `Figure_5` is compiled from `figure_sources/Figure_5.tex`
-- The verification script checks key numeric values and Appendix-B references, not pixel-perfect image identity
-- If you publish this package as a standalone repository, you only need `README.md`, `data/`, `scripts/`, and `figure_sources/`
+- R 4.4 or later
+- R packages:
+  - `ggplot2`
+  - `dplyr`
+  - `tidyr`
+  - `scales`
+  - `forcats`
+  - `patchwork`
+
+`Figure_5` is generated directly from R and does not require LaTeX.
+
+## Reproducibility notes
+
+- The repository contains processed figure inputs rather than raw survey microdata.
+- The verification script checks key figure values and workflow labels, but it does not perform pixel-perfect image comparison.
+- This package is not intended to reproduce every table, appendix figure, or intermediate dataset from the study.
+
+## Citation
+
+If you use this code or these processed figure inputs, please cite the associated manuscript and acknowledge this replication package.

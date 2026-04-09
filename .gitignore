@@ -1,8 +1,4 @@
 generated/
-figure_sources/*.aux
-figure_sources/*.fdb_latexmk
-figure_sources/*.fls
-figure_sources/*.log
-figure_sources/*.pdf
 *.Rhistory
 *.RData
+Rplots.pdf

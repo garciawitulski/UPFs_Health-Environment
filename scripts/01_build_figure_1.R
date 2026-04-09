@@ -1,12 +1,5 @@
-# 24_results_section_figures.R
-# ---------------------------------------------------------------------------
-# Four manuscript figures, one per Results paragraph that previously cited
-# only an Online Appendix table:
-#   Fig_R1_upf_heatmap        -> Table S9  (UPF % energy by sex x age)
-#   Fig_R2_attributable_pyramid -> Table S10 (attributable deaths + PAF)
-#   Fig_R3_burden_lollipop    -> Table S11 (YLL, e30, indirect costs by sex)
-#   Fig_R4_scenario_ladder    -> Table S12 (counterfactual scenarios, 95% UI)
-# ---------------------------------------------------------------------------
+# Figure 1
+# Exposure to ultra-processed foods and attributable mortality by sex and age.
 
 suppressPackageStartupMessages({
   library(ggplot2)
@@ -28,6 +21,12 @@ bootstrap_script_dir <- function() {
 }
 source(file.path(bootstrap_script_dir(), "00_config.R"), local = TRUE)
 
+col_fig4e_low <- "#C2410C"
+col_fig4e_mid <- "#F8FAFC"
+col_fig4e_high <- "#1F3A4D"
+col_men_f1 <- col_fig4e_high
+col_women_f1 <- col_fig4e_low
+
 parse_ci <- function(x) {
   m <- regmatches(x, regexec("([0-9.]+)\\s*\\(([0-9.]+),\\s*([0-9.]+)\\)", x))
   out <- do.call(rbind, lapply(m, function(v) {
@@ -40,7 +39,7 @@ parse_ci <- function(x) {
 # ---------------------------------------------------------------------------
 # FIG R1: Heatmap sex x age, UPF % of total energy (Table S9)
 # ---------------------------------------------------------------------------
-t1_full <- read_pkg_csv("Tabla1_UPF_por_energia_Argentina.csv")
+t1_full <- read_pkg_csv("upf_exposure_by_age_and_sex.csv")
 names(t1_full)[1] <- "age_group"
 t1 <- t1_full[t1_full$age_group != "Total", ]
 t1_tot <- t1_full[t1_full$age_group == "Total", ]
@@ -69,14 +68,12 @@ mean_df_t1 <- data.frame(
          label_ci  = sprintf("[%.1f, %.1f]", lo, hi))
 
 n_age <- nlevels(hd$age)
-pal_r1 <- c("#F7FBFC", "#EAF4F7", "#D8EBF1", "#BEDCE6",
-            "#9CCBD8", "#74B6C8", "#4E97AF", "#2E748E", "#184C67")
 
 fig_r1 <- ggplot(hd, aes(age, sex, fill = est)) +
   geom_tile(colour = "white", linewidth = 1.0) +
-  geom_text(aes(label = label_val, colour = est > 17),
+  geom_text(aes(label = label_val, colour = est <= 14 | est >= 18),
             size = 3.1, fontface = "bold", nudge_y = 0.12) +
-  geom_text(aes(label = label_ci, colour = est > 17),
+  geom_text(aes(label = label_ci, colour = est <= 14 | est >= 18),
             size = 2.0, nudge_y = -0.20) +
   # Mean column (separate, with CI)
   annotate("segment",
@@ -90,20 +87,23 @@ fig_r1 <- ggplot(hd, aes(age, sex, fill = est)) +
             inherit.aes = FALSE) +
   geom_text(data = mean_df_t1,
             aes(x = n_age + 1.15, y = sex, label = label_val,
-                colour = est > 17),
+                colour = est <= 14 | est >= 18),
             inherit.aes = FALSE,
             fontface = "bold", size = 3.1, nudge_y = 0.12) +
   geom_text(data = mean_df_t1,
             aes(x = n_age + 1.15, y = sex, label = label_ci,
-                colour = est > 17),
+                colour = est <= 14 | est >= 18),
             inherit.aes = FALSE, size = 2.0, nudge_y = -0.20) +
   annotate("text", x = n_age + 1.15, y = 0.30,
            label = "Overall", fontface = "bold",
            size = 2.85, colour = col_ink) +
   coord_cartesian(xlim = c(0.45, n_age + 1.70),
                   ylim = c(0.05, 2.65), clip = "off", expand = FALSE) +
-  scale_fill_gradientn(
-    colours = pal_r1,
+  scale_fill_gradient2(
+    low = col_fig4e_low,
+    mid = col_fig4e_mid,
+    high = col_fig4e_high,
+    midpoint = 16.5,
     limits = c(12, 21),
     name   = "UPF share of total dietary energy (%)",
     breaks = c(13, 15, 17, 19, 21),
@@ -132,7 +132,7 @@ fig_r1 <- ggplot(hd, aes(age, sex, fill = est)) +
 # ---------------------------------------------------------------------------
 # FIG R2: Bilateral attributable-deaths pyramid + PAF overlay (Table S10)
 # ---------------------------------------------------------------------------
-t2_full <- read_pkg_csv("Tabla2_Muertes_atribuibles_Argentina.csv")
+t2_full <- read_pkg_csv("upf_attributable_deaths_by_age_and_sex.csv")
 names(t2_full)[1] <- "age_group"
 t2 <- t2_full[t2_full$age_group != "Total", ]
 t2_tot <- t2_full[t2_full$age_group == "Total", ]
@@ -264,11 +264,11 @@ fig_r2 <- ggplot(pyr2) +
   annotate("text", x = -(gap + dmax) * 0.50,
            y = n_age_pyr + 1.95,
            label = "MEN", hjust = 0.5, vjust = 0.5,
-           size = 3.0, fontface = "bold", colour = col_men) +
+           size = 3.0, fontface = "bold", colour = col_men_f1) +
   annotate("text", x = (gap + dmax) * 0.50,
            y = n_age_pyr + 1.95,
            label = "WOMEN", hjust = 0.5, vjust = 0.5,
-           size = 3.0, fontface = "bold", colour = col_women) +
+           size = 3.0, fontface = "bold", colour = col_women_f1) +
   annotate("text", x = -(gap + dmax) * 0.50,
            y = n_age_pyr + 1.40,
            label = sprintf("%s deaths  \u00b7  PAF %.1f%%",
@@ -279,7 +279,7 @@ fig_r2 <- ggplot(pyr2) +
            label = sprintf("%s deaths  \u00b7  PAF %.1f%%",
                            comma(round(total_women_t2)), mean_women_t2_paf),
            size = 2.05, fontface = "italic", colour = col_muted) +
-  scale_fill_manual(values = c(Men = col_men, Women = col_women),
+  scale_fill_manual(values = c(Men = col_men_f1, Women = col_women_f1),
                     guide = "none") +
   scale_x_continuous(limits = c(-x_limit, x_limit),
                      expand = c(0, 0)) +
@@ -392,9 +392,9 @@ fig_r3 <- ggplot(burden_pair_long) +
   # row separators (hairline)
   geom_hline(data = row_sep, aes(yintercept = y),
              colour = col_grid, linewidth = 0.3) +
-  scale_fill_manual(values = c(Men = col_men, Women = col_women),
+  scale_fill_manual(values = c(Men = col_men_f1, Women = col_women_f1),
                     guide = "none") +
-  scale_colour_manual(values = c(Men = col_men, Women = col_women),
+  scale_colour_manual(values = c(Men = col_men_f1, Women = col_women_f1),
                       guide = "none") +
   scale_x_continuous(limits = c(-0.05, 1.22), expand = c(0, 0)) +
   scale_y_reverse(limits = c(3.75, 0.55), expand = c(0, 0)) +
@@ -411,21 +411,21 @@ fig_r3 <- ggplot(burden_pair_long) +
 # A faint curved spline connects scenario centres to convey the intensity
 # gradient between proportional reductions and NDG-aligned targets.
 # ---------------------------------------------------------------------------
-sehs <- read_pkg_csv("scenario_health_economic_summary.csv")
+sehs <- read_pkg_csv("scenario_health_economic_results.csv")
 
 scen_levels <- c("red_10", "red_20", "red_50",
                  "ndg_gapa_conservative", "ndg_gapa_central", "ndg_gapa_strict")
 scen_labels <- c(
-  red_10 = "10% proportional reduction",
-  red_20 = "20% proportional reduction",
-  red_50 = "50% proportional reduction",
-  ndg_gapa_conservative = "NDG conservative (target 5.45%)",
-  ndg_gapa_central      = "NDG central (target 3.63%)",
-  ndg_gapa_strict       = "NDG strict (target 1.81%)"
+  red_10 = "10% proportional\nreduction",
+  red_20 = "20% proportional\nreduction",
+  red_50 = "50% proportional\nreduction",
+  ndg_gapa_conservative = "NDG conservative\n(target 5.45%)",
+  ndg_gapa_central      = "NDG central\n(target 3.63%)",
+  ndg_gapa_strict       = "NDG strict\n(target 1.81%)"
 )
 fam_levels <- c("Proportional reduction", "NDG-aligned target")
 fam_pal <- c("Proportional reduction" = "#7E94B5",
-             "NDG-aligned target"     = "#1B5E47")
+             "NDG-aligned target"     = "#E39A6D")
 
 scen_long <- sehs %>%
   filter(scenario %in% scen_levels) %>%
@@ -543,7 +543,8 @@ pB_left  <- fig_r2 + labs(tag = "b") +
 pB_right <- fig_r3 +
   theme(plot.margin = margin(6, 8, 4, 0))
 pC <- fig_r4 + labs(tag = "c") +
-  theme(legend.position = "top",
+  theme(legend.position = "bottom",
+        legend.justification = "center",
         plot.margin     = margin(4, 22, 4, 0)) + tag_theme
 
 pB <- (pB_left | plot_spacer() | pB_right) +
