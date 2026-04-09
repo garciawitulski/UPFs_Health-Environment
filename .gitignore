@@ -1,40 +1,8 @@
-# Ignore everything by default
-*
-
-# Repository metadata and docs
-!.gitignore
-!.gitattributes
-!README.md
-
-# R code
-!R/
-!R/**
-
-# ENNyS inputs used by the R pipeline
-!ENNyS/
-ENNyS/*
-!ENNyS/alimentos_clasificados_NOVA.csv
-!ENNyS/alimentos_clasificados_sin_suplementos.csv
-!ENNyS/composicion_quimica.csv
-!ENNyS/Base_Alimentos_Bebidas_Suplementos.csv
-!ENNyS/Base_Nutrientes.csv
-!ENNyS/ENNyS2_encuesta.csv
-
-# Health inputs
-!data/
-data/*
-!data/defunciones_2019.csv
-!data/poblacion_argentina_2018_ennys.csv
-!data/EPH/
-data/EPH/*
-!data/EPH/ingresos_por_estrato.csv
-
-# Pre-mapped / pre-built environmental inputs
-!data/environmental_footprints/
-data/environmental_footprints/*
-!data/environmental_footprints/arrieta_2022_tableS4_partI_coefficients.csv
-!data/environmental_footprints/ennys_codigo_to_env_group_extended.csv
-!data/environmental_footprints/env_coefficients_comparable_4ind.csv
-!data/environmental_footprints/env_coefficients_agribalyse_subgroups.csv
-!data/environmental_footprints/env_coefficients_expanded_from_xlsx.csv
-!data/environmental_footprints/env_group_extended_to_expanded_bridge.csv
+generated/
+figure_sources/*.aux
+figure_sources/*.fdb_latexmk
+figure_sources/*.fls
+figure_sources/*.log
+figure_sources/*.pdf
+*.Rhistory
+*.RData
