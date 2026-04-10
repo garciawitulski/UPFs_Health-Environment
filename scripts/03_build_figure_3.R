@@ -166,7 +166,9 @@ p2 <- ggplot(delta, aes(basket, food_group, fill = delta_pp)) +
   geom_text(aes(label = label, colour = label_colour), size = 2.05, lineheight = 0.92) +
   scale_fill_gradient2(low = col_div_low, mid = col_div_mid, high = col_div_high, midpoint = 0,
                        limits = c(-30, 30), breaks = c(-30, -15, 0, 15, 30),
-                       labels = function(x) paste0(number(x, accuracy = 1), " pp"), name = "Change vs\nObserved") +
+                       labels = function(x) paste0(number(x, accuracy = 1), " pp"),
+                       name = "Observed vs change",
+                       guide = guide_colourbar(barwidth = 12, barheight = 0.45, title.position = "top")) +
   scale_colour_identity() +
   scale_x_discrete(labels = function(x) unname(basket_labels[x])) +
   scale_y_discrete(labels = function(x) unname(food_group_labels[x])) +
@@ -176,7 +178,8 @@ p2 <- ggplot(delta, aes(basket, food_group, fill = delta_pp)) +
     panel.grid = element_blank(),
     axis.text.x = element_text(face = "bold"),
     axis.text.y = element_text(size = rel(0.76), lineheight = 0.95),
-    legend.position = "bottom"
+    legend.position = "bottom",
+    legend.title = element_text(size = rel(0.75))
   )
 
 fig <- p1 / p2 + plot_layout(heights = c(0.95, 1.12))

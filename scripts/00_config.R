@@ -1,4 +1,5 @@
 suppressPackageStartupMessages({
+  library(readr)
   library(ggplot2)
   library(dplyr)
   library(tidyr)
@@ -39,13 +40,16 @@ if (IS_NESTED_SUBMISSION) {
 }
 
 DATA_DIR <- file.path(PKG_ROOT, "data")
+CALC_DATA_DIR <- file.path(DATA_DIR, "analysis")
 GEN_DIR <- file.path(PKG_ROOT, "generated")
 FIG_DIR <- file.path(GEN_DIR, "figures")
 REPORT_DIR <- file.path(GEN_DIR, "reports")
+CALC_OUTPUT_DIR <- file.path(GEN_DIR, "calculation_outputs")
 SUBMISSION_FIG_DIR <- if (IS_NESTED_SUBMISSION) file.path(SUBMISSION_ROOT, "figures") else file.path(GEN_DIR, "figures")
 
 dir.create(FIG_DIR, showWarnings = FALSE, recursive = TRUE)
 dir.create(REPORT_DIR, showWarnings = FALSE, recursive = TRUE)
+dir.create(CALC_OUTPUT_DIR, showWarnings = FALSE, recursive = TRUE)
 dir.create(SUBMISSION_FIG_DIR, showWarnings = FALSE, recursive = TRUE)
 
 col_ink   <- "#111827"
@@ -78,6 +82,18 @@ theme_nf <- function(base = 9.3) {
 
 read_pkg_csv <- function(name) {
   read.csv(file.path(DATA_DIR, name), stringsAsFactors = FALSE, check.names = FALSE)
+}
+
+read_calc_csv <- function(name) {
+  read.csv(file.path(CALC_DATA_DIR, name), stringsAsFactors = FALSE, check.names = FALSE)
+}
+
+write_calc_csv <- function(df, name) {
+  utils::write.csv(df, file.path(CALC_OUTPUT_DIR, name), row.names = FALSE, na = "")
+}
+
+read_calc_output_csv <- function(name) {
+  read.csv(file.path(CALC_OUTPUT_DIR, name), stringsAsFactors = FALSE, check.names = FALSE)
 }
 
 parse_ci <- function(x) {

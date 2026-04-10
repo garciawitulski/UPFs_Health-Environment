@@ -1,81 +1,123 @@
 # Health and environmental co-benefits of reducing ultra-processed food consumption in Argentina: a modelling study
 
-This repository provides a compact manuscript replication package.
+This repository is a processed-data manuscript replication package for the study:
 
-It contains the code and processed analytical inputs needed to regenerate the main quantitative visual outputs used in the paper, without requiring the full internal workflow used to build every intermediate dataset, table, and appendix artifact.
+> Health and environmental co-benefits of reducing ultra-processed food consumption in Argentina: a modelling study
 
-## Scope of this package
+It contains the code and processed analytical inputs needed to regenerate the main manuscript calculations and the five figures used in the submission package, without redistributing the full underlying ENNyS survey microdata.
 
-The current public package reproduces the five main figures cited in the manuscript:
+## What this package reproduces
 
-- `Figure_1`: UPF exposure and attributable mortality by sex and age
-- `Figure_2`: Baseline environmental shares and scenario-specific environmental changes
-- `Figure_3`: Composition of the replacement baskets used in the environmental scenarios
-- `Figure_4`: Health-environment trade-offs across UPF-reduction scenarios
-- `Figure_5`: Overview of the health and environmental analytical workflows
+The public package reproduces:
+
+- the core health calculations used in the manuscript
+- the scenario-level health and economic summaries
+- the environmental scenario calculations used in the main manuscript
+- the appendix-ready scenario-composition and environmental-coefficient tables
+- the five main manuscript figures
+
+The package is intentionally built from processed analytical inputs. This keeps the repository compact and reproducible while avoiding oversized source files that are impractical for a standard public GitHub repository.
 
 ## Repository structure
 
 ```text
-data/         Processed analytical inputs used by the manuscript replication package
-scripts/      Reproducible figure-building scripts and verification checks
-generated/    Regenerated outputs (created locally, ignored by git)
+data/
+  Processed analytical inputs shipped with the package
+  analysis/      Inputs used by the manuscript calculation scripts
+
+scripts/
+  Figure-building scripts used for the main manuscript figures
+  calculations/  Ordered manuscript-calculation pipeline adapted for this public package
+
+generated/
+  Regenerated calculation outputs, figures, and verification reports
+  Created locally and ignored by git
 ```
 
-## Included data
-
-The repository includes the processed data files required by the public manuscript replication package:
-
-- `upf_exposure_by_age_and_sex.csv`
-- `upf_attributable_deaths_by_age_and_sex.csv`
-- `environmental_baseline_shares.csv`
-- `scenario_health_economic_results.csv`
-- `scenario_environment_results.csv`
-- `replacement_basket_composition.csv`
-
-See [data/README.md](data/README.md) for a short description of each file.
-
 ## Quick start
+
+Run the manuscript calculations:
+
+```r
+source("scripts/calculations/90_run_core_outputs.R")
+source("scripts/calculations/95_verify_core_outputs.R")
+```
 
 Rebuild the manuscript figures:
 
 ```r
 source("scripts/06_build_all_figures.R")
+source("scripts/07_verify_main_figure_values.R")
 ```
 
-Verify that the regenerated outputs remain numerically aligned with the manuscript:
+Run the full public replication pipeline:
 
 ```r
-source("scripts/07_verify_main_figure_values.R")
+source("scripts/calculations/99_full_submission_pipeline.R")
 ```
 
 Generated outputs are written to:
 
+- `generated/calculation_outputs/`
 - `generated/figures/`
 - `generated/reports/`
 
-If this package is nested inside the local `submission_nature_food` folder used by the authors, the scripts also synchronize the refreshed figure files into the manuscript submission directory.
+When this package is nested inside the authors' local `submission_nature_food` folder, the figure scripts also synchronize refreshed figure files into the manuscript submission directory.
 
-## Script order
+## Included analytical inputs
 
-Individual scripts can also be run independently:
+The repository ships two processed input layers:
 
-1. `scripts/01_build_figure_1.R`
-2. `scripts/02_build_figure_2.R`
-3. `scripts/03_build_figure_3.R`
-4. `scripts/04_build_figure_4.R`
-5. `scripts/05_build_figure_5.R`
-6. `scripts/07_verify_main_figure_values.R`
+- figure-ready inputs in `data/`, used by the public figure scripts
+- calculation-ready inputs in `data/analysis/`, used by the ordered manuscript calculation pipeline
 
-Or use the single entry point:
+These include:
 
-1. `scripts/06_build_all_figures.R`
-2. `scripts/07_verify_main_figure_values.R`
+- stratum-level UPF exposure
+- stratum-level all-cause mortality
+- stratum-level cause-specific mortality
+- population and earnings by sex-age stratum
+- processed environmental baseline totals and group summaries
+- processed environmental scenario slopes
+- food-group replacement basket composition
+- environmental coefficients used by the public appendix-table script
+
+See [data/README.md](data/README.md) and [data/analysis/README.md](data/analysis/README.md) for file-level descriptions.
+
+## Script layout
+
+### Main figures
+
+- `scripts/01_build_figure_1.R`
+- `scripts/02_build_figure_2.R`
+- `scripts/03_build_figure_3.R`
+- `scripts/04_build_figure_4.R`
+- `scripts/05_build_figure_5.R`
+- `scripts/06_build_all_figures.R`
+- `scripts/07_verify_main_figure_values.R`
+
+### Manuscript calculations
+
+- `scripts/calculations/04_paf_resultados.R`
+- `scripts/calculations/05_muertes_por_causa.R`
+- `scripts/calculations/06_yll.R`
+- `scripts/calculations/07_esperanza_vida.R`
+- `scripts/calculations/08_costos_indirectos.R`
+- `scripts/calculations/09_scenario_health_economic_summary.R`
+- `scripts/calculations/10_impacto_ambiental.R`
+- `scripts/calculations/13_merge_health_env_summaries.R`
+- `scripts/calculations/16_appendix_scenario_composition_table.R`
+- `scripts/calculations/17_appendix_environmental_coefficients_table.R`
+- `scripts/calculations/90_run_core_outputs.R`
+- `scripts/calculations/91_build_submission_figures.R`
+- `scripts/calculations/95_verify_core_outputs.R`
+- `scripts/calculations/99_full_submission_pipeline.R`
 
 ## Software requirements
 
 - R 4.4 or later
 - R packages:
+  - `readr`
   - `ggplot2`
   - `dplyr`
   - `tidyr`
@@ -89,10 +131,11 @@ Or use the single entry point:
 
 ## Reproducibility notes
 
-- The repository contains processed analytical inputs rather than raw survey microdata.
-- The verification script checks key figure values and workflow labels, but it does not perform pixel-perfect image comparison.
-- This public package is focused on the main manuscript outputs and does not include every table, appendix figure, or intermediate dataset from the full study workflow.
+- This public package does not redistribute the full raw ENNyS microdata workflow.
+- The manuscript calculations included here are rebuilt from processed analytical inputs derived from the full internal study pipeline.
+- The verification scripts check the main numerical targets used in the manuscript package, but they do not perform pixel-level image comparison.
+- The public package is focused on the main manuscript calculations and figures rather than every intermediate file produced during the original internal workflow.
 
 ## Citation
 
-If you use this code or these processed manuscript inputs, please cite the associated manuscript and acknowledge this replication package.
+If you use this code or these processed analytical inputs, please cite the associated manuscript and acknowledge this public replication package.
