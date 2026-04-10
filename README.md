@@ -82,9 +82,10 @@ Or use the single entry point:
   - `scales`
   - `forcats`
   - `patchwork`
-- `tibble`
+- `pdflatex` on the system path for `Figure_5`
+- `pdftoppm` on the system path if you also want the PNG version of `Figure_5`
 
-`Figure_5` is generated directly from R using the same diagram logic adapted from the manuscript appendix pipeline script.
+`Figure_5` is generated from R through an embedded TikZ/LaTeX source written by the script at runtime.
 
 ## Reproducibility notes
 

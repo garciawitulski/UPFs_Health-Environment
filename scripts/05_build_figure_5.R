@@ -1,7 +1,3 @@
-suppressPackageStartupMessages({
-  library(grid)
-})
-
 bootstrap_script_dir <- function() {
   for (i in rev(seq_along(sys.frames()))) {
     if (!is.null(sys.frames()[[i]]$ofile)) return(dirname(normalizePath(sys.frames()[[i]]$ofile, winslash = "/", mustWork = FALSE)))
@@ -13,249 +9,294 @@ bootstrap_script_dir <- function() {
 }
 source(file.path(bootstrap_script_dir(), "00_config.R"), local = TRUE)
 
-col_input_border <- "#6FA8B5"
-col_input_fill <- "#E1ECF0"
-col_core_border <- "#1F3A4D"
-col_core_fill <- "#E2E8EE"
-col_output_border <- "#B45309"
-col_output_fill <- "#FDF1DD"
-col_note_border <- "#9CA3AF"
-col_note_fill <- "#F3F4F6"
-col_bg <- "#F8FAFC"
-col_health <- "#A63A50"
-col_env <- "#1F7A6F"
+# ---------------------------------------------------------------------------
+# Figure 5 is a TikZ diagram compiled with pdflatex.
+# The .tex source is embedded here so the script is self-contained.
+# ---------------------------------------------------------------------------
 
-draw_box <- function(x, y, w, h, title, body = character(), border, fill,
-                     dashed = FALSE, title_col = col_ink, body_col = col_ink,
-                     title_cex = 0.78, body_cex = 0.70, body_y = 0.43) {
-  grid.roundrect(
-    x = unit(x, "npc"),
-    y = unit(y, "npc"),
-    width = unit(w, "npc"),
-    height = unit(h, "npc"),
-    r = unit(2.6, "mm"),
-    gp = gpar(
-      fill = fill,
-      col = border,
-      lwd = if (dashed) 1.0 else 1.25,
-      lty = if (dashed) 2 else 1
-    )
-  )
-  grid.text(
-    title,
-    x = unit(x, "npc"),
-    y = unit(y + h * 0.24, "npc"),
-    gp = gpar(col = title_col, fontsize = 10.5 * title_cex, fontface = "bold")
-  )
-  if (length(body)) {
-    grid.text(
-      paste(body, collapse = "\n"),
-      x = unit(x, "npc"),
-      y = unit(y - h * body_y / 2.6, "npc"),
-      gp = gpar(col = body_col, fontsize = 10.2 * body_cex, lineheight = 1.08)
-    )
-  }
+tex_source <- r"(
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{tikz}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\renewcommand{\familydefault}{\sfdefault}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, fit, backgrounds, calc}
+
+% --- Palette (matches main manuscript figures) ----------------------------
+\definecolor{cInput}{HTML}{6FA8B5}
+\definecolor{cInputBg}{HTML}{E1ECF0}
+\definecolor{cCore}{HTML}{1F3A4D}
+\definecolor{cCoreBg}{HTML}{E2E8EE}
+\definecolor{cOutput}{HTML}{B45309}
+\definecolor{cOutputBg}{HTML}{FDF1DD}
+\definecolor{cNote}{HTML}{6B7280}
+\definecolor{cNoteBg}{HTML}{F1F3F5}
+\definecolor{cInk}{HTML}{111827}
+\definecolor{cRule}{HTML}{1F2937}
+\definecolor{cBg}{HTML}{F8FAFC}
+\definecolor{cHealth}{HTML}{A63A50}   % accent rose for health branch rail
+\definecolor{cEnv}{HTML}{1F7A6F}      % accent teal for env branch rail
+
+\begin{document}
+\begin{tikzpicture}[
+    x=1cm, y=1cm,
+    font=\sffamily\scriptsize,
+    >={Stealth[length=2.2mm,width=1.6mm]},
+    every node/.style={align=center},
+    input/.style  = {draw=cInput,  fill=cInputBg,  line width=0.6pt,
+                     rounded corners=2pt, inner sep=3pt,
+                     text width=34mm, minimum height=14mm},
+    core/.style   = {draw=cCore,   fill=cCoreBg,   line width=0.65pt,
+                     rounded corners=2pt, inner sep=3pt,
+                     text width=34mm, minimum height=14mm},
+    output/.style = {draw=cOutput, fill=cOutputBg, line width=0.65pt,
+                     rounded corners=2pt, inner sep=3pt,
+                     text width=34mm, minimum height=14mm},
+    note/.style   = {draw=cNote, dashed, fill=cNoteBg, line width=0.45pt,
+                     rounded corners=2pt, inner sep=3pt,
+                     text width=48mm, minimum height=12mm},
+    header/.style = {font=\sffamily\bfseries\small},
+    flow/.style   = {->, draw=cRule, line width=0.55pt},
+    sflow/.style  = {->, draw=cNote, line width=0.45pt, dashed},
+    swatch/.style = {rounded corners=1.2pt, line width=0.55pt,
+                     minimum width=5mm, minimum height=3mm, inner sep=0pt},
+]
+
+% ============================== ROOT =======================================
+\node[input, text width=38mm, minimum height=18mm] (root) at (0, 0) {%
+  \textbf{ENNyS 2 dietary recalls}\\[1pt]
+  (2018--2019)\\[1pt]
+  \scriptsize $g_{kji}\ \cdot\ $NOVA 1--4 $\cdot\ \mathrm{kcal}_i$\\[1pt]
+  \scriptsize survey weights $w_k$};
+
+% ========================== HEALTH BRANCH (top) ============================
+\node[input]  (hAux1) at (5, 4.7)
+  {\textbf{DEIS mortality 2019}\\[1pt]
+   \scriptsize all-cause deaths $D_{sa}$\\
+   \scriptsize by sex $\times$ age 30--69};
+
+\node[input]  (hAux2) at (10, 4.7)
+  {\textbf{Dose--response (B.2)}\\[1pt]
+   \scriptsize Pagliai 2021 RR=1.25\\
+   \scriptsize $\beta=\ln(\mathrm{RR})/35.7$};
+
+\node[core]   (hExp) at (5, 2.2)
+  {\textbf{1. \%UPF exposure (B.1)}\\[1pt]
+   \scriptsize person mean $\overline{\%\mathrm{UPF}}_k$\\
+   \scriptsize stratum $\mu_{sa},\ \sigma_{sa}$};
+
+\node[core]   (hCra) at (10, 2.2)
+  {\textbf{2. Distributional CRA (B.3)}\\[1pt]
+   \scriptsize log-normal $[0,100]$\\
+   \scriptsize $\mathbb{E}[\mathrm{RR}(X_{sa})]$};
+
+\node[core]   (hPaf) at (15, 2.2)
+  {\textbf{3. PAF \& attributable}\\[1pt]
+   \scriptsize $\mathrm{PAF}_{sa}=\dfrac{\Delta\mathbb{E}[\mathrm{RR}]}{\mathbb{E}[\mathrm{RR}]}$\\
+   \scriptsize $A_{sa}=\mathrm{PAF}_{sa}\,D_{sa}$};
+
+\node[core]   (hMc)  at (20, 2.2)
+  {\textbf{4. Monte Carlo (B.4)}\\[1pt]
+   \scriptsize 10\,000 iterations\\
+   \scriptsize sample $\mu,\beta,D\sim\mathrm{Poi}$\\
+   \scriptsize 95\,\% UI};
+
+\node[core]   (hPost) at (25, 2.2)
+  {\textbf{5. YLL / $\Delta e_{30}$ / PVLE}\\[1pt]
+   \scriptsize WHO $L_a$ (B.5)\\
+   \scriptsize cause-deleted life table (B.6)\\
+   \scriptsize PVLE, $r{=}3\%$ (B.7)};
+
+\node[output] (hOut) at (30, 2.2)
+  {\textbf{Health outputs}\\[1pt]
+   \scriptsize Deaths averted $\cdot$ YLL\\
+   \scriptsize $\Delta e_{30}$ $\cdot$ indirect cost};
+
+% ======================== ENVIRONMENTAL BRANCH (bottom) ====================
+\node[input]  (eAux1) at (5, -4.7)
+  {\textbf{LCA coefficients}\\[1pt]
+   \scriptsize Arrieta 2022 + OWID\\
+   \scriptsize $c_{i,m}$ per kg};
+
+\node[input]  (eAux2) at (10, -4.7)
+  {\textbf{Yield ratios $\phi_i$}\\[1pt]
+   \scriptsize retail $\to$ farm-gate\\
+   \scriptsize mapping coverage (S5)};
+
+\node[core]   (eMass) at (5, -2.2)
+  {\textbf{1. Intake $\to$ mass (B.8)}\\[1pt]
+   \scriptsize $q^{\mathrm{ret}}=g/1000$\\
+   \scriptsize $q^{\mathrm{ref}}=q^{\mathrm{ret}}/\phi_i$};
+
+\node[core]   (eItem) at (10, -2.2)
+  {\textbf{2. Item footprints}\\[1pt]
+   \scriptsize $I_{kji,m}=q^{\mathrm{ref}}\,c_{i,m}$\\
+   \scriptsize GHG $\cdot$ Land $\cdot$ Water $\cdot$ Eutro};
+
+\node[core]   (eAgg)  at (15, -2.2)
+  {\textbf{3. Population totals}\\[1pt]
+   \scriptsize $I^{\mathrm{base}}_m,\ I^{\mathrm{UPF}}_m$\\
+   \scriptsize restricted to NOVA\,4};
+
+\node[core]   (eCf)   at (20, -2.2)
+  {\textbf{4. Counterfactuals (B.8)}\\[1pt]
+   \scriptsize no-sub $\cdot$ isocaloric\\
+   \scriptsize isoweight};
+
+\node[core]   (ePost) at (25, -2.2)
+  {\textbf{5. Net scenario impacts}\\[1pt]
+   \scriptsize $\%\Delta I_{m}=100\left(\dfrac{I^{\mathrm{cf}}_{m}}{I^{\mathrm{base}}_{m}}-1\right)$\\
+   \scriptsize reported vs.\ baseline};
+
+\node[output] (eOut)  at (30, -2.2)
+  {\textbf{Environmental outputs}\\[1pt]
+   \scriptsize GHG $\cdot$ Land\\
+   \scriptsize Water $\cdot$ Eutrophication};
+
+% ========================= SCENARIO ENGINE (centre) ========================
+\node[note, text width=56mm] (scen) at (15, 0)
+  {\textbf{Shared scenario engine}\\[1pt]
+   \scriptsize TMRL $\cdot$ 10/20/50\,\% proportional\\
+   \scriptsize NDG targets: 5.45 / 3.63 / 1.81\,\%\\
+   \scriptsize Baskets: NOVA\,1 $\cdot$ NOVA\,3 $\cdot$ blend $\cdot$ NDG};
+
+% ===================== FINAL INTEGRATED OUTPUT =============================
+\node[output, text width=42mm, minimum height=18mm] (final) at (30, 0)
+  {\textbf{Integrated output}\\[1pt]
+   \scriptsize Figure 4\\
+   \scriptsize health--environment\\
+   \scriptsize trade-offs};
+
+% ================================ EDGES ===================================
+% Root -> first stage of each branch
+\draw[flow] (root.north east) to[out=60,  in=180] (hExp.west);
+\draw[flow] (root.south east) to[out=-60, in=180] (eMass.west);
+
+% Auxiliary inputs feeding their relevant step
+\draw[flow] (hAux1.south) -- (hPaf.north -| hAux1.south);
+\draw[flow] (hAux2.south) -- (hCra.north);
+\draw[flow] (eAux1.north) -- (eItem.south);
+\draw[flow] (eAux2.north) -- (eAgg.south -| eAux2.north);
+
+% Health branch horizontal flow
+\draw[flow] (hExp.east)  -- (hCra.west);
+\draw[flow] (hCra.east)  -- (hPaf.west);
+\draw[flow] (hPaf.east)  -- (hMc.west);
+\draw[flow] (hMc.east)   -- (hPost.west);
+\draw[flow] (hPost.east) -- (hOut.west);
+
+% Env branch horizontal flow
+\draw[flow] (eMass.east) -- (eItem.west);
+\draw[flow] (eItem.east) -- (eAgg.west);
+\draw[flow] (eAgg.east)  -- (eCf.west);
+\draw[flow] (eCf.east)   -- (ePost.west);
+\draw[flow] (ePost.east) -- (eOut.west);
+
+% Scenario engine feeds the CRA node (health) and counterfactuals (env)
+\draw[sflow] (scen.north) to[out=90,  in=-90] (hCra.south);
+\draw[sflow] (scen.south) to[out=-90, in=90]  (eCf.north);
+
+% Convergence of branch outputs onto the integrated output
+\draw[flow] (hOut.south) to[out=-90, in=90]  (final.north);
+\draw[flow] (eOut.north) to[out=90,  in=-90] (final.south);
+
+% ============================ BRANCH HEADERS ================================
+\node[header, text=cHealth] at (2.5, 6.1) {HEALTH BRANCH};
+\node[header, text=cEnv]    at (2.5, -6.1) {ENVIRONMENTAL BRANCH};
+
+% Subtle horizontal rails behind branch rows
+\begin{pgfonlayer}{background}
+  \draw[cHealth, line width=0.45pt, dashed, opacity=0.40]
+    (3.0,  2.2) -- (32.0,  2.2);
+  \draw[cEnv,    line width=0.45pt, dashed, opacity=0.40]
+    (3.0, -2.2) -- (32.0, -2.2);
+\end{pgfonlayer}
+
+% ============================ STAGE HEADERS (top) ==========================
+\foreach \x/\lbl in {5/Exposure,10/Risk model,15/Attribution,20/Uncertainty,25/Post-processing,30/Results}{
+  \node[font=\sffamily\bfseries\tiny, text=cNote] at (\x, 6.9) {\lbl};
+  \draw[cNote, line width=0.25pt, dotted, opacity=0.55]
+    (\x, 6.6) -- (\x, -6.6);
 }
 
-draw_arrow <- function(x0, y0, x1, y1, col = col_rule, lwd = 1.1, dashed = FALSE) {
-  grid.lines(
-    x = unit(c(x0, x1), "npc"),
-    y = unit(c(y0, y1), "npc"),
-    gp = gpar(col = col, lwd = lwd, lty = if (dashed) 2 else 1),
-    arrow = arrow(type = "closed", length = unit(2.3, "mm"))
-  )
+% ============================== LEGEND =====================================
+\node[draw=cNote, line width=0.45pt, rounded corners=2pt,
+      inner sep=5pt, fill=white, font=\sffamily\scriptsize,
+      anchor=north west] (legend) at (-1.5, -7.2) {%
+  \begin{tabular}{@{}c l @{\hspace{6mm}} c l@{}}
+    \tikz\node[swatch,draw=cInput, fill=cInputBg]{};   & Input data /
+      exposure source &
+    \tikz\node[swatch,draw=cCore, fill=cCoreBg]{};     & Core computation
+      (Appendix B) \\[1.5pt]
+    \tikz\node[swatch,draw=cOutput,fill=cOutputBg]{};  & Manuscript output
+      (Figs.\ 1--4) &
+    \tikz\node[swatch,draw=cNote, fill=cNoteBg, dashed]{}; & Shared scenario
+      / counterfactuals \\[1.5pt]
+    \multicolumn{4}{@{}l}{%
+       \tikz\draw[->, draw=cRule, line width=0.55pt, >={Stealth[length=1.8mm]}]
+            (0,0) -- (6mm,0);\ \ solid arrow: data or computation flow\quad
+       \tikz\draw[->, draw=cNote, line width=0.45pt, dashed,
+                  >={Stealth[length=1.8mm]}]
+            (0,0) -- (6mm,0);\ \ dashed: scenario linkage}
+  \end{tabular}};
+
+% ============================ BACKGROUND ===================================
+\begin{pgfonlayer}{background}
+  \node[fill=cBg, inner sep=7mm,
+        fit=(root)(hAux1)(hOut)(eAux1)(eOut)(final)(legend)
+            (current bounding box)] {};
+\end{pgfonlayer}
+
+\end{tikzpicture}
+\end{document}
+)"
+
+# ---------------------------------------------------------------------------
+# Write .tex, compile with pdflatex, convert to PNG, sync
+# ---------------------------------------------------------------------------
+# Write .tex to the output figures directory
+tex_path <- file.path(FIG_DIR, "Figure_5.tex")
+writeLines(tex_source, tex_path)
+if (IS_NESTED_SUBMISSION) {
+  file.copy(tex_path, file.path(SUBMISSION_ROOT, "Figure_5.tex"), overwrite = TRUE)
+  file.copy(tex_path, file.path(SUBMISSION_FIG_DIR, "Figure_5.tex"), overwrite = TRUE)
 }
 
-draw_poly_arrow <- function(xs, ys, col = col_rule, lwd = 1.0, dashed = FALSE) {
-  grid.lines(
-    x = unit(xs, "npc"),
-    y = unit(ys, "npc"),
-    gp = gpar(col = col, lwd = lwd, lty = if (dashed) 2 else 1),
-    arrow = arrow(type = "closed", length = unit(2.0, "mm"))
-  )
+pdflatex <- Sys.which("pdflatex")
+if (!nzchar(pdflatex)) stop("pdflatex not found on PATH")
+
+old_wd <- getwd()
+on.exit(setwd(old_wd), add = TRUE)
+setwd(FIG_DIR)
+
+cmd_out <- system2(
+  pdflatex,
+  c("-interaction=nonstopmode", "-halt-on-error", "Figure_5.tex"),
+  stdout = TRUE,
+  stderr = TRUE
+)
+status <- attr(cmd_out, "status")
+if (!is.null(status) && status != 0) {
+  stop(paste(c("Figure_5.tex failed to compile:", cmd_out), collapse = "\n"))
 }
 
-draw_stage_guides <- function(x_pos, labels) {
-  for (i in seq_along(x_pos)) {
-    grid.text(
-      labels[i],
-      x = unit(x_pos[i], "npc"),
-      y = unit(0.95, "npc"),
-      gp = gpar(col = col_muted, fontsize = 7.2, fontface = "bold")
-    )
-    grid.lines(
-      x = unit(c(x_pos[i], x_pos[i]), "npc"),
-      y = unit(c(0.16, 0.93), "npc"),
-      gp = gpar(col = col_grid, lwd = 0.8, lty = 3)
-    )
-  }
+pdf_src <- file.path(FIG_DIR, "Figure_5.pdf")
+if (!file.exists(pdf_src)) stop("Expected compiled PDF not found: ", pdf_src)
+
+# Copy PDF to submission directories (pdf already in FIG_DIR from pdflatex)
+if (IS_NESTED_SUBMISSION) {
+  file.copy(pdf_src, file.path(SUBMISSION_ROOT, "Figure_5.pdf"), overwrite = TRUE)
+  file.copy(pdf_src, file.path(SUBMISSION_FIG_DIR, "Figure_5.pdf"), overwrite = TRUE)
 }
 
-draw_legend <- function() {
-  lx <- 0.17
-  ly <- 0.075
-  lw <- 0.27
-  lh <- 0.085
-
-  grid.roundrect(
-    x = unit(lx, "npc"),
-    y = unit(ly, "npc"),
-    width = unit(lw, "npc"),
-    height = unit(lh, "npc"),
-    r = unit(2, "mm"),
-    gp = gpar(fill = "white", col = col_note_border, lwd = 0.9)
-  )
-
-  swatch <- function(x, y, fill, border, label, dashed = FALSE) {
-    grid.roundrect(
-      x = unit(x, "npc"),
-      y = unit(y, "npc"),
-      width = unit(0.015, "npc"),
-      height = unit(0.018, "npc"),
-      r = unit(1.4, "mm"),
-      gp = gpar(fill = fill, col = border, lwd = 0.9, lty = if (dashed) 2 else 1)
-    )
-    grid.text(label, x = unit(x + 0.022, "npc"), y = unit(y, "npc"),
-              just = "left", gp = gpar(col = col_ink, fontsize = 8))
-  }
-
-  swatch(0.065, 0.092, col_input_fill, col_input_border, "Input data / exposure source")
-  swatch(0.065, 0.064, col_output_fill, col_output_border, "Manuscript output (Figures 1-4)")
-  swatch(0.20, 0.092, col_core_fill, col_core_border, "Core computation (Appendix B)")
-  swatch(0.20, 0.064, col_note_fill, col_note_border, "Shared scenario / counterfactuals", dashed = TRUE)
-
-  grid.lines(
-    x = unit(c(0.065, 0.086), "npc"),
-    y = unit(c(0.042, 0.042), "npc"),
-    gp = gpar(col = col_rule, lwd = 1.0),
-    arrow = arrow(type = "closed", length = unit(1.8, "mm"))
-  )
-  grid.text("solid arrow: data or computation flow", x = unit(0.091, "npc"), y = unit(0.042, "npc"),
-            just = "left", gp = gpar(col = col_ink, fontsize = 7.8))
-
-  grid.lines(
-    x = unit(c(0.215, 0.236), "npc"),
-    y = unit(c(0.042, 0.042), "npc"),
-    gp = gpar(col = col_muted, lwd = 0.9, lty = 2),
-    arrow = arrow(type = "closed", length = unit(1.8, "mm"))
-  )
-  grid.text("dashed: scenario linkage", x = unit(0.241, "npc"), y = unit(0.042, "npc"),
-            just = "left", gp = gpar(col = col_ink, fontsize = 7.8))
+# Convert to PNG
+png_out <- file.path(FIG_DIR, "Figure_5.png")
+png_ok <- convert_pdf_to_png(pdf_src, png_out)
+if (png_ok && IS_NESTED_SUBMISSION) {
+  file.copy(png_out, file.path(SUBMISSION_ROOT, "Figure_5.png"), overwrite = TRUE)
+  file.copy(png_out, file.path(SUBMISSION_FIG_DIR, "Figure_5.png"), overwrite = TRUE)
 }
 
-draw_figure_5 <- function() {
-  grid.newpage()
-  pushViewport(viewport())
-
-  grid.rect(gp = gpar(fill = col_bg, col = NA))
-
-  stage_x <- c(0.22, 0.36, 0.50, 0.64, 0.78, 0.92)
-  draw_stage_guides(stage_x, c("Exposure", "Risk model", "Attribution", "Uncertainty", "Post-processing", "Results"))
-
-  grid.text("HEALTH BRANCH", x = unit(0.11, "npc"), y = unit(0.90, "npc"),
-            gp = gpar(col = col_health, fontsize = 14, fontface = "bold"))
-  grid.text("ENVIRONMENTAL BRANCH", x = unit(0.14, "npc"), y = unit(0.19, "npc"),
-            gp = gpar(col = col_env, fontsize = 14, fontface = "bold"))
-
-  grid.lines(x = unit(c(0.18, 0.95), "npc"), y = unit(c(0.68, 0.68), "npc"),
-             gp = gpar(col = col_health, lwd = 0.9, lty = 3, alpha = 0.45))
-  grid.lines(x = unit(c(0.18, 0.95), "npc"), y = unit(c(0.42, 0.42), "npc"),
-             gp = gpar(col = col_env, lwd = 0.9, lty = 3, alpha = 0.45))
-
-  draw_box(0.08, 0.55, 0.11, 0.10, "ENNyS 2 dietary recalls",
-           c("(2018-2019)", "g_kji * NOVA 1-4 * kcal_i", "survey weights w_k"),
-           border = col_input_border, fill = col_input_fill, title_cex = 0.82)
-
-  draw_box(0.22, 0.80, 0.10, 0.08, "DEIS mortality 2019",
-           c("all-cause deaths D_sa", "by sex x age 30-69"),
-           border = col_input_border, fill = col_input_fill)
-  draw_box(0.36, 0.80, 0.10, 0.08, "Dose-response (B.2)",
-           c("Pagliai 2021 RR = 1.25", "beta = ln(RR) / 35.7"),
-           border = col_input_border, fill = col_input_fill)
-
-  draw_box(0.22, 0.67, 0.10, 0.08, "1. %UPF exposure (B.1)",
-           c("person mean pctUPF_k", "stratum mu_sa, sigma_sa"),
-           border = col_core_border, fill = col_core_fill)
-  draw_box(0.36, 0.67, 0.10, 0.08, "2. Distributional CRA (B.3)",
-           c("log-normal [0,100]", "E[RR(X_sa)]"),
-           border = col_core_border, fill = col_core_fill)
-  draw_box(0.50, 0.67, 0.10, 0.08, "3. PAF and attributable",
-           c("PAF_sa = Delta E[RR] / E[RR]", "A_sa = PAF_sa * D_sa"),
-           border = col_core_border, fill = col_core_fill)
-  draw_box(0.64, 0.67, 0.10, 0.08, "4. Monte Carlo (B.4)",
-           c("10,000 iterations", "sample mu, beta, D ~ Poi", "95% UI"),
-           border = col_core_border, fill = col_core_fill)
-  draw_box(0.78, 0.67, 0.10, 0.08, "5. YLL / Delta e30 / PVLE",
-           c("WHO L_a (B.5)", "cause-deleted life table (B.6)", "PVLE, r = 3% (B.7)"),
-           border = col_core_border, fill = col_core_fill, body_cex = 0.66)
-  draw_box(0.92, 0.67, 0.10, 0.08, "Health outputs",
-           c("Deaths averted * YLL", "Delta e30 * indirect cost"),
-           border = col_output_border, fill = col_output_fill)
-
-  draw_box(0.22, 0.42, 0.10, 0.08, "1. Intake to mass (B.8)",
-           c("q_ret = g / 1000", "q_ref = q_ret / phi_i"),
-           border = col_core_border, fill = col_core_fill)
-  draw_box(0.36, 0.42, 0.10, 0.08, "2. Item footprints",
-           c("I_kji,m = q_ref * c_i,m", "GHG * Land * Water * Eutro"),
-           border = col_core_border, fill = col_core_fill)
-  draw_box(0.50, 0.42, 0.10, 0.08, "3. Population totals",
-           c("I_m^base, I_m^UPF", "restricted to NOVA 4"),
-           border = col_core_border, fill = col_core_fill)
-  draw_box(0.64, 0.42, 0.10, 0.08, "4. Counterfactuals (B.8)",
-           c("no-sub * isocaloric", "isoweight"),
-           border = col_core_border, fill = col_core_fill)
-  draw_box(0.78, 0.42, 0.10, 0.08, "5. Net scenario impacts",
-           c("%Delta I_m = 100 *", "((I_cf / I_base) - 1)", "reported vs baseline"),
-           border = col_core_border, fill = col_core_fill, body_cex = 0.60)
-  draw_box(0.92, 0.42, 0.10, 0.08, "Environmental outputs",
-           c("GHG * Land", "Water * Eutrophication"),
-           border = col_output_border, fill = col_output_fill)
-
-  draw_box(0.22, 0.29, 0.10, 0.07, "LCA coefficients",
-           c("Arrieta 2022 + OWID", "c_i,m per kg"),
-           border = col_input_border, fill = col_input_fill)
-  draw_box(0.36, 0.29, 0.10, 0.07, "Yield ratios phi_i",
-           c("retail -> farm-gate", "mapping coverage (S5)"),
-           border = col_input_border, fill = col_input_fill)
-
-  draw_box(0.50, 0.55, 0.13, 0.075, "Shared scenario engine",
-           c("TMRL * 10/20/50% proportional",
-             "NDG targets: 5.45 / 3.63 / 1.81%",
-             "Baskets: NOVA 1 * NOVA 3 * blend * NDG"),
-           border = col_note_border, fill = col_note_fill, dashed = TRUE, body_cex = 0.68)
-
-  draw_box(0.92, 0.55, 0.11, 0.10, "Integrated output",
-           c("Figure 4", "health-environment", "trade-offs"),
-           border = col_output_border, fill = col_output_fill)
-
-  draw_poly_arrow(c(0.135, 0.15, 0.17), c(0.59, 0.67, 0.67))
-  draw_poly_arrow(c(0.135, 0.15, 0.17), c(0.51, 0.42, 0.42))
-
-  draw_arrow(0.22, 0.76, 0.22, 0.71)
-  draw_arrow(0.36, 0.76, 0.36, 0.71)
-  draw_arrow(0.22, 0.33, 0.22, 0.38)
-  draw_arrow(0.36, 0.33, 0.36, 0.38)
-
-  draw_arrow(0.27, 0.67, 0.31, 0.67)
-  draw_arrow(0.41, 0.67, 0.45, 0.67)
-  draw_arrow(0.55, 0.67, 0.59, 0.67)
-  draw_arrow(0.69, 0.67, 0.73, 0.67)
-  draw_arrow(0.83, 0.67, 0.87, 0.67)
-
-  draw_arrow(0.27, 0.42, 0.31, 0.42)
-  draw_arrow(0.41, 0.42, 0.45, 0.42)
-  draw_arrow(0.55, 0.42, 0.59, 0.42)
-  draw_arrow(0.69, 0.42, 0.73, 0.42)
-  draw_arrow(0.83, 0.42, 0.87, 0.42)
-
-  draw_poly_arrow(c(0.50, 0.50, 0.36), c(0.585, 0.61, 0.635), col = col_muted, lwd = 0.9, dashed = TRUE)
-  draw_poly_arrow(c(0.50, 0.50, 0.64), c(0.515, 0.49, 0.455), col = col_muted, lwd = 0.9, dashed = TRUE)
-
-  draw_arrow(0.92, 0.63, 0.92, 0.59)
-  draw_arrow(0.92, 0.46, 0.92, 0.51)
-
-  draw_legend()
-}
-
-save_grid_pair(draw_figure_5, "Figure_5", width_mm = 330, height_mm = 170)
-message("Saved Figure_5 to ", FIG_DIR)
+message("Saved Figure_5 to ", FIG_DIR, if (png_ok) " (pdf + png)" else " (pdf only)")
