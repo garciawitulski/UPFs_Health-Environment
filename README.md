@@ -1,8 +1,6 @@
-# Manuscript Replication Package
+# Health and environmental co-benefits of reducing ultra-processed food consumption in Argentina: a modelling study
 
-This repository provides a compact replication package for the manuscript:
-
-**Health and environmental impacts of ultra-processed food consumption in Argentina**
+This repository provides a compact manuscript replication package.
 
 It contains the code and processed analytical inputs needed to regenerate the main quantitative visual outputs used in the paper, without requiring the full internal workflow used to build every intermediate dataset, table, and appendix artifact.
 
