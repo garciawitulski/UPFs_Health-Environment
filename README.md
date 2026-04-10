@@ -84,8 +84,10 @@ Or use the single entry point:
   - `scales`
   - `forcats`
   - `patchwork`
+- `pdflatex` on the system path for `Figure_5`
+- `pdftoppm` on the system path if you also want the PNG version of `Figure_5`
 
-`Figure_5` is generated directly from R and does not require LaTeX.
+`Figure_5` is generated from R through an embedded TikZ/LaTeX source written by the script at runtime.
 
 ## Reproducibility notes
 
