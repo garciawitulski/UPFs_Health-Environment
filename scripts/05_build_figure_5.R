@@ -1,3 +1,9 @@
+suppressPackageStartupMessages({
+  library(ggplot2)
+  library(dplyr)
+  library(tibble)
+})
+
 bootstrap_script_dir <- function() {
   for (i in rev(seq_along(sys.frames()))) {
     if (!is.null(sys.frames()[[i]]$ofile)) return(dirname(normalizePath(sys.frames()[[i]]$ofile, winslash = "/", mustWork = FALSE)))
@@ -10,293 +16,209 @@ bootstrap_script_dir <- function() {
 source(file.path(bootstrap_script_dir(), "00_config.R"), local = TRUE)
 
 # ---------------------------------------------------------------------------
-# Figure 5 is a TikZ diagram compiled with pdflatex.
-# The .tex source is embedded here so the script is self-contained.
+# Figure 5
+# Direct R/ggplot implementation adapted from R/26_appendix_pipeline_figures.R
 # ---------------------------------------------------------------------------
 
-tex_source <- r"(
-\documentclass[tikz,border=8pt]{standalone}
-\usepackage{tikz}
-\usepackage[T1]{fontenc}
-\usepackage{helvet}
-\usepackage{amssymb}
-\usepackage{amsmath}
-\renewcommand{\familydefault}{\sfdefault}
-\usetikzlibrary{arrows.meta, positioning, shapes.geometric, fit, backgrounds, calc}
+col_input <- "#6FA8B5"
+col_core <- "#1F3A4D"
+col_output <- "#B45309"
+col_note <- "#9CA3AF"
+col_bg <- "#F8FAFC"
 
-% --- Palette (matches main manuscript figures) ----------------------------
-\definecolor{cInput}{HTML}{6FA8B5}
-\definecolor{cInputBg}{HTML}{E1ECF0}
-\definecolor{cCore}{HTML}{1F3A4D}
-\definecolor{cCoreBg}{HTML}{E2E8EE}
-\definecolor{cOutput}{HTML}{B45309}
-\definecolor{cOutputBg}{HTML}{FDF1DD}
-\definecolor{cNote}{HTML}{6B7280}
-\definecolor{cNoteBg}{HTML}{F1F3F5}
-\definecolor{cInk}{HTML}{111827}
-\definecolor{cRule}{HTML}{1F2937}
-\definecolor{cBg}{HTML}{F8FAFC}
-\definecolor{cHealth}{HTML}{A63A50}   % accent rose for health branch rail
-\definecolor{cEnv}{HTML}{1F7A6F}      % accent teal for env branch rail
-
-\begin{document}
-\begin{tikzpicture}[
-    x=1cm, y=1cm,
-    font=\sffamily\scriptsize,
-    >={Stealth[length=2.2mm,width=1.6mm]},
-    every node/.style={align=center},
-    input/.style  = {draw=cInput,  fill=cInputBg,  line width=0.6pt,
-                     rounded corners=2pt, inner sep=3pt,
-                     text width=34mm, minimum height=14mm},
-    core/.style   = {draw=cCore,   fill=cCoreBg,   line width=0.65pt,
-                     rounded corners=2pt, inner sep=3pt,
-                     text width=34mm, minimum height=14mm},
-    output/.style = {draw=cOutput, fill=cOutputBg, line width=0.65pt,
-                     rounded corners=2pt, inner sep=3pt,
-                     text width=34mm, minimum height=14mm},
-    note/.style   = {draw=cNote, dashed, fill=cNoteBg, line width=0.45pt,
-                     rounded corners=2pt, inner sep=3pt,
-                     text width=48mm, minimum height=12mm},
-    header/.style = {font=\sffamily\bfseries\small},
-    flow/.style   = {->, draw=cRule, line width=0.55pt},
-    sflow/.style  = {->, draw=cNote, line width=0.45pt, dashed},
-    swatch/.style = {rounded corners=1.2pt, line width=0.55pt,
-                     minimum width=5mm, minimum height=3mm, inner sep=0pt},
-]
-
-% ============================== ROOT =======================================
-\node[input, text width=38mm, minimum height=18mm] (root) at (0, 0) {%
-  \textbf{ENNyS 2 dietary recalls}\\[1pt]
-  (2018--2019)\\[1pt]
-  \scriptsize $g_{kji}\ \cdot\ $NOVA 1--4 $\cdot\ \mathrm{kcal}_i$\\[1pt]
-  \scriptsize survey weights $w_k$};
-
-% ========================== HEALTH BRANCH (top) ============================
-\node[input]  (hAux1) at (5, 4.7)
-  {\textbf{DEIS mortality 2019}\\[1pt]
-   \scriptsize all-cause deaths $D_{sa}$\\
-   \scriptsize by sex $\times$ age 30--69};
-
-\node[input]  (hAux2) at (10, 4.7)
-  {\textbf{Dose--response (B.2)}\\[1pt]
-   \scriptsize Pagliai 2021 RR=1.25\\
-   \scriptsize $\beta=\ln(\mathrm{RR})/35.7$};
-
-\node[core]   (hExp) at (5, 2.2)
-  {\textbf{1. \%UPF exposure (B.1)}\\[1pt]
-   \scriptsize person mean $\overline{\%\mathrm{UPF}}_k$\\
-   \scriptsize stratum $\mu_{sa},\ \sigma_{sa}$};
-
-\node[core]   (hCra) at (10, 2.2)
-  {\textbf{2. Distributional CRA (B.3)}\\[1pt]
-   \scriptsize log-normal $[0,100]$\\
-   \scriptsize $\mathbb{E}[\mathrm{RR}(X_{sa})]$};
-
-\node[core]   (hPaf) at (15, 2.2)
-  {\textbf{3. PAF \& attributable}\\[1pt]
-   \scriptsize $\mathrm{PAF}_{sa}=\dfrac{\Delta\mathbb{E}[\mathrm{RR}]}{\mathbb{E}[\mathrm{RR}]}$\\
-   \scriptsize $A_{sa}=\mathrm{PAF}_{sa}\,D_{sa}$};
-
-\node[core]   (hMc)  at (20, 2.2)
-  {\textbf{4. Monte Carlo (B.4)}\\[1pt]
-   \scriptsize 10\,000 iterations\\
-   \scriptsize sample $\mu,\beta,D\sim\mathrm{Poi}$\\
-   \scriptsize 95\,\% UI};
-
-\node[core]   (hPost) at (25, 2.2)
-  {\textbf{5. YLL / $\Delta e_{30}$ / PVLE}\\[1pt]
-   \scriptsize WHO $L_a$ (B.5)\\
-   \scriptsize cause-deleted life table (B.6)\\
-   \scriptsize PVLE, $r{=}3\%$ (B.7)};
-
-\node[output] (hOut) at (30, 2.2)
-  {\textbf{Health outputs}\\[1pt]
-   \scriptsize Deaths averted $\cdot$ YLL\\
-   \scriptsize $\Delta e_{30}$ $\cdot$ indirect cost};
-
-% ======================== ENVIRONMENTAL BRANCH (bottom) ====================
-\node[input]  (eAux1) at (5, -4.7)
-  {\textbf{LCA coefficients}\\[1pt]
-   \scriptsize Arrieta 2022 + OWID\\
-   \scriptsize $c_{i,m}$ per kg};
-
-\node[input]  (eAux2) at (10, -4.7)
-  {\textbf{Yield ratios $\phi_i$}\\[1pt]
-   \scriptsize retail $\to$ farm-gate\\
-   \scriptsize mapping coverage (S5)};
-
-\node[core]   (eMass) at (5, -2.2)
-  {\textbf{1. Intake $\to$ mass (B.8)}\\[1pt]
-   \scriptsize $q^{\mathrm{ret}}=g/1000$\\
-   \scriptsize $q^{\mathrm{ref}}=q^{\mathrm{ret}}/\phi_i$};
-
-\node[core]   (eItem) at (10, -2.2)
-  {\textbf{2. Item footprints}\\[1pt]
-   \scriptsize $I_{kji,m}=q^{\mathrm{ref}}\,c_{i,m}$\\
-   \scriptsize GHG $\cdot$ Land $\cdot$ Water $\cdot$ Eutro};
-
-\node[core]   (eAgg)  at (15, -2.2)
-  {\textbf{3. Population totals}\\[1pt]
-   \scriptsize $I^{\mathrm{base}}_m,\ I^{\mathrm{UPF}}_m$\\
-   \scriptsize restricted to NOVA\,4};
-
-\node[core]   (eCf)   at (20, -2.2)
-  {\textbf{4. Counterfactuals (B.8)}\\[1pt]
-   \scriptsize no-sub $\cdot$ isocaloric\\
-   \scriptsize isoweight};
-
-\node[core]   (ePost) at (25, -2.2)
-  {\textbf{5. Net scenario impacts}\\[1pt]
-   \scriptsize $\%\Delta I_{m}=100\left(\dfrac{I^{\mathrm{cf}}_{m}}{I^{\mathrm{base}}_{m}}-1\right)$\\
-   \scriptsize reported vs.\ baseline};
-
-\node[output] (eOut)  at (30, -2.2)
-  {\textbf{Environmental outputs}\\[1pt]
-   \scriptsize GHG $\cdot$ Land\\
-   \scriptsize Water $\cdot$ Eutrophication};
-
-% ========================= SCENARIO ENGINE (centre) ========================
-\node[note, text width=56mm] (scen) at (15, 0)
-  {\textbf{Shared scenario engine}\\[1pt]
-   \scriptsize TMRL $\cdot$ 10/20/50\,\% proportional\\
-   \scriptsize NDG targets: 5.45 / 3.63 / 1.81\,\%\\
-   \scriptsize Baskets: NOVA\,1 $\cdot$ NOVA\,3 $\cdot$ blend $\cdot$ NDG};
-
-% ===================== FINAL INTEGRATED OUTPUT =============================
-\node[output, text width=42mm, minimum height=18mm] (final) at (30, 0)
-  {\textbf{Integrated output}\\[1pt]
-   \scriptsize Figure 4\\
-   \scriptsize health--environment\\
-   \scriptsize trade-offs};
-
-% ================================ EDGES ===================================
-% Root -> first stage of each branch
-\draw[flow] (root.north east) to[out=60,  in=180] (hExp.west);
-\draw[flow] (root.south east) to[out=-60, in=180] (eMass.west);
-
-% Auxiliary inputs feeding their relevant step
-\draw[flow] (hAux1.south) -- (hPaf.north -| hAux1.south);
-\draw[flow] (hAux2.south) -- (hCra.north);
-\draw[flow] (eAux1.north) -- (eItem.south);
-\draw[flow] (eAux2.north) -- (eAgg.south -| eAux2.north);
-
-% Health branch horizontal flow
-\draw[flow] (hExp.east)  -- (hCra.west);
-\draw[flow] (hCra.east)  -- (hPaf.west);
-\draw[flow] (hPaf.east)  -- (hMc.west);
-\draw[flow] (hMc.east)   -- (hPost.west);
-\draw[flow] (hPost.east) -- (hOut.west);
-
-% Env branch horizontal flow
-\draw[flow] (eMass.east) -- (eItem.west);
-\draw[flow] (eItem.east) -- (eAgg.west);
-\draw[flow] (eAgg.east)  -- (eCf.west);
-\draw[flow] (eCf.east)   -- (ePost.west);
-\draw[flow] (ePost.east) -- (eOut.west);
-
-% Scenario engine feeds the CRA node (health) and counterfactuals (env)
-\draw[sflow] (scen.north) to[out=90,  in=-90] (hCra.south);
-\draw[sflow] (scen.south) to[out=-90, in=90]  (eCf.north);
-
-% Convergence of branch outputs onto the integrated output
-\draw[flow] (hOut.south) to[out=-90, in=90]  (final.north);
-\draw[flow] (eOut.north) to[out=90,  in=-90] (final.south);
-
-% ============================ BRANCH HEADERS ================================
-\node[header, text=cHealth] at (2.5, 6.1) {HEALTH BRANCH};
-\node[header, text=cEnv]    at (2.5, -6.1) {ENVIRONMENTAL BRANCH};
-
-% Subtle horizontal rails behind branch rows
-\begin{pgfonlayer}{background}
-  \draw[cHealth, line width=0.45pt, dashed, opacity=0.40]
-    (3.0,  2.2) -- (32.0,  2.2);
-  \draw[cEnv,    line width=0.45pt, dashed, opacity=0.40]
-    (3.0, -2.2) -- (32.0, -2.2);
-\end{pgfonlayer}
-
-% ============================ STAGE HEADERS (top) ==========================
-\foreach \x/\lbl in {5/Exposure,10/Risk model,15/Attribution,20/Uncertainty,25/Post-processing,30/Results}{
-  \node[font=\sffamily\bfseries\tiny, text=cNote] at (\x, 6.9) {\lbl};
-  \draw[cNote, line width=0.25pt, dotted, opacity=0.55]
-    (\x, 6.6) -- (\x, -6.6);
+node_fill <- function(kind) {
+  switch(kind,
+         input  = "#E1ECF0",
+         core   = "#E2E8EE",
+         output = "#FDF1DD",
+         note   = "#F1F3F5",
+         "#FFFFFF")
 }
 
-% ============================== LEGEND =====================================
-\node[draw=cNote, line width=0.45pt, rounded corners=2pt,
-      inner sep=5pt, fill=white, font=\sffamily\scriptsize,
-      anchor=north west] (legend) at (-1.5, -7.2) {%
-  \begin{tabular}{@{}c l @{\hspace{6mm}} c l@{}}
-    \tikz\node[swatch,draw=cInput, fill=cInputBg]{};   & Input data /
-      exposure source &
-    \tikz\node[swatch,draw=cCore, fill=cCoreBg]{};     & Core computation
-      (Appendix B) \\[1.5pt]
-    \tikz\node[swatch,draw=cOutput,fill=cOutputBg]{};  & Manuscript output
-      (Figs.\ 1--4) &
-    \tikz\node[swatch,draw=cNote, fill=cNoteBg, dashed]{}; & Shared scenario
-      / counterfactuals \\[1.5pt]
-    \multicolumn{4}{@{}l}{%
-       \tikz\draw[->, draw=cRule, line width=0.55pt, >={Stealth[length=1.8mm]}]
-            (0,0) -- (6mm,0);\ \ solid arrow: data or computation flow\quad
-       \tikz\draw[->, draw=cNote, line width=0.45pt, dashed,
-                  >={Stealth[length=1.8mm]}]
-            (0,0) -- (6mm,0);\ \ dashed: scenario linkage}
-  \end{tabular}};
-
-% ============================ BACKGROUND ===================================
-\begin{pgfonlayer}{background}
-  \node[fill=cBg, inner sep=7mm,
-        fit=(root)(hAux1)(hOut)(eAux1)(eOut)(final)(legend)
-            (current bounding box)] {};
-\end{pgfonlayer}
-
-\end{tikzpicture}
-\end{document}
-)"
-
-# ---------------------------------------------------------------------------
-# Write .tex, compile with pdflatex, convert to PNG, sync
-# ---------------------------------------------------------------------------
-# Write .tex to the output figures directory
-tex_path <- file.path(FIG_DIR, "Figure_5.tex")
-writeLines(tex_source, tex_path)
-if (IS_NESTED_SUBMISSION) {
-  file.copy(tex_path, file.path(SUBMISSION_ROOT, "Figure_5.tex"), overwrite = TRUE)
-  file.copy(tex_path, file.path(SUBMISSION_FIG_DIR, "Figure_5.tex"), overwrite = TRUE)
+node_stroke <- function(kind) {
+  switch(kind,
+         input  = col_input,
+         core   = col_core,
+         output = col_output,
+         note   = col_note,
+         col_ink)
 }
 
-pdflatex <- Sys.which("pdflatex")
-if (!nzchar(pdflatex)) stop("pdflatex not found on PATH")
+make_node <- function(id, x, y, w, h, kind, title, body = "") {
+  tibble(
+    id = id, x = x, y = y, w = w, h = h, kind = kind,
+    title = title, body = body,
+    xmin = x - w, xmax = x + w,
+    ymin = y - h, ymax = y + h,
+    fill = node_fill(kind),
+    stroke = node_stroke(kind)
+  )
+}
 
-old_wd <- getwd()
-on.exit(setwd(old_wd), add = TRUE)
-setwd(FIG_DIR)
+make_edge <- function(nodes, from, to, curvature = 0) {
+  a <- nodes[nodes$id == from, ]
+  b <- nodes[nodes$id == to, ]
+  if (abs(b$x - a$x) >= abs(b$y - a$y)) {
+    x1 <- ifelse(b$x >= a$x, a$xmax, a$xmin)
+    x2 <- ifelse(b$x >= a$x, b$xmin, b$xmax)
+    y1 <- a$y
+    y2 <- b$y
+  } else {
+    y1 <- ifelse(b$y >= a$y, a$ymax, a$ymin)
+    y2 <- ifelse(b$y >= a$y, b$ymin, b$ymax)
+    x1 <- a$x
+    x2 <- b$x
+  }
+  tibble(x = x1, y = y1, xend = x2, yend = y2, curvature = curvature)
+}
 
-cmd_out <- system2(
-  pdflatex,
-  c("-interaction=nonstopmode", "-halt-on-error", "Figure_5.tex"),
-  stdout = TRUE,
-  stderr = TRUE
+draw_pipeline <- function(nodes, edges, xlim, ylim) {
+  p <- ggplot() +
+    geom_rect(
+      data = nodes %>% mutate(
+        xmin = xmin + 0.04, xmax = xmax + 0.04,
+        ymin = ymin - 0.04, ymax = ymax - 0.04
+      ),
+      aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+      fill = alpha("#000000", 0.06), colour = NA
+    ) +
+    geom_rect(
+      data = nodes,
+      aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax,
+          fill = I(fill), colour = I(stroke)),
+      linewidth = 0.55
+    )
+
+  straight <- edges %>% filter(curvature == 0)
+  curved <- edges %>% filter(curvature != 0)
+
+  if (nrow(straight) > 0) {
+    p <- p + geom_segment(
+      data = straight,
+      aes(x = x, y = y, xend = xend, yend = yend),
+      colour = col_rule, linewidth = 0.5,
+      arrow = arrow(length = unit(2.2, "mm"), type = "closed")
+    )
+  }
+
+  if (nrow(curved) > 0) {
+    for (cv in unique(curved$curvature)) {
+      p <- p + geom_curve(
+        data = curved %>% filter(curvature == cv),
+        aes(x = x, y = y, xend = xend, yend = yend),
+        colour = col_rule, linewidth = 0.5, curvature = cv,
+        arrow = arrow(length = unit(2.2, "mm"), type = "closed")
+      )
+    }
+  }
+
+  p +
+    geom_text(
+      data = nodes,
+      aes(x = x, y = y + h * 0.45, label = title),
+      fontface = "bold", size = 2.9, colour = col_ink, lineheight = 0.95
+    ) +
+    geom_text(
+      data = nodes %>% filter(nzchar(body)),
+      aes(x = x, y = y - h * 0.12, label = body),
+      size = 2.25, colour = col_muted, lineheight = 1.0
+    ) +
+    coord_cartesian(xlim = xlim, ylim = ylim, expand = FALSE, clip = "off") +
+    theme_void(base_size = 10) +
+    theme(
+      plot.background = element_rect(fill = col_bg, colour = NA),
+      plot.margin = margin(10, 12, 10, 12)
+    )
+}
+
+w_n <- 1.55
+h_n <- 0.55
+
+u_nodes <- bind_rows(
+  make_node("root", 1.2, 4.50, 1.70, 0.80, "input",
+            "ENNyS 2 dietary recalls",
+            "g_kji  |  NOVA 1-4  |  kcal_i\nsurvey weights w_k"),
+
+  make_node("h_in", 4.0, 7.20, w_n, h_n, "input",
+            "DEIS mortality 2019\n+\nDose-response (B.2)",
+            "D_sa  |  RR = 1.25"),
+  make_node("h_exp", 4.0, 5.90, w_n, h_n, "core",
+            "1. %UPF exposure (B.1)",
+            "person mean pctUPF_k\nmu_sa, sigma_sa"),
+  make_node("h_cra", 6.5, 6.55, w_n, h_n, "core",
+            "2. Distributional CRA (B.3)",
+            "E[RR(X_sa)]  |  PAF"),
+  make_node("h_mc", 9.0, 6.55, w_n, h_n, "core",
+            "3. Monte Carlo (B.4)",
+            "10,000 iterations"),
+  make_node("h_out", 11.6, 6.55, 1.70, h_n, "output",
+            "Health outputs",
+            "Deaths | YLL | Delta e30 | PVLE"),
+
+  make_node("e_in", 4.0, 1.80, w_n, h_n, "input",
+            "LCA coefficients and yield ratios",
+            "Arrieta 2022 + OWID\nphi_i, c_i,m"),
+  make_node("e_mass", 4.0, 3.10, w_n, h_n, "core",
+            "1. Intake to mass (B.8)",
+            "q_ret  |  q_ref"),
+  make_node("e_item", 6.5, 2.45, w_n, h_n, "core",
+            "2. Item footprints",
+            "I_kji,m = q_ref * c_i,m"),
+  make_node("e_agg", 9.0, 2.45, w_n, h_n, "core",
+            "3. Population totals",
+            "I_base  |  I_UPF"),
+  make_node("e_out", 11.6, 2.45, 1.70, h_n, "output",
+            "Environmental outputs",
+            "GHG | Land | Water | Eutroph."),
+
+  make_node("scen", 9.0, 4.50, 2.00, 0.65, "note",
+            "Shared scenario engine",
+            "TMRL | 10/20/50% | NDG targets\nNOVA 1 / NOVA 3 / blend / NDG"),
+
+  make_node("final", 11.6, 4.50, 1.70, 0.65, "output",
+            "Integrated output",
+            "Figure 4: health-environment trade-offs")
 )
-status <- attr(cmd_out, "status")
-if (!is.null(status) && status != 0) {
-  stop(paste(c("Figure_5.tex failed to compile:", cmd_out), collapse = "\n"))
-}
 
-pdf_src <- file.path(FIG_DIR, "Figure_5.pdf")
-if (!file.exists(pdf_src)) stop("Expected compiled PDF not found: ", pdf_src)
+u_edges <- bind_rows(
+  make_edge(u_nodes, "root", "h_exp", curvature = -0.15),
+  make_edge(u_nodes, "root", "e_mass", curvature = 0.15),
+  make_edge(u_nodes, "h_in", "h_cra", curvature = -0.10),
+  make_edge(u_nodes, "h_exp", "h_cra"),
+  make_edge(u_nodes, "h_cra", "h_mc"),
+  make_edge(u_nodes, "h_mc", "h_out"),
+  make_edge(u_nodes, "e_in", "e_item", curvature = 0.10),
+  make_edge(u_nodes, "e_mass", "e_item"),
+  make_edge(u_nodes, "e_item", "e_agg"),
+  make_edge(u_nodes, "e_agg", "e_out"),
+  make_edge(u_nodes, "scen", "h_cra", curvature = 0.20),
+  make_edge(u_nodes, "scen", "e_agg", curvature = -0.20),
+  make_edge(u_nodes, "h_out", "final", curvature = 0.20),
+  make_edge(u_nodes, "e_out", "final", curvature = -0.20),
+  make_edge(u_nodes, "scen", "final")
+)
 
-# Copy PDF to submission directories (pdf already in FIG_DIR from pdflatex)
-if (IS_NESTED_SUBMISSION) {
-  file.copy(pdf_src, file.path(SUBMISSION_ROOT, "Figure_5.pdf"), overwrite = TRUE)
-  file.copy(pdf_src, file.path(SUBMISSION_FIG_DIR, "Figure_5.pdf"), overwrite = TRUE)
-}
+u_labels <- tibble(
+  x = c(2.6, 2.6),
+  y = c(8.10, 0.90),
+  label = c("HEALTH BRANCH", "ENVIRONMENTAL BRANCH"),
+  colour = c(col_core, col_core)
+)
 
-# Convert to PNG
-png_out <- file.path(FIG_DIR, "Figure_5.png")
-png_ok <- convert_pdf_to_png(pdf_src, png_out)
-if (png_ok && IS_NESTED_SUBMISSION) {
-  file.copy(png_out, file.path(SUBMISSION_ROOT, "Figure_5.png"), overwrite = TRUE)
-  file.copy(png_out, file.path(SUBMISSION_FIG_DIR, "Figure_5.png"), overwrite = TRUE)
-}
+fig_u <- draw_pipeline(
+  u_nodes, u_edges,
+  xlim = c(-0.4, 13.0),
+  ylim = c(0.2, 8.6)
+) +
+  geom_text(
+    data = u_labels,
+    aes(x = x, y = y, label = label, colour = I(colour)),
+    fontface = "bold", size = 3.1, hjust = 0
+  ) +
+  annotate("segment", x = 2.9, xend = 12.6, y = 8.10, yend = 8.10,
+           colour = col_input, linewidth = 0.25, linetype = "22") +
+  annotate("segment", x = 2.9, xend = 12.6, y = 0.90, yend = 0.90,
+           colour = col_input, linewidth = 0.25, linetype = "22")
 
-message("Saved Figure_5 to ", FIG_DIR, if (png_ok) " (pdf + png)" else " (pdf only)")
+save_pair(fig_u, "Figure_5", width_mm = 260, height_mm = 170)
+message("Saved Figure_5 to ", FIG_DIR)
