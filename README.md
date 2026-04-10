@@ -39,8 +39,8 @@ generated/
 Run the manuscript calculations:
 
 ```r
-source("scripts/calculations/90_run_core_outputs.R")
-source("scripts/calculations/95_verify_core_outputs.R")
+source("scripts/calculations/90_run_manuscript_calculations.R")
+source("scripts/calculations/95_verify_manuscript_outputs.R")
 ```
 
 Rebuild the manuscript figures:
@@ -53,7 +53,7 @@ source("scripts/07_verify_main_figure_values.R")
 Run the full public replication pipeline:
 
 ```r
-source("scripts/calculations/99_full_submission_pipeline.R")
+source("scripts/calculations/99_run_full_manuscript_replication.R")
 ```
 
 Generated outputs are written to:
@@ -98,20 +98,20 @@ See [data/README.md](data/README.md) and [data/analysis/README.md](data/analysis
 
 ### Manuscript calculations
 
-- `scripts/calculations/04_paf_resultados.R`
-- `scripts/calculations/05_muertes_por_causa.R`
-- `scripts/calculations/06_yll.R`
-- `scripts/calculations/07_esperanza_vida.R`
-- `scripts/calculations/08_costos_indirectos.R`
-- `scripts/calculations/09_scenario_health_economic_summary.R`
-- `scripts/calculations/10_impacto_ambiental.R`
-- `scripts/calculations/13_merge_health_env_summaries.R`
-- `scripts/calculations/16_appendix_scenario_composition_table.R`
-- `scripts/calculations/17_appendix_environmental_coefficients_table.R`
-- `scripts/calculations/90_run_core_outputs.R`
-- `scripts/calculations/91_build_submission_figures.R`
-- `scripts/calculations/95_verify_core_outputs.R`
-- `scripts/calculations/99_full_submission_pipeline.R`
+- `scripts/calculations/01_estimate_all_cause_paf.R`
+- `scripts/calculations/02_estimate_cause_specific_deaths.R`
+- `scripts/calculations/03_compute_years_of_life_lost.R`
+- `scripts/calculations/04_estimate_life_expectancy_gains.R`
+- `scripts/calculations/05_estimate_indirect_costs.R`
+- `scripts/calculations/06_build_health_economic_scenario_summary.R`
+- `scripts/calculations/07_build_environmental_scenarios.R`
+- `scripts/calculations/08_merge_health_environment_summaries.R`
+- `scripts/calculations/09_build_table_s7_scenario_composition.R`
+- `scripts/calculations/10_build_table_s8_environmental_coefficients.R`
+- `scripts/calculations/90_run_manuscript_calculations.R`
+- `scripts/calculations/91_build_main_figures.R`
+- `scripts/calculations/95_verify_manuscript_outputs.R`
+- `scripts/calculations/99_run_full_manuscript_replication.R`
 
 ## Software requirements
 

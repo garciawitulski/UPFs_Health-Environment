@@ -12,16 +12,16 @@ bootstrap_script_dir <- function() {
 
 script_dir <- bootstrap_script_dir()
 ordered_scripts <- c(
-  "04_paf_resultados.R",
-  "05_muertes_por_causa.R",
-  "06_yll.R",
-  "07_esperanza_vida.R",
-  "08_costos_indirectos.R",
-  "09_scenario_health_economic_summary.R",
-  "10_impacto_ambiental.R",
-  "13_merge_health_env_summaries.R",
-  "16_appendix_scenario_composition_table.R",
-  "17_appendix_environmental_coefficients_table.R"
+  "01_estimate_all_cause_paf.R",
+  "02_estimate_cause_specific_deaths.R",
+  "03_compute_years_of_life_lost.R",
+  "04_estimate_life_expectancy_gains.R",
+  "05_estimate_indirect_costs.R",
+  "06_build_health_economic_scenario_summary.R",
+  "07_build_environmental_scenarios.R",
+  "08_merge_health_environment_summaries.R",
+  "09_build_table_s7_scenario_composition.R",
+  "10_build_table_s8_environmental_coefficients.R"
 )
 
 for (script_name in ordered_scripts) {

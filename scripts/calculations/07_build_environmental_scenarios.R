@@ -23,7 +23,7 @@ slopes <- read_calc_csv("environmental_replacement_slopes.csv")
 
 profile_path <- file.path(CALC_OUTPUT_DIR, "upf_ndg_gapa_profile.csv")
 if (!file.exists(profile_path)) {
-  stop("Missing health-derived NDG profile. Run calculations/04_paf_resultados.R first.")
+  stop("Missing health-derived NDG profile. Run calculations/01_estimate_all_cause_paf.R first.")
 }
 policy_scen <- read.csv(profile_path, stringsAsFactors = FALSE, check.names = FALSE) %>%
   transmute(

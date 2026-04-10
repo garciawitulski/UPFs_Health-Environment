@@ -11,7 +11,7 @@ bootstrap_script_dir <- function() {
 }
 
 script_dir <- bootstrap_script_dir()
-source(file.path(script_dir, "90_run_core_outputs.R"), local = new.env(parent = globalenv()))
-source(file.path(script_dir, "95_verify_core_outputs.R"), local = new.env(parent = globalenv()))
-source(file.path(script_dir, "91_build_submission_figures.R"), local = new.env(parent = globalenv()))
+source(file.path(script_dir, "90_run_manuscript_calculations.R"), local = new.env(parent = globalenv()))
+source(file.path(script_dir, "95_verify_manuscript_outputs.R"), local = new.env(parent = globalenv()))
+source(file.path(script_dir, "91_build_main_figures.R"), local = new.env(parent = globalenv()))
 message("Processed-data manuscript replication pipeline completed.")
