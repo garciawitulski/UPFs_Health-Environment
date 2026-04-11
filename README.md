@@ -95,14 +95,14 @@ See [data/README.md](data/README.md) and [data/analysis/README.md](data/analysis
 ### Manuscript calculations
 
 - `scripts/calculations/01_estimate_all_cause_paf.R`
-- `scripts/calculations/03_compute_years_of_life_lost.R`
-- `scripts/calculations/04_estimate_life_expectancy_gains.R`
-- `scripts/calculations/05_estimate_indirect_costs.R`
-- `scripts/calculations/06_build_health_economic_scenario_summary.R`
-- `scripts/calculations/07_build_environmental_scenarios.R`
-- `scripts/calculations/08_merge_health_environment_summaries.R`
-- `scripts/calculations/09_build_table_s7_scenario_composition.R`
-- `scripts/calculations/10_build_table_s8_environmental_coefficients.R`
+- `scripts/calculations/02_compute_years_of_life_lost.R`
+- `scripts/calculations/03_estimate_life_expectancy_gains.R`
+- `scripts/calculations/04_estimate_indirect_costs.R`
+- `scripts/calculations/05_build_health_economic_scenario_summary.R`
+- `scripts/calculations/06_build_environmental_scenarios.R`
+- `scripts/calculations/07_merge_health_environment_summaries.R`
+- `scripts/calculations/08_build_table_s7_scenario_composition.R`
+- `scripts/calculations/09_build_table_s8_environmental_coefficients.R`
 - `scripts/calculations/90_run_manuscript_calculations.R`
 - `scripts/calculations/91_build_main_figures.R`
 - `scripts/calculations/99_run_full_manuscript_replication.R`
