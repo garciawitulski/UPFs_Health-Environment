@@ -16,7 +16,7 @@ The public package reproduces:
 - the appendix-ready scenario-composition and environmental-coefficient tables
 - the five main manuscript figures
 
-The package is intentionally built from processed analytical inputs. This keeps the repository compact and reproducible while avoiding oversized source files that are impractical for a standard public GitHub repository.
+The package is intentionally built from processed analytical inputs. 
 
 ## Repository structure
 
@@ -58,8 +58,6 @@ Generated outputs are written to:
 
 - `generated/calculation_outputs/`
 - `generated/figures/`
-
-When this package is nested inside the authors' local `submission_nature_food` folder, the figure scripts also synchronize refreshed figure files into the manuscript submission directory.
 
 ## Included analytical inputs
 
