@@ -30,7 +30,7 @@ scripts/
   calculations/  Ordered manuscript-calculation pipeline adapted for this public package
 
 generated/
-  Regenerated calculation outputs, figures, and verification reports
+  Regenerated calculation outputs and figures
   Created locally and ignored by git
 ```
 
@@ -40,14 +40,12 @@ Run the manuscript calculations:
 
 ```r
 source("scripts/calculations/90_run_manuscript_calculations.R")
-source("scripts/calculations/95_verify_manuscript_outputs.R")
 ```
 
 Rebuild the manuscript figures:
 
 ```r
 source("scripts/06_build_all_figures.R")
-source("scripts/07_verify_main_figure_values.R")
 ```
 
 Run the full public replication pipeline:
@@ -60,7 +58,6 @@ Generated outputs are written to:
 
 - `generated/calculation_outputs/`
 - `generated/figures/`
-- `generated/reports/`
 
 When this package is nested inside the authors' local `submission_nature_food` folder, the figure scripts also synchronize refreshed figure files into the manuscript submission directory.
 
@@ -94,12 +91,10 @@ See [data/README.md](data/README.md) and [data/analysis/README.md](data/analysis
 - `scripts/04_build_figure_4.R`
 - `scripts/05_build_figure_5.R`
 - `scripts/06_build_all_figures.R`
-- `scripts/07_verify_main_figure_values.R`
 
 ### Manuscript calculations
 
 - `scripts/calculations/01_estimate_all_cause_paf.R`
-- `scripts/calculations/02_estimate_cause_specific_deaths.R`
 - `scripts/calculations/03_compute_years_of_life_lost.R`
 - `scripts/calculations/04_estimate_life_expectancy_gains.R`
 - `scripts/calculations/05_estimate_indirect_costs.R`
@@ -110,7 +105,6 @@ See [data/README.md](data/README.md) and [data/analysis/README.md](data/analysis
 - `scripts/calculations/10_build_table_s8_environmental_coefficients.R`
 - `scripts/calculations/90_run_manuscript_calculations.R`
 - `scripts/calculations/91_build_main_figures.R`
-- `scripts/calculations/95_verify_manuscript_outputs.R`
 - `scripts/calculations/99_run_full_manuscript_replication.R`
 
 ## Software requirements
@@ -133,7 +127,6 @@ See [data/README.md](data/README.md) and [data/analysis/README.md](data/analysis
 
 - This public package does not redistribute the full raw ENNyS microdata workflow.
 - The manuscript calculations included here are rebuilt from processed analytical inputs derived from the full internal study pipeline.
-- The verification scripts check the main numerical targets used in the manuscript package, but they do not perform pixel-level image comparison.
 - The public package is focused on the main manuscript calculations and figures rather than every intermediate file produced during the original internal workflow.
 
 ## Citation

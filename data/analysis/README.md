@@ -8,9 +8,6 @@ This folder contains the processed analytical inputs used by the public manuscri
 - `all_cause_mortality_by_stratum.csv`
   All-cause deaths by sex-age stratum for the target adult population.
 
-- `cause_specific_mortality_by_stratum.csv`
-  Cause-specific deaths by sex-age stratum used in the cause-specific attributable mortality calculations.
-
 - `population_by_stratum.csv`
   Population counts by sex-age stratum used in life-table calculations.
 

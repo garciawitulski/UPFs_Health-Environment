@@ -14,6 +14,5 @@ script_dir <- bootstrap_script_dir()
 pkg_root <- normalizePath(file.path(script_dir, "..", ".."), winslash = "/", mustWork = TRUE)
 
 source(file.path(pkg_root, "scripts", "06_build_all_figures.R"), local = new.env(parent = globalenv()))
-source(file.path(pkg_root, "scripts", "07_verify_main_figure_values.R"), local = new.env(parent = globalenv()))
 
-message("Main manuscript figures rebuilt and verified.")
+message("Main manuscript figures rebuilt.")

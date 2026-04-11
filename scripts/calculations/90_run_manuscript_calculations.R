@@ -13,7 +13,6 @@ bootstrap_script_dir <- function() {
 script_dir <- bootstrap_script_dir()
 ordered_scripts <- c(
   "01_estimate_all_cause_paf.R",
-  "02_estimate_cause_specific_deaths.R",
   "03_compute_years_of_life_lost.R",
   "04_estimate_life_expectancy_gains.R",
   "05_estimate_indirect_costs.R",

@@ -21,22 +21,10 @@ res <- read_calc_output_csv("resultados_paper_argentina.csv")
 res$yll_per_death <- unname(WHO_YLL[res$age_group])
 res$YLL <- res$deaths_attr * res$yll_per_death
 write_calc_csv(res[c("sexo_m", "age_group", "deaths_attr", "YLL", "yll_per_death")], "yll_allcause_por_estrato.csv")
-
-res_causa <- read_calc_output_csv("resultados_por_causa.csv")
-res_causa$yll_per_death <- unname(WHO_YLL[res_causa$age_group])
-res_causa$YLL <- res_causa$deaths_attr * res_causa$yll_per_death
-
-resumen <- res_causa %>%
-  group_by(causa) %>%
-  summarise(deaths = sum(deaths), deaths_attr = sum(deaths_attr), YLL = sum(YLL), .groups = "drop")
-
-resumen_out <- data.frame(
-  causa = c(resumen$causa, "Total"),
-  deaths_attr = c(resumen$deaths_attr, sum(resumen$deaths_attr)),
-  YLL = c(resumen$YLL, sum(resumen$YLL))
+summary_allcause <- data.frame(
+  deaths_attr = sum(res$deaths_attr, na.rm = TRUE),
+  YLL = sum(res$YLL, na.rm = TRUE)
 )
+write_calc_csv(summary_allcause, "yll_allcause_summary.csv")
 
-write_calc_csv(resumen, "yll_por_causa.csv")
-write_calc_csv(resumen_out, "resumen_yll_por_causa.csv")
-
-message("Saved calculation outputs: yll_allcause_por_estrato.csv, yll_por_causa.csv, resumen_yll_por_causa.csv")
+message("Saved calculation outputs: yll_allcause_por_estrato.csv, yll_allcause_summary.csv")
